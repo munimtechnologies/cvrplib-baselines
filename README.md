@@ -30,6 +30,45 @@ Pre-registered expectations: [vrp/expectations.md](vrp/expectations.md). Scoring
 between 0.5% and 3%) failed on XL-n1094-k157, which came within 0.18%.
 Raw output: [vrp/results.json](vrp/results.json), [vrp/results.md](vrp/results.md).
 
+## vrptw/: all 56 Solomon instances and six 1,000-customer Homberger instances
+
+`vrptw_baseline.py` checks every CVRPLib VRPTW BKS under the DIMACS convention (each arc truncated to
+0.1, travel time = distance) and runs PyVRP in two modes: *dist* (distance only, the file's fleet) and
+*lex* (fewest vehicles for half the time, then distance). 30 s per mode on Solomon, 300 s on Homberger.
+
+| | result |
+|---|---|
+| BKS check (DIMACS) | 62 of 62 reproduce their Cost line |
+| dist, Solomon | BKS reached on 40 of 56; largest gap 1.64% (RC108) |
+| dist, 1,000 customers | gaps 0.005% (C1_10_1), 0.82% (C2), 1.92% (R1), 0.47% (R2), 1.66% (RC1), 0.21% (RC2) |
+| lex, Solomon | fewer routes than CVRPLib's BKS on 36 of 56, because those BKSs minimise distance only |
+
+Scoring: [vrptw/score.md](vrptw/score.md): V1 and V4 held, V2 and V3 failed (bands set too tight).
+Raw output: [vrptw/results.json](vrptw/results.json), [vrptw/results.md](vrptw/results.md).
+The `beats_bks_lex` flags in the results are fewer-route solutions compared with distance-only optima.
+They are not improvements, and they are not published as such.
+
+## xl/: memory and speed at 1,000 to 10,000 customers
+
+`xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
+windows and solves them on one CPU, to size jobs for the XLTW instances.
+
+| n | budget | peak memory | iterations/s | feasible |
+|---|---|---|---|---|
+| 1,000 | 300 s | 105 MB | 336.7 | yes |
+| 2,500 | 600 s | 253 MB | 185.1 | yes |
+| 5,000 | 900 s | 638 MB | 99.6 | yes |
+| 10,000 | 1,800 s | 2,361 MB | 44.1 | yes |
+
+Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
+
+## Coming next
+
+- `vrptwd/`: the same solutions re-checked in double precision, the convention of SINTEF's hierarchical
+  records. Under DIMACS, 23 PyVRP lex results look shorter than those records with the same number of
+  vehicles; the expectation is that none survives double precision. Expectations are written first.
+- XLTW-Test (due from CVRPLib on 2026-10-31): plain PyVRP under the challenge's own convention.
+
 Reproduce (Python 3.12):
 
 ```
@@ -37,15 +76,15 @@ pip install pyvrp==0.14.1
 cd vrp
 python -m unittest -v test_vrp_probe
 python vrp_probe.py --ids 280,281,282 --warm-seconds 1800 --cold-seconds 900 --workers 2 --data-dir data --out-dir out
+cd ../vrptw
+python -m unittest -v test_vrptw_baseline
+python vrptw_baseline.py --ids 380-435,676,686,696,706,716,726 --small-seconds 30 --large-seconds 300 --workers 2 --data-dir data --out-dir out
+cd ../xl
+python -m unittest -v test_xl_scale
+python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
 ```
 
 Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed). The results files
 say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned as above.
-
-## Coming next
-
-- `vrptw/`: PyVRP on all 56 Solomon instances and six 1,000-customer Homberger instances, checking
-  CVRPLib's VRPTW distance convention and whether its BKSs minimise vehicles or distance.
-- `xl/`: memory and speed of PyVRP at 1,000 to 10,000 customers, to size runs for the XLTW instances.
 
 Data: instances and best known solutions are downloaded from CVRPLib at run time and are not redistributed here.
