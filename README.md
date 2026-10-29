@@ -48,6 +48,25 @@ Raw output: [vrptw/results.json](vrptw/results.json), [vrptw/results.md](vrptw/r
 The `beats_bks_lex` flags in the results are fewer-route solutions compared with distance-only optima.
 They are not improvements, and they are not published as such.
 
+## vrptwd/: the same solutions in double precision
+
+`double_check.py` re-checks the 62 CVRPLib BKSs and 24 PyVRP lex solutions in double precision (the
+convention of SINTEF's long-standing hierarchical records: no truncation, time = distance) and compares each
+with the SINTEF record (fewest vehicles, then distance).
+
+| | result |
+|---|---|
+| Solomon BKSs feasible in double precision | 48 of 56; late somewhere: R102, R105, R107, R108, R112, R211, RC101, RC105 (one late arrival each, 0.07 to 0.40 time units) |
+| 1,000-customer BKSs feasible in double precision | 4 of 6; R1_10_1 (95 routes; 7 late arrivals) and RC2_10_1 (2) are not |
+| R1_10_1 | CVRPLib's BKS uses 95 routes, SINTEF's record 100: the 95-route solution is feasible only with truncated travel times |
+| 23 PyVRP results that looked shorter than SINTEF's records under DIMACS | in double precision 5 are infeasible, 10 equal the record, 8 are longer; none is better |
+
+Scoring: [vrptwd/score.md](vrptwd/score.md): D0 to D3 held; D4 (at least 50 of 56 Solomon BKSs
+feasible in double precision) failed with 48. Raw output: [vrptwd/results.json](vrptwd/results.json),
+[vrptwd/results.md](vrptwd/results.md). Neither convention is wrong; both are documented and in use. The
+point is that a vehicle count or distance from one convention cannot be compared with a record kept under the
+other.
+
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
 `xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
@@ -64,9 +83,8 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- `vrptwd/`: the same solutions re-checked in double precision, the convention of SINTEF's hierarchical
-  records. Under DIMACS, 23 PyVRP lex results look shorter than those records with the same number of
-  vehicles; the expectation is that none survives double precision. Expectations are written first.
+- `vrptwd2/`: a second, separately written check of every `vrptwd/` row (vrplib's parser, exact 50-digit
+  arithmetic, every late visit listed). Expectations: [vrptwd2/expectations.md](vrptwd2/expectations.md).
 - XLTW-Test (due from CVRPLib on 2026-10-31): plain PyVRP under the challenge's own convention.
 
 Reproduce (Python 3.12):
@@ -79,6 +97,9 @@ python vrp_probe.py --ids 280,281,282 --warm-seconds 1800 --cold-seconds 900 --w
 cd ../vrptw
 python -m unittest -v test_vrptw_baseline
 python vrptw_baseline.py --ids 380-435,676,686,696,706,716,726 --small-seconds 30 --large-seconds 300 --workers 2 --data-dir data --out-dir out
+cd ../vrptwd
+python -m unittest -v test_double_check
+python double_check.py --ids 380-435,676,686,696,706,716,726 --sols sols --data-dir data --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
