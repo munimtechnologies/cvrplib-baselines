@@ -1,0 +1,146 @@
+{
+ "pyvrp_version": "unknown",
+ "seed": 20261028,
+ "warm_seconds": 1800,
+ "cold_seconds": 900,
+ "instances": [
+  {
+   "name": "XL-n1048-k237",
+   "clients": 1047,
+   "capacity": 128,
+   "bks_cost": 380090.0,
+   "bks_routes": 238,
+   "bks_check_ok": true,
+   "bks_check_reason": "",
+   "bks_check_cost": 380090,
+   "runs": [
+    {
+     "mode": "warm",
+     "seconds": 1800,
+     "seed": 20261028,
+     "pyvrp_init_distance": 380090,
+     "feasible": true,
+     "distance": 380090,
+     "iterations": 484447,
+     "wall_seconds": 1800.2,
+     "check_ok": true,
+     "check_reason": "",
+     "check_cost": 380090,
+     "pyvrp_matches_check": true,
+     "gap_vs_bks_pct": 0.0,
+     "improves_bks": false,
+     "num_routes": 238
+    },
+    {
+     "mode": "cold",
+     "seconds": 900,
+     "seed": 20261028,
+     "pyvrp_init_distance": null,
+     "feasible": true,
+     "distance": 387650,
+     "iterations": 218429,
+     "wall_seconds": 900.3,
+     "check_ok": true,
+     "check_reason": "",
+     "check_cost": 387650,
+     "pyvrp_matches_check": true,
+     "gap_vs_bks_pct": 1.989,
+     "improves_bks": false,
+     "num_routes": 245
+    }
+   ]
+  },
+  {
+   "name": "XL-n1094-k157",
+   "clients": 1093,
+   "capacity": 7,
+   "bks_cost": 112431.0,
+   "bks_routes": 157,
+   "bks_check_ok": true,
+   "bks_check_reason": "",
+   "bks_check_cost": 112431,
+   "runs": [
+    {
+     "mode": "warm",
+     "seconds": 1800,
+     "seed": 20261028,
+     "pyvrp_init_distance": 112431,
+     "feasible": true,
+     "distance": 112431,
+     "iterations": 661287,
+     "wall_seconds": 1800.2,
+     "check_ok": true,
+     "check_reason": "",
+     "check_cost": 112431,
+     "pyvrp_matches_check": true,
+     "gap_vs_bks_pct": 0.0,
+     "improves_bks": false,
+     "num_routes": 157
+    },
+    {
+     "mode": "cold",
+     "seconds": 900,
+     "seed": 20261028,
+     "pyvrp_init_distance": null,
+     "feasible": true,
+     "distance": 112637,
+     "iterations": 314278,
+     "wall_seconds": 900.5,
+     "check_ok": true,
+     "check_reason": "",
+     "check_cost": 112637,
+     "pyvrp_matches_check": true,
+     "gap_vs_bks_pct": 0.1832,
+     "improves_bks": false,
+     "num_routes": 157
+    }
+   ]
+  },
+  {
+   "name": "XL-n1141-k112",
+   "clients": 1140,
+   "capacity": 761,
+   "bks_cost": 95638.0,
+   "bks_routes": 113,
+   "bks_check_ok": true,
+   "bks_check_reason": "",
+   "bks_check_cost": 95638,
+   "runs": [
+    {
+     "mode": "warm",
+     "seconds": 1800,
+     "seed": 20261028,
+     "pyvrp_init_distance": 95638,
+     "feasible": true,
+     "distance": 95638,
+     "iterations": 1035314,
+     "wall_seconds": 1800.2,
+     "check_ok": true,
+     "check_reason": "",
+     "check_cost": 95638,
+     "pyvrp_matches_check": true,
+     "gap_vs_bks_pct": 0.0,
+     "improves_bks": false,
+     "num_routes": 113
+    },
+    {
+     "mode": "cold",
+     "seconds": 900,
+     "seed": 20261028,
+     "pyvrp_init_distance": null,
+     "feasible": true,
+     "distance": 96259,
+     "iterations": 446315,
+     "wall_seconds": 900.4,
+     "check_ok": true,
+     "check_reason": "",
+     "check_cost": 96259,
+     "pyvrp_matches_check": true,
+     "gap_vs_bks_pct": 0.6493,
+     "improves_bks": false,
+     "num_routes": 114
+    }
+   ]
+  }
+ ]
+}
