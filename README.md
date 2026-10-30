@@ -103,23 +103,64 @@ What this is for: a solver or checker that works in double precision cannot star
 quarter of the Homberger BKSs as published. The per-instance lists in `vrptwd/` and `vrptwd3/` say which ones. They are not errors
 in CVRPLib: every one is feasible under the DIMACS rules it was found with.
 
-## vrptwd4/: can the 90 late BKSs be repaired without an extra route? (pre-registered, running)
+## vrptwd4/: 87 of the 90 late BKSs repaired without an extra route
 
 `repair.py` starts PyVRP from each of the 90 BKSs that are late in double precision, with the fleet capped at the
 BKS's route count, on a copy of the instance where every number is multiplied by 1,000 and rounded **up**. Travel
 times then never undercut the exact ones, so anything on time in the copy is on time in double precision; every
-result is re-checked by `vrptwd/double_check.py` anyway. Repaired solutions will be published in `vrptwd4/sols/`.
-The predictions (R0 to R6) were written before the run: [vrptwd4/expectations.md](vrptwd4/expectations.md).
-Results and scoring will be added here.
+result is re-checked by `vrptwd/double_check.py` anyway. One seed, 60 s to 300 s per instance.
 
-## vrptwd5/: where on their routes the late BKSs turn late (pre-registered, running)
+| | result |
+|---|---|
+| repaired (on time in double precision, no more routes than the BKS) | **87 of 90**; all 50 in C2/R2/RC2, 37 of 40 in C1/R1/RC1 |
+| not repaired in the budget | R1_6_1, R1_8_1, R1_10_1 (95 routes; SINTEF's double-precision record uses 100) |
+| distance against the BKS's own double-precision distance | median +0.43%; +0.19% in C2/R2/RC2, +1.38% in C1/R1/RC1; largest +12.85% (RC1_10_5) |
+| one route fewer than the BKS | R2_2_1, R2_2_2, R2_6_5, at 0.47% to 0.96% more distance: not an improvement under either convention |
+| against SINTEF's records (where `double_check.py` has them) | all 9 comparable repairs use more vehicles; none is better |
+
+Scoring: [vrptwd4/score.md](vrptwd4/score.md): all seven pre-registered expectations (R0 to R6) held; R3 (median
+change 0% to +0.5%) only because the wide-horizon repairs dominate. Repaired solutions: [vrptwd4/sols/](vrptwd4/sols/)
+(CVRPLib format, `Cost` = double-precision distance). Raw output: [vrptwd4/results.json](vrptwd4/results.json),
+[vrptwd4/results.md](vrptwd4/results.md). A BKS that was not repaired is not shown to be impossible at its route
+count; a repair is not a new record.
+
+## vrptwd4x/: the 87 repaired solutions, checked a second way (pre-registered, running)
+
+`exact_repair_check.py` re-checks every solution in `vrptwd4/sols/` with the `vrplib` parser and exact 50-digit
+decimal arithmetic, under both conventions, and takes each BKS's route count from the BKS file itself. The
+predictions (X0 to X4) were written before the run: [vrptwd4x/expectations.md](vrptwd4x/expectations.md). Its first
+run read no data (the `vrptwd4/` files had not reached this repository yet); the same code is running again. Results
+and scoring will be added here.
+
+## vrptwd5/: where on their routes the late BKSs turn late
 
 `anatomy.py` follows every route of the 356 BKSs under both conventions at once. In double precision a route drifts
 later by up to 0.1 per arc until the vehicle waits for a window to open, so a visit can only turn late if its DIMACS
-slack is below 0.1 times the arcs driven since the last wait. The script counts such visits, the waiting on each
-route, and routes that return to the depot within 1.0 of its closing time, to ask why lateness concentrates in C2 at
-800 and 1,000 customers. The predictions (A0 to A5) were written before the run:
-[vrptwd5/expectations.md](vrptwd5/expectations.md). Results and scoring will be added here.
+slack is below 0.1 times the arcs driven since the last wait (it is *exposed*).
+
+| | result |
+|---|---|
+| late routes | 141 on the 90 late BKSs; every late visit is exposed, as the arithmetic requires |
+| C2 route late rate | 3.33% at 800 and 1,000 customers against 1.08% at 200 to 600 (3.1 times) |
+| late C2 routes | 15 of 22 never wait, the other 7 wait once; only 6 run up against the depot's closing time |
+| first late visit | at the depot on 4 of 141 late routes; at a customer reached exactly at its due time under DIMACS on 84 |
+| exposed visits as a signal | separate late from on-time BKSs with AUC 0.865 |
+
+Scoring: [vrptwd5/score.md](vrptwd5/score.md): A0, A3, A4 and A5 held. A1 (C2 late rate at most doubles with
+size) and A2 (most late C2 routes run up against the depot's closing time) did not hold. Late C2 routes are long
+chains with no wait to reset the drift. Why this happens more often at 800 and 1,000 customers is only partly
+explained (more no-wait routes), and the score says so. Raw output: [vrptwd5/results.json](vrptwd5/results.json),
+[vrptwd5/results.md](vrptwd5/results.md), [vrptwd5/routes.csv](vrptwd5/routes.csv) (one row per route of all 356
+BKSs).
+
+## vrptwl/: fewest vehicles first, in double precision, against SINTEF's records (pre-registered, running)
+
+The challenge ranks by vehicles first. CVRPLib's VRPTW BKSs minimise distance only; the hierarchical records for the
+same instances are SINTEF's, kept in double precision. `fleet_double.py` runs PyVRP's `minimise_fleet` (300 s) and
+then `solve` with that fleet (300 s) on all 60 Gehring-Homberger 1,000-customer instances, with travel times x1,000
+rounded up so that results are on time in double precision, and compares each result with SINTEF's record. The
+predictions (L0 to L6) were written before the run: [vrptwl/expectations.md](vrptwl/expectations.md). Results and
+scoring will be added here.
 
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
@@ -137,9 +178,10 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- vrptwd4/ and vrptwd5/ results and scoring (above).
+- vrptwd4x/ and vrptwl/ results and scoring (above).
 - XLTW-Test (due from CVRPLib; announced for 2026-10-31): plain PyVRP under the challenge's own convention, with
-  expectations written first.
+  expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say which DIMACS
+  BKSs a solver cannot start from as published, and `vrptwd4/sols/` gives double-precision starts for 87 of them.
 
 Reproduce (Python 3.12):
 
@@ -163,9 +205,15 @@ python homberger_check.py --ids 436-735 --data-dir data --out-dir out
 cd ../vrptwd4
 python -m unittest -v test_repair
 python repair.py --ids 380-735 --workers 3 --data-dir data --out-dir out
+cd ../vrptwd4x
+python -m unittest -v test_exact_repair_check
+python exact_repair_check.py --data-dir data --out-dir out
 cd ../vrptwd5
 python -m unittest -v test_anatomy
 python anatomy.py --ids 380-735 --data-dir data --out-dir out
+cd ../vrptwl
+python -m unittest -v test_fleet_double
+python fleet_double.py --ids 676-735 --seconds 600 --workers 3 --data-dir data --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
@@ -175,3 +223,4 @@ Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine
 say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned as above.
 
 Data: instances and best known solutions are downloaded from CVRPLib at run time and are not redistributed here.
+SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL.
