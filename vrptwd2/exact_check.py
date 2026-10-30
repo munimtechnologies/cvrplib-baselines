@@ -13,11 +13,13 @@ import argparse
 import csv
 import json
 import os
+import socket
 import time
 import urllib.request
 from decimal import Decimal, getcontext
 
 getcontext().prec = 50
+socket.setdefaulttimeout(120)
 
 BASE = "https://galgos.inf.puc-rio.br/cvrplib/en/download"
 RAW = ("https://raw.githubusercontent.com/munimtechnologies/cvrplib-baselines/main/"
@@ -29,16 +31,23 @@ IDS = [str(i) for i in range(380, 436)] + ["676", "686", "696", "706", "716", "7
 SOLS = ["R101", "R102", "R104", "R105", "R108", "R109", "R111", "R112", "R1_10_1", "R201", "R202",
         "R203", "R205", "R206", "R208", "R209", "RC101", "RC102", "RC106", "RC107", "RC108", "RC202",
         "RC204", "RC205"]
+T0 = time.time()
+
+
+def log(msg):
+    print("[%7.1fs] %s" % (time.time() - T0, msg), flush=True)
 
 
 def fetch(url, path):
     if os.path.exists(path) and os.path.getsize(path) > 0:
         return path
+    t = time.time()
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=120) as r:
         body = r.read()
     with open(path, "wb") as f:
         f.write(body)
+    log("fetched %s (%d bytes, %.1fs)" % (url, len(body), time.time() - t))
     time.sleep(1)
     return path
 
@@ -146,6 +155,7 @@ def main():
         os.makedirs(d, exist_ok=True)
     with open(args.reference, encoding="utf-8") as f:
         ref = {(r["instance"], r["source"]): r for r in csv.DictReader(f)}
+    log("cached files in data volume: %d" % len(os.listdir(src)))
 
     insts, todo = {}, []
     for i in IDS:
@@ -153,14 +163,17 @@ def main():
         insts[inst["name"]] = inst
         todo.append((inst["name"], "cvrplib-bks",
                      fetch("%s/bks/%s" % (BASE, i), os.path.join(src, "%s.sol" % i))))
+    log("loaded %d instances" % len(insts))
     for name in SOLS:
         todo.append((name, "pyvrp-lex",
                      fetch(RAW + "%s-lex.sol" % name, os.path.join(sols, "%s-lex.sol" % name))))
+    log("downloads done: %d solutions to check" % len(todo))
 
     rows, visits = [], []
     for name, source, path in todo:
         routes = load_routes(path)
         res = check(routes, insts[name])
+        log("checked %s/%s: ok=%s late=%d" % (name, source, res["ok"], len(res.get("late", []))))
         r = ref.get((name, source))
         agree = compare(res, r) if r else None
         rows.append({"instance": name, "source": source, "routes": len(routes),

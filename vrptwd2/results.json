@@ -1,0 +1,1672 @@
+{
+ "precision_digits": 50,
+ "tolerance": "0.000001",
+ "tally": {
+  "rows": 86,
+  "reference_rows": 86,
+  "missing_reference": [],
+  "routes_mismatch": [],
+  "S1_feasibility_disagree": [],
+  "S2_late_disagree": [],
+  "S3_distance_disagree": [],
+  "S4_outside_truncation_bound": [],
+  "infeasible": [
+   "R102/cvrplib-bks",
+   "R105/cvrplib-bks",
+   "R107/cvrplib-bks",
+   "R108/cvrplib-bks",
+   "R112/cvrplib-bks",
+   "R211/cvrplib-bks",
+   "RC101/cvrplib-bks",
+   "RC105/cvrplib-bks",
+   "R1_10_1/cvrplib-bks",
+   "RC2_10_1/cvrplib-bks",
+   "R102/pyvrp-lex",
+   "R105/pyvrp-lex",
+   "R112/pyvrp-lex",
+   "R1_10_1/pyvrp-lex",
+   "R202/pyvrp-lex",
+   "RC202/pyvrp-lex"
+  ],
+  "late_visits": 30,
+  "feasible_min_slack_below_0.1": 11,
+  "feasible_min_slack_below_0.01": 4,
+  "feasible": 70
+ },
+ "rows": [
+  {
+   "instance": "C101",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C102",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C103",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.064882",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C104",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "824.776708",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C105",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C106",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C107",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C108",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C109",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "828.936867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.220282",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C201",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "591.556557",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "1.407120",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C202",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "591.556557",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "1.407120",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C203",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "591.173443",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "1.407120",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C204",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "590.598746",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "1.407120",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C205",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "588.875963",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "4.087714",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C206",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "588.492849",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.936304",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C207",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "588.286321",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "4.087714",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C208",
+   "source": "cvrplib-bks",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "588.323801",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "4.087714",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R101",
+   "source": "cvrplib-bks",
+   "routes": 20,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1642.876875",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.462795",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R102",
+   "source": "cvrplib-bks",
+   "routes": 18,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1471.745684",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.070719",
+   "min_slack": "-0.070719",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R103",
+   "source": "cvrplib-bks",
+   "routes": 14,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1213.623943",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.171573",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R104",
+   "source": "cvrplib-bks",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "976.693248",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.171573",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R105",
+   "source": "cvrplib-bks",
+   "routes": 15,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1360.120328",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.103852",
+   "min_slack": "-0.103852",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R106",
+   "source": "cvrplib-bks",
+   "routes": 13,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1239.371883",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.036767",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R107",
+   "source": "cvrplib-bks",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1069.094652",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.136817",
+   "min_slack": "-0.136817",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R108",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "936.689123",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.371709",
+   "min_slack": "-0.371709",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R109",
+   "source": "cvrplib-bks",
+   "routes": 13,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1151.911715",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.055728",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R110",
+   "source": "cvrplib-bks",
+   "routes": 12,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1072.477218",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.016442",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R111",
+   "source": "cvrplib-bks",
+   "routes": 12,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1053.495774",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.055728",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R112",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "953.439185",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.400162",
+   "min_slack": "-0.400162",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R201",
+   "source": "cvrplib-bks",
+   "routes": 8,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1147.820306",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "3.958405",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R202",
+   "source": "cvrplib-bks",
+   "routes": 8,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1034.347225",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.694035",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R203",
+   "source": "cvrplib-bks",
+   "routes": 6,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "874.868867",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.337893",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R204",
+   "source": "cvrplib-bks",
+   "routes": 5,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "735.861285",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "5.107556",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R205",
+   "source": "cvrplib-bks",
+   "routes": 5,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "954.161676",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "1.699437",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R206",
+   "source": "cvrplib-bks",
+   "routes": 5,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "879.893394",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "2.236252",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R207",
+   "source": "cvrplib-bks",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "798.083529",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "2.754391",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R208",
+   "source": "cvrplib-bks",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "705.331200",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "4.233831",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R209",
+   "source": "cvrplib-bks",
+   "routes": 5,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "859.390363",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.119172",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R210",
+   "source": "cvrplib-bks",
+   "routes": 6,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "904.807320",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.459747",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R211",
+   "source": "cvrplib-bks",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "751.293321",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.341171",
+   "min_slack": "-0.341171",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC101",
+   "source": "cvrplib-bks",
+   "routes": 15,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1623.557104",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.070329",
+   "min_slack": "-0.070329",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC102",
+   "source": "cvrplib-bks",
+   "routes": 14,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1461.334134",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.149079",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC103",
+   "source": "cvrplib-bks",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1261.671856",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.348232",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC104",
+   "source": "cvrplib-bks",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1135.479396",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.348232",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC105",
+   "source": "cvrplib-bks",
+   "routes": 15,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1517.929825",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.097245",
+   "min_slack": "-0.097245",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC106",
+   "source": "cvrplib-bks",
+   "routes": 12,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1376.255960",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "1.036995",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC107",
+   "source": "cvrplib-bks",
+   "routes": 12,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1211.125832",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.247011",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC108",
+   "source": "cvrplib-bks",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1117.526462",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.795363",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC201",
+   "source": "cvrplib-bks",
+   "routes": 9,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1265.556278",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.000000",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC202",
+   "source": "cvrplib-bks",
+   "routes": 8,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1095.643862",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.408740",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC203",
+   "source": "cvrplib-bks",
+   "routes": 5,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "926.898709",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.639320",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC204",
+   "source": "cvrplib-bks",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "786.538866",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.200274",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC205",
+   "source": "cvrplib-bks",
+   "routes": 7,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1157.664814",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "2.397675",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC206",
+   "source": "cvrplib-bks",
+   "routes": 7,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1054.605671",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "11.971009",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC207",
+   "source": "cvrplib-bks",
+   "routes": 6,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "966.372359",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.394449",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC208",
+   "source": "cvrplib-bks",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "778.925640",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.095701",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C1_10_1",
+   "source": "cvrplib-bks",
+   "routes": 100,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "42479.078024",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.944963",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "C2_10_1",
+   "source": "cvrplib-bks",
+   "routes": 30,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "16879.295400",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "5.060180",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R1_10_1",
+   "source": "cvrplib-bks",
+   "routes": 95,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "7 late arrivals",
+   "distance": "53072.011193",
+   "late": 7,
+   "late_routes": 7,
+   "max_late": "0.124531",
+   "min_slack": "-0.124531",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R2_10_1",
+   "source": "cvrplib-bks",
+   "routes": 37,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "36926.646580",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.675061",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC1_10_1",
+   "source": "cvrplib-bks",
+   "routes": 90,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "45830.639705",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.000000",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC2_10_1",
+   "source": "cvrplib-bks",
+   "routes": 29,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "2 late arrivals",
+   "distance": "28161.282729",
+   "late": 2,
+   "late_routes": 2,
+   "max_late": "0.082763",
+   "min_slack": "-0.082763",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R101",
+   "source": "pyvrp-lex",
+   "routes": 19,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1651.103785",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.455900",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R102",
+   "source": "pyvrp-lex",
+   "routes": 17,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1485.050224",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.070719",
+   "min_slack": "-0.070719",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R104",
+   "source": "pyvrp-lex",
+   "routes": 9,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1007.310577",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.171573",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R105",
+   "source": "pyvrp-lex",
+   "routes": 14,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1372.182565",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.103852",
+   "min_slack": "-0.103852",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R108",
+   "source": "pyvrp-lex",
+   "routes": 9,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "960.875779",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.071060",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R109",
+   "source": "pyvrp-lex",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1197.419866",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.866802",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R111",
+   "source": "pyvrp-lex",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1096.735385",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.055728",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R112",
+   "source": "pyvrp-lex",
+   "routes": 9,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "980.965594",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.104552",
+   "min_slack": "-0.104552",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R1_10_1",
+   "source": "pyvrp-lex",
+   "routes": 94,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "8 late arrivals",
+   "distance": "59570.884066",
+   "late": 8,
+   "late_routes": 8,
+   "max_late": "0.105608",
+   "min_slack": "-0.105608",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R201",
+   "source": "pyvrp-lex",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1252.387755",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.372946",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R202",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1190.776372",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.048779",
+   "min_slack": "-0.048779",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R203",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "941.407839",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.668348",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R205",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "994.427657",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.615450",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R206",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "906.142079",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.384227",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R208",
+   "source": "pyvrp-lex",
+   "routes": 2,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "726.822786",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "2.363215",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "R209",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "909.656561",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.105871",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC101",
+   "source": "pyvrp-lex",
+   "routes": 14,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1696.949157",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.000000",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC102",
+   "source": "pyvrp-lex",
+   "routes": 12,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1554.837336",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.000000",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC106",
+   "source": "pyvrp-lex",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1424.733684",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.217547",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC107",
+   "source": "pyvrp-lex",
+   "routes": 11,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1232.207574",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.492429",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC108",
+   "source": "pyvrp-lex",
+   "routes": 10,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1139.821433",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.686293",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC202",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": false,
+   "reason": "1 late arrivals",
+   "distance": "1335.936405",
+   "late": 1,
+   "late_routes": 1,
+   "max_late": "0.087479",
+   "min_slack": "-0.087479",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC204",
+   "source": "pyvrp-lex",
+   "routes": 3,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "798.463581",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.200274",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  },
+  {
+   "instance": "RC205",
+   "source": "pyvrp-lex",
+   "routes": 4,
+   "routes_match_reference": true,
+   "ok": true,
+   "reason": "",
+   "distance": "1297.647746",
+   "late": 0,
+   "late_routes": 0,
+   "max_late": "0.000000",
+   "min_slack": "0.203928",
+   "agree": {
+    "feasibility": true,
+    "late_count": true,
+    "max_late": true,
+    "distance": true
+   }
+  }
+ ]
+}
