@@ -124,13 +124,24 @@ change 0% to +0.5%) only because the wide-horizon repairs dominate. Repaired sol
 [vrptwd4/results.md](vrptwd4/results.md). A BKS that was not repaired is not shown to be impossible at its route
 count; a repair is not a new record.
 
-## vrptwd4x/: the 87 repaired solutions, checked a second way (pre-registered, running)
+## vrptwd4x/: the 87 repaired solutions, checked a second way
 
-`exact_repair_check.py` re-checks every solution in `vrptwd4/sols/` with the `vrplib` parser and exact 50-digit
-decimal arithmetic, under both conventions, and takes each BKS's route count from the BKS file itself. The
-predictions (X0 to X4) were written before the run: [vrptwd4x/expectations.md](vrptwd4x/expectations.md). Its first
-run read no data (the `vrptwd4/` files had not reached this repository yet); the same code is running again. Results
-and scoring will be added here.
+`exact_repair_check.py` re-checks every solution in `vrptwd4/sols/`, downloaded from this repository, with the
+`vrplib` parser and exact 50-digit decimal arithmetic, under both conventions. It takes each BKS's route count from
+the BKS file itself.
+
+| | result |
+|---|---|
+| on time in exact double-precision arithmetic | **87 of 87** |
+| on time under DIMACS | 87 of 87 |
+| distance and DIMACS cost against `vrptwd4/` | no disagreement |
+| one route fewer than the BKS file | R2_2_1 (12/13), R2_2_2 (10/11), R2_6_5 (21/22) confirmed |
+| no room to spare | 14 solutions come within 0.01 of a due time; 13 show 0.000000 slack to six decimals |
+
+Scoring: [vrptwd4x/score.md](vrptwd4x/score.md): all five pre-registered expectations (X0 to X4) held
+([vrptwd4x/expectations.md](vrptwd4x/expectations.md)). Raw output: [vrptwd4x/results.json](vrptwd4x/results.json),
+[vrptwd4x/results.md](vrptwd4x/results.md). Its first run read no data, because the `vrptwd4/` files had not reached
+this repository yet. The second run used the same code.
 
 ## vrptwd5/: where on their routes the late BKSs turn late
 
@@ -153,14 +164,43 @@ explained (more no-wait routes), and the score says so. Raw output: [vrptwd5/res
 [vrptwd5/results.md](vrptwd5/results.md), [vrptwd5/routes.csv](vrptwd5/routes.csv) (one row per route of all 356
 BKSs).
 
-## vrptwl/: fewest vehicles first, in double precision, against SINTEF's records (pre-registered, running)
+## vrptwl/: fewest vehicles first, in double precision, against SINTEF's records
 
 The challenge ranks by vehicles first. CVRPLib's VRPTW BKSs minimise distance only; the hierarchical records for the
-same instances are SINTEF's, kept in double precision. `fleet_double.py` runs PyVRP's `minimise_fleet` (300 s) and
+same instances are SINTEF's, kept in double precision. `fleet_double.py` ran PyVRP's `minimise_fleet` (300 s) and
 then `solve` with that fleet (300 s) on all 60 Gehring-Homberger 1,000-customer instances, with travel times x1,000
-rounded up so that results are on time in double precision, and compares each result with SINTEF's record. The
-predictions (L0 to L6) were written before the run: [vrptwl/expectations.md](vrptwl/expectations.md). Results and
-scoring will be added here.
+rounded up so that results are on time in double precision, and compared each result with SINTEF's record.
+
+| family | match SINTEF's vehicles | vehicles over (misses) | median distance over SINTEF where matched |
+|---|---|---|---|
+| C1 | 5 of 10 | +1, +1, +2, +4, +4 | 0.52% |
+| C2 | 6 of 10 | +1, +1, +1, +1 | 2.01% |
+| R1 | 10 of 10 | none | 21.95% |
+| R2 | 10 of 10 | none | 1.68% |
+| RC1 | 9 of 10 | +1 | 12.90% |
+| RC2 | 7 of 10 | +1, +1, +2 | 3.80% |
+| all | **47 of 60** | 21 vehicles (3,437 against 3,416) | 4.18% |
+
+All 60 results are on time in double precision. None beats a SINTEF record; C2_10_1 equals its record. In 41
+instances `minimise_fleet` returned before its time limit. By PyVRP's source, that happens only at its capacity
+bound, and all 41 match SINTEF's count. The 13 misses all ran out of time. In the short-horizon families (R1, RC1),
+the vehicle count was easy and distance was the hard part.
+
+Scoring: [vrptwl/score.md](vrptwl/score.md): L0 to L4 held. L5 (at most 6 of 20 match in R1/RC1) and L6 (median
+distance where matched at most 3% above SINTEF) did not hold: 19 of 20 matched, and the median was 4.18%.
+Expectations: [vrptwl/expectations.md](vrptwl/expectations.md). Raw output: [vrptwl/results.json](vrptwl/results.json),
+[vrptwl/results.md](vrptwl/results.md); solutions in [vrptwl/sols/](vrptwl/sols/) (CVRPLib format, `Cost` =
+double-precision distance). None is a record. SINTEF's record table in `fleet_double.py` (vehicles and distance
+only) is quoted with its source URL; the job re-read the page and found no difference.
+
+## vrptwlb/: fleet lower bounds against SINTEF's records (pre-registered, running)
+
+`bounds.py` computes two classic lower bounds on the number of vehicles for all 356 CVRPLib VRPTW instances: the
+capacity bound and a time-window bound (a clique of customers that no single route can serve together, after
+Kontoravdis and Bard, 1995). It computes them in double precision and under DIMACS, re-checks every clique in exact
+arithmetic, and compares them with SINTEF's records, CVRPLib's BKS route counts and `vrptwl/`. Where a record equals
+the bound, its vehicle count cannot be lowered. The predictions (B0 to B5) were written before the run:
+[vrptwlb/expectations.md](vrptwlb/expectations.md). Results and scoring will be added here.
 
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
@@ -178,7 +218,7 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- vrptwd4x/ and vrptwl/ results and scoring (above).
+- `vrptwlb/` results and scoring (above).
 - XLTW-Test (due from CVRPLib; announced for 2026-10-31): plain PyVRP under the challenge's own convention, with
   expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say which DIMACS
   BKSs a solver cannot start from as published, and `vrptwd4/sols/` gives double-precision starts for 87 of them.
@@ -186,7 +226,7 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 Reproduce (Python 3.12):
 
 ```
-pip install pyvrp==0.14.1 vrplib==2.2.0
+pip install pyvrp==0.14.1 vrplib==2.2.0 numpy==2.1.3
 cd vrp
 python -m unittest -v test_vrp_probe
 python vrp_probe.py --ids 280,281,282 --warm-seconds 1800 --cold-seconds 900 --workers 2 --data-dir data --out-dir out
@@ -207,13 +247,16 @@ python -m unittest -v test_repair
 python repair.py --ids 380-735 --workers 3 --data-dir data --out-dir out
 cd ../vrptwd4x
 python -m unittest -v test_exact_repair_check
-python exact_repair_check.py --data-dir data --out-dir out
+python exact_repair_check.py --tries 44 --wait 300 --data-dir data --out-dir out
 cd ../vrptwd5
 python -m unittest -v test_anatomy
 python anatomy.py --ids 380-735 --data-dir data --out-dir out
 cd ../vrptwl
 python -m unittest -v test_fleet_double
 python fleet_double.py --ids 676-735 --seconds 600 --workers 3 --data-dir data --out-dir out
+cd ../vrptwlb
+python -m unittest -v test_bounds
+python bounds.py --ids 380-735 --fleets vrptwl_fleets.json --data-dir data --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
@@ -223,4 +266,5 @@ Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine
 say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned as above.
 
 Data: instances and best known solutions are downloaded from CVRPLib at run time and are not redistributed here.
-SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL.
+SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL;
+`vrptwlb/` reads SINTEF's pages at run time and stores only the vehicle counts and distances it compares.
