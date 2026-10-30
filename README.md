@@ -103,6 +103,15 @@ What this is for: a solver or checker that works in double precision cannot star
 quarter of the Homberger BKSs as published. The per-instance lists in `vrptwd/` and `vrptwd3/` say which ones. They are not errors
 in CVRPLib: every one is feasible under the DIMACS rules it was found with.
 
+## vrptwd4/: can the 90 late BKSs be repaired without an extra route? (pre-registered, running)
+
+`repair.py` starts PyVRP from each of the 90 BKSs that are late in double precision, with the fleet capped at the
+BKS's route count, on a copy of the instance where every number is multiplied by 1,000 and rounded **up**. Travel
+times then never undercut the exact ones, so anything on time in the copy is on time in double precision; every
+result is re-checked by `vrptwd/double_check.py` anyway. Repaired solutions will be published in `vrptwd4/sols/`.
+The predictions (R0 to R6) were written before the run: [vrptwd4/expectations.md](vrptwd4/expectations.md).
+Results and scoring will be added here.
+
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
 `xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
@@ -119,6 +128,7 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
+- vrptwd4/ results and scoring (above).
 - XLTW-Test (due from CVRPLib; announced for 2026-10-31): plain PyVRP under the challenge's own convention, with
   expectations written first.
 
@@ -141,6 +151,9 @@ python exact_check.py --reference reference.csv --data-dir data --out-dir out
 cd ../vrptwd3
 python -m unittest -v test_homberger_check
 python homberger_check.py --ids 436-735 --data-dir data --out-dir out
+cd ../vrptwd4
+python -m unittest -v test_repair
+python repair.py --ids 380-735 --workers 3 --data-dir data --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
