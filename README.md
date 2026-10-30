@@ -112,6 +112,15 @@ result is re-checked by `vrptwd/double_check.py` anyway. Repaired solutions will
 The predictions (R0 to R6) were written before the run: [vrptwd4/expectations.md](vrptwd4/expectations.md).
 Results and scoring will be added here.
 
+## vrptwd5/: where on their routes the late BKSs turn late (pre-registered, running)
+
+`anatomy.py` follows every route of the 356 BKSs under both conventions at once. In double precision a route drifts
+later by up to 0.1 per arc until the vehicle waits for a window to open, so a visit can only turn late if its DIMACS
+slack is below 0.1 times the arcs driven since the last wait. The script counts such visits, the waiting on each
+route, and routes that return to the depot within 1.0 of its closing time, to ask why lateness concentrates in C2 at
+800 and 1,000 customers. The predictions (A0 to A5) were written before the run:
+[vrptwd5/expectations.md](vrptwd5/expectations.md). Results and scoring will be added here.
+
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
 `xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
@@ -128,7 +137,7 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- vrptwd4/ results and scoring (above).
+- vrptwd4/ and vrptwd5/ results and scoring (above).
 - XLTW-Test (due from CVRPLib; announced for 2026-10-31): plain PyVRP under the challenge's own convention, with
   expectations written first.
 
@@ -154,6 +163,9 @@ python homberger_check.py --ids 436-735 --data-dir data --out-dir out
 cd ../vrptwd4
 python -m unittest -v test_repair
 python repair.py --ids 380-735 --workers 3 --data-dir data --out-dir out
+cd ../vrptwd5
+python -m unittest -v test_anatomy
+python anatomy.py --ids 380-735 --data-dir data --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
