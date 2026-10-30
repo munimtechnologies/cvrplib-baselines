@@ -85,6 +85,11 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 - `vrptwd2/`: a second, separately written check of every `vrptwd/` row (vrplib's parser, exact 50-digit
   arithmetic, every late visit listed). Expectations: [vrptwd2/expectations.md](vrptwd2/expectations.md).
+  Its first run (2026-10-29) was stopped by the host after 16 minutes, before it wrote any output; it has
+  been queued again unchanged except for progress logging.
+- `vrptwd3/`: the same double-precision check on all 300 Homberger BKSs (200 to 1,000 customers), with every
+  late arrival compared with the most that truncation can remove. Expectations, written before the run:
+  [vrptwd3/expectations.md](vrptwd3/expectations.md).
 - XLTW-Test (due from CVRPLib on 2026-10-31): plain PyVRP under the challenge's own convention.
 
 Reproduce (Python 3.12):
