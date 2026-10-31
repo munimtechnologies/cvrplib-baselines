@@ -1,0 +1,11476 @@
+{
+ "eps": 1e-06,
+ "seed": 20261031,
+ "sintef_pages": {
+  "100": 56,
+  "200": 60,
+  "400": 60,
+  "600": 60,
+  "800": 60,
+  "1000": 60
+ },
+ "tally": {
+  "instances": 356,
+  "run_errors": [],
+  "sintef_missing": [],
+  "clique_unverified": [],
+  "unservable": [],
+  "dimacs_skipped": [],
+  "sintef_below_bound": [],
+  "bks_below_bound": [],
+  "vrptwl_below_bound": [],
+  "vrptwl_early": [
+   "C1_10_10",
+   "C1_10_3",
+   "C1_10_4",
+   "C2_10_10",
+   "C2_10_3",
+   "C2_10_4",
+   "R1_10_10",
+   "R1_10_2",
+   "R1_10_3",
+   "R1_10_4",
+   "R1_10_5",
+   "R1_10_6",
+   "R1_10_7",
+   "R1_10_8",
+   "R1_10_9",
+   "R2_10_1",
+   "R2_10_10",
+   "R2_10_2",
+   "R2_10_3",
+   "R2_10_4",
+   "R2_10_5",
+   "R2_10_6",
+   "R2_10_7",
+   "R2_10_8",
+   "R2_10_9",
+   "RC1_10_10",
+   "RC1_10_2",
+   "RC1_10_3",
+   "RC1_10_4",
+   "RC1_10_5",
+   "RC1_10_6",
+   "RC1_10_7",
+   "RC1_10_8",
+   "RC1_10_9",
+   "RC2_10_10",
+   "RC2_10_3",
+   "RC2_10_4",
+   "RC2_10_6",
+   "RC2_10_7",
+   "RC2_10_8",
+   "RC2_10_9"
+  ],
+  "early_kc_mismatch": [],
+  "tw_above_kc_1000": 2,
+  "r101": {
+   "kc": 8,
+   "kt_double": 18,
+   "sintef": 19
+  },
+  "sintef_at_bound": 270,
+  "sintef_at_bound_share": 0.7584,
+  "sintef_at_bound_by_size": {
+   "100": [
+    23,
+    56
+   ],
+   "200": [
+    54,
+    60
+   ],
+   "400": [
+    48,
+    60
+   ],
+   "600": [
+    51,
+    60
+   ],
+   "800": [
+    45,
+    60
+   ],
+   "1000": [
+    49,
+    60
+   ]
+  },
+  "sintef_at_bound_by_family": {
+   "C1": [
+    39,
+    59
+   ],
+   "C2": [
+    34,
+    58
+   ],
+   "R1": [
+    52,
+    62
+   ],
+   "R2": [
+    54,
+    61
+   ],
+   "RC1": [
+    50,
+    58
+   ],
+   "RC2": [
+    41,
+    58
+   ]
+  },
+  "tw_binding": [
+   "R101",
+   "R102",
+   "R103",
+   "RC105",
+   "C1_2_1",
+   "R1_2_1",
+   "C1_4_1",
+   "R1_4_1",
+   "C1_6_1",
+   "R1_6_1",
+   "C1_8_1",
+   "R1_8_1",
+   "C1_10_1",
+   "R1_10_1"
+  ],
+  "vehicle_gap_total": 180,
+  "open_1000": [
+   [
+    "C1_10_5",
+    10
+   ],
+   [
+    "C1_10_6",
+    9
+   ],
+   [
+    "C1_10_7",
+    7
+   ],
+   [
+    "C1_10_8",
+    2
+   ],
+   [
+    "C2_10_1",
+    2
+   ],
+   [
+    "C2_10_5",
+    2
+   ],
+   [
+    "RC2_10_1",
+    2
+   ],
+   [
+    "C1_10_1",
+    1
+   ],
+   [
+    "C2_10_2",
+    1
+   ],
+   [
+    "C2_10_6",
+    1
+   ],
+   [
+    "C2_10_7",
+    1
+   ]
+  ],
+  "predictions": {
+   "B0": "held",
+   "B1": "held",
+   "B2": "held",
+   "B3": "held",
+   "B4": "held",
+   "B5": "did not hold"
+  }
+ },
+ "instances": [
+  {
+   "id": "380",
+   "instance": "C101",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 10,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1295
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1289
+    }
+   }
+  },
+  {
+   "id": "381",
+   "instance": "C102",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 9,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0794
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0794
+    }
+   }
+  },
+  {
+   "id": "382",
+   "instance": "C103",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.06
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 7,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0352
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0352
+    }
+   }
+  },
+  {
+   "id": "383",
+   "instance": "C104",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    824.78
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 4,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0085
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0085
+    }
+   }
+  },
+  {
+   "id": "384",
+   "instance": "C105",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 5,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0364
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0362
+    }
+   }
+  },
+  {
+   "id": "385",
+   "instance": "C106",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 6,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0279
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0277
+    }
+   }
+  },
+  {
+   "id": "386",
+   "instance": "C107",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 1,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "387",
+   "instance": "C108",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 1,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "388",
+   "instance": "C109",
+   "family": "C1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    828.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 10,
+    "double": {
+     "kt": 1,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "389",
+   "instance": "C201",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    591.56
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 2,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    }
+   }
+  },
+  {
+   "id": "390",
+   "instance": "C202",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    591.56
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 2,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    }
+   }
+  },
+  {
+   "id": "391",
+   "instance": "C203",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    591.17
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 2,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    }
+   }
+  },
+  {
+   "id": "392",
+   "instance": "C204",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    590.6
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "393",
+   "instance": "C205",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    588.88
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "394",
+   "instance": "C206",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    588.49
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "395",
+   "instance": "C207",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    588.29
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "396",
+   "instance": "C208",
+   "family": "C2",
+   "customers": 100,
+   "bks_routes": 3,
+   "sintef": [
+    3,
+    588.32
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 3,
+    "double": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "397",
+   "instance": "R101",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 20,
+   "sintef": [
+    19,
+    1650.8
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 18,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3875
+    },
+    "dimacs": {
+     "kt": 18,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3857
+    }
+   }
+  },
+  {
+   "id": "398",
+   "instance": "R102",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    1486.12
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 17,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2313
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2303
+    }
+   }
+  },
+  {
+   "id": "399",
+   "instance": "R103",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 14,
+   "sintef": [
+    13,
+    1292.68
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 13,
+     "k": 13,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0974
+    },
+    "dimacs": {
+     "kt": 13,
+     "k": 13,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.097
+    }
+   }
+  },
+  {
+   "id": "400",
+   "instance": "R104",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 11,
+   "sintef": [
+    9,
+    1007.31
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.024
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.024
+    }
+   }
+  },
+  {
+   "id": "401",
+   "instance": "R105",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 15,
+   "sintef": [
+    14,
+    1377.11
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 7,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2018
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2004
+    }
+   }
+  },
+  {
+   "id": "402",
+   "instance": "R106",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 13,
+   "sintef": [
+    12,
+    1252.03
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 7,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1307
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1301
+    }
+   }
+  },
+  {
+   "id": "403",
+   "instance": "R107",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 11,
+   "sintef": [
+    10,
+    1104.66
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 6,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0549
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0547
+    }
+   }
+  },
+  {
+   "id": "404",
+   "instance": "R108",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    9,
+    960.88
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 5,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0121
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0121
+    }
+   }
+  },
+  {
+   "id": "405",
+   "instance": "R109",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 13,
+   "sintef": [
+    11,
+    1194.73
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0394
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.039
+    }
+   }
+  },
+  {
+   "id": "406",
+   "instance": "R110",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 12,
+   "sintef": [
+    10,
+    1118.84
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0174
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.017
+    }
+   }
+  },
+  {
+   "id": "407",
+   "instance": "R111",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 12,
+   "sintef": [
+    10,
+    1096.73
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 6,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0376
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0374
+    }
+   }
+  },
+  {
+   "id": "408",
+   "instance": "R112",
+   "family": "R1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    9,
+    982.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "409",
+   "instance": "R201",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 8,
+   "sintef": [
+    4,
+    1252.37
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 2,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004
+    }
+   }
+  },
+  {
+   "id": "410",
+   "instance": "R202",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 8,
+   "sintef": [
+    3,
+    1191.7
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 2,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004
+    }
+   }
+  },
+  {
+   "id": "411",
+   "instance": "R203",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 6,
+   "sintef": [
+    3,
+    939.5
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "412",
+   "instance": "R204",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 5,
+   "sintef": [
+    2,
+    825.52
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "413",
+   "instance": "R205",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 5,
+   "sintef": [
+    3,
+    994.43
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "414",
+   "instance": "R206",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 5,
+   "sintef": [
+    3,
+    906.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "415",
+   "instance": "R207",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 4,
+   "sintef": [
+    2,
+    890.61
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "416",
+   "instance": "R208",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 4,
+   "sintef": [
+    2,
+    726.82
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "417",
+   "instance": "R209",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 5,
+   "sintef": [
+    3,
+    909.16
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "418",
+   "instance": "R210",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 6,
+   "sintef": [
+    3,
+    939.37
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "419",
+   "instance": "R211",
+   "family": "R2",
+   "customers": 100,
+   "bks_routes": 4,
+   "sintef": [
+    2,
+    885.71
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "420",
+   "instance": "RC101",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 15,
+   "sintef": [
+    14,
+    1696.95
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 8,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3196
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.319
+    }
+   }
+  },
+  {
+   "id": "421",
+   "instance": "RC102",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 14,
+   "sintef": [
+    12,
+    1554.75
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 7,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1853
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1846
+    }
+   }
+  },
+  {
+   "id": "422",
+   "instance": "RC103",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 11,
+   "sintef": [
+    11,
+    1261.67
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 7,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0784
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0782
+    }
+   }
+  },
+  {
+   "id": "423",
+   "instance": "RC104",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 10,
+   "sintef": [
+    10,
+    1135.48
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 6,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0246
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0246
+    }
+   }
+  },
+  {
+   "id": "424",
+   "instance": "RC105",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 15,
+   "sintef": [
+    13,
+    1629.44
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 12,
+     "k": 12,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1877
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 12,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1859
+    }
+   }
+  },
+  {
+   "id": "425",
+   "instance": "RC106",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    1424.73
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 4,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1095
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1079
+    }
+   }
+  },
+  {
+   "id": "426",
+   "instance": "RC107",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    1230.48
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 4,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0412
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0412
+    }
+   }
+  },
+  {
+   "id": "427",
+   "instance": "RC108",
+   "family": "RC1",
+   "customers": 100,
+   "bks_routes": 11,
+   "sintef": [
+    10,
+    1139.82
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 9,
+    "double": {
+     "kt": 3,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0107
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 9,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0105
+    }
+   }
+  },
+  {
+   "id": "428",
+   "instance": "RC201",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 9,
+   "sintef": [
+    4,
+    1406.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "429",
+   "instance": "RC202",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 8,
+   "sintef": [
+    3,
+    1365.65
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "430",
+   "instance": "RC203",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 5,
+   "sintef": [
+    3,
+    1049.62
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "431",
+   "instance": "RC204",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 4,
+   "sintef": [
+    3,
+    798.46
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "432",
+   "instance": "RC205",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 7,
+   "sintef": [
+    4,
+    1297.65
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 2,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    }
+   }
+  },
+  {
+   "id": "433",
+   "instance": "RC206",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 7,
+   "sintef": [
+    3,
+    1146.32
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "434",
+   "instance": "RC207",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 6,
+   "sintef": [
+    3,
+    1061.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "435",
+   "instance": "RC208",
+   "family": "RC2",
+   "customers": 100,
+   "bks_routes": 4,
+   "sintef": [
+    3,
+    828.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 2,
+    "double": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 2,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "436",
+   "instance": "C1_2_1",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    20,
+    2704.57
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 20,
+     "k": 20,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1968
+    },
+    "dimacs": {
+     "kt": 20,
+     "k": 20,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1967
+    }
+   }
+  },
+  {
+   "id": "437",
+   "instance": "C1_2_2",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    2917.89
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 17,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1072
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1071
+    }
+   }
+  },
+  {
+   "id": "438",
+   "instance": "C1_2_3",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    2707.35
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 13,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0463
+    },
+    "dimacs": {
+     "kt": 13,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0463
+    }
+   }
+  },
+  {
+   "id": "439",
+   "instance": "C1_2_4",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    2643.31
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0109
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0109
+    }
+   }
+  },
+  {
+   "id": "440",
+   "instance": "C1_2_5",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    20,
+    2702.05
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0999
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0998
+    }
+   }
+  },
+  {
+   "id": "441",
+   "instance": "C1_2_6",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    20,
+    2701.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.062
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.062
+    }
+   }
+  },
+  {
+   "id": "442",
+   "instance": "C1_2_7",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    20,
+    2701.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 4,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0179
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0179
+    }
+   }
+  },
+  {
+   "id": "443",
+   "instance": "C1_2_8",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    19,
+    2775.48
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 3,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0033
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0033
+    }
+   }
+  },
+  {
+   "id": "444",
+   "instance": "C1_2_9",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    2687.83
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 1,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "445",
+   "instance": "C1_2_10",
+   "family": "C1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    2643.55
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 1,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "446",
+   "instance": "C2_2_1",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1931.44
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.009
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.009
+    }
+   }
+  },
+  {
+   "id": "447",
+   "instance": "C2_2_2",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1863.16
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0055
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0054
+    }
+   }
+  },
+  {
+   "id": "448",
+   "instance": "C2_2_3",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1775.08
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0028
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    }
+   }
+  },
+  {
+   "id": "449",
+   "instance": "C2_2_4",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1703.43
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    }
+   }
+  },
+  {
+   "id": "450",
+   "instance": "C2_2_5",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1878.85
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "451",
+   "instance": "C2_2_6",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1857.35
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "452",
+   "instance": "C2_2_7",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 6,
+   "sintef": [
+    6,
+    1849.46
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004
+    }
+   }
+  },
+  {
+   "id": "453",
+   "instance": "C2_2_8",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 6,
+   "sintef": [
+    6,
+    1820.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "454",
+   "instance": "C2_2_9",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1830.05
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 2,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "455",
+   "instance": "C2_2_10",
+   "family": "C2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    6,
+    1806.58
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 6,
+    "double": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 6,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "456",
+   "instance": "R1_2_1",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 23,
+   "sintef": [
+    20,
+    4784.11
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 20,
+     "k": 20,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2485
+    },
+    "dimacs": {
+     "kt": 19,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.248
+    }
+   }
+  },
+  {
+   "id": "457",
+   "instance": "R1_2_2",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    4040.6
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 16,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1366
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1363
+    }
+   }
+  },
+  {
+   "id": "458",
+   "instance": "R1_2_3",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    3381.96
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 14,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0612
+    },
+    "dimacs": {
+     "kt": 14,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0611
+    }
+   }
+  },
+  {
+   "id": "459",
+   "instance": "R1_2_4",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    3057.81
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 8,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.015
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0149
+    }
+   }
+  },
+  {
+   "id": "460",
+   "instance": "R1_2_5",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    4107.86
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1835
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1828
+    }
+   }
+  },
+  {
+   "id": "461",
+   "instance": "R1_2_6",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3583.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1018
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1015
+    }
+   }
+  },
+  {
+   "id": "462",
+   "instance": "R1_2_7",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    3150.11
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0455
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0454
+    }
+   }
+  },
+  {
+   "id": "463",
+   "instance": "R1_2_8",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    2951.99
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0107
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0106
+    }
+   }
+  },
+  {
+   "id": "464",
+   "instance": "R1_2_9",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3760.58
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1019
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1014
+    }
+   }
+  },
+  {
+   "id": "465",
+   "instance": "R1_2_10",
+   "family": "R1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    3301.18
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 4,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0157
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0155
+    }
+   }
+  },
+  {
+   "id": "466",
+   "instance": "R2_2_1",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 13,
+   "sintef": [
+    4,
+    4483.16
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 3,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0047
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0047
+    }
+   }
+  },
+  {
+   "id": "467",
+   "instance": "R2_2_2",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 11,
+   "sintef": [
+    4,
+    3621.2
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0029
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0029
+    }
+   }
+  },
+  {
+   "id": "468",
+   "instance": "R2_2_3",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 9,
+   "sintef": [
+    4,
+    2880.62
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0016
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0016
+    }
+   }
+  },
+  {
+   "id": "469",
+   "instance": "R2_2_4",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 5,
+   "sintef": [
+    4,
+    1981.3
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    }
+   }
+  },
+  {
+   "id": "470",
+   "instance": "R2_2_5",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 8,
+   "sintef": [
+    4,
+    3366.79
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "471",
+   "instance": "R2_2_6",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 8,
+   "sintef": [
+    4,
+    2913.03
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "472",
+   "instance": "R2_2_7",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    4,
+    2451.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "473",
+   "instance": "R2_2_8",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 4,
+   "sintef": [
+    4,
+    1849.87
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "474",
+   "instance": "R2_2_9",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 9,
+   "sintef": [
+    4,
+    3092.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    }
+   }
+  },
+  {
+   "id": "475",
+   "instance": "R2_2_10",
+   "family": "R2",
+   "customers": 200,
+   "bks_routes": 8,
+   "sintef": [
+    4,
+    2654.97
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "476",
+   "instance": "RC1_2_1",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    3602.8
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 13,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2566
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2559
+    }
+   }
+  },
+  {
+   "id": "477",
+   "instance": "RC1_2_2",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3249.05
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 11,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1409
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1405
+    }
+   }
+  },
+  {
+   "id": "478",
+   "instance": "RC1_2_3",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    3008.33
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 8,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0605
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0604
+    }
+   }
+  },
+  {
+   "id": "479",
+   "instance": "RC1_2_4",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    2851.68
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 7,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0153
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0153
+    }
+   }
+  },
+  {
+   "id": "480",
+   "instance": "RC1_2_5",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3371.0
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 8,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1422
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1415
+    }
+   }
+  },
+  {
+   "id": "481",
+   "instance": "RC1_2_6",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3324.8
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1534
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1527
+    }
+   }
+  },
+  {
+   "id": "482",
+   "instance": "RC1_2_7",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3189.32
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0706
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0703
+    }
+   }
+  },
+  {
+   "id": "483",
+   "instance": "RC1_2_8",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3083.93
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 4,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0326
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0324
+    }
+   }
+  },
+  {
+   "id": "484",
+   "instance": "RC1_2_9",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3081.13
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 3,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0235
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0233
+    }
+   }
+  },
+  {
+   "id": "485",
+   "instance": "RC1_2_10",
+   "family": "RC1",
+   "customers": 200,
+   "bks_routes": 19,
+   "sintef": [
+    18,
+    3000.3
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 2,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0065
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0065
+    }
+   }
+  },
+  {
+   "id": "486",
+   "instance": "RC2_2_1",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 10,
+   "sintef": [
+    6,
+    3099.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 3,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0042
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0042
+    }
+   }
+  },
+  {
+   "id": "487",
+   "instance": "RC2_2_2",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 9,
+   "sintef": [
+    5,
+    2825.24
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    }
+   }
+  },
+  {
+   "id": "488",
+   "instance": "RC2_2_3",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 9,
+   "sintef": [
+    4,
+    2601.87
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    }
+   }
+  },
+  {
+   "id": "489",
+   "instance": "RC2_2_4",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    4,
+    2038.56
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0005
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0005
+    }
+   }
+  },
+  {
+   "id": "490",
+   "instance": "RC2_2_5",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    4,
+    2911.46
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0016
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0016
+    }
+   }
+  },
+  {
+   "id": "491",
+   "instance": "RC2_2_6",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 8,
+   "sintef": [
+    4,
+    2873.12
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "492",
+   "instance": "RC2_2_7",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 7,
+   "sintef": [
+    4,
+    2525.83
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "493",
+   "instance": "RC2_2_8",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 6,
+   "sintef": [
+    4,
+    2292.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "494",
+   "instance": "RC2_2_9",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 6,
+   "sintef": [
+    4,
+    2175.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "495",
+   "instance": "RC2_2_10",
+   "family": "RC2",
+   "customers": 200,
+   "bks_routes": 5,
+   "sintef": [
+    4,
+    2015.61
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 4,
+    "double": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "496",
+   "instance": "C1_4_1",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 40,
+   "sintef": [
+    40,
+    7152.02
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 40,
+     "k": 40,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2504
+    },
+    "dimacs": {
+     "kt": 40,
+     "k": 40,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2502
+    }
+   }
+  },
+  {
+   "id": "497",
+   "instance": "C1_4_2",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 40,
+   "sintef": [
+    36,
+    7686.38
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 35,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1409
+    },
+    "dimacs": {
+     "kt": 35,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1408
+    }
+   }
+  },
+  {
+   "id": "498",
+   "instance": "C1_4_3",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 38,
+   "sintef": [
+    36,
+    7060.67
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 25,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0613
+    },
+    "dimacs": {
+     "kt": 25,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0613
+    }
+   }
+  },
+  {
+   "id": "499",
+   "instance": "C1_4_4",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    6803.24
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 15,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0163
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0163
+    }
+   }
+  },
+  {
+   "id": "500",
+   "instance": "C1_4_5",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 40,
+   "sintef": [
+    40,
+    7152.02
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 21,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1509
+    },
+    "dimacs": {
+     "kt": 21,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1506
+    }
+   }
+  },
+  {
+   "id": "501",
+   "instance": "C1_4_6",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 40,
+   "sintef": [
+    40,
+    7153.41
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 20,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0999
+    },
+    "dimacs": {
+     "kt": 20,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0996
+    }
+   }
+  },
+  {
+   "id": "502",
+   "instance": "C1_4_7",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 40,
+   "sintef": [
+    39,
+    7417.92
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 5,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0609
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0607
+    }
+   }
+  },
+  {
+   "id": "503",
+   "instance": "C1_4_8",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 39,
+   "sintef": [
+    37,
+    7347.23
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 4,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0163
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0162
+    }
+   }
+  },
+  {
+   "id": "504",
+   "instance": "C1_4_9",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    7042.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 1,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "505",
+   "instance": "C1_4_10",
+   "family": "C1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    6860.63
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 2,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "506",
+   "instance": "C2_4_1",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    12,
+    4116.05
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0169
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0168
+    }
+   }
+  },
+  {
+   "id": "507",
+   "instance": "C2_4_2",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    12,
+    3929.89
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0099
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0098
+    }
+   }
+  },
+  {
+   "id": "508",
+   "instance": "C2_4_3",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    4018.02
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0044
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0043
+    }
+   }
+  },
+  {
+   "id": "509",
+   "instance": "C2_4_4",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    3702.49
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0012
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0012
+    }
+   }
+  },
+  {
+   "id": "510",
+   "instance": "C2_4_5",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    12,
+    3938.69
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "511",
+   "instance": "C2_4_6",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    12,
+    3875.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "512",
+   "instance": "C2_4_7",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    12,
+    3894.13
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    }
+   }
+  },
+  {
+   "id": "513",
+   "instance": "C2_4_8",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    4233.2
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "514",
+   "instance": "C2_4_9",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 13,
+   "sintef": [
+    12,
+    3864.68
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 2,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "515",
+   "instance": "C2_4_10",
+   "family": "C2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    3825.67
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "516",
+   "instance": "R1_4_1",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 41,
+   "sintef": [
+    40,
+    10372.31
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 40,
+     "k": 40,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.286
+    },
+    "dimacs": {
+     "kt": 36,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2855
+    }
+   }
+  },
+  {
+   "id": "517",
+   "instance": "R1_4_2",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    8898.15
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 28,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1627
+    },
+    "dimacs": {
+     "kt": 27,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1626
+    }
+   }
+  },
+  {
+   "id": "518",
+   "instance": "R1_4_3",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    7808.34
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 21,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0711
+    },
+    "dimacs": {
+     "kt": 21,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0711
+    }
+   }
+  },
+  {
+   "id": "519",
+   "instance": "R1_4_4",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7282.78
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 14,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0189
+    },
+    "dimacs": {
+     "kt": 14,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0189
+    }
+   }
+  },
+  {
+   "id": "520",
+   "instance": "R1_4_5",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    9222.96
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 18,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2335
+    },
+    "dimacs": {
+     "kt": 18,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2331
+    }
+   }
+  },
+  {
+   "id": "521",
+   "instance": "R1_4_6",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    8358.69
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 16,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1335
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1332
+    }
+   }
+  },
+  {
+   "id": "522",
+   "instance": "R1_4_7",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7616.15
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 14,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.058
+    },
+    "dimacs": {
+     "kt": 14,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0579
+    }
+   }
+  },
+  {
+   "id": "523",
+   "instance": "R1_4_8",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7257.28
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 12,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0155
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0155
+    }
+   }
+  },
+  {
+   "id": "524",
+   "instance": "R1_4_9",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    8694.78
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 11,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1576
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1572
+    }
+   }
+  },
+  {
+   "id": "525",
+   "instance": "R1_4_10",
+   "family": "R1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    8094.1
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 5,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0606
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0605
+    }
+   }
+  },
+  {
+   "id": "526",
+   "instance": "R2_4_1",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 20,
+   "sintef": [
+    8,
+    9210.15
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 5,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0148
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0147
+    }
+   }
+  },
+  {
+   "id": "527",
+   "instance": "R2_4_2",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 18,
+   "sintef": [
+    8,
+    7606.75
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0081
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0081
+    }
+   }
+  },
+  {
+   "id": "528",
+   "instance": "R2_4_3",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 14,
+   "sintef": [
+    8,
+    5911.07
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0039
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0039
+    }
+   }
+  },
+  {
+   "id": "529",
+   "instance": "R2_4_4",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 9,
+   "sintef": [
+    8,
+    4241.47
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    }
+   }
+  },
+  {
+   "id": "530",
+   "instance": "R2_4_5",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 14,
+   "sintef": [
+    8,
+    7127.83
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "531",
+   "instance": "R2_4_6",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 13,
+   "sintef": [
+    8,
+    6122.6
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "532",
+   "instance": "R2_4_7",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 11,
+   "sintef": [
+    8,
+    5018.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "533",
+   "instance": "R2_4_8",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 8,
+   "sintef": [
+    8,
+    4015.6
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "534",
+   "instance": "R2_4_9",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 14,
+   "sintef": [
+    8,
+    6400.1
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007
+    }
+   }
+  },
+  {
+   "id": "535",
+   "instance": "R2_4_10",
+   "family": "R2",
+   "customers": 400,
+   "bks_routes": 11,
+   "sintef": [
+    8,
+    5773.17
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "536",
+   "instance": "RC1_4_1",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    8571.32
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 22,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3722
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3716
+    }
+   }
+  },
+  {
+   "id": "537",
+   "instance": "RC1_4_2",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7892.52
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 22,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2098
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2096
+    }
+   }
+  },
+  {
+   "id": "538",
+   "instance": "RC1_4_3",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    7533.05
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 17,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0926
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0926
+    }
+   }
+  },
+  {
+   "id": "539",
+   "instance": "RC1_4_4",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7308.55
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 15,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0257
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0257
+    }
+   }
+  },
+  {
+   "id": "540",
+   "instance": "RC1_4_5",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    8172.64
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 17,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2747
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2743
+    }
+   }
+  },
+  {
+   "id": "541",
+   "instance": "RC1_4_6",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    8164.98
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 10,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2845
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.284
+    }
+   }
+  },
+  {
+   "id": "542",
+   "instance": "RC1_4_7",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 37,
+   "sintef": [
+    36,
+    7948.51
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 11,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2079
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2075
+    }
+   }
+  },
+  {
+   "id": "543",
+   "instance": "RC1_4_8",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7772.57
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 7,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1365
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1361
+    }
+   }
+  },
+  {
+   "id": "544",
+   "instance": "RC1_4_9",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7733.35
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 4,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1364
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1361
+    }
+   }
+  },
+  {
+   "id": "545",
+   "instance": "RC1_4_10",
+   "family": "RC1",
+   "customers": 400,
+   "bks_routes": 36,
+   "sintef": [
+    36,
+    7596.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 36,
+    "double": {
+     "kt": 3,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0714
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 36,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0711
+    }
+   }
+  },
+  {
+   "id": "546",
+   "instance": "RC2_4_1",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 16,
+   "sintef": [
+    11,
+    6682.37
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0282
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0281
+    }
+   }
+  },
+  {
+   "id": "547",
+   "instance": "RC2_4_2",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 15,
+   "sintef": [
+    9,
+    6180.62
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0169
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0169
+    }
+   }
+  },
+  {
+   "id": "548",
+   "instance": "RC2_4_3",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    8,
+    4930.84
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0074
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0074
+    }
+   }
+  },
+  {
+   "id": "549",
+   "instance": "RC2_4_4",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 9,
+   "sintef": [
+    8,
+    3631.01
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0019
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0019
+    }
+   }
+  },
+  {
+   "id": "550",
+   "instance": "RC2_4_5",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 13,
+   "sintef": [
+    8,
+    6706.44
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 7,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0064
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0063
+    }
+   }
+  },
+  {
+   "id": "551",
+   "instance": "RC2_4_6",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    8,
+    5766.61
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "552",
+   "instance": "RC2_4_7",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 12,
+   "sintef": [
+    8,
+    5334.72
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0012
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0012
+    }
+   }
+  },
+  {
+   "id": "553",
+   "instance": "RC2_4_8",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 10,
+   "sintef": [
+    8,
+    4790.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 2,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "554",
+   "instance": "RC2_4_9",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 9,
+   "sintef": [
+    8,
+    4551.11
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "555",
+   "instance": "RC2_4_10",
+   "family": "RC2",
+   "customers": 400,
+   "bks_routes": 9,
+   "sintef": [
+    8,
+    4278.61
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 8,
+    "double": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "556",
+   "instance": "C1_6_1",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 60,
+   "sintef": [
+    60,
+    14095.64
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 60,
+     "k": 60,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.317
+    },
+    "dimacs": {
+     "kt": 60,
+     "k": 60,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3168
+    }
+   }
+  },
+  {
+   "id": "557",
+   "instance": "C1_6_2",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 58,
+   "sintef": [
+    56,
+    14163.31
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 48,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1792
+    },
+    "dimacs": {
+     "kt": 48,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1791
+    }
+   }
+  },
+  {
+   "id": "558",
+   "instance": "C1_6_3",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 57,
+   "sintef": [
+    56,
+    13777.81
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 37,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0795
+    },
+    "dimacs": {
+     "kt": 37,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0794
+    }
+   }
+  },
+  {
+   "id": "559",
+   "instance": "C1_6_4",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 56,
+   "sintef": [
+    56,
+    13558.54
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 22,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0206
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0206
+    }
+   }
+  },
+  {
+   "id": "560",
+   "instance": "C1_6_5",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 60,
+   "sintef": [
+    60,
+    14085.72
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 27,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2172
+    },
+    "dimacs": {
+     "kt": 27,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2169
+    }
+   }
+  },
+  {
+   "id": "561",
+   "instance": "C1_6_6",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 60,
+   "sintef": [
+    59,
+    15832.68
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 26,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1605
+    },
+    "dimacs": {
+     "kt": 26,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1603
+    }
+   }
+  },
+  {
+   "id": "562",
+   "instance": "C1_6_7",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 60,
+   "sintef": [
+    57,
+    15731.2
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 8,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1241
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1239
+    }
+   }
+  },
+  {
+   "id": "563",
+   "instance": "C1_6_8",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 58,
+   "sintef": [
+    56,
+    14385.8
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 6,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0626
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0625
+    }
+   }
+  },
+  {
+   "id": "564",
+   "instance": "C1_6_9",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 56,
+   "sintef": [
+    56,
+    13693.42
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 2,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0021
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0021
+    }
+   }
+  },
+  {
+   "id": "565",
+   "instance": "C1_6_10",
+   "family": "C1",
+   "customers": 600,
+   "bks_routes": 56,
+   "sintef": [
+    56,
+    13637.34
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 56,
+    "double": {
+     "kt": 2,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003
+    }
+   }
+  },
+  {
+   "id": "566",
+   "instance": "C2_6_1",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    7774.1
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 8,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0468
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0467
+    }
+   }
+  },
+  {
+   "id": "567",
+   "instance": "C2_6_2",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    8258.2
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 7,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0256
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0256
+    }
+   }
+  },
+  {
+   "id": "568",
+   "instance": "C2_6_3",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    7506.62
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 7,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0119
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0118
+    }
+   }
+  },
+  {
+   "id": "569",
+   "instance": "C2_6_4",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    6909.58
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 5,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0029
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0029
+    }
+   }
+  },
+  {
+   "id": "570",
+   "instance": "C2_6_5",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    7575.2
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 3,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0024
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0024
+    }
+   }
+  },
+  {
+   "id": "571",
+   "instance": "C2_6_6",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    7470.36
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 2,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "572",
+   "instance": "C2_6_7",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    7512.07
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 4,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    }
+   }
+  },
+  {
+   "id": "573",
+   "instance": "C2_6_8",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    7539.73
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 1,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "574",
+   "instance": "C2_6_9",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    7911.61
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 5,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0006
+    }
+   }
+  },
+  {
+   "id": "575",
+   "instance": "C2_6_10",
+   "family": "C2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    17,
+    7255.69
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 17,
+    "double": {
+     "kt": 1,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "576",
+   "instance": "R1_6_1",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 58,
+   "sintef": [
+    59,
+    21394.95
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 59,
+     "k": 59,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2819
+    },
+    "dimacs": {
+     "kt": 56,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2816
+    }
+   }
+  },
+  {
+   "id": "577",
+   "instance": "R1_6_2",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 56,
+   "sintef": [
+    54,
+    18585.0
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 45,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1581
+    },
+    "dimacs": {
+     "kt": 44,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.158
+    }
+   }
+  },
+  {
+   "id": "578",
+   "instance": "R1_6_3",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 54,
+   "sintef": [
+    54,
+    16900.67
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 37,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0703
+    },
+    "dimacs": {
+     "kt": 37,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0702
+    }
+   }
+  },
+  {
+   "id": "579",
+   "instance": "R1_6_4",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 54,
+   "sintef": [
+    54,
+    15748.07
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 28,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0171
+    },
+    "dimacs": {
+     "kt": 28,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0171
+    }
+   }
+  },
+  {
+   "id": "580",
+   "instance": "R1_6_5",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    54,
+    19381.52
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 26,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2464
+    },
+    "dimacs": {
+     "kt": 26,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2461
+    }
+   }
+  },
+  {
+   "id": "581",
+   "instance": "R1_6_6",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 54,
+   "sintef": [
+    54,
+    17790.97
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 23,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1383
+    },
+    "dimacs": {
+     "kt": 23,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1382
+    }
+   }
+  },
+  {
+   "id": "582",
+   "instance": "R1_6_7",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 54,
+   "sintef": [
+    54,
+    16522.52
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 20,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0615
+    },
+    "dimacs": {
+     "kt": 20,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0614
+    }
+   }
+  },
+  {
+   "id": "583",
+   "instance": "R1_6_8",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 54,
+   "sintef": [
+    54,
+    15610.0
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 15,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0146
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0145
+    }
+   }
+  },
+  {
+   "id": "584",
+   "instance": "R1_6_9",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    54,
+    18530.96
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 17,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1968
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1966
+    }
+   }
+  },
+  {
+   "id": "585",
+   "instance": "R1_6_10",
+   "family": "R1",
+   "customers": 600,
+   "bks_routes": 54,
+   "sintef": [
+    54,
+    17610.12
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 54,
+    "double": {
+     "kt": 8,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1146
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1143
+    }
+   }
+  },
+  {
+   "id": "586",
+   "instance": "R2_6_1",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 27,
+   "sintef": [
+    11,
+    18205.58
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0281
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0281
+    }
+   }
+  },
+  {
+   "id": "587",
+   "instance": "R2_6_2",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 23,
+   "sintef": [
+    11,
+    14754.13
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0156
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0156
+    }
+   }
+  },
+  {
+   "id": "588",
+   "instance": "R2_6_3",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 19,
+   "sintef": [
+    11,
+    11188.7
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 6,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.007
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0069
+    }
+   }
+  },
+  {
+   "id": "589",
+   "instance": "R2_6_4",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 13,
+   "sintef": [
+    11,
+    8008.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0016
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0016
+    }
+   }
+  },
+  {
+   "id": "590",
+   "instance": "R2_6_5",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 22,
+   "sintef": [
+    11,
+    15067.34
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0034
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0034
+    }
+   }
+  },
+  {
+   "id": "591",
+   "instance": "R2_6_6",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 19,
+   "sintef": [
+    11,
+    12498.27
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0019
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0019
+    }
+   }
+  },
+  {
+   "id": "592",
+   "instance": "R2_6_7",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 15,
+   "sintef": [
+    11,
+    10064.56
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0008
+    }
+   }
+  },
+  {
+   "id": "593",
+   "instance": "R2_6_8",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    7571.99
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 2,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "594",
+   "instance": "R2_6_9",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    11,
+    13377.56
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0025
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0025
+    }
+   }
+  },
+  {
+   "id": "595",
+   "instance": "R2_6_10",
+   "family": "R2",
+   "customers": 600,
+   "bks_routes": 17,
+   "sintef": [
+    11,
+    12202.28
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "596",
+   "instance": "RC1_6_1",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 56,
+   "sintef": [
+    55,
+    16982.86
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 36,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.359
+    },
+    "dimacs": {
+     "kt": 35,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3586
+    }
+   }
+  },
+  {
+   "id": "597",
+   "instance": "RC1_6_2",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    15914.7
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 32,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.197
+    },
+    "dimacs": {
+     "kt": 32,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1968
+    }
+   }
+  },
+  {
+   "id": "598",
+   "instance": "RC1_6_3",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    15204.64
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 28,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0885
+    },
+    "dimacs": {
+     "kt": 28,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0884
+    }
+   }
+  },
+  {
+   "id": "599",
+   "instance": "RC1_6_4",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    14777.19
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 20,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.021
+    },
+    "dimacs": {
+     "kt": 20,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.021
+    }
+   }
+  },
+  {
+   "id": "600",
+   "instance": "RC1_6_5",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    16559.78
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 21,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2857
+    },
+    "dimacs": {
+     "kt": 21,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2853
+    }
+   }
+  },
+  {
+   "id": "601",
+   "instance": "RC1_6_6",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    16496.88
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 17,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2902
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2899
+    }
+   }
+  },
+  {
+   "id": "602",
+   "instance": "RC1_6_7",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    16077.12
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 17,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.229
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2286
+    }
+   }
+  },
+  {
+   "id": "603",
+   "instance": "RC1_6_8",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    15914.91
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 11,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1707
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1705
+    }
+   }
+  },
+  {
+   "id": "604",
+   "instance": "RC1_6_9",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    15826.24
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 7,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1645
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1642
+    }
+   }
+  },
+  {
+   "id": "605",
+   "instance": "RC1_6_10",
+   "family": "RC1",
+   "customers": 600,
+   "bks_routes": 55,
+   "sintef": [
+    55,
+    15675.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 55,
+    "double": {
+     "kt": 5,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1228
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 55,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1226
+    }
+   }
+  },
+  {
+   "id": "606",
+   "instance": "RC2_6_1",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 22,
+   "sintef": [
+    14,
+    13324.93
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0477
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0476
+    }
+   }
+  },
+  {
+   "id": "607",
+   "instance": "RC2_6_2",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 20,
+   "sintef": [
+    12,
+    11555.51
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0238
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0237
+    }
+   }
+  },
+  {
+   "id": "608",
+   "instance": "RC2_6_3",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 16,
+   "sintef": [
+    11,
+    9438.52
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0098
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0097
+    }
+   }
+  },
+  {
+   "id": "609",
+   "instance": "RC2_6_4",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    7057.94
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0024
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0024
+    }
+   }
+  },
+  {
+   "id": "610",
+   "instance": "RC2_6_5",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 19,
+   "sintef": [
+    11,
+    12909.07
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 10,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0128
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0128
+    }
+   }
+  },
+  {
+   "id": "611",
+   "instance": "RC2_6_6",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 18,
+   "sintef": [
+    11,
+    11913.11
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0052
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0052
+    }
+   }
+  },
+  {
+   "id": "612",
+   "instance": "RC2_6_7",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 15,
+   "sintef": [
+    11,
+    10711.85
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 6,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0036
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0036
+    }
+   }
+  },
+  {
+   "id": "613",
+   "instance": "RC2_6_8",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 14,
+   "sintef": [
+    11,
+    9990.4
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0005
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0005
+    }
+   }
+  },
+  {
+   "id": "614",
+   "instance": "RC2_6_9",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 14,
+   "sintef": [
+    11,
+    9574.99
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "615",
+   "instance": "RC2_6_10",
+   "family": "RC2",
+   "customers": 600,
+   "bks_routes": 12,
+   "sintef": [
+    11,
+    9058.9
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 11,
+    "double": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "616",
+   "instance": "C1_8_1",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 80,
+   "sintef": [
+    80,
+    25030.36
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 80,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3917
+    },
+    "dimacs": {
+     "kt": 80,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3915
+    }
+   }
+  },
+  {
+   "id": "617",
+   "instance": "C1_8_2",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 78,
+   "sintef": [
+    72,
+    26540.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 67,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.214
+    },
+    "dimacs": {
+     "kt": 67,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2139
+    }
+   }
+  },
+  {
+   "id": "618",
+   "instance": "C1_8_3",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    24242.49
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 54,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0927
+    },
+    "dimacs": {
+     "kt": 54,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0927
+    }
+   }
+  },
+  {
+   "id": "619",
+   "instance": "C1_8_4",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    23824.17
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 32,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0235
+    },
+    "dimacs": {
+     "kt": 32,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0235
+    }
+   }
+  },
+  {
+   "id": "620",
+   "instance": "C1_8_5",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 80,
+   "sintef": [
+    80,
+    25166.28
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 31,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2987
+    },
+    "dimacs": {
+     "kt": 31,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2984
+    }
+   }
+  },
+  {
+   "id": "621",
+   "instance": "C1_8_6",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 80,
+   "sintef": [
+    79,
+    26873.86
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 39,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2443
+    },
+    "dimacs": {
+     "kt": 39,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2442
+    }
+   }
+  },
+  {
+   "id": "622",
+   "instance": "C1_8_7",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 80,
+   "sintef": [
+    77,
+    26464.91
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 13,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2116
+    },
+    "dimacs": {
+     "kt": 13,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2114
+    }
+   }
+  },
+  {
+   "id": "623",
+   "instance": "C1_8_8",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 76,
+   "sintef": [
+    73,
+    26099.74
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 9,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1343
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1341
+    }
+   }
+  },
+  {
+   "id": "624",
+   "instance": "C1_8_9",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 74,
+   "sintef": [
+    72,
+    24300.21
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 4,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0327
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0327
+    }
+   }
+  },
+  {
+   "id": "625",
+   "instance": "C1_8_10",
+   "family": "C1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    24070.17
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 3,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0059
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0059
+    }
+   }
+  },
+  {
+   "id": "626",
+   "instance": "C2_8_1",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    24,
+    11662.08
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 12,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0636
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0636
+    }
+   }
+  },
+  {
+   "id": "627",
+   "instance": "C2_8_2",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    12285.31
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 11,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0361
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.036
+    }
+   }
+  },
+  {
+   "id": "628",
+   "instance": "C2_8_3",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    11410.69
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 9,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0156
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0156
+    }
+   }
+  },
+  {
+   "id": "629",
+   "instance": "C2_8_4",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    22,
+    10990.64
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 7,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0038
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0038
+    }
+   }
+  },
+  {
+   "id": "630",
+   "instance": "C2_8_5",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    24,
+    11425.23
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 3,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0099
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0099
+    }
+   }
+  },
+  {
+   "id": "631",
+   "instance": "C2_8_6",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    12235.3
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 2,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002
+    }
+   }
+  },
+  {
+   "id": "632",
+   "instance": "C2_8_7",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    13427.12
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 7,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0028
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0028
+    }
+   }
+  },
+  {
+   "id": "633",
+   "instance": "C2_8_8",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    11288.01
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 1,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "634",
+   "instance": "C2_8_9",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    11592.52
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 4,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001
+    }
+   }
+  },
+  {
+   "id": "635",
+   "instance": "C2_8_10",
+   "family": "C2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    23,
+    10977.36
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 22,
+    "double": {
+     "kt": 1,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 22,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "636",
+   "instance": "R1_8_1",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 80,
+   "sintef": [
+    80,
+    36767.92
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 80,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3007
+    },
+    "dimacs": {
+     "kt": 75,
+     "k": 75,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3005
+    }
+   }
+  },
+  {
+   "id": "637",
+   "instance": "R1_8_2",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    32313.17
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 59,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1673
+    },
+    "dimacs": {
+     "kt": 55,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1672
+    }
+   }
+  },
+  {
+   "id": "638",
+   "instance": "R1_8_3",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    29338.97
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 42,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0748
+    },
+    "dimacs": {
+     "kt": 39,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0747
+    }
+   }
+  },
+  {
+   "id": "639",
+   "instance": "R1_8_4",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    27769.19
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 22,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0187
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0187
+    }
+   }
+  },
+  {
+   "id": "640",
+   "instance": "R1_8_5",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    33529.08
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 34,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.273
+    },
+    "dimacs": {
+     "kt": 33,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2729
+    }
+   }
+  },
+  {
+   "id": "641",
+   "instance": "R1_8_6",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    30906.9
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 32,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1518
+    },
+    "dimacs": {
+     "kt": 32,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1517
+    }
+   }
+  },
+  {
+   "id": "642",
+   "instance": "R1_8_7",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    28823.76
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 25,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0679
+    },
+    "dimacs": {
+     "kt": 25,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0678
+    }
+   }
+  },
+  {
+   "id": "643",
+   "instance": "R1_8_8",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    27643.38
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 18,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.017
+    },
+    "dimacs": {
+     "kt": 18,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.017
+    }
+   }
+  },
+  {
+   "id": "644",
+   "instance": "R1_8_9",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    32293.46
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 22,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2339
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2338
+    }
+   }
+  },
+  {
+   "id": "645",
+   "instance": "R1_8_10",
+   "family": "R1",
+   "customers": 800,
+   "bks_routes": 72,
+   "sintef": [
+    72,
+    30952.77
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 12,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1645
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1643
+    }
+   }
+  },
+  {
+   "id": "646",
+   "instance": "R2_8_1",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 31,
+   "sintef": [
+    15,
+    28112.36
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 10,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0401
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0401
+    }
+   }
+  },
+  {
+   "id": "647",
+   "instance": "R2_8_2",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 25,
+   "sintef": [
+    15,
+    22795.79
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 8,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0223
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0222
+    }
+   }
+  },
+  {
+   "id": "648",
+   "instance": "R2_8_3",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 21,
+   "sintef": [
+    15,
+    17703.99
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 7,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0096
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0096
+    }
+   }
+  },
+  {
+   "id": "649",
+   "instance": "R2_8_4",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 16,
+   "sintef": [
+    15,
+    13192.32
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 5,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0024
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0024
+    }
+   }
+  },
+  {
+   "id": "650",
+   "instance": "R2_8_5",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 28,
+   "sintef": [
+    15,
+    24255.0
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0137
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0137
+    }
+   }
+  },
+  {
+   "id": "651",
+   "instance": "R2_8_6",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 22,
+   "sintef": [
+    15,
+    20412.02
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0077
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0077
+    }
+   }
+  },
+  {
+   "id": "652",
+   "instance": "R2_8_7",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 19,
+   "sintef": [
+    15,
+    16597.87
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0032
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0032
+    }
+   }
+  },
+  {
+   "id": "653",
+   "instance": "R2_8_8",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 15,
+   "sintef": [
+    15,
+    12642.67
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007
+    }
+   }
+  },
+  {
+   "id": "654",
+   "instance": "R2_8_9",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 24,
+   "sintef": [
+    15,
+    22277.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 5,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0059
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0059
+    }
+   }
+  },
+  {
+   "id": "655",
+   "instance": "R2_8_10",
+   "family": "R2",
+   "customers": 800,
+   "bks_routes": 22,
+   "sintef": [
+    15,
+    20358.61
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 2,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001
+    }
+   }
+  },
+  {
+   "id": "656",
+   "instance": "RC1_8_1",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 74,
+   "sintef": [
+    72,
+    30464.65
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 47,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4024
+    },
+    "dimacs": {
+     "kt": 48,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4022
+    }
+   }
+  },
+  {
+   "id": "657",
+   "instance": "RC1_8_2",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 74,
+   "sintef": [
+    72,
+    28511.37
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 43,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.222
+    },
+    "dimacs": {
+     "kt": 43,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2218
+    }
+   }
+  },
+  {
+   "id": "658",
+   "instance": "RC1_8_3",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    27528.16
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 40,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0976
+    },
+    "dimacs": {
+     "kt": 40,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0975
+    }
+   }
+  },
+  {
+   "id": "659",
+   "instance": "RC1_8_4",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    26663.45
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 29,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0256
+    },
+    "dimacs": {
+     "kt": 28,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0256
+    }
+   }
+  },
+  {
+   "id": "660",
+   "instance": "RC1_8_5",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 74,
+   "sintef": [
+    72,
+    29508.27
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 35,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3497
+    },
+    "dimacs": {
+     "kt": 35,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3494
+    }
+   }
+  },
+  {
+   "id": "661",
+   "instance": "RC1_8_6",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    29458.38
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 24,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3545
+    },
+    "dimacs": {
+     "kt": 24,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3542
+    }
+   }
+  },
+  {
+   "id": "662",
+   "instance": "RC1_8_7",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    28979.6
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 21,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3052
+    },
+    "dimacs": {
+     "kt": 21,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3049
+    }
+   }
+  },
+  {
+   "id": "663",
+   "instance": "RC1_8_8",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    28605.6
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 15,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2587
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2585
+    }
+   }
+  },
+  {
+   "id": "664",
+   "instance": "RC1_8_9",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    28555.53
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 9,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2573
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2571
+    }
+   }
+  },
+  {
+   "id": "665",
+   "instance": "RC1_8_10",
+   "family": "RC1",
+   "customers": 800,
+   "bks_routes": 73,
+   "sintef": [
+    72,
+    28331.16
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 72,
+    "double": {
+     "kt": 8,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2127
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 72,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2125
+    }
+   }
+  },
+  {
+   "id": "666",
+   "instance": "RC2_8_1",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 26,
+   "sintef": [
+    18,
+    20981.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 9,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0764
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0763
+    }
+   }
+  },
+  {
+   "id": "667",
+   "instance": "RC2_8_2",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 23,
+   "sintef": [
+    16,
+    18151.95
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 9,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0436
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0435
+    }
+   }
+  },
+  {
+   "id": "668",
+   "instance": "RC2_8_3",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 19,
+   "sintef": [
+    15,
+    14427.39
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 9,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0195
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0195
+    }
+   }
+  },
+  {
+   "id": "669",
+   "instance": "RC2_8_4",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 15,
+   "sintef": [
+    15,
+    10999.03
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 8,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0048
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0048
+    }
+   }
+  },
+  {
+   "id": "670",
+   "instance": "RC2_8_5",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 23,
+   "sintef": [
+    15,
+    19074.02
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 10,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0276
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0276
+    }
+   }
+  },
+  {
+   "id": "671",
+   "instance": "RC2_8_6",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 22,
+   "sintef": [
+    15,
+    18143.04
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0247
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0246
+    }
+   }
+  },
+  {
+   "id": "672",
+   "instance": "RC2_8_7",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 19,
+   "sintef": [
+    15,
+    16817.46
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 8,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095
+    }
+   }
+  },
+  {
+   "id": "673",
+   "instance": "RC2_8_8",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 18,
+   "sintef": [
+    15,
+    15759.14
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 6,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    }
+   }
+  },
+  {
+   "id": "674",
+   "instance": "RC2_8_9",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 18,
+   "sintef": [
+    15,
+    15325.25
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 2,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "675",
+   "instance": "RC2_8_10",
+   "family": "RC2",
+   "customers": 800,
+   "bks_routes": 16,
+   "sintef": [
+    15,
+    14411.81
+   ],
+   "vrptwl": null,
+   "bounds": {
+    "kc": 15,
+    "double": {
+     "kt": 1,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 15,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "676",
+   "instance": "C1_10_1",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 100,
+   "sintef": [
+    100,
+    42478.95
+   ],
+   "vrptwl": [
+    101,
+    300.6,
+    100
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 99,
+     "k": 99,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.488
+    },
+    "dimacs": {
+     "kt": 99,
+     "k": 99,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4878
+    }
+   }
+  },
+  {
+   "id": "677",
+   "instance": "C1_10_2",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 94,
+   "sintef": [
+    90,
+    42222.96
+   ],
+   "vrptwl": [
+    94,
+    300.8,
+    94
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 80,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2724
+    },
+    "dimacs": {
+     "kt": 79,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2723
+    }
+   }
+  },
+  {
+   "id": "678",
+   "instance": "C1_10_3",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    90,
+    40101.36
+   ],
+   "vrptwl": [
+    90,
+    45.4,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 61,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.125
+    },
+    "dimacs": {
+     "kt": 60,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1249
+    }
+   }
+  },
+  {
+   "id": "679",
+   "instance": "C1_10_4",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    39468.6
+   ],
+   "vrptwl": [
+    90,
+    9.8,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 44,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0315
+    },
+    "dimacs": {
+     "kt": 44,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0315
+    }
+   }
+  },
+  {
+   "id": "680",
+   "instance": "C1_10_5",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 100,
+   "sintef": [
+    100,
+    42469.18
+   ],
+   "vrptwl": [
+    100,
+    300.5,
+    100
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 48,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4038
+    },
+    "dimacs": {
+     "kt": 48,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4035
+    }
+   }
+  },
+  {
+   "id": "681",
+   "instance": "C1_10_6",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 100,
+   "sintef": [
+    99,
+    43830.21
+   ],
+   "vrptwl": [
+    100,
+    300.6,
+    100
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 48,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3519
+    },
+    "dimacs": {
+     "kt": 48,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3517
+    }
+   }
+  },
+  {
+   "id": "682",
+   "instance": "C1_10_7",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 100,
+   "sintef": [
+    97,
+    43341.77
+   ],
+   "vrptwl": [
+    99,
+    300.5,
+    99
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 18,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3221
+    },
+    "dimacs": {
+     "kt": 18,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3219
+    }
+   }
+  },
+  {
+   "id": "683",
+   "instance": "C1_10_8",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 95,
+   "sintef": [
+    92,
+    42629.91
+   ],
+   "vrptwl": [
+    96,
+    300.5,
+    96
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 12,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2424
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2422
+    }
+   }
+  },
+  {
+   "id": "684",
+   "instance": "C1_10_9",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    40318.03
+   ],
+   "vrptwl": [
+    91,
+    300.5,
+    91
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 5,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.115
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1148
+    }
+   }
+  },
+  {
+   "id": "685",
+   "instance": "C1_10_10",
+   "family": "C1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    90,
+    39852.44
+   ],
+   "vrptwl": [
+    90,
+    104.9,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 5,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0404
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0404
+    }
+   }
+  },
+  {
+   "id": "686",
+   "instance": "C2_10_1",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    30,
+    16879.24
+   ],
+   "vrptwl": [
+    30,
+    300.8,
+    30
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 15,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0961
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.096
+    }
+   }
+  },
+  {
+   "id": "687",
+   "instance": "C2_10_2",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    29,
+    17126.39
+   ],
+   "vrptwl": [
+    29,
+    300.8,
+    29
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 15,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0541
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0541
+    }
+   }
+  },
+  {
+   "id": "688",
+   "instance": "C2_10_3",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    28,
+    16829.47
+   ],
+   "vrptwl": [
+    28,
+    234.9,
+    28
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 12,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0241
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0241
+    }
+   }
+  },
+  {
+   "id": "689",
+   "instance": "C2_10_4",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    28,
+    15607.48
+   ],
+   "vrptwl": [
+    28,
+    77.7,
+    28
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 10,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0061
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0061
+    }
+   }
+  },
+  {
+   "id": "690",
+   "instance": "C2_10_5",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    30,
+    16561.29
+   ],
+   "vrptwl": [
+    30,
+    300.8,
+    30
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 4,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0292
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0292
+    }
+   }
+  },
+  {
+   "id": "691",
+   "instance": "C2_10_6",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    29,
+    16863.71
+   ],
+   "vrptwl": [
+    30,
+    300.6,
+    30
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 4,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0037
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0037
+    }
+   }
+  },
+  {
+   "id": "692",
+   "instance": "C2_10_7",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    29,
+    17602.84
+   ],
+   "vrptwl": [
+    30,
+    300.7,
+    30
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 9,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0062
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0062
+    }
+   }
+  },
+  {
+   "id": "693",
+   "instance": "C2_10_8",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    28,
+    16512.43
+   ],
+   "vrptwl": [
+    29,
+    300.7,
+    29
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 2,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "694",
+   "instance": "C2_10_9",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    28,
+    17809.34
+   ],
+   "vrptwl": [
+    29,
+    300.5,
+    29
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 6,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.002
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.002
+    }
+   }
+  },
+  {
+   "id": "695",
+   "instance": "C2_10_10",
+   "family": "C2",
+   "customers": 1000,
+   "bks_routes": 30,
+   "sintef": [
+    28,
+    15937.45
+   ],
+   "vrptwl": [
+    28,
+    98.7,
+    28
+   ],
+   "bounds": {
+    "kc": 28,
+    "double": {
+     "kt": 1,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 28,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0
+    }
+   }
+  },
+  {
+   "id": "696",
+   "instance": "R1_10_1",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 95,
+   "sintef": [
+    100,
+    53380.18
+   ],
+   "vrptwl": [
+    100,
+    301.1,
+    100
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 100,
+     "k": 100,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3084
+    },
+    "dimacs": {
+     "kt": 91,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3082
+    }
+   }
+  },
+  {
+   "id": "697",
+   "instance": "R1_10_2",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    48232.67
+   ],
+   "vrptwl": [
+    91,
+    202.6,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 78,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1725
+    },
+    "dimacs": {
+     "kt": 75,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1724
+    }
+   }
+  },
+  {
+   "id": "698",
+   "instance": "R1_10_3",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    44689.19
+   ],
+   "vrptwl": [
+    91,
+    30.2,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 54,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0777
+    },
+    "dimacs": {
+     "kt": 53,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0777
+    }
+   }
+  },
+  {
+   "id": "699",
+   "instance": "R1_10_4",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    42463.74
+   ],
+   "vrptwl": [
+    91,
+    4.9,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 27,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0193
+    },
+    "dimacs": {
+     "kt": 27,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0193
+    }
+   }
+  },
+  {
+   "id": "700",
+   "instance": "R1_10_5",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 92,
+   "sintef": [
+    91,
+    50442.31
+   ],
+   "vrptwl": [
+    91,
+    13.9,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 43,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2861
+    },
+    "dimacs": {
+     "kt": 43,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2859
+    }
+   }
+  },
+  {
+   "id": "701",
+   "instance": "R1_10_6",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    46928.44
+   ],
+   "vrptwl": [
+    91,
+    9.5,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 37,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1597
+    },
+    "dimacs": {
+     "kt": 37,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1596
+    }
+   }
+  },
+  {
+   "id": "702",
+   "instance": "R1_10_7",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    43969.48
+   ],
+   "vrptwl": [
+    91,
+    6.6,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 30,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0719
+    },
+    "dimacs": {
+     "kt": 30,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0719
+    }
+   }
+  },
+  {
+   "id": "703",
+   "instance": "R1_10_8",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    42288.04
+   ],
+   "vrptwl": [
+    91,
+    4.1,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 22,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0178
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0178
+    }
+   }
+  },
+  {
+   "id": "704",
+   "instance": "R1_10_9",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    49186.22
+   ],
+   "vrptwl": [
+    91,
+    9.8,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 30,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2539
+    },
+    "dimacs": {
+     "kt": 30,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2538
+    }
+   }
+  },
+  {
+   "id": "705",
+   "instance": "R1_10_10",
+   "family": "R1",
+   "customers": 1000,
+   "bks_routes": 91,
+   "sintef": [
+    91,
+    47403.83
+   ],
+   "vrptwl": [
+    91,
+    7.3,
+    91
+   ],
+   "bounds": {
+    "kc": 91,
+    "double": {
+     "kt": 17,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1921
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.192
+    }
+   }
+  },
+  {
+   "id": "706",
+   "instance": "R2_10_1",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 37,
+   "sintef": [
+    19,
+    42182.57
+   ],
+   "vrptwl": [
+    19,
+    26.0,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 12,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.049
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.049
+    }
+   }
+  },
+  {
+   "id": "707",
+   "instance": "R2_10_2",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 32,
+   "sintef": [
+    19,
+    33411.21
+   ],
+   "vrptwl": [
+    19,
+    28.7,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 11,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.027
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.027
+    }
+   }
+  },
+  {
+   "id": "708",
+   "instance": "R2_10_3",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 24,
+   "sintef": [
+    19,
+    24916.88
+   ],
+   "vrptwl": [
+    19,
+    21.5,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 8,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0115
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0115
+    }
+   }
+  },
+  {
+   "id": "709",
+   "instance": "R2_10_4",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 19,
+   "sintef": [
+    19,
+    17851.96
+   ],
+   "vrptwl": [
+    19,
+    7.7,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 7,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0027
+    }
+   }
+  },
+  {
+   "id": "710",
+   "instance": "R2_10_5",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 32,
+   "sintef": [
+    19,
+    36216.05
+   ],
+   "vrptwl": [
+    19,
+    18.9,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 5,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0227
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0227
+    }
+   }
+  },
+  {
+   "id": "711",
+   "instance": "R2_10_6",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 27,
+   "sintef": [
+    19,
+    29978.02
+   ],
+   "vrptwl": [
+    19,
+    23.9,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 5,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0128
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0128
+    }
+   }
+  },
+  {
+   "id": "712",
+   "instance": "R2_10_7",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 21,
+   "sintef": [
+    19,
+    23219.61
+   ],
+   "vrptwl": [
+    19,
+    22.1,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 4,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0053
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0053
+    }
+   }
+  },
+  {
+   "id": "713",
+   "instance": "R2_10_8",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 19,
+   "sintef": [
+    19,
+    17442.29
+   ],
+   "vrptwl": [
+    19,
+    7.9,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 4,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0013
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0013
+    }
+   }
+  },
+  {
+   "id": "714",
+   "instance": "R2_10_9",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 29,
+   "sintef": [
+    19,
+    32995.71
+   ],
+   "vrptwl": [
+    19,
+    17.8,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 6,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0102
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0102
+    }
+   }
+  },
+  {
+   "id": "715",
+   "instance": "R2_10_10",
+   "family": "R2",
+   "customers": 1000,
+   "bks_routes": 26,
+   "sintef": [
+    19,
+    30207.49
+   ],
+   "vrptwl": [
+    19,
+    13.6,
+    19
+   ],
+   "bounds": {
+    "kc": 19,
+    "double": {
+     "kt": 3,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 19,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011
+    }
+   }
+  },
+  {
+   "id": "716",
+   "instance": "RC1_10_1",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    45830.62
+   ],
+   "vrptwl": [
+    91,
+    300.7,
+    91
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 54,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4174
+    },
+    "dimacs": {
+     "kt": 54,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4171
+    }
+   }
+  },
+  {
+   "id": "717",
+   "instance": "RC1_10_2",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    43718.84
+   ],
+   "vrptwl": [
+    90,
+    41.7,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 48,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2371
+    },
+    "dimacs": {
+     "kt": 48,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2369
+    }
+   }
+  },
+  {
+   "id": "718",
+   "instance": "RC1_10_3",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    42145.32
+   ],
+   "vrptwl": [
+    90,
+    4.9,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 42,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1046
+    },
+    "dimacs": {
+     "kt": 42,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1045
+    }
+   }
+  },
+  {
+   "id": "719",
+   "instance": "RC1_10_4",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    41391.18
+   ],
+   "vrptwl": [
+    90,
+    4.3,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 29,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0244
+    },
+    "dimacs": {
+     "kt": 29,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0244
+    }
+   }
+  },
+  {
+   "id": "720",
+   "instance": "RC1_10_5",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    45069.37
+   ],
+   "vrptwl": [
+    90,
+    13.1,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 37,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3724
+    },
+    "dimacs": {
+     "kt": 37,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3722
+    }
+   }
+  },
+  {
+   "id": "721",
+   "instance": "RC1_10_6",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    44936.35
+   ],
+   "vrptwl": [
+    90,
+    17.8,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 27,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3759
+    },
+    "dimacs": {
+     "kt": 27,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3758
+    }
+   }
+  },
+  {
+   "id": "722",
+   "instance": "RC1_10_7",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    44456.67
+   ],
+   "vrptwl": [
+    90,
+    6.2,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 26,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3356
+    },
+    "dimacs": {
+     "kt": 26,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3353
+    }
+   }
+  },
+  {
+   "id": "723",
+   "instance": "RC1_10_8",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    43956.91
+   ],
+   "vrptwl": [
+    90,
+    4.6,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 16,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2931
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2929
+    }
+   }
+  },
+  {
+   "id": "724",
+   "instance": "RC1_10_9",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    43897.21
+   ],
+   "vrptwl": [
+    90,
+    6.2,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 12,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2929
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2927
+    }
+   }
+  },
+  {
+   "id": "725",
+   "instance": "RC1_10_10",
+   "family": "RC1",
+   "customers": 1000,
+   "bks_routes": 90,
+   "sintef": [
+    90,
+    43551.69
+   ],
+   "vrptwl": [
+    90,
+    3.6,
+    90
+   ],
+   "bounds": {
+    "kc": 90,
+    "double": {
+     "kt": 10,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2581
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 90,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2579
+    }
+   }
+  },
+  {
+   "id": "726",
+   "instance": "RC2_10_1",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 29,
+   "sintef": [
+    20,
+    30276.27
+   ],
+   "vrptwl": [
+    21,
+    300.6,
+    21
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 11,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.101
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1009
+    }
+   }
+  },
+  {
+   "id": "727",
+   "instance": "RC2_10_2",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 25,
+   "sintef": [
+    18,
+    26104.09
+   ],
+   "vrptwl": [
+    20,
+    300.6,
+    20
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0602
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0601
+    }
+   }
+  },
+  {
+   "id": "728",
+   "instance": "RC2_10_3",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    19911.48
+   ],
+   "vrptwl": [
+    18,
+    182.9,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0281
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0281
+    }
+   }
+  },
+  {
+   "id": "729",
+   "instance": "RC2_10_4",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 18,
+   "sintef": [
+    18,
+    15693.28
+   ],
+   "vrptwl": [
+    18,
+    16.9,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0079
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0079
+    }
+   }
+  },
+  {
+   "id": "730",
+   "instance": "RC2_10_5",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 27,
+   "sintef": [
+    18,
+    27067.04
+   ],
+   "vrptwl": [
+    19,
+    300.7,
+    19
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 12,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0467
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0466
+    }
+   }
+  },
+  {
+   "id": "731",
+   "instance": "RC2_10_6",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 25,
+   "sintef": [
+    18,
+    26741.27
+   ],
+   "vrptwl": [
+    18,
+    26.0,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 5,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0516
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0515
+    }
+   }
+  },
+  {
+   "id": "732",
+   "instance": "RC2_10_7",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 23,
+   "sintef": [
+    18,
+    24999.66
+   ],
+   "vrptwl": [
+    18,
+    28.6,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0253
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0253
+    }
+   }
+  },
+  {
+   "id": "733",
+   "instance": "RC2_10_8",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 22,
+   "sintef": [
+    18,
+    23595.33
+   ],
+   "vrptwl": [
+    18,
+    14.9,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.011
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.011
+    }
+   }
+  },
+  {
+   "id": "734",
+   "instance": "RC2_10_9",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 21,
+   "sintef": [
+    18,
+    22919.42
+   ],
+   "vrptwl": [
+    18,
+    11.5,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 3,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0034
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0034
+    }
+   }
+  },
+  {
+   "id": "735",
+   "instance": "RC2_10_10",
+   "family": "RC2",
+   "customers": 1000,
+   "bks_routes": 20,
+   "sintef": [
+    18,
+    21834.94
+   ],
+   "vrptwl": [
+    18,
+    10.9,
+    18
+   ],
+   "bounds": {
+    "kc": 18,
+    "double": {
+     "kt": 2,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 18,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003
+    }
+   }
+  }
+ ]
+}

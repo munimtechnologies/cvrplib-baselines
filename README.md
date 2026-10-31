@@ -58,7 +58,7 @@ with the SINTEF record (fewest vehicles, then distance).
 |---|---|
 | Solomon BKSs feasible in double precision | 48 of 56; late somewhere: R102, R105, R107, R108, R112, R211, RC101, RC105 (one late arrival each, 0.07 to 0.40 time units) |
 | 1,000-customer BKSs feasible in double precision | 4 of 6; R1_10_1 (95 routes; 7 late arrivals) and RC2_10_1 (2) are not |
-| R1_10_1 | CVRPLib's BKS uses 95 routes, SINTEF's record 100: the 95-route solution is feasible only with truncated travel times |
+| R1_10_1 | CVRPLib's BKS uses 95 routes, SINTEF's record 100: the 95-route solution is feasible only with truncated travel times (and `vrptwlb/` shows that no 95-route solution is on time in double precision) |
 | 23 PyVRP results that looked shorter than SINTEF's records under DIMACS | in double precision 5 are infeasible, 10 equal the record, 8 are longer; none is better |
 
 Scoring: [vrptwd/score.md](vrptwd/score.md): D0 to D3 held. D4 (at least 50 of 56 Solomon BKSs
@@ -113,7 +113,7 @@ result is re-checked by `vrptwd/double_check.py` anyway. One seed, 60 s to 300 s
 | | result |
 |---|---|
 | repaired (on time in double precision, no more routes than the BKS) | **87 of 90**; all 50 in C2/R2/RC2, 37 of 40 in C1/R1/RC1 |
-| not repaired in the budget | R1_6_1, R1_8_1, R1_10_1 (95 routes; SINTEF's double-precision record uses 100) |
+| not repaired in the budget | R1_6_1, R1_8_1, R1_10_1 (95 routes; SINTEF's double-precision record uses 100). `vrptwlb/` later showed that R1_6_1 (58 routes) and R1_10_1 cannot be repaired at their route count: both are below the double-precision fleet bound (59 and 100). R1_8_1 is not ruled out. |
 | distance against the BKS's own double-precision distance | median +0.43%; +0.19% in C2/R2/RC2, +1.38% in C1/R1/RC1; largest +12.85% (RC1_10_5) |
 | one route fewer than the BKS | R2_2_1, R2_2_2, R2_6_5, at 0.47% to 0.96% more distance: not an improvement under either convention |
 | against SINTEF's records (where `double_check.py` has them) | all 9 comparable repairs use more vehicles; none is better |
@@ -121,8 +121,8 @@ result is re-checked by `vrptwd/double_check.py` anyway. One seed, 60 s to 300 s
 Scoring: [vrptwd4/score.md](vrptwd4/score.md): all seven pre-registered expectations (R0 to R6) held; R3 (median
 change 0% to +0.5%) only because the wide-horizon repairs dominate. Repaired solutions: [vrptwd4/sols/](vrptwd4/sols/)
 (CVRPLib format, `Cost` = double-precision distance). Raw output: [vrptwd4/results.json](vrptwd4/results.json),
-[vrptwd4/results.md](vrptwd4/results.md). A BKS that was not repaired is not shown to be impossible at its route
-count; a repair is not a new record.
+[vrptwd4/results.md](vrptwd4/results.md). Apart from the two cases above, a BKS that was not repaired is not shown to
+be impossible at its route count; a repair is not a new record.
 
 ## vrptwd4x/: the 87 repaired solutions, checked a second way
 
@@ -183,8 +183,9 @@ rounded up so that results are on time in double precision, and compared each re
 
 All 60 results are on time in double precision. None beats a SINTEF record; C2_10_1 equals its record. In 41
 instances `minimise_fleet` returned before its time limit. By PyVRP's source, that happens only at its capacity
-bound, and all 41 match SINTEF's count. The 13 misses all ran out of time. In the short-horizon families (R1, RC1),
-the vehicle count was easy and distance was the hard part.
+bound, and all 41 match SINTEF's count (`vrptwlb/` confirms KC equals the returned fleet in all 41). The 13 misses
+all ran out of time. In the short-horizon families (R1, RC1), the vehicle count was easy and distance was the hard
+part.
 
 Scoring: [vrptwl/score.md](vrptwl/score.md): L0 to L4 held. L5 (at most 6 of 20 match in R1/RC1) and L6 (median
 distance where matched at most 3% above SINTEF) did not hold: 19 of 20 matched, and the median was 4.18%.
@@ -193,14 +194,29 @@ Expectations: [vrptwl/expectations.md](vrptwl/expectations.md). Raw output: [vrp
 double-precision distance). None is a record. SINTEF's record table in `fleet_double.py` (vehicles and distance
 only) is quoted with its source URL; the job re-read the page and found no difference.
 
-## vrptwlb/: fleet lower bounds against SINTEF's records (pre-registered, running)
+## vrptwlb/: classical fleet lower bounds against SINTEF's records
 
-`bounds.py` computes two classic lower bounds on the number of vehicles for all 356 CVRPLib VRPTW instances: the
-capacity bound and a time-window bound (a clique of customers that no single route can serve together, after
+`bounds.py` computes two classical lower bounds on the number of vehicles for all 356 CVRPLib VRPTW instances: the
+capacity bound KC and a time-window bound KT (a clique of customers that no single route can serve together, after
 Kontoravdis and Bard, 1995). It computes them in double precision and under DIMACS, re-checks every clique in exact
-arithmetic, and compares them with SINTEF's records, CVRPLib's BKS route counts and `vrptwl/`. Where a record equals
-the bound, its vehicle count cannot be lowered. The predictions (B0 to B5) were written before the run:
-[vrptwlb/expectations.md](vrptwlb/expectations.md). Results and scoring will be added here.
+arithmetic, and compares K = max(KC, KT) with SINTEF's records, CVRPLib's BKS route counts and `vrptwl/`. These are
+the bounds that Afifi, Guibadj and Moukrim (CPAIOR 2014) improved on; they report the minimum fleet for 339 of 468
+standard instances ([vrptwlb/prior-art-addendum.md](vrptwlb/prior-art-addendum.md)). This is a reproduction and
+calibration aid, not a new bound.
+
+| | result |
+|---|---|
+| SINTEF's record equals K (cannot use fewer vehicles) | **270 of 356**: 23 of 56 Solomon, 247 of 300 Gehring-Homberger, 49 of 60 at 1,000 customers |
+| records above K | 86 instances, 180 vehicles in total; at 1,000 customers 11 (C1_10_5 +10, C1_10_6 +9, C1_10_7 +7, then C1/C2/RC2 at +1 or +2) |
+| time-window bound binding | 14 instances, all tightest-window: R101, R102, R103, RC105 and C1/R1 `_1` at every Gehring-Homberger size |
+| double-precision K above DIMACS K | 6 tight-window R1 instances, up to 9 vehicles (R1_10_1: 100 vs 91) |
+| DIMACS BKS below the double-precision K | R1_6_1 (58 vs 59) and R1_10_1 (95 vs 100): no solution with that many routes is on time in double precision |
+
+Scoring: [vrptwlb/score.md](vrptwlb/score.md): B0 to B4 held; B5 (record equals K on 40% to 70%) did not hold, with
+75.8%. Expectations: [vrptwlb/expectations.md](vrptwlb/expectations.md). Raw output:
+[vrptwlb/results.json](vrptwlb/results.json), [vrptwlb/results.md](vrptwlb/results.md),
+[vrptwlb/bounds.csv](vrptwlb/bounds.csv), [vrptwlb/cliques.json](vrptwlb/cliques.json). A record above K may still be
+optimal; the greedy clique search may miss larger cliques.
 
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
@@ -218,10 +234,10 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- `vrptwlb/` results and scoring (above).
-- XLTW-Test (due from CVRPLib; announced for 2026-10-31): plain PyVRP under the challenge's own convention, with
-  expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say which DIMACS
-  BKSs a solver cannot start from as published, and `vrptwd4/sols/` gives double-precision starts for 87 of them.
+- XLTW-Test (due from CVRPLib; announced for 2026-10-31): fleet lower bounds for every test instance, then plain
+  PyVRP under the challenge's own convention, with expectations written first. If the challenge uses double
+  precision, `vrptwd/` to `vrptwd5/` say which DIMACS BKSs a solver cannot start from as published, and
+  `vrptwd4/sols/` gives double-precision starts for 87 of them.
 
 Reproduce (Python 3.12):
 
