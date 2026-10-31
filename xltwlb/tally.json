@@ -1,0 +1,81 @@
+{
+ "instances": 356,
+ "run_errors": [],
+ "missing_conv": [],
+ "clique_unverified": [],
+ "unservable": [],
+ "not_published": [],
+ "kc_diff": [],
+ "kt_diff": [],
+ "clique_diff": [],
+ "kb_above_kc": [],
+ "round_vs_double": [
+  [
+   "R101",
+   18,
+   17
+  ],
+  [
+   "R102",
+   17,
+   16
+  ],
+  [
+   "R1_2_1",
+   20,
+   18
+  ],
+  [
+   "R1_4_1",
+   40,
+   36
+  ],
+  [
+   "R1_6_1",
+   59,
+   54
+  ],
+  [
+   "R1_8_1",
+   80,
+   72
+  ],
+  [
+   "R1_10_1",
+   100,
+   91
+  ]
+ ],
+ "round_vs_dimacs": [
+  [
+   "R101",
+   18,
+   17
+  ],
+  [
+   "R1_2_1",
+   19,
+   18
+  ],
+  [
+   "R1_6_1",
+   56,
+   54
+  ],
+  [
+   "R1_8_1",
+   75,
+   72
+  ]
+ ],
+ "bound_seconds_total": 49.1,
+ "peak_gb": 0.061,
+ "published_read": true,
+ "predictions": {
+  "C0": "held",
+  "C1": "held",
+  "C2": "held",
+  "C3": "held",
+  "C4": "held"
+ }
+}

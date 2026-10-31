@@ -99,6 +99,10 @@ Scoring: [vrptwd3/score.md](vrptwd3/score.md). H0, H2, H3 and H4 held. H1 (no C1
 [vrptwd3/results.json](vrptwd3/results.json), [vrptwd3/results.md](vrptwd3/results.md),
 [vrptwd3/late_visits.csv](vrptwd3/late_visits.csv).
 
+The check includes the 13 VRPTW improvements CVRPLib published on 2026-10-23 (Takahashi, Kumamoto, Shin, Nomura and
+Ono, Institute of Science Tokyo; C1/R1/RC1 at 1,000 customers): all 13 are on time in double precision, and each
+uses exactly the capacity bound's number of routes ([xltwlb/score.md](xltwlb/score.md)).
+
 What this is for: a solver or checker that works in double precision cannot start from, or compare with, about a
 quarter of the Homberger BKSs as published. The per-instance lists in `vrptwd/` and `vrptwd3/` say which ones. They are not errors
 in CVRPLib: every one is feasible under the DIMACS rules it was found with.
@@ -218,6 +222,28 @@ Scoring: [vrptwlb/score.md](vrptwlb/score.md): B0 to B4 held; B5 (record equals 
 [vrptwlb/bounds.csv](vrptwlb/bounds.csv), [vrptwlb/cliques.json](vrptwlb/cliques.json). A record above K may still be
 optimal; the greedy clique search may miss larger cliques.
 
+## xltwlb/: the fleet bounds rewritten for 10,000 customers, checked against vrptwlb/
+
+`xltwlb.py` is the `vrptwlb/` code rewritten for CVRPLib's XLTW-Test set. It reads VRPLIB or Solomon files, builds
+the incompatibility matrix in row blocks (10,000 customers in 26 s and 0.30 GB on synthetic instances), adds the
+Martello-Toth L2 bin-packing bound (KB), counts two customers whose demands together exceed the capacity as
+incompatible, and adds a third travel-time convention, 'round' (nearest integer, CVRPLib's CVRP rule). `compare.py`
+ran it on all 356 instances and compared it with the published `vrptwlb/` files.
+
+| | result |
+|---|---|
+| KC, KT (double, DIMACS) and the cliques against `vrptwlb/` | identical on all 356 |
+| KB above KC | none (demands in these sets are small next to the capacity) |
+| K under 'round' | differs from double on 7 instances and from DIMACS on 4, all tightest-window R1, always lower |
+| R1 `_1` instances under 'round' | the time-window bound no longer binds at any Gehring-Homberger size; K falls to KC (R1_10_1: 91, against 100 in double) |
+| time and memory | 49 s for all 356 in three conventions, peak 0.06 GB |
+
+Scoring: [xltwlb/score.md](xltwlb/score.md): all five pre-registered expectations (C0 to C4) held
+([xltwlb/expectations.md](xltwlb/expectations.md)). Raw output: [xltwlb/results.md](xltwlb/results.md),
+[xltwlb/results.json](xltwlb/results.json), [xltwlb/tally.json](xltwlb/tally.json),
+[xltwlb/cliques.json](xltwlb/cliques.json). Predictions for XLTW-Test, fixed before its release:
+[xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md).
+
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
 `xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
@@ -234,9 +260,10 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- XLTW-Test (due from CVRPLib; announced for 2026-10-31): fleet lower bounds for every test instance, then plain
-  PyVRP under the challenge's own convention, with expectations written first. If the challenge uses double
-  precision, `vrptwd/` to `vrptwd5/` say which DIMACS BKSs a solver cannot start from as published, and
+- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 10:55 UTC that day): fleet lower bounds for every
+  test instance with `xltwlb.py`, scored against [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md),
+  then plain PyVRP under the challenge's own convention, with expectations written first. If the challenge uses
+  double precision, `vrptwd/` to `vrptwd5/` say which DIMACS BKSs a solver cannot start from as published, and
   `vrptwd4/sols/` gives double-precision starts for 87 of them.
 
 Reproduce (Python 3.12):
@@ -273,6 +300,10 @@ python fleet_double.py --ids 676-735 --seconds 600 --workers 3 --data-dir data -
 cd ../vrptwlb
 python -m unittest -v test_bounds
 python bounds.py --ids 380-735 --fleets vrptwl_fleets.json --data-dir data --out-dir out
+cd ../xltwlb
+python -m unittest -v test_xltwlb test_compare
+python compare.py --ids 380-735 --data-dir data --out-dir out
+python xltwlb.py --synthetic 1000,5000,10000 --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
