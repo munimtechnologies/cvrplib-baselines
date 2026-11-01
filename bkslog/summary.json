@@ -1,0 +1,175 @@
+{
+ "fetched_at": "2026-11-01T08:00:25Z",
+ "pages": [
+  {
+   "page": 1,
+   "dated_entries": 20,
+   "pairs": 109
+  },
+  {
+   "page": 2,
+   "dated_entries": 20,
+   "pairs": 84
+  },
+  {
+   "page": 3,
+   "dated_entries": 20,
+   "pairs": 9
+  },
+  {
+   "page": 4,
+   "dated_entries": 20,
+   "pairs": 8
+  },
+  {
+   "page": 5,
+   "dated_entries": 20,
+   "pairs": 46
+  },
+  {
+   "page": 6,
+   "dated_entries": 20,
+   "pairs": 190
+  },
+  {
+   "page": 7,
+   "dated_entries": 5,
+   "pairs": 23
+  }
+ ],
+ "records_raw": 469,
+ "records": 453,
+ "xl_records": 170,
+ "x_records": 283,
+ "xl_instances": 82,
+ "first_date": "2015-01-05",
+ "last_date": "2026-10-31",
+ "xl_reports_by_month": {
+  "2026-07": 1,
+  "2026-09": 77,
+  "2026-10": 92
+ },
+ "xl_by_size_band": {
+  "1000-2499": {
+   "reports": 39,
+   "instances": 20
+  },
+  "2500-4999": {
+   "reports": 58,
+   "instances": 31
+  },
+  "5000-7499": {
+   "reports": 33,
+   "instances": 17
+  },
+  "7500-10001": {
+   "reports": 40,
+   "instances": 14
+  }
+ },
+ "challenge_end": "2026-02-11",
+ "predictions": {
+  "B1": {
+   "pairs": 83,
+   "down": 83,
+   "share": 1.0,
+   "held": true,
+   "not_down": []
+  },
+  "B2": {
+   "period": [
+    "2026-02-12",
+    "2026-09-30"
+   ],
+   "distinct_instances": 75,
+   "instances": [
+    "XL-n10001-k1570",
+    "XL-n1048-k237",
+    "XL-n1234-k55",
+    "XL-n1374-k278",
+    "XL-n1421-k232",
+    "XL-n1608-k39",
+    "XL-n1701-k562",
+    "XL-n1748-k271",
+    "XL-n1841-k126",
+    "XL-n1888-k82",
+    "XL-n2028-k617",
+    "XL-n2074-k264",
+    "XL-n2121-k186",
+    "XL-n2168-k138",
+    "XL-n2307-k34",
+    "XL-n2354-k631",
+    "XL-n2401-k408",
+    "XL-n2447-k290",
+    "XL-n2541-k121",
+    "XL-n2587-k66",
+    "XL-n2681-k540",
+    "XL-n2774-k286",
+    "XL-n2821-k208",
+    "XL-n2867-k120",
+    "XL-n2961-k55",
+    "XL-n3007-k658",
+    "XL-n3054-k461",
+    "XL-n3101-k311",
+    "XL-n3194-k161",
+    "XL-n3241-k115",
+    "XL-n3334-k934",
+    "XL-n3408-k524",
+    "XL-n3561-k229",
+    "XL-n3640-k211",
+    "XL-n3888-k1010",
+    "XL-n3975-k687",
+    "XL-n4063-k347",
+    "XL-n4153-k291",
+    "XL-n4245-k203",
+    "XL-n4340-k148",
+    "XL-n4436-k48",
+    "XL-n4535-k1134",
+    "XL-n4635-k790",
+    "XL-n4738-k487",
+    "XL-n4844-k321",
+    "XL-n4951-k203",
+    "XL-n5061-k184",
+    "XL-n5288-k1246",
+    "XL-n5406-k783",
+    "XL-n5526-k553",
+    "XL-n5649-k401",
+    "XL-n5774-k290",
+    "XL-n5902-k122",
+    "XL-n6034-k61",
+    "XL-n6168-k1922",
+    "XL-n6305-k1042",
+    "XL-n6445-k628",
+    "XL-n6588-k473",
+    "XL-n6734-k330",
+    "XL-n6884-k148",
+    "XL-n7193-k1683",
+    "XL-n7353-k1471",
+    "XL-n7516-k859",
+    "XL-n7683-k602",
+    "XL-n7854-k365",
+    "XL-n8028-k294",
+    "XL-n8207-k108",
+    "XL-n8389-k2028",
+    "XL-n8575-k1297",
+    "XL-n8766-k1032",
+    "XL-n8960-k634",
+    "XL-n9160-k379",
+    "XL-n9363-k209",
+    "XL-n9571-k55",
+    "XL-n9784-k2774"
+   ],
+   "held": true
+  },
+  "B3": {
+   "period": [
+    "2026-02-12",
+    "2026-09-30"
+   ],
+   "reports": 78,
+   "reports_n_ge_5000": 31,
+   "share": 0.3974,
+   "held": false
+  }
+ }
+}

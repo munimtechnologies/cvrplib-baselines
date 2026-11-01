@@ -1,0 +1,454 @@
+date,instance,n,k,value,credit,page
+2015-01-05,X-n1001-k43,1001,43,72719,,7
+2015-01-05,X-n289-k60,289,60,95151,,7
+2015-01-05,X-n327-k20,327,20,27546,,7
+2015-01-05,X-n336-k84,336,84,139172,,7
+2015-01-05,X-n344-k43,344,43,42092,,7
+2015-01-05,X-n429-k61,429,61,65483,,7
+2015-01-05,X-n449-k29,449,29,55355,,7
+2015-01-05,X-n586-k159,586,159,190491,,7
+2015-01-05,X-n599-k92,599,92,108736,,7
+2015-01-05,X-n613-k62,613,62,59584,,7
+2015-01-05,X-n685-k75,685,75,68415,,7
+2015-01-05,X-n701-k44,701,44,82254,,7
+2015-01-05,X-n716-k35,716,35,43517,,7
+2015-01-05,X-n783-k48,783,48,72715,,7
+2015-01-05,X-n801-k40,801,40,73564,,7
+2015-01-05,X-n819-k171,819,171,158558,,7
+2015-01-05,X-n837-k142,837,142,194187,,7
+2015-01-05,X-n876-k59,876,59,99653,,7
+2015-01-05,X-n895-k37,895,37,54071,,7
+2015-01-05,X-n916-k207,916,207,329752,,7
+2015-01-05,X-n936-k151,936,151,133046,,7
+2015-01-05,X-n957-k87,957,87,85663,,7
+2015-04-10,X-n190-k8,190,8,16980,,7
+2015-06-22,X-n1001-k43,1001,43,72477,Jan Christiaens,6
+2015-06-22,X-n322-k28,322,28,29854,Jan Christiaens,6
+2015-06-22,X-n336-k84,336,84,139165,Jan Christiaens,6
+2015-06-22,X-n344-k43,344,43,42073,Jan Christiaens,6
+2015-06-22,X-n351-k40,351,40,25936,Jan Christiaens,6
+2015-06-22,X-n384-k52,384,52,66021,Jan Christiaens,6
+2015-06-22,X-n401-k29,401,29,66219,Jan Christiaens,6
+2015-06-22,X-n480-k70,480,70,89488,Jan Christiaens,6
+2015-06-22,X-n491-k59,491,59,66523,Jan Christiaens,6
+2015-06-22,X-n536-k96,536,96,95062,Jan Christiaens,6
+2015-06-22,X-n561-k42,561,42,42754,Jan Christiaens,6
+2015-06-22,X-n573-k30,573,30,50726,Jan Christiaens,6
+2015-06-22,X-n586-k159,586,159,190454,Jan Christiaens,6
+2015-06-22,X-n599-k92,599,92,108600,Jan Christiaens,6
+2015-06-22,X-n627-k43,627,43,62264,Jan Christiaens,6
+2015-06-22,X-n641-k35,641,35,63760,Jan Christiaens,6
+2015-06-22,X-n670-k130,670,130,146570,Jan Christiaens,6
+2015-06-22,X-n685-k75,685,75,68291,Jan Christiaens,6
+2015-06-22,X-n701-k44,701,44,81997,Jan Christiaens,6
+2015-06-22,X-n716-k35,716,35,43491,Jan Christiaens,6
+2015-06-22,X-n733-k159,733,159,136313,Jan Christiaens,6
+2015-06-22,X-n749-k98,749,98,77423,Jan Christiaens,6
+2015-06-22,X-n766-k71,766,71,114566,Jan Christiaens,6
+2015-06-22,X-n783-k48,783,48,72547,Jan Christiaens,6
+2015-06-22,X-n801-k40,801,40,73367,Jan Christiaens,6
+2015-06-22,X-n819-k171,819,171,158298,Jan Christiaens,6
+2015-06-22,X-n837-k142,837,142,193933,Jan Christiaens,6
+2015-06-22,X-n856-k95,856,95,89040,Jan Christiaens,6
+2015-06-22,X-n876-k59,876,59,99424,Jan Christiaens,6
+2015-06-22,X-n895-k37,895,37,54030,Jan Christiaens,6
+2015-06-22,X-n916-k207,916,207,329394,Jan Christiaens,6
+2015-06-22,X-n936-k151,936,151,132946,Jan Christiaens,6
+2015-06-22,X-n957-k87,957,87,85566,Jan Christiaens,6
+2015-06-22,X-n979-k58,979,58,119072,Jan Christiaens,6
+2016-04-01,X-n1001-k43,1001,43,72404,Jan Christiaens,6
+2016-04-01,X-n322-k28,322,28,29848,Jan Christiaens,6
+2016-04-01,X-n336-k84,336,84,139135,Jan Christiaens,6
+2016-04-01,X-n344-k43,344,43,42068,Jan Christiaens,6
+2016-04-01,X-n351-k40,351,40,25928,Jan Christiaens,6
+2016-04-01,X-n384-k52,384,52,65981,Jan Christiaens,6
+2016-04-01,X-n401-k29,401,29,66202,Jan Christiaens,6
+2016-04-01,X-n449-k29,449,29,55302,Jan Christiaens,6
+2016-04-01,X-n459-k26,459,26,24179,Jan Christiaens,6
+2016-04-01,X-n480-k70,480,70,89458,Jan Christiaens,6
+2016-04-01,X-n491-k59,491,59,66520,Jan Christiaens,6
+2016-04-01,X-n502-k39,502,39,69232,Jan Christiaens,6
+2016-04-01,X-n536-k96,536,96,94991,Jan Christiaens,6
+2016-04-01,X-n548-k50,548,50,86701,Jan Christiaens,6
+2016-04-01,X-n573-k30,573,30,50719,Jan Christiaens,6
+2016-04-01,X-n586-k159,586,159,190423,Jan Christiaens,6
+2016-04-01,X-n599-k92,599,92,108541,Jan Christiaens,6
+2016-04-01,X-n613-k62,613,62,59556,Jan Christiaens,6
+2016-04-01,X-n627-k43,627,43,62217,Jan Christiaens,6
+2016-04-01,X-n641-k35,641,35,63737,Jan Christiaens,6
+2016-04-01,X-n670-k130,670,130,146477,Jan Christiaens,6
+2016-04-01,X-n685-k75,685,75,68276,Jan Christiaens,6
+2016-04-01,X-n701-k44,701,44,81962,Jan Christiaens,6
+2016-04-01,X-n716-k35,716,35,43441,Jan Christiaens,6
+2016-04-01,X-n733-k159,733,159,136250,Jan Christiaens,6
+2016-04-01,X-n749-k98,749,98,77402,Jan Christiaens,6
+2016-04-01,X-n766-k71,766,71,114534,Jan Christiaens,6
+2016-04-01,X-n783-k48,783,48,72453,Jan Christiaens,6
+2016-04-01,X-n801-k40,801,40,73344,Jan Christiaens,6
+2016-04-01,X-n819-k171,819,171,158267,Jan Christiaens,6
+2016-04-01,X-n837-k142,837,142,193836,Jan Christiaens,6
+2016-04-01,X-n856-k95,856,95,89007,Jan Christiaens,6
+2016-04-01,X-n876-k59,876,59,99360,Jan Christiaens,6
+2016-04-01,X-n895-k37,895,37,53948,Jan Christiaens,6
+2016-04-01,X-n916-k207,916,207,329299,Jan Christiaens,6
+2016-04-01,X-n957-k87,957,87,85517,Jan Christiaens,6
+2016-04-01,X-n979-k58,979,58,119008,Jan Christiaens,6
+2016-04-04,X-n331-k15,331,15,31102,,6
+2016-04-04,X-n439-k37,439,37,36391,,6
+2016-04-25,X-n214-k11,214,11,10856,,6
+2016-04-25,X-n233-k16,233,16,19230,,6
+2016-11-06,X-n256-k16,256,16,18839,,6
+2016-11-23,X-n359-k29,359,29,51505,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n384-k52,384,52,65943,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n401-k29,401,29,66187,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n449-k29,449,29,55269,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n459-k26,459,26,24173,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n491-k59,491,59,66510,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n502-k39,502,39,69230,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n536-k96,536,96,94988,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n561-k42,561,42,42722,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n599-k92,599,92,108490,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n627-k43,627,43,62210,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n670-k130,670,130,146451,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n685-k75,685,75,68261,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n701-k44,701,44,81934,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n716-k35,716,35,43414,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n749-k98,749,98,77365,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n766-k71,766,71,114525,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n783-k48,783,48,72445,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n801-k40,801,40,73331,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n837-k142,837,142,193813,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n876-k59,876,59,99331,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n895-k37,895,37,53946,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n916-k207,916,207,329247,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n936-k151,936,151,132926,Jan Christiaens obtained using ASB-RR,6
+2016-11-23,X-n957-k87,957,87,85482,Jan Christiaens obtained using ASB-RR,6
+2017-08-14,X-n294-k50,294,50,47161,,6
+2017-08-14,X-n322-k28,322,28,29834,,6
+2017-08-14,X-n327-k20,327,20,27532,,6
+2017-08-14,X-n344-k43,344,43,42056,,6
+2017-08-14,X-n393-k38,393,38,38260,,6
+2017-08-14,X-n459-k26,459,26,24145,,6
+2018-02-23,X-n1001-k43,1001,43,72403,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n524-k153,524,153,154593,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n573-k30,573,30,50718,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n599-k92,599,92,108489,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n819-k171,819,171,158265,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n837-k142,837,142,193810,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n856-k95,856,95,89002,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n936-k151,936,151,132923,Keld Helsgaun using LKH-3,6
+2018-02-23,X-n957-k87,957,87,85478,Keld Helsgaun using LKH-3,6
+2018-09-15,X-n1001-k43,1001,43,72402,"Vu Hoang Vuong Nguyen, Duc Dong Do, Hoang Duc Nguyen, and Minh Hoàng Hà (Vietnam National University ORLab)",6
+2018-09-15,X-n573-k30,573,30,50717,"Vu Hoang Vuong Nguyen, Duc Dong Do, Hoang Duc Nguyen, and Minh Hoàng Hà (Vietnam National University ORLab)",6
+2019-03-01,X-n284-k15,284,15,20215,,6
+2019-03-01,X-n469-k138,469,138,221824,,6
+2019-03-01,X-n548-k50,548,50,86700,,6
+2020-01-17,X-n336-k84,336,84,139111,,6
+2020-01-17,X-n480-k70,480,70,89457,,6
+2020-01-17,X-n491-k59,491,59,66503,,6
+2020-01-17,X-n502-k39,502,39,69226,,6
+2020-01-17,X-n536-k96,536,96,94950,,6
+2020-01-17,X-n586-k159,586,159,190368,,6
+2020-01-17,X-n599-k92,599,92,108455,,6
+2020-01-17,X-n613-k62,613,62,59545,,6
+2020-01-17,X-n670-k130,670,130,146446,,6
+2020-01-17,X-n685-k75,685,75,68252,,6
+2020-01-17,X-n733-k159,733,159,136190,,6
+2020-01-17,X-n749-k98,749,98,77353,,6
+2020-01-17,X-n766-k71,766,71,114501,,6
+2020-01-17,X-n819-k171,819,171,158249,,6
+2020-01-17,X-n837-k142,837,142,193752,,6
+2020-01-17,X-n856-k95,856,95,88997,,6
+2020-01-17,X-n916-k207,916,207,329179,,6
+2020-01-17,X-n936-k151,936,151,132907,,6
+2020-05-03,X-n1001-k43,1001,43,72397,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n351-k40,351,40,25919,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n384-k52,384,52,65941,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n536-k96,536,96,94921,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n561-k42,561,42,42717,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n573-k30,573,30,50708,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n641-k35,641,35,63723,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n670-k130,670,130,146332,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n685-k75,685,75,68245,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n716-k35,716,35,43412,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n819-k171,819,171,158247,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n876-k59,876,59,99330,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n895-k37,895,37,53935,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n936-k151,936,151,132881,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n957-k87,957,87,85474,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-03,X-n979-k58,979,58,118996,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-08,X-n1001-k43,1001,43,72370,,6
+2020-05-08,X-n303-k21,303,21,21739,,6
+2020-05-08,X-n351-k40,351,40,25917,,6
+2020-05-08,X-n411-k19,411,19,19712,,6
+2020-05-08,X-n429-k61,429,61,65467,,6
+2020-05-08,X-n449-k29,449,29,55254,,6
+2020-05-08,X-n480-k70,480,70,89449,,6
+2020-05-08,X-n491-k59,491,59,66487,,6
+2020-05-08,X-n536-k96,536,96,94872,,6
+2020-05-08,X-n573-k30,573,30,50678,,6
+2020-05-08,X-n586-k159,586,159,190357,,6
+2020-05-08,X-n627-k43,627,43,62178,,6
+2020-05-08,X-n641-k35,641,35,63705,,6
+2020-05-08,X-n685-k75,685,75,68225,,6
+2020-05-08,X-n701-k44,701,44,81923,,6
+2020-05-08,X-n716-k35,716,35,43387,,6
+2020-05-08,X-n749-k98,749,98,77314,,6
+2020-05-08,X-n766-k71,766,71,114487,,6
+2020-05-08,X-n783-k48,783,48,72394,,6
+2020-05-08,X-n819-k171,819,171,158121,,6
+2020-05-08,X-n837-k142,837,142,193737,,6
+2020-05-08,X-n856-k95,856,95,88990,,6
+2020-05-08,X-n876-k59,876,59,99309,,6
+2020-05-08,X-n895-k37,895,37,53930,,6
+2020-05-08,X-n936-k151,936,151,132813,,6
+2020-05-08,X-n957-k87,957,87,85469,,6
+2020-05-08,X-n979-k58,979,58,118988,,6
+2020-05-18,X-n1001-k43,1001,43,72369,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-18,X-n573-k30,573,30,50673,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-18,X-n766-k71,766,71,114456,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-18,X-n876-k59,876,59,99303,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-18,X-n895-k37,895,37,53928,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-05-18,X-n936-k151,936,151,132812,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",6
+2020-07-02,X-n303-k21,303,21,21738,,5
+2020-07-02,X-n344-k43,344,43,42050,,5
+2020-07-02,X-n351-k40,351,40,25896,,5
+2020-07-02,X-n384-k52,384,52,65940,,5
+2020-07-02,X-n536-k96,536,96,94868,,5
+2020-07-02,X-n586-k159,586,159,190316,,5
+2020-07-02,X-n599-k92,599,92,108451,,5
+2020-07-02,X-n627-k43,627,43,62173,,5
+2020-07-31,X-n459-k26,459,26,24141,Luca Accorsi and Daniele Vigo (University of Bologna),5
+2020-07-31,X-n801-k40,801,40,73311,Luca Accorsi and Daniele Vigo (University of Bologna),5
+2020-07-31,X-n895-k37,895,37,53906,Luca Accorsi and Daniele Vigo (University of Bologna),5
+2020-07-31,X-n957-k87,957,87,85467,Luca Accorsi and Daniele Vigo (University of Bologna),5
+2020-08-12,X-n313-k71,313,71,94043,,5
+2020-08-20,X-n459-k26,459,26,24140,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",5
+2020-08-20,X-n801-k40,801,40,73305,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",5
+2020-08-20,X-n895-k37,895,37,53870,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",5
+2020-09-21,X-n1001-k43,1001,43,72359,,5
+2020-09-21,X-n303-k21,303,21,21736,,5
+2020-09-21,X-n401-k29,401,29,66163,,5
+2020-09-21,X-n429-k61,429,61,65449,,5
+2020-09-21,X-n449-k29,449,29,55233,,5
+2020-09-21,X-n459-k26,459,26,24139,,5
+2020-09-21,X-n613-k62,613,62,59535,,5
+2020-09-21,X-n627-k43,627,43,62164,,5
+2020-09-21,X-n641-k35,641,35,63694,,5
+2020-09-21,X-n685-k75,685,75,68205,,5
+2020-09-21,X-n766-k71,766,71,114454,,5
+2020-09-21,X-n856-k95,856,95,88965,,5
+2020-09-21,X-n876-k59,876,59,99299,,5
+2020-09-21,X-n895-k37,895,37,53860,,5
+2020-09-21,X-n936-k151,936,151,132725,,5
+2020-09-21,X-n957-k87,957,87,85465,,5
+2020-09-21,X-n979-k58,979,58,118987,,5
+2020-11-06,X-n1001-k43,1001,43,72355,,5
+2020-11-06,X-n401-k29,401,29,66154,,5
+2020-11-06,X-n491-k59,491,59,66483,,5
+2020-11-06,X-n536-k96,536,96,94846,,5
+2020-11-06,X-n733-k159,733,159,136187,,5
+2020-11-06,X-n749-k98,749,98,77269,,5
+2020-11-06,X-n766-k71,766,71,114418,,5
+2020-11-06,X-n783-k48,783,48,72393,,5
+2020-11-06,X-n936-k151,936,151,132715,,5
+2020-11-06,X-n979-k58,979,58,118976,,5
+2020-11-14,X-n384-k52,384,52,65938,,5
+2020-11-14,X-n641-k35,641,35,63692,,5
+2020-11-14,X-n716-k35,716,35,43379,,5
+2020-12-15,X-n641-k35,641,35,63684,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",4
+2020-12-15,X-n716-k35,716,35,43373,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",4
+2020-12-15,X-n766-k71,766,71,114417,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",4
+2020-12-15,X-n783-k48,783,48,72386,"Francesco Cavaliere, Emilio Bendotti, and Matteo Fischetti (University of Padova)",4
+2021-03-15,X-n261-k13,261,13,26558,,4
+2021-06-30,X-n384-k52,384,52,65928,"Martin Simensen (NTNU/SINTEF), Geir Hasle (SINTEF), and Magnus Stålhane (NTNU) using a hybrid approach that combines the Hybrid Genetic Search of Vidal, T. (2020) with Ruin & Recreate by Christiaens, J., & Vanden Berghe, G. (2020)",4
+2021-06-30,X-n641-k35,641,35,63682,"Martin Simensen (NTNU/SINTEF), Geir Hasle (SINTEF), and Magnus Stålhane (NTNU) using a hybrid approach that combines the Hybrid Genetic Search of Vidal, T. (2020) with Ruin & Recreate by Christiaens, J., & Vanden Berghe, G. (2020)",4
+2023-09-14,X-n367-k17,367,17,22814,,3
+2026-07-04,X-n1001-k43,1001,43,72353,,2
+2026-07-04,X-n1001-k43,1001,43,72346,,2
+2026-07-04,X-n979-k58,979,58,118973,,2
+2026-07-04,XL-n1841-k126,1841,126,213971,,2
+2026-09-04,XL-n1048-k237,1048,237,380092,Yue Huang (University of Notre Dame),2
+2026-09-10,XL-n2354-k631,2354,631,940632,Tobias Linke (Enpal Fulfillment B.V.),2
+2026-09-11,XL-n10001-k1570,10001,1570,2330557,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n1608-k39,1608,39,48008,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n1701-k562,1701,562,520831,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n1748-k271,1748,271,173757,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n1841-k126,1841,126,213965,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n1888-k82,1888,82,143557,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2028-k617,2028,617,544164,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2074-k264,2074,264,421227,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2121-k186,2121,186,283098,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2168-k138,2168,138,127190,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2307-k34,2307,34,47935,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2354-k631,2354,631,940630,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2401-k408,2401,408,463049,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2447-k290,2447,290,218629,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2541-k121,2541,121,146344,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2587-k66,2587,66,73251,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2681-k540,2681,540,797871,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2774-k286,2774,286,407616,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2821-k208,2821,208,216613,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2867-k120,2867,120,165905,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n2961-k55,2961,55,107937,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3007-k658,3007,658,522118,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3054-k461,3054,461,782158,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3101-k311,3101,311,245758,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3194-k161,3194,161,148594,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3241-k115,3241,115,221248,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3334-k934,3334,934,1452321,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3408-k524,3408,524,678003,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3640-k211,3640,211,189511,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3888-k1010,3888,1010,1877100,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n3975-k687,3975,687,525558,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4063-k347,4063,347,548300,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4153-k291,4153,291,355769,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4245-k203,4245,203,229518,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4340-k148,4340,148,243864,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4436-k48,4436,48,61430,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4535-k1134,4535,1134,1203501,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4635-k790,4635,790,609696,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4738-k487,4738,487,759605,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4844-k321,4844,321,404412,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n4951-k203,4951,203,284751,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5061-k184,5061,184,161455,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5288-k1246,5288,1246,1957948,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5406-k783,5406,783,1040108,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5526-k553,5526,553,336838,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5649-k401,5649,401,644557,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5774-k290,5774,290,249849,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n5902-k122,5902,122,216998,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6034-k61,6034,61,64249,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6168-k1922,6168,1922,1527217,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6305-k1042,6305,1042,1175816,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6445-k628,6445,628,996107,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6588-k473,6588,473,333818,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6734-k330,6734,330,447457,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n6884-k148,6884,148,181583,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n7193-k1683,7193,1683,2958155,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n7353-k1471,7353,1471,1537696,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n7516-k859,7516,859,572943,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n7683-k602,7683,602,701136,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n7854-k365,7854,365,659074,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n8028-k294,8028,294,266270,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n8207-k108,8207,108,118046,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n8389-k2028,8389,2028,3353124,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n8575-k1297,8575,1297,1088346,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n8766-k1032,8766,1032,905020,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n8960-k634,8960,634,772879,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n9160-k379,9160,379,323576,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n9363-k209,9363,209,205367,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n9571-k55,9571,55,106342,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-11,XL-n9784-k2774,9784,2774,4076867,"Qianlong Wang, Wenhui Bai, Zengle Ge, Huaiming Li and Annan Li (Famou Agent Team, Baidu AI Cloud)",2
+2026-09-20,X-n536-k96,536,96,94840,Yuchen Shi (Tongji University),2
+2026-09-20,X-n716-k35,716,35,43350,Yuchen Shi (Tongji University),2
+2026-09-20,X-n979-k58,979,58,118940,Yuchen Shi (Tongji University),2
+2026-09-23,XL-n7193-k1683,7193,1683,2958154,Tobias Linke (Enpal Fulfillment B.V.),2
+2026-09-29,XL-n1234-k55,1234,55,96601,Shiyao Bian (Independent Researcher),2
+2026-09-29,XL-n1374-k278,1374,278,232931,Shiyao Bian (Independent Researcher),2
+2026-09-29,XL-n1421-k232,1421,232,384643,Shiyao Bian (Independent Researcher),2
+2026-09-29,XL-n3561-k229,3561,229,209184,Shiyao Bian (Independent Researcher),2
+2026-10-01,XL-n1421-k232,1421,232,384641,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n1934-k46,1934,46,52978,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n2261-k54,2261,54,98824,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n2494-k194,2494,194,361056,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n2914-k95,2914,95,88901,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n3147-k232,3147,232,256415,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n3561-k229,3561,229,209181,Shiyao Bian (Independent Researcher),1
+2026-10-01,XL-n7037-k38,7037,38,70757,Shiyao Bian (Independent Researcher),1
+2026-10-03,X-n1001-k43,1001,43,72338,Luca Accorsi (Google),1
+2026-10-05,XL-n3147-k232,3147,232,256413,Shiyao Bian (Independent Researcher),1
+2026-10-05,XL-n3484-k436,3484,436,703315,Shiyao Bian (Independent Researcher),1
+2026-10-08,X-n1001-k43,1001,43,72334,Luca Accorsi (Google),1
+2026-10-08,X-n701-k44,701,44,81899,Luca Accorsi (Google),1
+2026-10-08,X-n783-k48,783,48,72383,Luca Accorsi (Google),1
+2026-10-08,X-n837-k142,837,142,193721,Luca Accorsi (Google),1
+2026-10-08,X-n895-k37,895,37,53849,Luca Accorsi (Google),1
+2026-10-12,X-n979-k58,979,58,118924,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n10001-k1570,10001,1570,2330257,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n2681-k540,2681,540,797844,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n6168-k1922,6168,1922,1527163,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n8028-k294,8028,294,266255,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n8389-k2028,8389,2028,3352860,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n9363-k209,9363,209,205365,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n9571-k55,9571,55,106341,Martín Vizzolini (Independent Researcher),1
+2026-10-12,XL-n9784-k2774,9784,2774,4076860,Martín Vizzolini (Independent Researcher),1
+2026-10-13,X-n536-k96,536,96,94834,Yuchen Shi (Tongji University),1
+2026-10-19,XL-n10001-k1570,10001,1570,2330176,Chris Pawlowski (Dayjob.ai),1
+2026-10-21,XL-n10001-k1570,10001,1570,2329810,Chris Pawlowski (Dayjob.ai),1
+2026-10-22,X-n536-k96,536,96,94832,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n1048-k237,1048,237,380091,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n1234-k55,1234,55,96597,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n1421-k232,1421,232,384636,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n1608-k39,1608,39,48001,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n1841-k126,1841,126,213941,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n1888-k82,1888,82,143552,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2028-k617,2028,617,544140,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2074-k264,2074,264,421225,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2168-k138,2168,138,127188,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2261-k54,2261,54,98822,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2307-k34,2307,34,47933,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2354-k631,2354,631,940625,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2447-k290,2447,290,218627,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2541-k121,2541,121,146343,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2587-k66,2587,66,73248,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2821-k208,2821,208,216603,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n2914-k95,2914,95,88898,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3054-k461,3054,461,782157,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3147-k232,3147,232,256404,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3194-k161,3194,161,148591,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3241-k115,3241,115,221246,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3334-k934,3334,934,1452315,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3408-k524,3408,524,678002,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3484-k436,3484,436,703314,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3561-k229,3561,229,209180,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3640-k211,3640,211,189501,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n3975-k687,3975,687,525555,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4063-k347,4063,347,548288,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4153-k291,4153,291,355768,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4340-k148,4340,148,243863,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4635-k790,4635,790,609684,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4738-k487,4738,487,759604,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4844-k321,4844,321,404411,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n4951-k203,4951,203,284736,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n5406-k783,5406,783,1040106,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n5526-k553,5526,553,336837,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n5649-k401,5649,401,644551,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n6588-k473,6588,473,333810,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n6734-k330,6734,330,447452,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n6884-k148,6884,148,181582,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n7037-k38,7037,38,70754,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n7516-k859,7516,859,572940,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n7683-k602,7683,602,701129,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n8960-k634,8960,634,772867,Shiyao Bian (Independent Researcher),1
+2026-10-22,XL-n9160-k379,9160,379,323566,Shiyao Bian (Independent Researcher),1
+2026-10-24,X-n1001-k43,1001,43,72332,Martín Vizzolini (Independent Researcher),1
+2026-10-24,XL-n10001-k1570,10001,1570,2329795,Martín Vizzolini (Independent Researcher),1
+2026-10-25,X-n895-k37,895,37,53845,Christoph Breunig (LYKOPHOS),1
+2026-10-25,X-n979-k58,979,58,118923,Christoph Breunig (LYKOPHOS),1
+2026-10-25,XL-n10001-k1570,10001,1570,2329785,Arhan Canli,1
+2026-10-25,XL-n6168-k1922,6168,1922,1527161,Arhan Canli,1
+2026-10-25,XL-n9784-k2774,9784,2774,4076853,Arhan Canli,1
+2026-10-26,XL-n2121-k186,2121,186,283097,Christoph Breunig (LYKOPHOS),1
+2026-10-27,XL-n10001-k1570,10001,1570,2329784,Arhan Canli,1
+2026-10-27,XL-n10001-k1570,10001,1570,2329546,Chris Pawlowski (Dayjob.ai),1
+2026-10-27,XL-n10001-k1570,10001,1570,2329483,Chris Pawlowski (Dayjob.ai),1
+2026-10-27,XL-n1048-k237,1048,237,380090,Arhan Canli,1
+2026-10-27,XL-n1748-k271,1748,271,173756,Arhan Canli,1
+2026-10-27,XL-n5774-k290,5774,290,249847,Arhan Canli,1
+2026-10-27,XL-n8028-k294,8028,294,266253,Arhan Canli,1
+2026-10-28,XL-n10001-k1570,10001,1570,2329471,Laio Oriel Seman (IFSC),1
+2026-10-28,XL-n5288-k1246,5288,1246,1957947,Laio Oriel Seman (IFSC),1
+2026-10-29,XL-n10001-k1570,10001,1570,2329443,Chris Pawlowski (dayjob.ai),1
+2026-10-29,XL-n10001-k1570,10001,1570,2329438,Laio Oriel Seman (IFSC),1
+2026-10-29,XL-n2961-k55,2961,55,107936,Christoph Breunig (LYKOPHOS),1
+2026-10-29,XL-n5288-k1246,5288,1246,1957944,Laio Oriel Seman (IFSC),1
+2026-10-29,XL-n8389-k2028,8389,2028,3352774,Chris Pawlowski (dayjob.ai),1
+2026-10-30,XL-n10001-k1570,10001,1570,2329417,Laio Oriel Seman (IFSC),1
+2026-10-30,XL-n2961-k55,2961,55,107934,Laio Oriel Seman (IFSC),1
+2026-10-31,XL-n3147-k232,3147,232,256399,Chris Pawlowski (dayjob.ai),1
+2026-10-31,XL-n5288-k1246,5288,1246,1957938,Laio Oriel Seman (IFSC),1
+2026-10-31,XL-n5288-k1246,5288,1246,1957929,Chris Pawlowski (dayjob.ai),1
+2026-10-31,XL-n5774-k290,5774,290,249846,Chris Pawlowski (dayjob.ai),1
+2026-10-31,XL-n8389-k2028,8389,2028,3352773,Laio Oriel Seman (IFSC),1
+2026-10-31,XL-n8389-k2028,8389,2028,3352681,Chris Pawlowski (dayjob.ai),1

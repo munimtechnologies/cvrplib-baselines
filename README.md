@@ -244,6 +244,54 @@ Scoring: [xltwlb/score.md](xltwlb/score.md): all five pre-registered expectation
 [xltwlb/cliques.json](xltwlb/cliques.json). Predictions for XLTW-Test, fixed before its release:
 [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md).
 
+## xltwbase/: vehicles first, fleet search stopped at the bound, leftover time to distance
+
+`xltwbase.py` is the baseline we plan to run on XLTW-Test. It runs `minimise_fleet`'s own loop but stops it at
+K = max(L2, time-window clique) from `xltwlb.py`, gives `solve` every second the fleet phase did not use, and
+re-checks every result in 50-digit decimals in the run's own convention (double, DIMACS or nearest-integer). It was
+checked on 13 Gehring-Homberger 1,000-customer instances (600 s each) and 4 convention runs (120 s), against the
+earlier `vrptwl/` run. This is an obvious engineering change, not a new method.
+
+| | result |
+|---|---|
+| runs on time in their own convention | 17 of 17; no result below its bound; every clique confirmed exactly |
+| vehicles on the 8 instances where the fleet search reached the capacity bound quickly | same as `vrptwl/` on all 8 |
+| distance on those 8 | shorter on all 8; median 6.41% shorter, **but see below** |
+| R1_10_1 fleet phase | stopped at 100 vehicles (the double-precision bound) after 44.6 s, instead of 301 s spent trying 99 |
+| C2_10_6 (control) | 29 vehicles instead of 30 |
+| R1_10_1 under DIMACS / nearest-integer rounding (120 s) | 95 / 93 vehicles (bound 91 in both) |
+
+**The distance comparison is confounded.** This run's machine made 1.5 to 5.6 times as many iterations per second as
+the `vrptwl/` run's, on every instance including the controls, so the 6.41% mixes the budget change with machine
+speed and must not be quoted as the gain from the budget change. A same-machine control is pre-registered in
+[xltwctl/expectations.md](xltwctl/expectations.md).
+
+Scoring: [xltwbase/score.md](xltwbase/score.md): all six pre-registered expectations (Q0 to Q5) held as written
+([xltwbase/expectations.md](xltwbase/expectations.md)); the score explains the speed confound with a per-instance
+table. Raw output: [xltwbase/results.md](xltwbase/results.md), [xltwbase/results.json](xltwbase/results.json);
+solutions in [xltwbase/sols/](xltwbase/sols/) (CVRPLib format, `Cost` = distance in the run's convention). None is a
+record.
+
+## bkslog/: CVRPLib's best-known-solution announcements as a table
+
+`bkslog.py` reads every page of CVRPLib's [updates page](https://galgos.inf.puc-rio.br/cvrplib/en/updates/) once
+(2 s apart) and writes one row per announced `instance (value)` pair for X and XL CVRP instances. It is an open,
+machine-readable copy of a public log, read on 2026-11-01: 469 pairs from 2015-01-05 to 2026-10-31, 170 of them on
+82 XL instances.
+
+| | result |
+|---|---|
+| reported values for the same XL instance over time | always lower (83 of 83 consecutive pairs) |
+| XL instances with a report between the CVRP challenge's end (2026-02-11) and 2026-09-30 | 75, but 70 of the 78 reports come from one entry of 2026-09-11 |
+| XL reports by month | none from February to June 2026; 1 in July, 77 in September, 92 in October |
+| share of those reports on instances with 5,000 or more customers | 39.7% (reports at every size) |
+
+Scoring: [bkslog/score.md](bkslog/score.md): B1 and B2 held, B3 (at least 60% on 5,000+ customers) did not
+([bkslog/expectations.md](bkslog/expectations.md)). Data: [bkslog/log_raw.csv](bkslog/log_raw.csv) (every pair as
+printed, with date and credit), [bkslog/log.csv](bkslog/log.csv) (one row per instance and value),
+[bkslog/per_instance.csv](bkslog/per_instance.csv), [bkslog/summary.json](bkslog/summary.json). Values are as
+announced and not re-checked; the raw HTML is not redistributed.
+
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
 `xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
@@ -260,11 +308,13 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 10:55 UTC that day): fleet lower bounds for every
-  test instance with `xltwlb.py`, scored against [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md),
-  then plain PyVRP under the challenge's own convention, with expectations written first. If the challenge uses
-  double precision, `vrptwd/` to `vrptwd5/` say which DIMACS BKSs a solver cannot start from as published, and
-  `vrptwd4/sols/` gives double-precision starts for 87 of them.
+- `xltwctl/`: the same-machine control for `xltwbase/` (pre-registered, queued).
+- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 10:30 UTC on 2026-11-01): fleet lower bounds for
+  every test instance with `xltwlb.py`, scored against
+  [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md), then `xltwbase.py` under the challenge's own
+  convention, with expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say
+  which DIMACS BKSs a solver cannot start from as published, and `vrptwd4/sols/` gives double-precision starts for 87
+  of them.
 
 Reproduce (Python 3.12):
 
@@ -304,14 +354,26 @@ cd ../xltwlb
 python -m unittest -v test_xltwlb test_compare
 python compare.py --ids 380-735 --data-dir data --out-dir out
 python xltwlb.py --synthetic 1000,5000,10000 --out-dir out
+cd ../xltwbase
+cp ../xltwlb/xltwlb.py .
+python -m unittest -v test_xltwbase
+python xltwbase.py --study --seconds 600 --conv-seconds 120 --workers 3 --data-dir data --out-dir out
+cd ../xltwctl
+cp ../xltwlb/xltwlb.py ../xltwbase/xltwbase.py .
+python -m unittest -v test_xltwctl
+python xltwctl.py --seconds 600 --workers 3 --data-dir data --out-dir out
+cd ../bkslog
+python -m unittest -v test_bkslog
+python bkslog.py --out out/bkslog --max-pages 30 --pause 2.0
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
 ```
 
-Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed). The results files
-say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned as above.
+Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed, as `xltwbase/` shows). The
+results files say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned as above.
 
 Data: instances and best known solutions are downloaded from CVRPLib at run time and are not redistributed here.
 SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL;
 `vrptwlb/` reads SINTEF's pages at run time and stores only the vehicle counts and distances it compares.
+`bkslog/` keeps the announced instance names, values, dates and credits only.
