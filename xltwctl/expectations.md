@@ -35,3 +35,24 @@ vehicles (ruled out by the bound in double precision); the bound arm stops at 10
 **Limits stated in advance.** One seed, one CPU, 9 instances, one machine shared with other jobs. With one seed the
 reduction on an instance is one draw, not an average. This measures an obvious engineering change, not a new method;
 nothing here is a record. If K5 fails, K2 to K4 are reported but not interpreted.
+
+## Addendum (2026-11-01 ~14:50 UTC, before `xltwctl-v2` ran): v1 was interrupted
+
+`xltwctl-v1` ran on the Dell from 12:04 to 13:00 UTC and was stopped from outside after 56 minutes (exit 143, a
+SIGTERM; its 120-minute limit was not reached, and its peak memory was 0.34 GB). By then both arms had finished and
+been logged for 7 of the 9 instances (R1_10_4, R1_10_6, R1_10_8, RC1_10_3, RC1_10_10, R2_10_4, RC2_10_9), plus the
+split arm of C1_10_4. No results.json was written, so those 7 pairs are taken from v1's log, copied verbatim into
+`v1_log.txt`.
+
+`xltwctl-v2` runs both arms of C1_10_4 and R1_10_1 (`--only C1_10_4,R1_10_1`), interleaved in one job as before, with
+two runs at a time on two CPUs. `merge_ctl.py` drops every v1 record of those two instances, adds v2's runs and scores
+K0 to K5 with the same unchanged `score_k()`. Each split/bound pair still comes from one job; different pairs may come
+from different jobs.
+
+**Disclosed:** this addendum was written after reading v1's 7 finished pairs. Their E reductions are 0.000, 0.417,
+3.375, 3.505, 4.094, 4.405 and 5.853%, so whatever C1_10_4 gives, the E median of 8 lies between 3.44% and 3.80%:
+K2 (at least 1.0%) will hold and K3 (below 3.2%) will not, unless C1_10_4's two arms use different numbers of
+vehicles (then both are untestable). Their E speed ratios (split/bound) are 0.702 to 0.934, median 0.86, so K5 is
+also nearly settled. K0, K1 (on C1_10_4) and K4 are still open. No prediction, threshold or odds was changed. Also, v1 asked
+for 3 CPUs but its container got 2 while running 3 runs at a time, so its runs shared CPUs; both arms of each pair
+shared them the same way.
