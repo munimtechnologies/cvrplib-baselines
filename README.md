@@ -105,7 +105,8 @@ uses exactly the capacity bound's number of routes ([xltwlb/score.md](xltwlb/sco
 
 What this is for: a solver or checker that works in double precision cannot start from, or compare with, about a
 quarter of the Homberger BKSs as published. The per-instance lists in `vrptwd/` and `vrptwd3/` say which ones. They are not errors
-in CVRPLib: every one is feasible under the DIMACS rules it was found with.
+in CVRPLib: every one is feasible under the DIMACS rules it was found with. (These counts are for the files read on
+2026-10-30; `bkswatch/` below re-reads them.)
 
 ## vrptwd4/: 87 of the 90 late BKSs repaired without an extra route
 
@@ -315,6 +316,33 @@ printed, with date and credit), [bkslog/log.csv](bkslog/log.csv) (one row per in
 [bkslog/per_instance.csv](bkslog/per_instance.csv), [bkslog/summary.json](bkslog/summary.json). Values are as
 announced and not re-checked; the raw HTML is not redistributed.
 
+## bkswatch/: the VRPTW BKSs re-read after CVRPLib's switch to automatic publishing
+
+Since 2026-10-28 CVRPLib verifies new best known solutions on submission and publishes them in a daily digest.
+`bkswatch.py` downloaded all 356 VRPTW BKS files again on 2026-11-02 (fresh, 2 s apart), checked each with the
+unchanged `vrptwd/double_check.py` under DIMACS and in double precision, and compared them with the files read on
+2026-10-30 and with the `vrptwlb/` fleet bounds.
+
+| | result |
+|---|---|
+| files read and feasible under DIMACS | 356 of 356 |
+| cost line equal to the cost of the file's own routes | 355 of 356. R1_10_6's file says `Cost 468603`; its routes give 46,860.3, the value in CVRPLib's instance table |
+| BKSs changed since 2026-10-30 | 5: the four announced on 2026-11-01 (C1_10_9, R1_10_1, R1_10_5, R1_10_9) and R1_10_6, not yet announced when read |
+| changed BKSs with one route more than the solution they replaced | 3 of 5 (C1_10_9 90 to 91, R1_10_6 91 to 92, R1_10_9 91 to 92); R1_10_1 went from 95 to 94 |
+| changed BKSs late in double precision | 3 of 5 (R1_10_1, R1_10_6, R1_10_9); before, 1 of the 5 (R1_10_1) |
+| all BKSs late in double precision | 92 of 356, up from 90 |
+
+CVRPLib's VRPTW BKSs are ranked by distance only, so a shorter solution with an extra route is an improvement there.
+The VRPTW BKS Challenge ranks vehicles first. Under that rule, the three solutions with an extra route would rank
+below the ones they replaced. None of this is an error by CVRPLib, and its instance table has the right value for
+R1_10_6. The only slip is the cost line in that one downloadable file.
+
+Scoring: [bkswatch/score.md](bkswatch/score.md): W1, W2 and W3 held; W0 (every cost line matches) and W4 (route
+counts unchanged) did not; W5 was untestable as coded, because it is scored only when W0 holds
+([bkswatch/expectations.md](bkswatch/expectations.md)). Raw output: [bkswatch/results.md](bkswatch/results.md),
+[bkswatch/results.json](bkswatch/results.json), [bkswatch/bks.csv](bkswatch/bks.csv) (one row per instance). Five
+changed BKSs are too few to call this a trend.
+
 ## xl/: memory and speed at 1,000 to 10,000 customers
 
 `xl_scale.py` builds instances from the first n customers of XL-n10001-k1570 with **synthetic** time
@@ -331,12 +359,13 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 04:30 UTC on 2026-11-02): fleet lower bounds for
+- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 05:35 UTC on 2026-11-02): fleet lower bounds for
   every test instance with `xltwlb.py`, scored against
   [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md), then `xltwbase.py` under the challenge's own
   convention, with expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say
   which DIMACS BKSs a solver cannot start from as published, and `vrptwd4/sols/` gives double-precision starts for 87
   of them.
+- `bkswatch/` again about once a week while new VRPTW BKSs keep arriving, using this read as the reference.
 
 Reproduce (Python 3.12):
 
@@ -390,6 +419,13 @@ python xltwctl.py --seconds 600 --workers 2 --data-dir data --out-dir out
 cd ../bkslog
 python -m unittest -v test_bkslog
 python bkslog.py --out out/bkslog --max-pages 30 --pause 2.0
+cd ../bkswatch
+cp ../vrptwd/double_check.py .
+cp ../vrptwd3/results.json vrptwd3_results.json
+cp ../vrptwd/results.json vrptwd_results.json
+cp ../vrptwlb/bounds.csv .
+python -m unittest -v test_bkswatch
+python bkswatch.py --ids 380-735 --stamp 20261102 --data-dir data --out-dir out
 cd ../xl
 python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
@@ -397,9 +433,10 @@ python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1
 
 Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed, as `xltwbase/` and
 `xltwctl/` show). The results files say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned
-as above.
+as above. `bkswatch/` reads CVRPLib's files as they are on the day it runs, so a re-run on a later day can differ.
 
 Data: instances and best known solutions are downloaded from CVRPLib at run time and are not redistributed here.
 SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL;
 `vrptwlb/` reads SINTEF's pages at run time and stores only the vehicle counts and distances it compares.
-`bkslog/` keeps the announced instance names, values, dates and credits only.
+`bkslog/` keeps the announced instance names, values, dates and credits only. `bkswatch/` keeps one row per BKS
+(route count, costs, check results), not the solutions.
