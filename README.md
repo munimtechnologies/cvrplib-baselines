@@ -263,14 +263,37 @@ earlier `vrptwl/` run. This is an obvious engineering change, not a new method.
 
 **The distance comparison is confounded.** This run's machine made 1.5 to 5.6 times as many iterations per second as
 the `vrptwl/` run's, on every instance including the controls, so the 6.41% mixes the budget change with machine
-speed and must not be quoted as the gain from the budget change. A same-machine control is pre-registered in
-[xltwctl/expectations.md](xltwctl/expectations.md).
+speed and must not be quoted as the gain from the budget change. The same-machine control `xltwctl/` (below) measured
+the budget change alone: a median of **3.44%** on the same 8 instances, about half of the 6.41%.
 
 Scoring: [xltwbase/score.md](xltwbase/score.md): all six pre-registered expectations (Q0 to Q5) held as written
 ([xltwbase/expectations.md](xltwbase/expectations.md)); the score explains the speed confound with a per-instance
 table. Raw output: [xltwbase/results.md](xltwbase/results.md), [xltwbase/results.json](xltwbase/results.json);
-solutions in [xltwbase/sols/](xltwbase/sols/) (CVRPLib format, `Cost` = distance in the run's convention). None is a
+solutions in [xltwbase/sols/](xltwbase/sols/) (CVRPLib format, `Cost` = distance in the run's own convention). None is a
 record.
+
+## xltwctl/: the same-machine control for xltwbase/
+
+`xltwctl.py` runs both budgets on the same instance in the same job, one after the other: the `vrptwl/` split (fleet
+search to PyVRP's capacity bound for at most 300 s, then `solve` for 300 s) and the `xltwbase.py` budget (fleet
+search stopped at the bound, `solve` gets the rest of 600 s). 9 Gehring-Homberger 1,000-customer instances, double
+precision, one seed, one CPU per run. The first job was stopped from outside after 7 of 9 pairs; a second job ran the
+other 2 pairs, and `merge_ctl.py` scored all 9 once (an addendum, written before the second job, discloses that three
+predictions were nearly settled by then).
+
+| | result |
+|---|---|
+| runs on time in exact arithmetic, same vehicles in both arms | 18 of 18; 9 of 9 pairs |
+| bound arm shorter, 8 instances where both arms run the same fleet search | 7 of 8 shorter, 1 equal; **median 3.44%** |
+| by family | R1/RC1 3.4% to 5.9%; R2, RC2, C1 0% to 0.42% |
+| R1_10_1 (fleet search stopped at 100 after 57.5 s instead of 300.7 s) | 1.35% shorter (predicted at least 2%) |
+| iterations per second, split / bound | median 0.859; the longer arm was faster per iteration in all 9 pairs |
+
+Scoring: [xltwctl/score.md](xltwctl/score.md): K0, K1, K2 and K5 held; K3 (median below 3.2%) and K4 (R1_10_1 at
+least 2% shorter) did not ([xltwctl/expectations.md](xltwctl/expectations.md)). Merged table:
+[xltwctl/merged.md](xltwctl/merged.md), [xltwctl/merged.json](xltwctl/merged.json); second job's output:
+[xltwctl/results-v2.md](xltwctl/results-v2.md), [xltwctl/results-v2.json](xltwctl/results-v2.json); first job's
+log: [xltwctl/v1_log.txt](xltwctl/v1_log.txt); solutions in [xltwctl/sols/](xltwctl/sols/). None is a record.
 
 ## bkslog/: CVRPLib's best-known-solution announcements as a table
 
@@ -308,8 +331,7 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- `xltwctl/`: the same-machine control for `xltwbase/` (pre-registered, queued).
-- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 10:30 UTC on 2026-11-01): fleet lower bounds for
+- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 04:30 UTC on 2026-11-02): fleet lower bounds for
   every test instance with `xltwlb.py`, scored against
   [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md), then `xltwbase.py` under the challenge's own
   convention, with expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say
@@ -360,8 +382,11 @@ python -m unittest -v test_xltwbase
 python xltwbase.py --study --seconds 600 --conv-seconds 120 --workers 3 --data-dir data --out-dir out
 cd ../xltwctl
 cp ../xltwlb/xltwlb.py ../xltwbase/xltwbase.py .
-python -m unittest -v test_xltwctl
-python xltwctl.py --seconds 600 --workers 3 --data-dir data --out-dir out
+python -m unittest -v test_xltwctl test_merge_ctl
+python xltwctl.py --seconds 600 --workers 2 --data-dir data --out-dir out
+# as published: the first job's 7 pairs are in v1_log.txt; the second job ran
+#   python xltwctl.py --seconds 600 --workers 2 --only C1_10_4,R1_10_1 --data-dir data --out-dir out
+#   python merge_ctl.py --prior v1_log.txt --results out/xltwctl/results.json --out-dir out/xltwctl
 cd ../bkslog
 python -m unittest -v test_bkslog
 python bkslog.py --out out/bkslog --max-pages 30 --pause 2.0
@@ -370,8 +395,9 @@ python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
 ```
 
-Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed, as `xltwbase/` shows). The
-results files say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned as above.
+Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed, as `xltwbase/` and
+`xltwctl/` show). The results files say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned
+as above.
 
 Data: instances and best known solutions are downloaded from CVRPLib at run time and are not redistributed here.
 SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL;
