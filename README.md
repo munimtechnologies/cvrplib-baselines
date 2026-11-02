@@ -10,7 +10,27 @@ working in MV2's name. Licence: Apache-2.0 (code); results and text CC BY 4.0.
 Why: CVRPLib's VRPTW Best Known Solution Challenge (1,000 to 10,000 customers with time windows; official
 instances on 2027-02-24, ending 2027-03-26) asks what a method can do on very large instances. These runs
 measure what an off-the-shelf solver on one CPU does, as a floor to compare against. They are calibrations,
-not new results.
+not new results. The challenge's rules were published on 2026-11-02 (summary below).
+
+## The challenge's rules (published 2026-11-02, summarised)
+
+From the [challenge page](https://galgos.inf.puc-rio.br/cvrplib/en/challenges/vrptw/overview), read on 2026-11-02.
+This is our summary; the page is the authority.
+
+| | rule |
+|---|---|
+| objective | fewest routes first, then total distance; no fleet limit |
+| distance and time | TSPLIB EUC_2D: each arc rounded to the nearest integer, floor(d + 0.5); travel time = distance |
+| instances | XLTW: 1,000 to 10,000 customers, XL's depot, customer locations and demands with new time windows, service times and capacity; confidential until 2027-02-24 15:00 GMT. XLTW-Test (for development, dropped when the challenge starts) is a download on the page now |
+| scoring | days holding a BKS during the 30 days, +5 for each final BKS, at most 35 per instance (as in the CVRP challenge); certificates to the overall winner and to every team with at least one final BKS |
+| algorithm track | registration and submissions 2026-12-16 to 2027-01-16; public code with a README, or a paper or report, or documented commercial software; a short report on XLTW-Test is mandatory |
+| how algorithms run | Linux x86-64, builds with `make` or `build.sh`, no Internet, no root; single-threaded, one logical CPU; `./solver instance.vrp <seconds> <seed>`; solutions printed to stdout in CVRPLib format (`Route #k: ...`, `Cost: ...`), the last complete feasible one before the limit counts; T(n) = 1,800 x n / 1,000 s (30 min per 1,000 customers); 20 runs per instance, deterministic per seed |
+
+What this means for the work below: the challenge uses neither double precision nor DIMACS truncation but
+nearest-integer rounding, which `xltwlb.py` already calls 'round'. The double/DIMACS findings (`vrptwd/` to
+`vrptwd5/`) are about CVRPLib's existing VRPTW sets and SINTEF's records, not about the challenge's scoring. Under
+'round' the time-window bound of the R1 `_1` instances no longer binds (`xltwlb/`). The time limit for algorithm
+runs is 1,800 s per 1,000 customers, six times the 300 s fleet budgets used so far.
 
 ## vrp/: warm and cold PyVRP on the three smallest XL instances
 
@@ -228,8 +248,9 @@ optimal; the greedy clique search may miss larger cliques.
 `xltwlb.py` is the `vrptwlb/` code rewritten for CVRPLib's XLTW-Test set. It reads VRPLIB or Solomon files, builds
 the incompatibility matrix in row blocks (10,000 customers in 26 s and 0.30 GB on synthetic instances), adds the
 Martello-Toth L2 bin-packing bound (KB), counts two customers whose demands together exceed the capacity as
-incompatible, and adds a third travel-time convention, 'round' (nearest integer, CVRPLib's CVRP rule). `compare.py`
-ran it on all 356 instances and compared it with the published `vrptwlb/` files.
+incompatible, and adds a third travel-time convention, 'round' (nearest integer, CVRPLib's CVRP rule, and since
+2026-11-02 known to be the VRPTW challenge's rule too). `compare.py` ran it on all 356 instances and compared it with
+the published `vrptwlb/` files.
 
 | | result |
 |---|---|
@@ -296,6 +317,45 @@ least 2% shorter) did not ([xltwctl/expectations.md](xltwctl/expectations.md)). 
 [xltwctl/results-v2.md](xltwctl/results-v2.md), [xltwctl/results-v2.json](xltwctl/results-v2.json); first job's
 log: [xltwctl/v1_log.txt](xltwctl/v1_log.txt); solutions in [xltwctl/sols/](xltwctl/sols/). None is a record.
 
+## xltwrm/: three fleet searches compared; the plain loop won
+
+The challenge ranks vehicles first, and the fleet search is the weakest part of the baseline: `vrptwl/` used more
+vehicles than SINTEF's records on 13 of the 60 1,000-customer instances. `xltwrm.py` ran three fleet searches on
+those 13, in one job, 300 s each, double precision, one seed: **fleet** (PyVRP's `minimise_fleet` loop as in
+`xltwbase.py`), **warm** (the same loop, each attempt starting from the last solution with its smallest route
+removed) and **eject** (a thin prize-collecting ejection loop after Nagata and Bräysy, 2009: the smallest route
+removed, every customer optional with a prize that grows each time it is left out, penalties fixed far above the
+prizes).
+
+| | fleet | warm | eject |
+|---|---|---|---|
+| vehicles, 13 instances (SINTEF: 728) | **743** | 761 | 764 |
+| fewest vehicles (alone or tied) | 13 of 13 | 4 of 13 | 5 of 13 |
+| equal to SINTEF's record | 3 | 1 | 1 |
+
+All 39 runs were on time in exact arithmetic and none was below K or below a record. warm drops routes fast and then
+stalls: on 8 instances it reached its final count, still above K, within 15 s and spent the rest on one failed
+attempt. eject's rounds were short (5 s at 1,000 customers) and its counters reached only 2 to 11. Its fixed
+penalties also ruled out the infeasible "squeeze" moves that Nagata and Bräysy rely on. This says nothing about full
+ejection-pool methods, only about this thin version. eject's route plans were the shortest on all 13 instances,
+because each of its rounds runs PyVRP's full search while the other two stop at the first feasible solution. That was
+not predicted and not compared.
+
+Scoring: [xltwrm/score.md](xltwrm/score.md): M0 and M5 held; M1 to M4, M6 and M7 did not
+([xltwrm/expectations.md](xltwrm/expectations.md)). Raw output: [xltwrm/results.md](xltwrm/results.md),
+[xltwrm/results.json](xltwrm/results.json), [xltwrm/progress.jsonl](xltwrm/progress.jsonl) (with every run's trace);
+solutions in [xltwrm/sols/](xltwrm/sols/). None is a record. `xltwbase.py` keeps the plain loop.
+
+## xltwrs/ and xltwtest/: pre-registered, results to come
+
+- [`xltwrs/`](xltwrs/expectations.md): the plain loop with a 900 s fleet budget (half the challenge's time per 1,000
+  customers), against the same loop with each attempt capped and restarted with a new seed, on the same 13
+  instances. Predictions R0 to R5 are fixed before the run.
+- [`xltwtest/`](xltwtest/xltwtest.py): fleet bounds for every XLTW-Test instance in the challenge's convention and in
+  double and DIMACS, scored against [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md) (P1 to P4,
+  fixed 2026-10-31 before the set was released). It also records the archive's hash, its files and their format.
+  No instance data is copied into this repository.
+
 ## bkslog/: CVRPLib's best-known-solution announcements as a table
 
 `bkslog.py` reads every page of CVRPLib's [updates page](https://galgos.inf.puc-rio.br/cvrplib/en/updates/) once
@@ -359,13 +419,11 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- XLTW-Test (announced by CVRPLib for 2026-10-31; not yet out at 05:35 UTC on 2026-11-02): fleet lower bounds for
-  every test instance with `xltwlb.py`, scored against
-  [xltwlb/predictions-xltw-test.md](xltwlb/predictions-xltw-test.md), then `xltwbase.py` under the challenge's own
-  convention, with expectations written first. If the challenge uses double precision, `vrptwd/` to `vrptwd5/` say
-  which DIMACS BKSs a solver cannot start from as published, and `vrptwd4/sols/` gives double-precision starts for 87
-  of them.
-- `bkswatch/` again about once a week while new VRPTW BKSs keep arriving, using this read as the reference.
+- Score `xltwtest/` (P1 to P4) and `xltwrs/` (R0 to R5).
+- On XLTW-Test, in the challenge's own convention (nearest integer) and its time limit scaled down where needed:
+  `xltwbase.py` with the fleet phase `xltwrs/` supports, expectations written first. That becomes the mandatory
+  XLTW-Test report if MV2 enters the algorithm track (registration opens 2026-12-16).
+- `bkswatch/` again about once a week while new VRPTW BKSs keep arriving, using the 2026-11-02 read as the reference.
 
 Reproduce (Python 3.12):
 
@@ -416,6 +474,19 @@ python xltwctl.py --seconds 600 --workers 2 --data-dir data --out-dir out
 # as published: the first job's 7 pairs are in v1_log.txt; the second job ran
 #   python xltwctl.py --seconds 600 --workers 2 --only C1_10_4,R1_10_1 --data-dir data --out-dir out
 #   python merge_ctl.py --prior v1_log.txt --results out/xltwctl/results.json --out-dir out/xltwctl
+cd ../xltwrm
+cp ../xltwlb/xltwlb.py ../xltwbase/xltwbase.py .
+python -m unittest -v test_xltwrm
+python xltwrm.py --seconds 300 --workers 3 --data-dir data --out-dir out
+cd ../xltwrs
+cp ../xltwlb/xltwlb.py ../xltwbase/xltwbase.py ../xltwrm/xltwrm.py .
+python -m unittest -v test_xltwrs
+python xltwrs.py --seconds 900 --workers 4 --data-dir data --out-dir out
+cd ../xltwtest
+pip install py7zr
+cp ../xltwlb/xltwlb.py .
+python -m unittest -v test_xltwtest
+python xltwtest.py --data-dir data --out-dir out
 cd ../bkslog
 python -m unittest -v test_bkslog
 python bkslog.py --out out/bkslog --max-pages 30 --pause 2.0
@@ -439,4 +510,5 @@ Data: instances and best known solutions are downloaded from CVRPLib at run time
 SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distance only) with its source URL;
 `vrptwlb/` reads SINTEF's pages at run time and stores only the vehicle counts and distances it compares.
 `bkslog/` keeps the announced instance names, values, dates and credits only. `bkswatch/` keeps one row per BKS
-(route count, costs, check results), not the solutions.
+(route count, costs, check results), not the solutions. `xltwtest/` keeps file names, sizes, hashes, header and
+section names, summary statistics and bounds, not the instances.
