@@ -1,0 +1,4314 @@
+{
+ "archive": {
+  "Content-Length": "3754859",
+  "Last-Modified": "Mon, 02 Nov 2026 17:40:09 GMT",
+  "ETag": "\"6ae8caf9-394b6b\"",
+  "Content-Type": "application/x-7z-compressed",
+  "url": "https://galgos.inf.puc-rio.br/cvrplib/uploads/files/vrptw_challenge/XLTW-Test.7z",
+  "bytes": 3754859,
+  "sha256": "9635b9fa813ea34ff3f35842f80a40ce6764d14c27cf2e13e5fbf1de623f4631",
+  "read_at": "2026-11-02T19:37:33Z"
+ },
+ "files": [
+  {
+   "path": "XLTW-Test-n10001.vrp",
+   "bytes": 540389,
+   "sha256": "d7f70e1298d22352e746a987f359896684a508a0a744ef849f12b343e99723c4",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "10001",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2895"
+   },
+   "name": "XLTW-Test-n10001",
+   "stats": {
+    "customers": 10000,
+    "capacity": 2895,
+    "total_demand": 752002,
+    "max_demand": 100,
+    "horizon": 3618,
+    "service_min": 18,
+    "service_max": 36,
+    "width_min": 182,
+    "width_median": 1419.5,
+    "width_max": 3618,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1048.vrp",
+   "bytes": 56918,
+   "sha256": "80b4c579f6067051ac192a30407b13fbaf28ebe9ff3a888d52665668697dd396",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1048",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "28486"
+   },
+   "name": "XLTW-Test-n1048",
+   "stats": {
+    "customers": 1047,
+    "capacity": 28486,
+    "total_demand": 28486,
+    "max_demand": 100,
+    "horizon": 11216,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 563,
+    "width_median": 2885,
+    "width_max": 11216,
+    "full_horizon_share": 0.1996,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1094.vrp",
+   "bytes": 59399,
+   "sha256": "1e7b77c582d6cb701e0f6735ec9ca868c0e032b4bf039bc7d842c38e61e1492d",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1094",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "12"
+   },
+   "name": "XLTW-Test-n1094",
+   "stats": {
+    "customers": 1093,
+    "capacity": 12,
+    "total_demand": 1093,
+    "max_demand": 1,
+    "horizon": 2226,
+    "service_min": 45,
+    "service_max": 111,
+    "width_min": 224,
+    "width_median": 609,
+    "width_max": 2226,
+    "full_horizon_share": 0.3998,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1141.vrp",
+   "bytes": 61939,
+   "sha256": "b7a3e924533320a3fa72f128d2fc3ec78a714169f4f3da460a6b3c942687f3a0",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1141",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2586"
+   },
+   "name": "XLTW-Test-n1141",
+   "stats": {
+    "customers": 1140,
+    "capacity": 2586,
+    "total_demand": 85151,
+    "max_demand": 100,
+    "horizon": 2170,
+    "service_min": 22,
+    "service_max": 43,
+    "width_min": 370,
+    "width_median": 851.0,
+    "width_max": 1086,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1188.vrp",
+   "bytes": 64477,
+   "sha256": "ed5d520e52d275cba0401b80d4267c2b35d1fdb214fbcdc286a83da776644f47",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1188",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2363"
+   },
+   "name": "XLTW-Test-n1188",
+   "stats": {
+    "customers": 1187,
+    "capacity": 2363,
+    "total_demand": 74693,
+    "max_demand": 100,
+    "horizon": 3987,
+    "service_min": 20,
+    "service_max": 40,
+    "width_min": 200,
+    "width_median": 326,
+    "width_max": 3987,
+    "full_horizon_share": 0.1997,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1234.vrp",
+   "bytes": 66961,
+   "sha256": "cccd0a0f642f4db1d002fe558f7a3695f148c739e87fe8041969f13a45e852c2",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1234",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "6820"
+   },
+   "name": "XLTW-Test-n1234",
+   "stats": {
+    "customers": 1233,
+    "capacity": 6820,
+    "total_demand": 6820,
+    "max_demand": 10,
+    "horizon": 8476,
+    "service_min": 42,
+    "service_max": 423,
+    "width_min": 426,
+    "width_median": 3186,
+    "width_max": 8476,
+    "full_horizon_share": 0.3998,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1281.vrp",
+   "bytes": 69498,
+   "sha256": "5e433e5d896c79cf5ba50c1610b97636610be48c2d74cb0e0a348ba97aa638c2",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1281",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "708"
+   },
+   "name": "XLTW-Test-n1281",
+   "stats": {
+    "customers": 1280,
+    "capacity": 708,
+    "total_demand": 63691,
+    "max_demand": 100,
+    "horizon": 1713,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 86,
+    "width_median": 130.0,
+    "width_max": 172,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1328.vrp",
+   "bytes": 72036,
+   "sha256": "9d5882d47016cdb10a68b30d8b3900e0c2037de9bec97ca61c3224e91e7e9cba",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1328",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "154"
+   },
+   "name": "XLTW-Test-n1328",
+   "stats": {
+    "customers": 1327,
+    "capacity": 154,
+    "total_demand": 9898,
+    "max_demand": 10,
+    "horizon": 8694,
+    "service_min": 174,
+    "service_max": 435,
+    "width_min": 876,
+    "width_median": 1990,
+    "width_max": 8694,
+    "full_horizon_share": 0.1997,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1374.vrp",
+   "bytes": 74521,
+   "sha256": "712f1743f98342ddc89b084b531bd82c3f0ba12a4d2fee05c4564e7edff523e2",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1374",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2873"
+   },
+   "name": "XLTW-Test-n1374",
+   "stats": {
+    "customers": 1373,
+    "capacity": 2873,
+    "total_demand": 68925,
+    "max_demand": 100,
+    "horizon": 4199,
+    "service_min": 21,
+    "service_max": 42,
+    "width_min": 904,
+    "width_median": 1623,
+    "width_max": 2100,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1421.vrp",
+   "bytes": 77060,
+   "sha256": "c5c3a29e91572beba1583ca0c231592adcca18717a62298bd685f7fdaae60c35",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1421",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "71485"
+   },
+   "name": "XLTW-Test-n1421",
+   "stats": {
+    "customers": 1420,
+    "capacity": 71485,
+    "total_demand": 71485,
+    "max_demand": 100,
+    "horizon": 3651,
+    "service_min": 18,
+    "service_max": 183,
+    "width_min": 184,
+    "width_median": 337.0,
+    "width_max": 3651,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1468.vrp",
+   "bytes": 79597,
+   "sha256": "43c28a3b85e6bf66d4856d1b08a58c2842194723d32bf4672ea1797285407567",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1468",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2784"
+   },
+   "name": "XLTW-Test-n1468",
+   "stats": {
+    "customers": 1467,
+    "capacity": 2784,
+    "total_demand": 109617,
+    "max_demand": 100,
+    "horizon": 5526,
+    "service_min": 55,
+    "service_max": 110,
+    "width_min": 1266,
+    "width_median": 2550,
+    "width_max": 5526,
+    "full_horizon_share": 0.4001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1514.vrp",
+   "bytes": 82082,
+   "sha256": "f8760454be3901c995b4be03fd3c7b2f71b463a32c909c6236c5e501c7a3d0cd",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1514",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "11282"
+   },
+   "name": "XLTW-Test-n1514",
+   "stats": {
+    "customers": 1513,
+    "capacity": 11282,
+    "total_demand": 11282,
+    "max_demand": 10,
+    "horizon": 2825,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 284,
+    "width_median": 568,
+    "width_max": 848,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1561.vrp",
+   "bytes": 84617,
+   "sha256": "8bbc1213c1d3592e5259f9512003567f668affd9047aae4b83d7011c16663f31",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1561",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "28"
+   },
+   "name": "XLTW-Test-n1561",
+   "stats": {
+    "customers": 1560,
+    "capacity": 28,
+    "total_demand": 1560,
+    "max_demand": 1,
+    "horizon": 2771,
+    "service_min": 1,
+    "service_max": 28,
+    "width_min": 140,
+    "width_median": 797.0,
+    "width_max": 2771,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1608.vrp",
+   "bytes": 87158,
+   "sha256": "8138fa1409af3b7cbfe17819d9f407dc992e29ba1045cf208b00c3fc0a77f22b",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1608",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "12837"
+   },
+   "name": "XLTW-Test-n1608",
+   "stats": {
+    "customers": 1607,
+    "capacity": 12837,
+    "total_demand": 12837,
+    "max_demand": 100,
+    "horizon": 2255,
+    "service_min": 45,
+    "service_max": 113,
+    "width_min": 606,
+    "width_median": 948,
+    "width_max": 2255,
+    "full_horizon_share": 0.1998,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1654.vrp",
+   "bytes": 89640,
+   "sha256": "93183e28a39a028d35db12f871d844742e012c7567b134e9c3f34250d9e8330f",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1654",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "132"
+   },
+   "name": "XLTW-Test-n1654",
+   "stats": {
+    "customers": 1653,
+    "capacity": 132,
+    "total_demand": 8982,
+    "max_demand": 10,
+    "horizon": 8314,
+    "service_min": 42,
+    "service_max": 416,
+    "width_min": 832,
+    "width_median": 2229,
+    "width_max": 8314,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1701.vrp",
+   "bytes": 92179,
+   "sha256": "fcef43db1c6c2b04ccce10d900e5b7676b377917ca33e2c05f807712cc18079e",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1701",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "3953"
+   },
+   "name": "XLTW-Test-n1701",
+   "stats": {
+    "customers": 1700,
+    "capacity": 3953,
+    "total_demand": 127494,
+    "max_demand": 100,
+    "horizon": 7489,
+    "service_min": 75,
+    "service_max": 150,
+    "width_min": 376,
+    "width_median": 1497.5,
+    "width_max": 3739,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1748.vrp",
+   "bytes": 94716,
+   "sha256": "b250530632843748e643a19dfd9a28397ae9ff8fcba70407d9b9eef92f7a1aef",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1748",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "511"
+   },
+   "name": "XLTW-Test-n1748",
+   "stats": {
+    "customers": 1747,
+    "capacity": 511,
+    "total_demand": 72972,
+    "max_demand": 100,
+    "horizon": 1764,
+    "service_min": 1,
+    "service_max": 88,
+    "width_min": 89,
+    "width_median": 162,
+    "width_max": 1764,
+    "full_horizon_share": 0.4001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1794.vrp",
+   "bytes": 97199,
+   "sha256": "1cea170f62014e07fdecb188d4e1cefdc229bf22218e4583c310ab5fd0cd9032",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1794",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "10"
+   },
+   "name": "XLTW-Test-n1794",
+   "stats": {
+    "customers": 1793,
+    "capacity": 10,
+    "total_demand": 1793,
+    "max_demand": 1,
+    "horizon": 2237,
+    "service_min": 1,
+    "service_max": 45,
+    "width_min": 113,
+    "width_median": 169,
+    "width_max": 225,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1841.vrp",
+   "bytes": 99740,
+   "sha256": "56efe918e21b6101c6c4664126ebe3bab84bce0c3382e23087026188ced53e05",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1841",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "23315"
+   },
+   "name": "XLTW-Test-n1841",
+   "stats": {
+    "customers": 1840,
+    "capacity": 23315,
+    "total_demand": 23315,
+    "max_demand": 100,
+    "horizon": 8416,
+    "service_min": 42,
+    "service_max": 84,
+    "width_min": 422,
+    "width_median": 2317.0,
+    "width_max": 8416,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1888.vrp",
+   "bytes": 102276,
+   "sha256": "9dd4632d6e0ad699f42df25f3e29bc18c72fee6f7db0b80a63567b3a55e75661",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1888",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "452"
+   },
+   "name": "XLTW-Test-n1888",
+   "stats": {
+    "customers": 1887,
+    "capacity": 452,
+    "total_demand": 14090,
+    "max_demand": 10,
+    "horizon": 5631,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 564,
+    "width_median": 1251,
+    "width_max": 5631,
+    "full_horizon_share": 0.1998,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1934.vrp",
+   "bytes": 104762,
+   "sha256": "8f9862333be8e7ed7de9147ee7a5a2879b5b8d1e3bb05d7a1996dfacefa470d5",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1934",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "99313"
+   },
+   "name": "XLTW-Test-n1934",
+   "stats": {
+    "customers": 1933,
+    "capacity": 99313,
+    "total_demand": 99313,
+    "max_demand": 100,
+    "horizon": 5520,
+    "service_min": 28,
+    "service_max": 276,
+    "width_min": 1368,
+    "width_median": 2484,
+    "width_max": 5520,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n1981.vrp",
+   "bytes": 107298,
+   "sha256": "c5a2b6c048e97f2588f17c443f0b86d1722f8c7a293903d680139fe8ba5526d4",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "1981",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "152"
+   },
+   "name": "XLTW-Test-n1981",
+   "stats": {
+    "customers": 1980,
+    "capacity": 152,
+    "total_demand": 10734,
+    "max_demand": 10,
+    "horizon": 2052,
+    "service_min": 21,
+    "service_max": 41,
+    "width_min": 104,
+    "width_median": 419.5,
+    "width_max": 1027,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2028.vrp",
+   "bytes": 109839,
+   "sha256": "1c7f41888c6e3fb6255e5a3415aec8093e7dcbe71fd2ea7fbe4fc9cacf95774d",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2028",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "152288"
+   },
+   "name": "XLTW-Test-n2028",
+   "stats": {
+    "customers": 2027,
+    "capacity": 152288,
+    "total_demand": 152288,
+    "max_demand": 100,
+    "horizon": 4178,
+    "service_min": 84,
+    "service_max": 209,
+    "width_min": 885,
+    "width_median": 1667,
+    "width_max": 4178,
+    "full_horizon_share": 0.1998,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2074.vrp",
+   "bytes": 112321,
+   "sha256": "bb4309039233e32fdeffa283ed62230aafcd60f5afa2a62df15aa21827da026c",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2074",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1998"
+   },
+   "name": "XLTW-Test-n2074",
+   "stats": {
+    "customers": 2073,
+    "capacity": 1998,
+    "total_demand": 105695,
+    "max_demand": 100,
+    "horizon": 4502,
+    "service_min": 1,
+    "service_max": 45,
+    "width_min": 452,
+    "width_median": 1221,
+    "width_max": 4502,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2121.vrp",
+   "bytes": 114858,
+   "sha256": "00b288b06b091292499ac2634ab310d3acff74d1c756cf7f313d547d2c1479c4",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2121",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "686"
+   },
+   "name": "XLTW-Test-n2121",
+   "stats": {
+    "customers": 2120,
+    "capacity": 686,
+    "total_demand": 11503,
+    "max_demand": 10,
+    "horizon": 10288,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 515,
+    "width_median": 776.0,
+    "width_max": 1030,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2168.vrp",
+   "bytes": 117397,
+   "sha256": "b0a14de4d3e3946f5cf41b4e02988be78b4d2fdfba1cb21760a734305acd6da7",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2168",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1642"
+   },
+   "name": "XLTW-Test-n2168",
+   "stats": {
+    "customers": 2167,
+    "capacity": 1642,
+    "total_demand": 110273,
+    "max_demand": 100,
+    "horizon": 2785,
+    "service_min": 14,
+    "service_max": 139,
+    "width_min": 140,
+    "width_median": 557,
+    "width_max": 1393,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2214.vrp",
+   "bytes": 119881,
+   "sha256": "03956502b5b453f724c50ded889da2cfc68c043aef19b96f6c9e78a75a7fdf09",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2214",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2213"
+   },
+   "name": "XLTW-Test-n2214",
+   "stats": {
+    "customers": 2213,
+    "capacity": 2213,
+    "total_demand": 2213,
+    "max_demand": 1,
+    "horizon": 5751,
+    "service_min": 29,
+    "service_max": 287,
+    "width_min": 577,
+    "width_median": 1307,
+    "width_max": 5751,
+    "full_horizon_share": 0.2002,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2261.vrp",
+   "bytes": 122418,
+   "sha256": "79e3091e1495b767487d5541d16e8ccea7d934fc08d5914aa3e054daa1459f00",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2261",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "283"
+   },
+   "name": "XLTW-Test-n2261",
+   "stats": {
+    "customers": 2260,
+    "capacity": 283,
+    "total_demand": 16943,
+    "max_demand": 10,
+    "horizon": 4491,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 226,
+    "width_median": 413.0,
+    "width_max": 4491,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2307.vrp",
+   "bytes": 124902,
+   "sha256": "d64a109f6e27360427edc02622165e299b5357b96bb18229c836247dcc7d18aa",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2307",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "387"
+   },
+   "name": "XLTW-Test-n2307",
+   "stats": {
+    "customers": 2306,
+    "capacity": 387,
+    "total_demand": 15841,
+    "max_demand": 100,
+    "horizon": 5559,
+    "service_min": 28,
+    "service_max": 56,
+    "width_min": 1559,
+    "width_median": 2327.0,
+    "width_max": 5559,
+    "full_horizon_share": 0.1999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2354.vrp",
+   "bytes": 127440,
+   "sha256": "00012291bb4d631059173c9c05bf359a8e13a60be4b13635e410889c4a450a07",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2354",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "275"
+   },
+   "name": "XLTW-Test-n2354",
+   "stats": {
+    "customers": 2353,
+    "capacity": 275,
+    "total_demand": 17641,
+    "max_demand": 10,
+    "horizon": 4718,
+    "service_min": 95,
+    "service_max": 236,
+    "width_min": 1202,
+    "width_median": 2171,
+    "width_max": 4718,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2401.vrp",
+   "bytes": 129981,
+   "sha256": "e514646c8e9d80f1ed0826b3cb644ff864b42150d0673af309488a01208cf11e",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2401",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "123539"
+   },
+   "name": "XLTW-Test-n2401",
+   "stats": {
+    "customers": 2400,
+    "capacity": 123539,
+    "total_demand": 123539,
+    "max_demand": 100,
+    "horizon": 3015,
+    "service_min": 1,
+    "service_max": 60,
+    "width_min": 303,
+    "width_median": 605.0,
+    "width_max": 905,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2447.vrp",
+   "bytes": 132462,
+   "sha256": "2e763a1a44a02213e5239192677ada402da718944583116bb30375e8ce477406",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2447",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "331"
+   },
+   "name": "XLTW-Test-n2447",
+   "stats": {
+    "customers": 2446,
+    "capacity": 331,
+    "total_demand": 43353,
+    "max_demand": 100,
+    "horizon": 2253,
+    "service_min": 11,
+    "service_max": 113,
+    "width_min": 114,
+    "width_median": 441.0,
+    "width_max": 1127,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2494.vrp",
+   "bytes": 135001,
+   "sha256": "e051fd16304ec28652bba875452a81639b87df8fde5ccdf1f583e50b1d0901cb",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2494",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "3543"
+   },
+   "name": "XLTW-Test-n2494",
+   "stats": {
+    "customers": 2493,
+    "capacity": 3543,
+    "total_demand": 128078,
+    "max_demand": 100,
+    "horizon": 4882,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 245,
+    "width_median": 399,
+    "width_max": 4882,
+    "full_horizon_share": 0.2002,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2541.vrp",
+   "bytes": 137539,
+   "sha256": "b726f9e589fd5658ce77dbc0ddfead92570df5797669c2d490c0f163a8583ea1",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2541",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2540"
+   },
+   "name": "XLTW-Test-n2541",
+   "stats": {
+    "customers": 2540,
+    "capacity": 2540,
+    "total_demand": 2540,
+    "max_demand": 1,
+    "horizon": 2791,
+    "service_min": 1,
+    "service_max": 28,
+    "width_min": 281,
+    "width_median": 742.5,
+    "width_max": 2791,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2587.vrp",
+   "bytes": 140023,
+   "sha256": "108d3f712da56c704489caf9e413b879ae1bcccf75776704021d45f0035e1fb8",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2587",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "4843"
+   },
+   "name": "XLTW-Test-n2587",
+   "stats": {
+    "customers": 2586,
+    "capacity": 4843,
+    "total_demand": 194725,
+    "max_demand": 100,
+    "horizon": 5633,
+    "service_min": 56,
+    "service_max": 113,
+    "width_min": 1315,
+    "width_median": 2251.5,
+    "width_max": 5633,
+    "full_horizon_share": 0.1999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2634.vrp",
+   "bytes": 142560,
+   "sha256": "7b77cf845cd218cd647e05deec509e8afaab491893ed6e94612dbab16c9f869b",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2634",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "197"
+   },
+   "name": "XLTW-Test-n2634",
+   "stats": {
+    "customers": 2633,
+    "capacity": 197,
+    "total_demand": 14531,
+    "max_demand": 10,
+    "horizon": 6174,
+    "service_min": 124,
+    "service_max": 309,
+    "width_min": 254,
+    "width_median": 2293,
+    "width_max": 6174,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2681.vrp",
+   "bytes": 145101,
+   "sha256": "fbf34559db5f1a7d8c78e8ae184cd54861d37ad7ef299768c235d498396f490b",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2681",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "135403"
+   },
+   "name": "XLTW-Test-n2681",
+   "stats": {
+    "customers": 2680,
+    "capacity": 135403,
+    "total_demand": 135403,
+    "max_demand": 100,
+    "horizon": 8312,
+    "service_min": 42,
+    "service_max": 415,
+    "width_min": 417,
+    "width_median": 628.0,
+    "width_max": 832,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2727.vrp",
+   "bytes": 147581,
+   "sha256": "ab228f4cf49d1980e635ea2c5988fba8e7cda73a7281a5a0a2f819c480e26759",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2727",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "43"
+   },
+   "name": "XLTW-Test-n2727",
+   "stats": {
+    "customers": 2726,
+    "capacity": 43,
+    "total_demand": 2726,
+    "max_demand": 1,
+    "horizon": 1821,
+    "service_min": 9,
+    "service_max": 18,
+    "width_min": 382,
+    "width_median": 726.0,
+    "width_max": 911,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2774.vrp",
+   "bytes": 150121,
+   "sha256": "3f0beeab61df44081e241abb7f5772f649a1b0206b42ba284bb9335b5c07ac0a",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2774",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1004"
+   },
+   "name": "XLTW-Test-n2774",
+   "stats": {
+    "customers": 2773,
+    "capacity": 1004,
+    "total_demand": 208524,
+    "max_demand": 100,
+    "horizon": 4355,
+    "service_min": 1,
+    "service_max": 87,
+    "width_min": 219,
+    "width_median": 403,
+    "width_max": 4355,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2821.vrp",
+   "bytes": 152660,
+   "sha256": "a09a523fa6654aa12f7b35d84a841d2c53fc7cb54158e64649e9449d33932811",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2821",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "37161"
+   },
+   "name": "XLTW-Test-n2821",
+   "stats": {
+    "customers": 2820,
+    "capacity": 37161,
+    "total_demand": 37161,
+    "max_demand": 100,
+    "horizon": 3194,
+    "service_min": 1,
+    "service_max": 160,
+    "width_min": 320,
+    "width_median": 725.0,
+    "width_max": 3194,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2867.vrp",
+   "bytes": 155144,
+   "sha256": "c2f0ce9251b4bdb39c8855d51bfacee4bc5d3c725c08272520fed0adb7ec9502",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2867",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "21556"
+   },
+   "name": "XLTW-Test-n2867",
+   "stats": {
+    "customers": 2866,
+    "capacity": 21556,
+    "total_demand": 21556,
+    "max_demand": 10,
+    "horizon": 9467,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 474,
+    "width_median": 1918.0,
+    "width_max": 4735,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2914.vrp",
+   "bytes": 157681,
+   "sha256": "648d0c7419afc3a59bd69eb7213fed6c67c17f0ed7f1708970116c91dc3007aa",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2914",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1004"
+   },
+   "name": "XLTW-Test-n2914",
+   "stats": {
+    "customers": 2913,
+    "capacity": 1004,
+    "total_demand": 157381,
+    "max_demand": 100,
+    "horizon": 1789,
+    "service_min": 36,
+    "service_max": 89,
+    "width_min": 388,
+    "width_median": 829,
+    "width_max": 1789,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n2961.vrp",
+   "bytes": 160218,
+   "sha256": "c6389c4675146f5e56eb3ca6bba1a4cd1634974a30fe13b19e7215bc8c19708a",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "2961",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "204"
+   },
+   "name": "XLTW-Test-n2961",
+   "stats": {
+    "customers": 2960,
+    "capacity": 204,
+    "total_demand": 16312,
+    "max_demand": 10,
+    "horizon": 11295,
+    "service_min": 113,
+    "service_max": 226,
+    "width_min": 566,
+    "width_median": 914.5,
+    "width_max": 11295,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3007.vrp",
+   "bytes": 162704,
+   "sha256": "5f9f3c191b27f4acee25c60d363e1f2b2e71a705a5b93d236d12edae3480faaa",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3007",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "16438"
+   },
+   "name": "XLTW-Test-n3007",
+   "stats": {
+    "customers": 3006,
+    "capacity": 16438,
+    "total_demand": 16438,
+    "max_demand": 10,
+    "horizon": 2251,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 113,
+    "width_median": 832.5,
+    "width_max": 2251,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3054.vrp",
+   "bytes": 165241,
+   "sha256": "e406540066e3b601dccf69624d8c9399bae8092ee7b678fd95bcdca7c567ea40",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3054",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2057"
+   },
+   "name": "XLTW-Test-n3054",
+   "stats": {
+    "customers": 3053,
+    "capacity": 2057,
+    "total_demand": 228926,
+    "max_demand": 100,
+    "horizon": 5628,
+    "service_min": 1,
+    "service_max": 56,
+    "width_min": 564,
+    "width_median": 1278,
+    "width_max": 5628,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3101.vrp",
+   "bytes": 167778,
+   "sha256": "629b88988e4e90c5d9f1c9845cc08622e5bd6d09c4b5a06d666c79b3453dd483",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3101",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "955"
+   },
+   "name": "XLTW-Test-n3101",
+   "stats": {
+    "customers": 3100,
+    "capacity": 955,
+    "total_demand": 49360,
+    "max_demand": 100,
+    "horizon": 5478,
+    "service_min": 27,
+    "service_max": 273,
+    "width_min": 276,
+    "width_median": 1074.0,
+    "width_max": 2740,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3147.vrp",
+   "bytes": 170264,
+   "sha256": "a8adc396d0d82521d18486d92d5fb0b4d69bf6a5a1943729df34148e4760b059",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3147",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "23563"
+   },
+   "name": "XLTW-Test-n3147",
+   "stats": {
+    "customers": 3146,
+    "capacity": 23563,
+    "total_demand": 23563,
+    "max_demand": 10,
+    "horizon": 8245,
+    "service_min": 41,
+    "service_max": 412,
+    "width_min": 1448,
+    "width_median": 3321.0,
+    "width_max": 8245,
+    "full_horizon_share": 0.1999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3194.vrp",
+   "bytes": 172800,
+   "sha256": "539ade5a887c0d8dfa582cf78225da787c81bbd54e71e24c577e5ff862bc608f",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3194",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "394"
+   },
+   "name": "XLTW-Test-n3194",
+   "stats": {
+    "customers": 3193,
+    "capacity": 394,
+    "total_demand": 162571,
+    "max_demand": 100,
+    "horizon": 2813,
+    "service_min": 1,
+    "service_max": 141,
+    "width_min": 141,
+    "width_median": 214,
+    "width_max": 283,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3241.vrp",
+   "bytes": 175339,
+   "sha256": "b4e2c810af892bdf0d3fc50436b4b5674160603c060faff093d4ba24f018bb84",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3241",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1175"
+   },
+   "name": "XLTW-Test-n3241",
+   "stats": {
+    "customers": 3240,
+    "capacity": 1175,
+    "total_demand": 160666,
+    "max_demand": 100,
+    "horizon": 3654,
+    "service_min": 1,
+    "service_max": 73,
+    "width_min": 367,
+    "width_median": 977.0,
+    "width_max": 3654,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3287.vrp",
+   "bytes": 177821,
+   "sha256": "8677918cd942e633b3c235285c6a34876d20235ce8a9b406a02783d62d5534dd",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3287",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "77"
+   },
+   "name": "XLTW-Test-n3287",
+   "stats": {
+    "customers": 3286,
+    "capacity": 77,
+    "total_demand": 3286,
+    "max_demand": 1,
+    "horizon": 2237,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 672,
+    "width_median": 896.0,
+    "width_max": 1120,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3334.vrp",
+   "bytes": 180360,
+   "sha256": "82019146da5dfafde0815a3737fdd42ab5d6a018afe66a2d6bbcb2e0fb9d7651",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3334",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "227"
+   },
+   "name": "XLTW-Test-n3334",
+   "stats": {
+    "customers": 3333,
+    "capacity": 227,
+    "total_demand": 18663,
+    "max_demand": 10,
+    "horizon": 8425,
+    "service_min": 42,
+    "service_max": 84,
+    "width_min": 844,
+    "width_median": 1894,
+    "width_max": 8425,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3408.vrp",
+   "bytes": 184359,
+   "sha256": "7210df325dd937aa153d07fe302dc90810c9b2736617a9523494922509a85bce",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3408",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "184725"
+   },
+   "name": "XLTW-Test-n3408",
+   "stats": {
+    "customers": 3407,
+    "capacity": 184725,
+    "total_demand": 184725,
+    "max_demand": 100,
+    "horizon": 3684,
+    "service_min": 74,
+    "service_max": 184,
+    "width_min": 185,
+    "width_median": 1427,
+    "width_max": 3684,
+    "full_horizon_share": 0.4001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3484.vrp",
+   "bytes": 188459,
+   "sha256": "3d5b5d007db583f1121d097eb36c484130419ece057fde725ba90123ca8ca084",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3484",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "44"
+   },
+   "name": "XLTW-Test-n3484",
+   "stats": {
+    "customers": 3483,
+    "capacity": 44,
+    "total_demand": 3483,
+    "max_demand": 1,
+    "horizon": 7513,
+    "service_min": 38,
+    "service_max": 75,
+    "width_min": 377,
+    "width_median": 691,
+    "width_max": 7513,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3561.vrp",
+   "bytes": 192619,
+   "sha256": "9c03309832059fa76d4b814c2e9a97a74bb7a7d3dccb80da7e528dc8e3b27cb3",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3561",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2915"
+   },
+   "name": "XLTW-Test-n3561",
+   "stats": {
+    "customers": 3560,
+    "capacity": 2915,
+    "total_demand": 178145,
+    "max_demand": 100,
+    "horizon": 5593,
+    "service_min": 56,
+    "service_max": 112,
+    "width_min": 1044,
+    "width_median": 2265.0,
+    "width_max": 5593,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3640.vrp",
+   "bytes": 196886,
+   "sha256": "80c673de30846e9ed0e3a10573f42f325e830365ca17acc89c1bdc35efea09af",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3640",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "27403"
+   },
+   "name": "XLTW-Test-n3640",
+   "stats": {
+    "customers": 3639,
+    "capacity": 27403,
+    "total_demand": 27403,
+    "max_demand": 10,
+    "horizon": 1964,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 99,
+    "width_median": 401,
+    "width_max": 982,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3721.vrp",
+   "bytes": 201258,
+   "sha256": "8fa9280923559f8912e6df5e05c92de1762fcebad5fd1f432f4919a6cdf66fd9",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3721",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "130"
+   },
+   "name": "XLTW-Test-n3721",
+   "stats": {
+    "customers": 3720,
+    "capacity": 130,
+    "total_demand": 28231,
+    "max_demand": 100,
+    "horizon": 5650,
+    "service_min": 1,
+    "service_max": 282,
+    "width_min": 283,
+    "width_median": 462.5,
+    "width_max": 5650,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3804.vrp",
+   "bytes": 205743,
+   "sha256": "08bc307f4635b0b5f695bd996d71730f8d17743b8fa5c8fc54267690c287961b",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3804",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "285694"
+   },
+   "name": "XLTW-Test-n3804",
+   "stats": {
+    "customers": 3803,
+    "capacity": 285694,
+    "total_demand": 285694,
+    "max_demand": 100,
+    "horizon": 5548,
+    "service_min": 28,
+    "service_max": 277,
+    "width_min": 490,
+    "width_median": 1100,
+    "width_max": 1664,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3888.vrp",
+   "bytes": 210276,
+   "sha256": "070f8da0474f864cfdddadc99d7065aca9bc161b83009564f9ddb02a89a672c0",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3888",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "580"
+   },
+   "name": "XLTW-Test-n3888",
+   "stats": {
+    "customers": 3887,
+    "capacity": 580,
+    "total_demand": 118153,
+    "max_demand": 100,
+    "horizon": 2810,
+    "service_min": 1,
+    "service_max": 28,
+    "width_min": 142,
+    "width_median": 1098,
+    "width_max": 2810,
+    "full_horizon_share": 0.4001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n3975.vrp",
+   "bytes": 214974,
+   "sha256": "e1c1a76994aaf3d00d6f4e1248ad075b17fe8317d0aa292806ea3f6cdda526e9",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "3975",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "314"
+   },
+   "name": "XLTW-Test-n3975",
+   "stats": {
+    "customers": 3974,
+    "capacity": 314,
+    "total_demand": 21980,
+    "max_demand": 10,
+    "horizon": 2239,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 225,
+    "width_median": 450.0,
+    "width_max": 673,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4063.vrp",
+   "bytes": 219727,
+   "sha256": "68f325fffb34499a22fd13e874512abaa29aadfb5fec17a4b14a1b80c7a51f03",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4063",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1515"
+   },
+   "name": "XLTW-Test-n4063",
+   "stats": {
+    "customers": 4062,
+    "capacity": 1515,
+    "total_demand": 206973,
+    "max_demand": 100,
+    "horizon": 8357,
+    "service_min": 84,
+    "service_max": 167,
+    "width_min": 419,
+    "width_median": 771.0,
+    "width_max": 8357,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4153.vrp",
+   "bytes": 224589,
+   "sha256": "8d256aa9e675f62e146d06629fe3512fa538c95bb1acc993e1c455f9f18a2a68",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4153",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "210614"
+   },
+   "name": "XLTW-Test-n4153",
+   "stats": {
+    "customers": 4152,
+    "capacity": 210614,
+    "total_demand": 210614,
+    "max_demand": 100,
+    "horizon": 3561,
+    "service_min": 71,
+    "service_max": 178,
+    "width_min": 950,
+    "width_median": 1476.5,
+    "width_max": 3561,
+    "full_horizon_share": 0.1999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4245.vrp",
+   "bytes": 229553,
+   "sha256": "38c2b55b49b17da15f47db22d420abf907d966333906b696daaa009d57d52d56",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4245",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "32"
+   },
+   "name": "XLTW-Test-n4245",
+   "stats": {
+    "customers": 4244,
+    "capacity": 32,
+    "total_demand": 4244,
+    "max_demand": 1,
+    "horizon": 6272,
+    "service_min": 125,
+    "service_max": 314,
+    "width_min": 629,
+    "width_median": 1409.5,
+    "width_max": 6272,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4340.vrp",
+   "bytes": 234687,
+   "sha256": "d4c799da4b8b171928bde3b3fc65de09ab137af4d3e97da1feffedb3863b19ca",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4340",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "326071"
+   },
+   "name": "XLTW-Test-n4340",
+   "stats": {
+    "customers": 4339,
+    "capacity": 326071,
+    "total_demand": 326071,
+    "max_demand": 100,
+    "horizon": 11233,
+    "service_min": 56,
+    "service_max": 112,
+    "width_min": 564,
+    "width_median": 2188,
+    "width_max": 5617,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4436.vrp",
+   "bytes": 239868,
+   "sha256": "55d4f381f5c300dda0e42bfb04ee0f61e6fbbb5b2672dae47fe63de21b6be620",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4436",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "620"
+   },
+   "name": "XLTW-Test-n4436",
+   "stats": {
+    "customers": 4435,
+    "capacity": 620,
+    "total_demand": 33264,
+    "max_demand": 10,
+    "horizon": 2799,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 841,
+    "width_median": 1300,
+    "width_max": 2799,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4535.vrp",
+   "bytes": 245215,
+   "sha256": "ca4f06e3d16366aadec294d1ad100c7631df0028f8094485b1d49dadcc0d2df8",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4535",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "4534"
+   },
+   "name": "XLTW-Test-n4535",
+   "stats": {
+    "customers": 4534,
+    "capacity": 4534,
+    "total_demand": 4534,
+    "max_demand": 1,
+    "horizon": 3342,
+    "service_min": 33,
+    "service_max": 67,
+    "width_min": 168,
+    "width_median": 270.5,
+    "width_max": 3342,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4635.vrp",
+   "bytes": 250615,
+   "sha256": "e55bd3c78a0cf3f1bfe72fa81bf81219d9fbd4c9552f1107b264c4f1b227a035",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4635",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1175"
+   },
+   "name": "XLTW-Test-n4635",
+   "stats": {
+    "customers": 4634,
+    "capacity": 1175,
+    "total_demand": 232234,
+    "max_demand": 100,
+    "horizon": 1798,
+    "service_min": 1,
+    "service_max": 90,
+    "width_min": 91,
+    "width_median": 703.5,
+    "width_max": 1798,
+    "full_horizon_share": 0.4001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4738.vrp",
+   "bytes": 256177,
+   "sha256": "783fdef466a690bef22a7006648d3041d09c55bc2265209325e97f02dd91f41d",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4738",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2409"
+   },
+   "name": "XLTW-Test-n4738",
+   "stats": {
+    "customers": 4737,
+    "capacity": 2409,
+    "total_demand": 242623,
+    "max_demand": 100,
+    "horizon": 8353,
+    "service_min": 42,
+    "service_max": 84,
+    "width_min": 1700,
+    "width_median": 3130,
+    "width_max": 4176,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4844.vrp",
+   "bytes": 261900,
+   "sha256": "99c63b874f19068fad361da298ac7d806546fd3eab341d156217e32c6dce191a",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4844",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "331"
+   },
+   "name": "XLTW-Test-n4844",
+   "stats": {
+    "customers": 4843,
+    "capacity": 331,
+    "total_demand": 60195,
+    "max_demand": 100,
+    "horizon": 3610,
+    "service_min": 36,
+    "service_max": 72,
+    "width_min": 181,
+    "width_median": 296,
+    "width_max": 3610,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n4951.vrp",
+   "bytes": 267679,
+   "sha256": "172c9c40d869990986eadbe800d701cf718ea41231edbee226dd380c94c11801",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "4951",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1759"
+   },
+   "name": "XLTW-Test-n4951",
+   "stats": {
+    "customers": 4950,
+    "capacity": 1759,
+    "total_demand": 373827,
+    "max_demand": 100,
+    "horizon": 11160,
+    "service_min": 223,
+    "service_max": 558,
+    "width_min": 1117,
+    "width_median": 2249.0,
+    "width_max": 3348,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5061.vrp",
+   "bytes": 273620,
+   "sha256": "acd8d58ffed932d4ddcd19ecfca59d3d47d421fffcb0d8d14758ef0cd29a75d7",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5061",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "37882"
+   },
+   "name": "XLTW-Test-n5061",
+   "stats": {
+    "customers": 5060,
+    "capacity": 37882,
+    "total_demand": 37882,
+    "max_demand": 10,
+    "horizon": 1737,
+    "service_min": 1,
+    "service_max": 87,
+    "width_min": 522,
+    "width_median": 789.0,
+    "width_max": 1737,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5174.vrp",
+   "bytes": 279720,
+   "sha256": "00d484c4e2e85eb1b83004ce1e2a8a31c8349b9cb5d292c22b0407989b18b685",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5174",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "747"
+   },
+   "name": "XLTW-Test-n5174",
+   "stats": {
+    "customers": 5173,
+    "capacity": 747,
+    "total_demand": 28574,
+    "max_demand": 10,
+    "horizon": 2766,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 222,
+    "width_median": 545,
+    "width_max": 831,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5288.vrp",
+   "bytes": 285879,
+   "sha256": "b871aca506031c7527be005d813c54e7224625ad18b251c159dfac51a2f2c760",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5288",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "396000"
+   },
+   "name": "XLTW-Test-n5288",
+   "stats": {
+    "customers": 5287,
+    "capacity": 396000,
+    "total_demand": 396000,
+    "max_demand": 100,
+    "horizon": 5588,
+    "service_min": 1,
+    "service_max": 56,
+    "width_min": 281,
+    "width_median": 2119,
+    "width_max": 5588,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5406.vrp",
+   "bytes": 292248,
+   "sha256": "140cfab305ba4b61132e03dee814118adcd3fbd0da31a0fc776d81164f989b0a",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5406",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "220"
+   },
+   "name": "XLTW-Test-n5406",
+   "stats": {
+    "customers": 5405,
+    "capacity": 220,
+    "total_demand": 29720,
+    "max_demand": 10,
+    "horizon": 3745,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 188,
+    "width_median": 305,
+    "width_max": 3745,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5526.vrp",
+   "bytes": 298727,
+   "sha256": "f96e2963f739ca9babed6731deadd62d482f31903b56b991dc1d7751ccdd9402",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5526",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "16"
+   },
+   "name": "XLTW-Test-n5526",
+   "stats": {
+    "customers": 5525,
+    "capacity": 16,
+    "total_demand": 5525,
+    "max_demand": 1,
+    "horizon": 1823,
+    "service_min": 1,
+    "service_max": 91,
+    "width_min": 92,
+    "width_median": 360,
+    "width_max": 913,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5649.vrp",
+   "bytes": 305370,
+   "sha256": "c078db48548f77faaab36f98d82a6d55769b458fa3b2146afbaa18eb685dfbbf",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5649",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "274"
+   },
+   "name": "XLTW-Test-n5649",
+   "stats": {
+    "customers": 5648,
+    "capacity": 274,
+    "total_demand": 72520,
+    "max_demand": 100,
+    "horizon": 8378,
+    "service_min": 168,
+    "service_max": 419,
+    "width_min": 420,
+    "width_median": 768.0,
+    "width_max": 8378,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5774.vrp",
+   "bytes": 312123,
+   "sha256": "c2f72adda28a81cef26c56f7197ae216127961640c95ee0d49520df2287e2a44",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5774",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "293128"
+   },
+   "name": "XLTW-Test-n5774",
+   "stats": {
+    "customers": 5773,
+    "capacity": 293128,
+    "total_demand": 293128,
+    "max_demand": 100,
+    "horizon": 5633,
+    "service_min": 56,
+    "service_max": 113,
+    "width_min": 1071,
+    "width_median": 2244,
+    "width_max": 5633,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n5902.vrp",
+   "bytes": 319035,
+   "sha256": "663a6b2e80d42a39d41157b116c47862860fa1fbcd659959a2b8167651f63f77",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "5902",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "322278"
+   },
+   "name": "XLTW-Test-n5902",
+   "stats": {
+    "customers": 5901,
+    "capacity": 322278,
+    "total_demand": 322278,
+    "max_demand": 100,
+    "horizon": 11278,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 1130,
+    "width_median": 2966,
+    "width_max": 11278,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6034.vrp",
+   "bytes": 326160,
+   "sha256": "dffaf6748a6872fb7c75ee146f284cf790f7eea98e77f6d2cc8d28737dd4cab1",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6034",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "440"
+   },
+   "name": "XLTW-Test-n6034",
+   "stats": {
+    "customers": 6033,
+    "capacity": 440,
+    "total_demand": 45381,
+    "max_demand": 10,
+    "horizon": 2645,
+    "service_min": 13,
+    "service_max": 26,
+    "width_min": 449,
+    "width_median": 1082,
+    "width_max": 2645,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6168.vrp",
+   "bytes": 333397,
+   "sha256": "8cc10691f1b3ac1d71897ed1fd223575ee89d6019e21a1ef0093408ef8d95ecb",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6168",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2111"
+   },
+   "name": "XLTW-Test-n6168",
+   "stats": {
+    "customers": 6167,
+    "capacity": 2111,
+    "total_demand": 311256,
+    "max_demand": 100,
+    "horizon": 4233,
+    "service_min": 42,
+    "service_max": 85,
+    "width_min": 213,
+    "width_median": 844,
+    "width_max": 2117,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6305.vrp",
+   "bytes": 340797,
+   "sha256": "2c2ffe84db14338f8019cd9239eb04d05803e8d8b44e95fa537cde805f4f1a11",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6305",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "279153"
+   },
+   "name": "XLTW-Test-n6305",
+   "stats": {
+    "customers": 6304,
+    "capacity": 279153,
+    "total_demand": 279153,
+    "max_demand": 100,
+    "horizon": 2829,
+    "service_min": 14,
+    "service_max": 141,
+    "width_min": 142,
+    "width_median": 211.0,
+    "width_max": 284,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6445.vrp",
+   "bytes": 348354,
+   "sha256": "f73ebea1b81a92df8174afff04fd82c39605740b5ff3c2c1add057fc1fceff6d",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6445",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "107"
+   },
+   "name": "XLTW-Test-n6445",
+   "stats": {
+    "customers": 6444,
+    "capacity": 107,
+    "total_demand": 48344,
+    "max_demand": 10,
+    "horizon": 5633,
+    "service_min": 1,
+    "service_max": 282,
+    "width_min": 564,
+    "width_median": 1263.0,
+    "width_max": 5633,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6588.vrp",
+   "bytes": 356076,
+   "sha256": "31562c22ae439e220ea2a90e127e4dd13a5db62641237c7d3c889590950fd3a3",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6588",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "417"
+   },
+   "name": "XLTW-Test-n6588",
+   "stats": {
+    "customers": 6587,
+    "capacity": 417,
+    "total_demand": 35916,
+    "max_demand": 10,
+    "horizon": 5448,
+    "service_min": 27,
+    "service_max": 272,
+    "width_min": 1321,
+    "width_median": 2425,
+    "width_max": 5448,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6734.vrp",
+   "bytes": 363961,
+   "sha256": "39a435ea2ff9e49ef6f5dde6f2949fb9371a077f4d8e17631cf08e42b3ccdc26",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6734",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "3119"
+   },
+   "name": "XLTW-Test-n6734",
+   "stats": {
+    "customers": 6733,
+    "capacity": 3119,
+    "total_demand": 506020,
+    "max_demand": 100,
+    "horizon": 4344,
+    "service_min": 1,
+    "service_max": 43,
+    "width_min": 435,
+    "width_median": 864,
+    "width_max": 1304,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n6884.vrp",
+   "bytes": 372062,
+   "sha256": "646c5ac4bc281b1a527e0bb2dc103a904ccecc7030d548b2814be7b16a880b27",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "6884",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "52819"
+   },
+   "name": "XLTW-Test-n6884",
+   "stats": {
+    "customers": 6883,
+    "capacity": 52819,
+    "total_demand": 52819,
+    "max_demand": 100,
+    "horizon": 3330,
+    "service_min": 33,
+    "service_max": 67,
+    "width_min": 167,
+    "width_median": 272,
+    "width_max": 3330,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n7037.vrp",
+   "bytes": 380321,
+   "sha256": "c027cb425267d139694f841161f9c2fcfc1a2c9f4f4697bd8730e803612eacb1",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "7037",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "12"
+   },
+   "name": "XLTW-Test-n7037",
+   "stats": {
+    "customers": 7036,
+    "capacity": 12,
+    "total_demand": 7036,
+    "max_demand": 1,
+    "horizon": 1834,
+    "service_min": 1,
+    "service_max": 92,
+    "width_min": 93,
+    "width_median": 703.0,
+    "width_max": 1834,
+    "full_horizon_share": 0.3999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n7193.vrp",
+   "bytes": 388747,
+   "sha256": "fb3a843ffc4e3af67bd27d538fa854bcdaebf91f594916cf9a926e8be1af4c73",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "7193",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1055"
+   },
+   "name": "XLTW-Test-n7193",
+   "stats": {
+    "customers": 7192,
+    "capacity": 1055,
+    "total_demand": 53834,
+    "max_demand": 10,
+    "horizon": 8433,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 422,
+    "width_median": 687.0,
+    "width_max": 8433,
+    "full_horizon_share": 0.1999,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n7353.vrp",
+   "bytes": 397385,
+   "sha256": "add089b6d3cce0fa0ec9f4e0eb7fe2d69ca636b4a982b9a5262416445d7b7806",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "7353",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "87"
+   },
+   "name": "XLTW-Test-n7353",
+   "stats": {
+    "customers": 7352,
+    "capacity": 87,
+    "total_demand": 7352,
+    "max_demand": 1,
+    "horizon": 6460,
+    "service_min": 32,
+    "service_max": 65,
+    "width_min": 1939,
+    "width_median": 2525.0,
+    "width_max": 3231,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n7516.vrp",
+   "bytes": 406191,
+   "sha256": "dd74d133ceeb6036bf124fdcf77ee4662efb280e0a9f45f269c866b03ef9e54a",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "7516",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "376717"
+   },
+   "name": "XLTW-Test-n7516",
+   "stats": {
+    "customers": 7515,
+    "capacity": 376717,
+    "total_demand": 376717,
+    "max_demand": 100,
+    "horizon": 5332,
+    "service_min": 27,
+    "service_max": 267,
+    "width_min": 534,
+    "width_median": 1431,
+    "width_max": 5332,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n7683.vrp",
+   "bytes": 415207,
+   "sha256": "fd9395b382f427da93b4415e361d44d1ca267d8da09264a22e888f31a3b2470a",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "7683",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2149"
+   },
+   "name": "XLTW-Test-n7683",
+   "stats": {
+    "customers": 7682,
+    "capacity": 2149,
+    "total_demand": 576083,
+    "max_demand": 100,
+    "horizon": 3474,
+    "service_min": 1,
+    "service_max": 69,
+    "width_min": 175,
+    "width_median": 676.5,
+    "width_max": 1737,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n7854.vrp",
+   "bytes": 424442,
+   "sha256": "21686d7c2f4ea73507eab27909cbccf285f32f45fc3aef5d95c69245703a1e60",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "7854",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "81287"
+   },
+   "name": "XLTW-Test-n7854",
+   "stats": {
+    "customers": 7853,
+    "capacity": 81287,
+    "total_demand": 81287,
+    "max_demand": 100,
+    "horizon": 2943,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 295,
+    "width_median": 670,
+    "width_max": 2943,
+    "full_horizon_share": 0.2001,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n8028.vrp",
+   "bytes": 433836,
+   "sha256": "9648cd29fd60ef38b9d54313d0c5de8966c66ad50f6d8ee2a32a62689792bdd6",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "8028",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "507"
+   },
+   "name": "XLTW-Test-n8028",
+   "stats": {
+    "customers": 8027,
+    "capacity": 507,
+    "total_demand": 406997,
+    "max_demand": 100,
+    "horizon": 2797,
+    "service_min": 1,
+    "service_max": 140,
+    "width_min": 140,
+    "width_median": 257,
+    "width_max": 2797,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n8207.vrp",
+   "bytes": 443502,
+   "sha256": "b595b6d3d9ebbb5099b19e386b98327c20a8cb3449543778864d669f08bd8adc",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "8207",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "179"
+   },
+   "name": "XLTW-Test-n8207",
+   "stats": {
+    "customers": 8206,
+    "capacity": 179,
+    "total_demand": 44803,
+    "max_demand": 10,
+    "horizon": 2240,
+    "service_min": 1,
+    "service_max": 22,
+    "width_min": 624,
+    "width_median": 1023.0,
+    "width_max": 2240,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n8389.vrp",
+   "bytes": 453331,
+   "sha256": "856337f2c4eab44177fa4dd138b09fb089ef754642337a83f3245fdf43f10d80",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "8389",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2611"
+   },
+   "name": "XLTW-Test-n8389",
+   "stats": {
+    "customers": 8388,
+    "capacity": 2611,
+    "total_demand": 421786,
+    "max_demand": 100,
+    "horizon": 11261,
+    "service_min": 225,
+    "service_max": 563,
+    "width_min": 361,
+    "width_median": 2982.5,
+    "width_max": 11261,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n8575.vrp",
+   "bytes": 463376,
+   "sha256": "bf332a3d508a2ae87749309a8af64b7f642af2d7975345e3a7c809f9add73faf",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "8575",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "46662"
+   },
+   "name": "XLTW-Test-n8575",
+   "stats": {
+    "customers": 8574,
+    "capacity": 46662,
+    "total_demand": 46662,
+    "max_demand": 10,
+    "horizon": 5141,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 258,
+    "width_median": 996.5,
+    "width_max": 2571,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n8766.vrp",
+   "bytes": 473689,
+   "sha256": "7433ca0b241e21e15c4647325f445df9ff1efa4eda9903c5222fc2c5929e609d",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "8766",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "1522"
+   },
+   "name": "XLTW-Test-n8766",
+   "stats": {
+    "customers": 8765,
+    "capacity": 1522,
+    "total_demand": 656774,
+    "max_demand": 100,
+    "horizon": 2351,
+    "service_min": 1,
+    "service_max": 118,
+    "width_min": 706,
+    "width_median": 966,
+    "width_max": 2351,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n8960.vrp",
+   "bytes": 484166,
+   "sha256": "c78a23aadd326c9aa7dc085e6b72a26fce682ada2c392d06f68ace11d8339d4c",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "8960",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "67151"
+   },
+   "name": "XLTW-Test-n8960",
+   "stats": {
+    "customers": 8959,
+    "capacity": 67151,
+    "total_demand": 67151,
+    "max_demand": 10,
+    "horizon": 5462,
+    "service_min": 55,
+    "service_max": 109,
+    "width_min": 418,
+    "width_median": 1079,
+    "width_max": 1640,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n9160.vrp",
+   "bytes": 494964,
+   "sha256": "00866f4ef38ee0efa018601f0305d7ed5471d61269962c017690f13e3213619b",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "9160",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "368"
+   },
+   "name": "XLTW-Test-n9160",
+   "stats": {
+    "customers": 9159,
+    "capacity": 368,
+    "total_demand": 89689,
+    "max_demand": 100,
+    "horizon": 5650,
+    "service_min": 28,
+    "service_max": 282,
+    "width_min": 283,
+    "width_median": 519,
+    "width_max": 5650,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n9363.vrp",
+   "bytes": 505925,
+   "sha256": "94437c4b30fb354af8973032945a2fd187c71d02a1b1d7026c5cf8b26bcdd581",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "9363",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "45"
+   },
+   "name": "XLTW-Test-n9363",
+   "stats": {
+    "customers": 9362,
+    "capacity": 45,
+    "total_demand": 9362,
+    "max_demand": 1,
+    "horizon": 2249,
+    "service_min": 1,
+    "service_max": 1,
+    "width_min": 226,
+    "width_median": 449.0,
+    "width_max": 676,
+    "full_horizon_share": 0.0,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n9571.vrp",
+   "bytes": 517159,
+   "sha256": "0c45b387b5f2036a60c3d8f524299f8bfd862e95bf65d0046e3495cd5f310c74",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "9571",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "2670"
+   },
+   "name": "XLTW-Test-n9571",
+   "stats": {
+    "customers": 9570,
+    "capacity": 2670,
+    "total_demand": 480640,
+    "max_demand": 100,
+    "horizon": 6845,
+    "service_min": 68,
+    "service_max": 137,
+    "width_min": 224,
+    "width_median": 626.0,
+    "width_max": 6845,
+    "full_horizon_share": 0.4,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  },
+  {
+   "path": "XLTW-Test-n9784.vrp",
+   "bytes": 528662,
+   "sha256": "db969920e3f8a8b0ebda071b2061a620b13f9fa52ab114d49721ab9254f094c7",
+   "kind": "instance",
+   "keys": [
+    "NAME",
+    "COMMENT",
+    "TYPE",
+    "DIMENSION",
+    "EDGE_WEIGHT_TYPE",
+    "CAPACITY"
+   ],
+   "sections": [
+    "NODE_COORD_SECTION",
+    "DEMAND_SECTION",
+    "SERVICE_TIME_SECTION",
+    "TIME_WINDOW_SECTION",
+    "DEPOT_SECTION"
+   ],
+   "values": {
+    "TYPE": "VRPTW",
+    "DIMENSION": "9784",
+    "EDGE_WEIGHT_TYPE": "EUC_2D",
+    "CAPACITY": "52700"
+   },
+   "name": "XLTW-Test-n9784",
+   "stats": {
+    "customers": 9783,
+    "capacity": 52700,
+    "total_demand": 52700,
+    "max_demand": 10,
+    "horizon": 5220,
+    "service_min": 104,
+    "service_max": 261,
+    "width_min": 1567,
+    "width_median": 2134,
+    "width_max": 5220,
+    "full_horizon_share": 0.2,
+    "integer_coords": true,
+    "header_vehicles": null
+   }
+  }
+ ]
+}

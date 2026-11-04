@@ -1,0 +1,5179 @@
+{
+ "archive": {
+  "Content-Length": "3754859",
+  "Last-Modified": "Mon, 02 Nov 2026 17:40:09 GMT",
+  "ETag": "\"6ae8caf9-394b6b\"",
+  "Content-Type": "application/x-7z-compressed",
+  "url": "https://galgos.inf.puc-rio.br/cvrplib/uploads/files/vrptw_challenge/XLTW-Test.7z",
+  "bytes": 3754859,
+  "sha256": "9635b9fa813ea34ff3f35842f80a40ce6764d14c27cf2e13e5fbf1de623f4631",
+  "read_at": "2026-11-02T19:37:33Z"
+ },
+ "convs": [
+  "round",
+  "double",
+  "dimacs"
+ ],
+ "challenge_conv": "round",
+ "instances": [
+  {
+   "path": "XLTW-Test-n1048.vrp",
+   "instance": "XLTW-Test-n1048",
+   "bounds": {
+    "customers": 1047,
+    "capacity": 28486,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0009,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0009,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0009,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.291,
+   "elapsed_s": 0.2
+  },
+  {
+   "path": "XLTW-Test-n1094.vrp",
+   "instance": "XLTW-Test-n1094",
+   "bounds": {
+    "customers": 1093,
+    "capacity": 12,
+    "kc": 92,
+    "kb": 92,
+    "round": {
+     "kt": 18,
+     "k": 92,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0876,
+     "seconds": [
+      0.0,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 18,
+     "k": 92,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0878,
+     "seconds": [
+      0.0,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 18,
+     "k": 92,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0877,
+     "seconds": [
+      0.0,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.291,
+   "elapsed_s": 0.6
+  },
+  {
+   "path": "XLTW-Test-n1141.vrp",
+   "instance": "XLTW-Test-n1141",
+   "bounds": {
+    "customers": 1140,
+    "capacity": 2586,
+    "kc": 33,
+    "kb": 33,
+    "round": {
+     "kt": 5,
+     "k": 33,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0534,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 5,
+     "k": 33,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0536,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 33,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0535,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.292,
+   "elapsed_s": 0.8
+  },
+  {
+   "path": "XLTW-Test-n1188.vrp",
+   "instance": "XLTW-Test-n1188",
+   "bounds": {
+    "customers": 1187,
+    "capacity": 2363,
+    "kc": 32,
+    "kb": 32,
+    "round": {
+     "kt": 11,
+     "k": 32,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1207,
+     "seconds": [
+      0.0,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 11,
+     "k": 32,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1209,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 32,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1208,
+     "seconds": [
+      0.0,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.293,
+   "elapsed_s": 1.1
+  },
+  {
+   "path": "XLTW-Test-n1234.vrp",
+   "instance": "XLTW-Test-n1234",
+   "bounds": {
+    "customers": 1233,
+    "capacity": 6820,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 7,
+     "k": 7,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0038,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 7,
+     "k": 7,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0038,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 7,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0038,
+     "seconds": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.294,
+   "elapsed_s": 1.2
+  },
+  {
+   "path": "XLTW-Test-n1281.vrp",
+   "instance": "XLTW-Test-n1281",
+   "bounds": {
+    "customers": 1280,
+    "capacity": 708,
+    "kc": 90,
+    "kb": 90,
+    "round": {
+     "kt": 132,
+     "k": 132,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3955,
+     "seconds": [
+      0.0,
+      3.1,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 195,
+     "k": 195,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3966,
+     "seconds": [
+      0.1,
+      5.5,
+      0.2
+     ]
+    },
+    "dimacs": {
+     "kt": 174,
+     "k": 174,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3964,
+     "seconds": [
+      0.1,
+      6.7,
+      0.4
+     ]
+    }
+   },
+   "peak_gb": 0.295,
+   "elapsed_s": 17.6
+  },
+  {
+   "path": "XLTW-Test-n1328.vrp",
+   "instance": "XLTW-Test-n1328",
+   "bounds": {
+    "customers": 1327,
+    "capacity": 154,
+    "kc": 65,
+    "kb": 65,
+    "round": {
+     "kt": 3,
+     "k": 65,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 65,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 65,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.296,
+   "elapsed_s": 17.9
+  },
+  {
+   "path": "XLTW-Test-n1374.vrp",
+   "instance": "XLTW-Test-n1374",
+   "bounds": {
+    "customers": 1373,
+    "capacity": 2873,
+    "kc": 24,
+    "kb": 24,
+    "round": {
+     "kt": 4,
+     "k": 24,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0015,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 24,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0015,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 24,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0015,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.296,
+   "elapsed_s": 18.4
+  },
+  {
+   "path": "XLTW-Test-n1421.vrp",
+   "instance": "XLTW-Test-n1421",
+   "bounds": {
+    "customers": 1420,
+    "capacity": 71485,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1121,
+     "seconds": [
+      0.1,
+      0.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1123,
+     "seconds": [
+      0.1,
+      0.2,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1122,
+     "seconds": [
+      0.1,
+      0.2,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.297,
+   "elapsed_s": 19.3
+  },
+  {
+   "path": "XLTW-Test-n1468.vrp",
+   "instance": "XLTW-Test-n1468",
+   "bounds": {
+    "customers": 1467,
+    "capacity": 2784,
+    "kc": 40,
+    "kb": 40,
+    "round": {
+     "kt": 2,
+     "k": 40,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 40,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 40,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.298,
+   "elapsed_s": 19.8
+  },
+  {
+   "path": "XLTW-Test-n1514.vrp",
+   "instance": "XLTW-Test-n1514",
+   "bounds": {
+    "customers": 1513,
+    "capacity": 11282,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1224,
+     "seconds": [
+      0.2,
+      0.4,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1227,
+     "seconds": [
+      0.1,
+      0.4,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1226,
+     "seconds": [
+      0.1,
+      0.4,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.299,
+   "elapsed_s": 21.5
+  },
+  {
+   "path": "XLTW-Test-n1561.vrp",
+   "instance": "XLTW-Test-n1561",
+   "bounds": {
+    "customers": 1560,
+    "capacity": 28,
+    "kc": 56,
+    "kb": 56,
+    "round": {
+     "kt": 37,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0673,
+     "seconds": [
+      0.1,
+      0.7,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 37,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0675,
+     "seconds": [
+      0.1,
+      0.7,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 37,
+     "k": 56,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0674,
+     "seconds": [
+      0.1,
+      0.7,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.3,
+   "elapsed_s": 24.0
+  },
+  {
+   "path": "XLTW-Test-n1608.vrp",
+   "instance": "XLTW-Test-n1608",
+   "bounds": {
+    "customers": 1607,
+    "capacity": 12837,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 7,
+     "k": 7,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0788,
+     "seconds": [
+      0.1,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 7,
+     "k": 7,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.079,
+     "seconds": [
+      0.1,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 7,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.079,
+     "seconds": [
+      0.1,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.301,
+   "elapsed_s": 24.7
+  },
+  {
+   "path": "XLTW-Test-n1654.vrp",
+   "instance": "XLTW-Test-n1654",
+   "bounds": {
+    "customers": 1653,
+    "capacity": 132,
+    "kc": 69,
+    "kb": 69,
+    "round": {
+     "kt": 4,
+     "k": 69,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 69,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 69,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0004,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.301,
+   "elapsed_s": 25.3
+  },
+  {
+   "path": "XLTW-Test-n1701.vrp",
+   "instance": "XLTW-Test-n1701",
+   "bounds": {
+    "customers": 1700,
+    "capacity": 3953,
+    "kc": 33,
+    "kb": 33,
+    "round": {
+     "kt": 5,
+     "k": 33,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0115,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 5,
+     "k": 33,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0116,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 33,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0115,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.302,
+   "elapsed_s": 25.7
+  },
+  {
+   "path": "XLTW-Test-n1748.vrp",
+   "instance": "XLTW-Test-n1748",
+   "bounds": {
+    "customers": 1747,
+    "capacity": 511,
+    "kc": 143,
+    "kb": 143,
+    "round": {
+     "kt": 142,
+     "k": 143,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1235,
+     "seconds": [
+      0.1,
+      0.8,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 157,
+     "k": 157,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1237,
+     "seconds": [
+      0.1,
+      0.8,
+      0.2
+     ]
+    },
+    "dimacs": {
+     "kt": 151,
+     "k": 151,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1236,
+     "seconds": [
+      0.1,
+      0.8,
+      0.2
+     ]
+    }
+   },
+   "peak_gb": 0.303,
+   "elapsed_s": 28.9
+  },
+  {
+   "path": "XLTW-Test-n1794.vrp",
+   "instance": "XLTW-Test-n1794",
+   "bounds": {
+    "customers": 1793,
+    "capacity": 10,
+    "kc": 180,
+    "kb": 180,
+    "round": {
+     "kt": 142,
+     "k": 180,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4266,
+     "seconds": [
+      0.1,
+      6.5,
+      0.2
+     ]
+    },
+    "double": {
+     "kt": 146,
+     "k": 180,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4269,
+     "seconds": [
+      0.1,
+      6.3,
+      0.2
+     ]
+    },
+    "dimacs": {
+     "kt": 146,
+     "k": 180,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.4269,
+     "seconds": [
+      0.1,
+      7.6,
+      0.2
+     ]
+    }
+   },
+   "peak_gb": 0.304,
+   "elapsed_s": 50.1
+  },
+  {
+   "path": "XLTW-Test-n1841.vrp",
+   "instance": "XLTW-Test-n1841",
+   "bounds": {
+    "customers": 1840,
+    "capacity": 23315,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0021,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0021,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0021,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.305,
+   "elapsed_s": 50.6
+  },
+  {
+   "path": "XLTW-Test-n1888.vrp",
+   "instance": "XLTW-Test-n1888",
+   "bounds": {
+    "customers": 1887,
+    "capacity": 452,
+    "kc": 32,
+    "kb": 32,
+    "round": {
+     "kt": 7,
+     "k": 32,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0096,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 7,
+     "k": 32,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0097,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 7,
+     "k": 32,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0097,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.306,
+   "elapsed_s": 51.1
+  },
+  {
+   "path": "XLTW-Test-n1934.vrp",
+   "instance": "XLTW-Test-n1934",
+   "bounds": {
+    "customers": 1933,
+    "capacity": 99313,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.307,
+   "elapsed_s": 51.6
+  },
+  {
+   "path": "XLTW-Test-n1981.vrp",
+   "instance": "XLTW-Test-n1981",
+   "bounds": {
+    "customers": 1980,
+    "capacity": 152,
+    "kc": 71,
+    "kb": 71,
+    "round": {
+     "kt": 26,
+     "k": 71,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2817,
+     "seconds": [
+      0.1,
+      1.8,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 27,
+     "k": 71,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2822,
+     "seconds": [
+      0.1,
+      1.6,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 27,
+     "k": 71,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2821,
+     "seconds": [
+      0.1,
+      1.6,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.307,
+   "elapsed_s": 56.9
+  },
+  {
+   "path": "XLTW-Test-n2028.vrp",
+   "instance": "XLTW-Test-n2028",
+   "bounds": {
+    "customers": 2027,
+    "capacity": 152288,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0141,
+     "seconds": [
+      0.1,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0141,
+     "seconds": [
+      0.1,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0141,
+     "seconds": [
+      0.1,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.308,
+   "elapsed_s": 57.5
+  },
+  {
+   "path": "XLTW-Test-n2074.vrp",
+   "instance": "XLTW-Test-n2074",
+   "bounds": {
+    "customers": 2073,
+    "capacity": 1998,
+    "kc": 53,
+    "kb": 53,
+    "round": {
+     "kt": 22,
+     "k": 53,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0282,
+     "seconds": [
+      0.2,
+      0.3,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 22,
+     "k": 53,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0282,
+     "seconds": [
+      0.1,
+      0.3,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 53,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0282,
+     "seconds": [
+      0.2,
+      0.3,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.309,
+   "elapsed_s": 58.9
+  },
+  {
+   "path": "XLTW-Test-n2121.vrp",
+   "instance": "XLTW-Test-n2121",
+   "bounds": {
+    "customers": 2120,
+    "capacity": 686,
+    "kc": 17,
+    "kb": 17,
+    "round": {
+     "kt": 4,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.31,
+   "elapsed_s": 59.5
+  },
+  {
+   "path": "XLTW-Test-n2168.vrp",
+   "instance": "XLTW-Test-n2168",
+   "bounds": {
+    "customers": 2167,
+    "capacity": 1642,
+    "kc": 68,
+    "kb": 68,
+    "round": {
+     "kt": 24,
+     "k": 68,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.147,
+     "seconds": [
+      0.2,
+      0.4,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 24,
+     "k": 68,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1473,
+     "seconds": [
+      0.1,
+      0.4,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 24,
+     "k": 68,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1472,
+     "seconds": [
+      0.2,
+      0.5,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.311,
+   "elapsed_s": 61.3
+  },
+  {
+   "path": "XLTW-Test-n2214.vrp",
+   "instance": "XLTW-Test-n2214",
+   "bounds": {
+    "customers": 2213,
+    "capacity": 2213,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 13,
+     "k": 13,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0099,
+     "seconds": [
+      0.2,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 13,
+     "k": 13,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0099,
+     "seconds": [
+      0.2,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 13,
+     "k": 13,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0099,
+     "seconds": [
+      0.2,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.312,
+   "elapsed_s": 62.2
+  },
+  {
+   "path": "XLTW-Test-n2261.vrp",
+   "instance": "XLTW-Test-n2261",
+   "bounds": {
+    "customers": 2260,
+    "capacity": 283,
+    "kc": 60,
+    "kb": 60,
+    "round": {
+     "kt": 50,
+     "k": 60,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.073,
+     "seconds": [
+      0.2,
+      1.4,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 56,
+     "k": 60,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0732,
+     "seconds": [
+      0.2,
+      1.7,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 55,
+     "k": 60,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0732,
+     "seconds": [
+      0.2,
+      1.6,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.313,
+   "elapsed_s": 67.5
+  },
+  {
+   "path": "XLTW-Test-n2307.vrp",
+   "instance": "XLTW-Test-n2307",
+   "bounds": {
+    "customers": 2306,
+    "capacity": 387,
+    "kc": 41,
+    "kb": 41,
+    "round": {
+     "kt": 2,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.314,
+   "elapsed_s": 68.1
+  },
+  {
+   "path": "XLTW-Test-n2354.vrp",
+   "instance": "XLTW-Test-n2354",
+   "bounds": {
+    "customers": 2353,
+    "capacity": 275,
+    "kc": 65,
+    "kb": 65,
+    "round": {
+     "kt": 2,
+     "k": 65,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 65,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002,
+     "seconds": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 65,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.315,
+   "elapsed_s": 68.7
+  },
+  {
+   "path": "XLTW-Test-n2401.vrp",
+   "instance": "XLTW-Test-n2401",
+   "bounds": {
+    "customers": 2400,
+    "capacity": 123539,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 111,
+     "k": 111,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2379,
+     "seconds": [
+      0.2,
+      12.5,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 111,
+     "k": 111,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2382,
+     "seconds": [
+      0.2,
+      13.4,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 111,
+     "k": 111,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2381,
+     "seconds": [
+      0.3,
+      11.8,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.316,
+   "elapsed_s": 107.3
+  },
+  {
+   "path": "XLTW-Test-n2447.vrp",
+   "instance": "XLTW-Test-n2447",
+   "bounds": {
+    "customers": 2446,
+    "capacity": 331,
+    "kc": 131,
+    "kb": 131,
+    "round": {
+     "kt": 31,
+     "k": 131,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1681,
+     "seconds": [
+      0.2,
+      1.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 31,
+     "k": 131,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1684,
+     "seconds": [
+      0.2,
+      1.4,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 31,
+     "k": 131,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1684,
+     "seconds": [
+      0.2,
+      1.4,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.316,
+   "elapsed_s": 111.8
+  },
+  {
+   "path": "XLTW-Test-n2494.vrp",
+   "instance": "XLTW-Test-n2494",
+   "bounds": {
+    "customers": 2493,
+    "capacity": 3543,
+    "kc": 37,
+    "kb": 37,
+    "round": {
+     "kt": 43,
+     "k": 43,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0267,
+     "seconds": [
+      0.2,
+      0.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 46,
+     "k": 46,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0269,
+     "seconds": [
+      0.2,
+      0.3,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 46,
+     "k": 46,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0268,
+     "seconds": [
+      0.2,
+      0.3,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.317,
+   "elapsed_s": 113.3
+  },
+  {
+   "path": "XLTW-Test-n2541.vrp",
+   "instance": "XLTW-Test-n2541",
+   "bounds": {
+    "customers": 2540,
+    "capacity": 2540,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 91,
+     "k": 91,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.076,
+     "seconds": [
+      0.2,
+      1.8,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 101,
+     "k": 101,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0761,
+     "seconds": [
+      0.2,
+      1.9,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 100,
+     "k": 100,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0761,
+     "seconds": [
+      0.2,
+      2.1,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.318,
+   "elapsed_s": 120.0
+  },
+  {
+   "path": "XLTW-Test-n2587.vrp",
+   "instance": "XLTW-Test-n2587",
+   "bounds": {
+    "customers": 2586,
+    "capacity": 4843,
+    "kc": 41,
+    "kb": 41,
+    "round": {
+     "kt": 4,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.319,
+   "elapsed_s": 120.8
+  },
+  {
+   "path": "XLTW-Test-n2634.vrp",
+   "instance": "XLTW-Test-n2634",
+   "bounds": {
+    "customers": 2633,
+    "capacity": 197,
+    "kc": 74,
+    "kb": 74,
+    "round": {
+     "kt": 22,
+     "k": 74,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0046,
+     "seconds": [
+      0.2,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 22,
+     "k": 74,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0047,
+     "seconds": [
+      0.2,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 22,
+     "k": 74,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0047,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.32,
+   "elapsed_s": 121.7
+  },
+  {
+   "path": "XLTW-Test-n2681.vrp",
+   "instance": "XLTW-Test-n2681",
+   "bounds": {
+    "customers": 2680,
+    "capacity": 135403,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 17,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0549,
+     "seconds": [
+      0.2,
+      0.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 17,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.055,
+     "seconds": [
+      0.2,
+      0.2,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 17,
+     "k": 17,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.055,
+     "seconds": [
+      0.3,
+      0.2,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.321,
+   "elapsed_s": 123.1
+  },
+  {
+   "path": "XLTW-Test-n2727.vrp",
+   "instance": "XLTW-Test-n2727",
+   "bounds": {
+    "customers": 2726,
+    "capacity": 43,
+    "kc": 64,
+    "kb": 64,
+    "round": {
+     "kt": 6,
+     "k": 64,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1738,
+     "seconds": [
+      0.2,
+      0.7,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 6,
+     "k": 64,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1741,
+     "seconds": [
+      0.3,
+      0.6,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 64,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.174,
+     "seconds": [
+      0.2,
+      0.5,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.322,
+   "elapsed_s": 125.6
+  },
+  {
+   "path": "XLTW-Test-n2774.vrp",
+   "instance": "XLTW-Test-n2774",
+   "bounds": {
+    "customers": 2773,
+    "capacity": 1004,
+    "kc": 208,
+    "kb": 208,
+    "round": {
+     "kt": 125,
+     "k": 208,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.075,
+     "seconds": [
+      0.3,
+      4.4,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 125,
+     "k": 208,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0751,
+     "seconds": [
+      0.3,
+      4.4,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 125,
+     "k": 208,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.075,
+     "seconds": [
+      0.3,
+      4.5,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.323,
+   "elapsed_s": 140.1
+  },
+  {
+   "path": "XLTW-Test-n2821.vrp",
+   "instance": "XLTW-Test-n2821",
+   "bounds": {
+    "customers": 2820,
+    "capacity": 37161,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 84,
+     "k": 84,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1393,
+     "seconds": [
+      0.3,
+      7.0,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 84,
+     "k": 84,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1394,
+     "seconds": [
+      0.3,
+      6.2,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 84,
+     "k": 84,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1394,
+     "seconds": [
+      0.3,
+      6.3,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.324,
+   "elapsed_s": 160.6
+  },
+  {
+   "path": "XLTW-Test-n2867.vrp",
+   "instance": "XLTW-Test-n2867",
+   "bounds": {
+    "customers": 2866,
+    "capacity": 21556,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0045,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0045,
+     "seconds": [
+      0.2,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0045,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.325,
+   "elapsed_s": 161.5
+  },
+  {
+   "path": "XLTW-Test-n2914.vrp",
+   "instance": "XLTW-Test-n2914",
+   "bounds": {
+    "customers": 2913,
+    "capacity": 1004,
+    "kc": 157,
+    "kb": 157,
+    "round": {
+     "kt": 9,
+     "k": 157,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1264,
+     "seconds": [
+      0.4,
+      0.9,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 9,
+     "k": 157,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1267,
+     "seconds": [
+      0.3,
+      0.9,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 157,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1266,
+     "seconds": [
+      0.3,
+      0.9,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.326,
+   "elapsed_s": 165.1
+  },
+  {
+   "path": "XLTW-Test-n2961.vrp",
+   "instance": "XLTW-Test-n2961",
+   "bounds": {
+    "customers": 2960,
+    "capacity": 204,
+    "kc": 80,
+    "kb": 80,
+    "round": {
+     "kt": 6,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0129,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 6,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0129,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 6,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0129,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.327,
+   "elapsed_s": 166.2
+  },
+  {
+   "path": "XLTW-Test-n3007.vrp",
+   "instance": "XLTW-Test-n3007",
+   "bounds": {
+    "customers": 3006,
+    "capacity": 16438,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 158,
+     "k": 158,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1486,
+     "seconds": [
+      0.3,
+      11.4,
+      0.2
+     ]
+    },
+    "double": {
+     "kt": 186,
+     "k": 186,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1488,
+     "seconds": [
+      0.2,
+      14.2,
+      0.2
+     ]
+    },
+    "dimacs": {
+     "kt": 179,
+     "k": 179,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1488,
+     "seconds": [
+      0.4,
+      12.8,
+      0.3
+     ]
+    }
+   },
+   "peak_gb": 0.328,
+   "elapsed_s": 206.2
+  },
+  {
+   "path": "XLTW-Test-n3054.vrp",
+   "instance": "XLTW-Test-n3054",
+   "bounds": {
+    "customers": 3053,
+    "capacity": 2057,
+    "kc": 112,
+    "kb": 112,
+    "round": {
+     "kt": 10,
+     "k": 112,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0097,
+     "seconds": [
+      0.4,
+      0.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 10,
+     "k": 112,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0097,
+     "seconds": [
+      0.4,
+      0.2,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 112,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0097,
+     "seconds": [
+      0.3,
+      0.2,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.329,
+   "elapsed_s": 207.8
+  },
+  {
+   "path": "XLTW-Test-n3101.vrp",
+   "instance": "XLTW-Test-n3101",
+   "bounds": {
+    "customers": 3100,
+    "capacity": 955,
+    "kc": 52,
+    "kb": 52,
+    "round": {
+     "kt": 14,
+     "k": 52,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0139,
+     "seconds": [
+      0.4,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 14,
+     "k": 52,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0139,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 14,
+     "k": 52,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0139,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.33,
+   "elapsed_s": 209.0
+  },
+  {
+   "path": "XLTW-Test-n3147.vrp",
+   "instance": "XLTW-Test-n3147",
+   "bounds": {
+    "customers": 3146,
+    "capacity": 23563,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 1,
+     "k": 1,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.4,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 1,
+     "k": 1,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 1,
+     "k": 1,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.4,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.331,
+   "elapsed_s": 210.1
+  },
+  {
+   "path": "XLTW-Test-n3194.vrp",
+   "instance": "XLTW-Test-n3194",
+   "bounds": {
+    "customers": 3193,
+    "capacity": 394,
+    "kc": 413,
+    "kb": 413,
+    "round": {
+     "kt": 226,
+     "k": 413,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3858,
+     "seconds": [
+      0.3,
+      38.0,
+      0.7
+     ]
+    },
+    "double": {
+     "kt": 227,
+     "k": 413,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3861,
+     "seconds": [
+      0.5,
+      35.6,
+      0.3
+     ]
+    },
+    "dimacs": {
+     "kt": 227,
+     "k": 413,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.386,
+     "seconds": [
+      0.4,
+      31.7,
+      0.4
+     ]
+    }
+   },
+   "peak_gb": 0.332,
+   "elapsed_s": 318.0
+  },
+  {
+   "path": "XLTW-Test-n3241.vrp",
+   "instance": "XLTW-Test-n3241",
+   "bounds": {
+    "customers": 3240,
+    "capacity": 1175,
+    "kc": 137,
+    "kb": 137,
+    "round": {
+     "kt": 151,
+     "k": 151,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0604,
+     "seconds": [
+      0.3,
+      7.3,
+      0.2
+     ]
+    },
+    "double": {
+     "kt": 151,
+     "k": 151,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0605,
+     "seconds": [
+      0.2,
+      9.4,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 151,
+     "k": 151,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0605,
+     "seconds": [
+      0.3,
+      8.8,
+      0.2
+     ]
+    }
+   },
+   "peak_gb": 0.333,
+   "elapsed_s": 344.8
+  },
+  {
+   "path": "XLTW-Test-n3287.vrp",
+   "instance": "XLTW-Test-n3287",
+   "bounds": {
+    "customers": 3286,
+    "capacity": 77,
+    "kc": 43,
+    "kb": 43,
+    "round": {
+     "kt": 3,
+     "k": 43,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0326,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 43,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0328,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 43,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0328,
+     "seconds": [
+      0.4,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.334,
+   "elapsed_s": 346.1
+  },
+  {
+   "path": "XLTW-Test-n3334.vrp",
+   "instance": "XLTW-Test-n3334",
+   "bounds": {
+    "customers": 3333,
+    "capacity": 227,
+    "kc": 83,
+    "kb": 83,
+    "round": {
+     "kt": 4,
+     "k": 83,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002,
+     "seconds": [
+      0.4,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 83,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 83,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0002,
+     "seconds": [
+      0.4,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.335,
+   "elapsed_s": 347.3
+  },
+  {
+   "path": "XLTW-Test-n3408.vrp",
+   "instance": "XLTW-Test-n3408",
+   "bounds": {
+    "customers": 3407,
+    "capacity": 184725,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 41,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.04,
+     "seconds": [
+      0.3,
+      0.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 41,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0401,
+     "seconds": [
+      0.3,
+      0.3,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 41,
+     "k": 41,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0401,
+     "seconds": [
+      0.4,
+      0.2,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.336,
+   "elapsed_s": 349.0
+  },
+  {
+   "path": "XLTW-Test-n3484.vrp",
+   "instance": "XLTW-Test-n3484",
+   "bounds": {
+    "customers": 3483,
+    "capacity": 44,
+    "kc": 80,
+    "kb": 80,
+    "round": {
+     "kt": 5,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0134,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 5,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0134,
+     "seconds": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 80,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0134,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.338,
+   "elapsed_s": 350.2
+  },
+  {
+   "path": "XLTW-Test-n3561.vrp",
+   "instance": "XLTW-Test-n3561",
+   "bounds": {
+    "customers": 3560,
+    "capacity": 2915,
+    "kc": 62,
+    "kb": 62,
+    "round": {
+     "kt": 2,
+     "k": 62,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.4,
+      0.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 62,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.3,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 62,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.4,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.34,
+   "elapsed_s": 351.5
+  },
+  {
+   "path": "XLTW-Test-n3640.vrp",
+   "instance": "XLTW-Test-n3640",
+   "bounds": {
+    "customers": 3639,
+    "capacity": 27403,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 243,
+     "k": 243,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3234,
+     "seconds": [
+      0.4,
+      34.4,
+      0.4
+     ]
+    },
+    "double": {
+     "kt": 333,
+     "k": 333,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.324,
+     "seconds": [
+      0.4,
+      51.3,
+      0.6
+     ]
+    },
+    "dimacs": {
+     "kt": 317,
+     "k": 317,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3239,
+     "seconds": [
+      0.4,
+      54.8,
+      0.8
+     ]
+    }
+   },
+   "peak_gb": 0.341,
+   "elapsed_s": 495.0
+  },
+  {
+   "path": "XLTW-Test-n3721.vrp",
+   "instance": "XLTW-Test-n3721",
+   "bounds": {
+    "customers": 3720,
+    "capacity": 130,
+    "kc": 218,
+    "kb": 218,
+    "round": {
+     "kt": 134,
+     "k": 218,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0902,
+     "seconds": [
+      0.5,
+      2.3,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 191,
+     "k": 218,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0903,
+     "seconds": [
+      0.4,
+      2.9,
+      0.2
+     ]
+    },
+    "dimacs": {
+     "kt": 177,
+     "k": 218,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0903,
+     "seconds": [
+      0.6,
+      2.8,
+      0.2
+     ]
+    }
+   },
+   "peak_gb": 0.343,
+   "elapsed_s": 505.3
+  },
+  {
+   "path": "XLTW-Test-n3804.vrp",
+   "instance": "XLTW-Test-n3804",
+   "bounds": {
+    "customers": 3803,
+    "capacity": 285694,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 10,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0101,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 10,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0102,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 10,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0102,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.345,
+   "elapsed_s": 507.3
+  },
+  {
+   "path": "XLTW-Test-n3888.vrp",
+   "instance": "XLTW-Test-n3888",
+   "bounds": {
+    "customers": 3887,
+    "capacity": 580,
+    "kc": 204,
+    "kb": 204,
+    "round": {
+     "kt": 460,
+     "k": 460,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0969,
+     "seconds": [
+      0.5,
+      13.7,
+      1.6
+     ]
+    },
+    "double": {
+     "kt": 507,
+     "k": 507,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0972,
+     "seconds": [
+      0.4,
+      18.6,
+      1.7
+     ]
+    },
+    "dimacs": {
+     "kt": 465,
+     "k": 465,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0971,
+     "seconds": [
+      0.4,
+      18.0,
+      1.7
+     ]
+    }
+   },
+   "peak_gb": 0.347,
+   "elapsed_s": 564.0
+  },
+  {
+   "path": "XLTW-Test-n3975.vrp",
+   "instance": "XLTW-Test-n3975",
+   "bounds": {
+    "customers": 3974,
+    "capacity": 314,
+    "kc": 70,
+    "kb": 70,
+    "round": {
+     "kt": 50,
+     "k": 70,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2473,
+     "seconds": [
+      0.5,
+      7.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 56,
+     "k": 70,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2477,
+     "seconds": [
+      0.5,
+      8.5,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 56,
+     "k": 70,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2476,
+     "seconds": [
+      0.6,
+      8.3,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.349,
+   "elapsed_s": 589.5
+  },
+  {
+   "path": "XLTW-Test-n4063.vrp",
+   "instance": "XLTW-Test-n4063",
+   "bounds": {
+    "customers": 4062,
+    "capacity": 1515,
+    "kc": 137,
+    "kb": 137,
+    "round": {
+     "kt": 9,
+     "k": 137,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0122,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 9,
+     "k": 137,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0122,
+     "seconds": [
+      0.4,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 137,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0122,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.351,
+   "elapsed_s": 591.3
+  },
+  {
+   "path": "XLTW-Test-n4153.vrp",
+   "instance": "XLTW-Test-n4153",
+   "bounds": {
+    "customers": 4152,
+    "capacity": 210614,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 5,
+     "k": 5,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0036,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 5,
+     "k": 5,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0036,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 5,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0036,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.353,
+   "elapsed_s": 593.1
+  },
+  {
+   "path": "XLTW-Test-n4245.vrp",
+   "instance": "XLTW-Test-n4245",
+   "bounds": {
+    "customers": 4244,
+    "capacity": 32,
+    "kc": 133,
+    "kb": 133,
+    "round": {
+     "kt": 10,
+     "k": 133,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 10,
+     "k": 133,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 10,
+     "k": 133,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0095,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.355,
+   "elapsed_s": 595.2
+  },
+  {
+   "path": "XLTW-Test-n4340.vrp",
+   "instance": "XLTW-Test-n4340",
+   "bounds": {
+    "customers": 4339,
+    "capacity": 326071,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001,
+     "seconds": [
+      0.5,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.001,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.357,
+   "elapsed_s": 597.2
+  },
+  {
+   "path": "XLTW-Test-n4436.vrp",
+   "instance": "XLTW-Test-n4436",
+   "bounds": {
+    "customers": 4435,
+    "capacity": 620,
+    "kc": 54,
+    "kb": 54,
+    "round": {
+     "kt": 4,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0053,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0053,
+     "seconds": [
+      0.5,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 54,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0053,
+     "seconds": [
+      0.6,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.36,
+   "elapsed_s": 599.1
+  },
+  {
+   "path": "XLTW-Test-n4535.vrp",
+   "instance": "XLTW-Test-n4535",
+   "bounds": {
+    "customers": 4534,
+    "capacity": 4534,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1252,
+     "seconds": [
+      0.6,
+      1.3,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1254,
+     "seconds": [
+      0.7,
+      1.5,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1254,
+     "seconds": [
+      0.8,
+      1.7,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.362,
+   "elapsed_s": 605.8
+  },
+  {
+   "path": "XLTW-Test-n4635.vrp",
+   "instance": "XLTW-Test-n4635",
+   "bounds": {
+    "customers": 4634,
+    "capacity": 1175,
+    "kc": 198,
+    "kb": 198,
+    "round": {
+     "kt": 201,
+     "k": 201,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2269,
+     "seconds": [
+      0.8,
+      31.4,
+      0.3
+     ]
+    },
+    "double": {
+     "kt": 206,
+     "k": 206,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2272,
+     "seconds": [
+      0.7,
+      29.4,
+      0.4
+     ]
+    },
+    "dimacs": {
+     "kt": 208,
+     "k": 208,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2271,
+     "seconds": [
+      0.8,
+      30.1,
+      0.3
+     ]
+    }
+   },
+   "peak_gb": 0.364,
+   "elapsed_s": 700.1
+  },
+  {
+   "path": "XLTW-Test-n4738.vrp",
+   "instance": "XLTW-Test-n4738",
+   "bounds": {
+    "customers": 4737,
+    "capacity": 2409,
+    "kc": 101,
+    "kb": 101,
+    "round": {
+     "kt": 2,
+     "k": 101,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.7,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 101,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.7,
+      0.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 101,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      0.7,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.367,
+   "elapsed_s": 702.4
+  },
+  {
+   "path": "XLTW-Test-n4844.vrp",
+   "instance": "XLTW-Test-n4844",
+   "bounds": {
+    "customers": 4843,
+    "capacity": 331,
+    "kc": 182,
+    "kb": 182,
+    "round": {
+     "kt": 23,
+     "k": 182,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1474,
+     "seconds": [
+      0.7,
+      1.5,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 23,
+     "k": 182,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1476,
+     "seconds": [
+      0.7,
+      1.5,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 23,
+     "k": 182,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1475,
+     "seconds": [
+      0.7,
+      1.4,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.369,
+   "elapsed_s": 709.0
+  },
+  {
+   "path": "XLTW-Test-n4951.vrp",
+   "instance": "XLTW-Test-n4951",
+   "bounds": {
+    "customers": 4950,
+    "capacity": 1759,
+    "kc": 213,
+    "kb": 213,
+    "round": {
+     "kt": 3,
+     "k": 213,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.8,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 213,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.7,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 213,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0001,
+     "seconds": [
+      0.7,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.372,
+   "elapsed_s": 711.4
+  },
+  {
+   "path": "XLTW-Test-n5061.vrp",
+   "instance": "XLTW-Test-n5061",
+   "bounds": {
+    "customers": 5060,
+    "capacity": 37882,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 38,
+     "k": 38,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0686,
+     "seconds": [
+      0.8,
+      2.9,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 38,
+     "k": 38,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0688,
+     "seconds": [
+      0.7,
+      2.9,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 38,
+     "k": 38,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0687,
+     "seconds": [
+      0.7,
+      2.9,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.375,
+   "elapsed_s": 722.4
+  },
+  {
+   "path": "XLTW-Test-n5174.vrp",
+   "instance": "XLTW-Test-n5174",
+   "bounds": {
+    "customers": 5173,
+    "capacity": 747,
+    "kc": 39,
+    "kb": 39,
+    "round": {
+     "kt": 9,
+     "k": 39,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.047,
+     "seconds": [
+      0.9,
+      0.4,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 9,
+     "k": 39,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0471,
+     "seconds": [
+      0.9,
+      0.4,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 9,
+     "k": 39,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0471,
+     "seconds": [
+      0.8,
+      0.4,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.378,
+   "elapsed_s": 726.3
+  },
+  {
+   "path": "XLTW-Test-n5288.vrp",
+   "instance": "XLTW-Test-n5288",
+   "bounds": {
+    "customers": 5287,
+    "capacity": 396000,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 77,
+     "k": 77,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0133,
+     "seconds": [
+      0.8,
+      1.1,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 78,
+     "k": 78,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0134,
+     "seconds": [
+      0.9,
+      1.0,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 78,
+     "k": 78,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0133,
+     "seconds": [
+      0.9,
+      1.0,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.381,
+   "elapsed_s": 732.2
+  },
+  {
+   "path": "XLTW-Test-n5406.vrp",
+   "instance": "XLTW-Test-n5406",
+   "bounds": {
+    "customers": 5405,
+    "capacity": 220,
+    "kc": 136,
+    "kb": 136,
+    "round": {
+     "kt": 115,
+     "k": 136,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1616,
+     "seconds": [
+      0.9,
+      26.4,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 168,
+     "k": 168,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1619,
+     "seconds": [
+      0.9,
+      38.8,
+      0.2
+     ]
+    },
+    "dimacs": {
+     "kt": 158,
+     "k": 158,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1618,
+     "seconds": [
+      1.1,
+      35.7,
+      0.2
+     ]
+    }
+   },
+   "peak_gb": 0.384,
+   "elapsed_s": 836.5
+  },
+  {
+   "path": "XLTW-Test-n5526.vrp",
+   "instance": "XLTW-Test-n5526",
+   "bounds": {
+    "customers": 5525,
+    "capacity": 16,
+    "kc": 346,
+    "kb": 346,
+    "round": {
+     "kt": 216,
+     "k": 346,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2172,
+     "seconds": [
+      0.9,
+      76.9,
+      0.4
+     ]
+    },
+    "double": {
+     "kt": 262,
+     "k": 346,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2177,
+     "seconds": [
+      0.9,
+      89.5,
+      0.4
+     ]
+    },
+    "dimacs": {
+     "kt": 238,
+     "k": 346,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2176,
+     "seconds": [
+      1.0,
+      84.8,
+      0.4
+     ]
+    }
+   },
+   "peak_gb": 0.387,
+   "elapsed_s": 1091.8
+  },
+  {
+   "path": "XLTW-Test-n5649.vrp",
+   "instance": "XLTW-Test-n5649",
+   "bounds": {
+    "customers": 5648,
+    "capacity": 274,
+    "kc": 265,
+    "kb": 265,
+    "round": {
+     "kt": 29,
+     "k": 265,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0771,
+     "seconds": [
+      1.0,
+      1.5,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 29,
+     "k": 265,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0772,
+     "seconds": [
+      1.0,
+      1.6,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 28,
+     "k": 265,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0772,
+     "seconds": [
+      1.0,
+      1.6,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.39,
+   "elapsed_s": 1099.4
+  },
+  {
+   "path": "XLTW-Test-n5774.vrp",
+   "instance": "XLTW-Test-n5774",
+   "bounds": {
+    "customers": 5773,
+    "capacity": 293128,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.2,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.0,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.3,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.394,
+   "elapsed_s": 1103.1
+  },
+  {
+   "path": "XLTW-Test-n5902.vrp",
+   "instance": "XLTW-Test-n5902",
+   "bounds": {
+    "customers": 5901,
+    "capacity": 322278,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.2,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.0,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 3,
+     "k": 3,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.1,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.397,
+   "elapsed_s": 1106.8
+  },
+  {
+   "path": "XLTW-Test-n6034.vrp",
+   "instance": "XLTW-Test-n6034",
+   "bounds": {
+    "customers": 6033,
+    "capacity": 440,
+    "kc": 104,
+    "kb": 104,
+    "round": {
+     "kt": 4,
+     "k": 104,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007,
+     "seconds": [
+      1.3,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 104,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007,
+     "seconds": [
+      1.2,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 104,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0007,
+     "seconds": [
+      1.3,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.401,
+   "elapsed_s": 1110.9
+  },
+  {
+   "path": "XLTW-Test-n6168.vrp",
+   "instance": "XLTW-Test-n6168",
+   "bounds": {
+    "customers": 6167,
+    "capacity": 2111,
+    "kc": 148,
+    "kb": 148,
+    "round": {
+     "kt": 19,
+     "k": 148,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0698,
+     "seconds": [
+      1.2,
+      1.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 19,
+     "k": 148,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.07,
+     "seconds": [
+      1.2,
+      1.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 19,
+     "k": 148,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0699,
+     "seconds": [
+      1.3,
+      1.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.404,
+   "elapsed_s": 1118.1
+  },
+  {
+   "path": "XLTW-Test-n6305.vrp",
+   "instance": "XLTW-Test-n6305",
+   "bounds": {
+    "customers": 6304,
+    "capacity": 279153,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 79,
+     "k": 79,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3359,
+     "seconds": [
+      1.3,
+      16.7,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 79,
+     "k": 79,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3363,
+     "seconds": [
+      1.1,
+      17.9,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 79,
+     "k": 79,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3362,
+     "seconds": [
+      1.5,
+      19.2,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.408,
+   "elapsed_s": 1176.0
+  },
+  {
+   "path": "XLTW-Test-n6445.vrp",
+   "instance": "XLTW-Test-n6445",
+   "bounds": {
+    "customers": 6444,
+    "capacity": 107,
+    "kc": 452,
+    "kb": 452,
+    "round": {
+     "kt": 91,
+     "k": 452,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0412,
+     "seconds": [
+      1.6,
+      15.4,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 91,
+     "k": 452,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0412,
+     "seconds": [
+      1.4,
+      15.8,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 90,
+     "k": 452,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0412,
+     "seconds": [
+      1.6,
+      16.5,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.412,
+   "elapsed_s": 1228.6
+  },
+  {
+   "path": "XLTW-Test-n6588.vrp",
+   "instance": "XLTW-Test-n6588",
+   "bounds": {
+    "customers": 6587,
+    "capacity": 417,
+    "kc": 87,
+    "kb": 87,
+    "round": {
+     "kt": 2,
+     "k": 87,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.5,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 87,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.4,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 87,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.4,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.416,
+   "elapsed_s": 1233.3
+  },
+  {
+   "path": "XLTW-Test-n6734.vrp",
+   "instance": "XLTW-Test-n6734",
+   "bounds": {
+    "customers": 6733,
+    "capacity": 3119,
+    "kc": 163,
+    "kb": 163,
+    "round": {
+     "kt": 38,
+     "k": 163,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0502,
+     "seconds": [
+      1.5,
+      6.2,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 39,
+     "k": 163,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0503,
+     "seconds": [
+      1.5,
+      5.9,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 39,
+     "k": 163,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0502,
+     "seconds": [
+      1.8,
+      6.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.42,
+   "elapsed_s": 1256.5
+  },
+  {
+   "path": "XLTW-Test-n6884.vrp",
+   "instance": "XLTW-Test-n6884",
+   "bounds": {
+    "customers": 6883,
+    "capacity": 52819,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1319,
+     "seconds": [
+      1.8,
+      3.0,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1321,
+     "seconds": [
+      1.5,
+      3.0,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 16,
+     "k": 16,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.132,
+     "seconds": [
+      1.7,
+      3.2,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.424,
+   "elapsed_s": 1270.8
+  },
+  {
+   "path": "XLTW-Test-n7037.vrp",
+   "instance": "XLTW-Test-n7037",
+   "bounds": {
+    "customers": 7036,
+    "capacity": 12,
+    "kc": 587,
+    "kb": 587,
+    "round": {
+     "kt": 298,
+     "k": 587,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3132,
+     "seconds": [
+      1.8,
+      55.8,
+      0.8
+     ]
+    },
+    "double": {
+     "kt": 337,
+     "k": 587,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3136,
+     "seconds": [
+      1.6,
+      54.4,
+      0.7
+     ]
+    },
+    "dimacs": {
+     "kt": 329,
+     "k": 587,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.3135,
+     "seconds": [
+      1.5,
+      54.2,
+      0.7
+     ]
+    }
+   },
+   "peak_gb": 0.429,
+   "elapsed_s": 1442.4
+  },
+  {
+   "path": "XLTW-Test-n7193.vrp",
+   "instance": "XLTW-Test-n7193",
+   "bounds": {
+    "customers": 7192,
+    "capacity": 1055,
+    "kc": 52,
+    "kb": 52,
+    "round": {
+     "kt": 5,
+     "k": 52,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0081,
+     "seconds": [
+      1.7,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 5,
+     "k": 52,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0081,
+     "seconds": [
+      1.5,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 52,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0081,
+     "seconds": [
+      1.9,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.433,
+   "elapsed_s": 1448.0
+  },
+  {
+   "path": "XLTW-Test-n7353.vrp",
+   "instance": "XLTW-Test-n7353",
+   "bounds": {
+    "customers": 7352,
+    "capacity": 87,
+    "kc": 85,
+    "kb": 85,
+    "round": {
+     "kt": 2,
+     "k": 85,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.7,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 2,
+     "k": 85,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.6,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 2,
+     "k": 85,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0,
+     "seconds": [
+      1.8,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.438,
+   "elapsed_s": 1453.3
+  },
+  {
+   "path": "XLTW-Test-n7516.vrp",
+   "instance": "XLTW-Test-n7516",
+   "bounds": {
+    "customers": 7515,
+    "capacity": 376717,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011,
+     "seconds": [
+      1.6,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011,
+     "seconds": [
+      1.4,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011,
+     "seconds": [
+      1.7,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.442,
+   "elapsed_s": 1458.5
+  },
+  {
+   "path": "XLTW-Test-n7683.vrp",
+   "instance": "XLTW-Test-n7683",
+   "bounds": {
+    "customers": 7682,
+    "capacity": 2149,
+    "kc": 269,
+    "kb": 269,
+    "round": {
+     "kt": 136,
+     "k": 269,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1247,
+     "seconds": [
+      1.9,
+      45.8,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 150,
+     "k": 269,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1249,
+     "seconds": [
+      1.8,
+      48.8,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 147,
+     "k": 269,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1249,
+     "seconds": [
+      1.9,
+      47.8,
+      0.2
+     ]
+    }
+   },
+   "peak_gb": 0.447,
+   "elapsed_s": 1606.9
+  },
+  {
+   "path": "XLTW-Test-n7854.vrp",
+   "instance": "XLTW-Test-n7854",
+   "bounds": {
+    "customers": 7853,
+    "capacity": 81287,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003,
+     "seconds": [
+      2.1,
+      0.1,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003,
+     "seconds": [
+      1.8,
+      0.1,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 4,
+     "k": 4,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0003,
+     "seconds": [
+      2.1,
+      0.1,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.453,
+   "elapsed_s": 1613.4
+  },
+  {
+   "path": "XLTW-Test-n8028.vrp",
+   "instance": "XLTW-Test-n8028",
+   "bounds": {
+    "customers": 8027,
+    "capacity": 507,
+    "kc": 803,
+    "kb": 803,
+    "round": {
+     "kt": 171,
+     "k": 803,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.1498,
+     "seconds": [
+      2.0,
+      13.6,
+      0.3
+     ]
+    },
+    "double": {
+     "kt": 172,
+     "k": 803,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.15,
+     "seconds": [
+      1.9,
+      12.5,
+      0.3
+     ]
+    },
+    "dimacs": {
+     "kt": 172,
+     "k": 803,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.15,
+     "seconds": [
+      2.6,
+      14.2,
+      0.3
+     ]
+    }
+   },
+   "peak_gb": 0.458,
+   "elapsed_s": 1661.2
+  },
+  {
+   "path": "XLTW-Test-n8207.vrp",
+   "instance": "XLTW-Test-n8207",
+   "bounds": {
+    "customers": 8206,
+    "capacity": 179,
+    "kc": 251,
+    "kb": 251,
+    "round": {
+     "kt": 11,
+     "k": 251,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0302,
+     "seconds": [
+      3.1,
+      0.7,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 11,
+     "k": 251,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0303,
+     "seconds": [
+      2.5,
+      0.8,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 251,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0303,
+     "seconds": [
+      3.1,
+      0.7,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.478,
+   "elapsed_s": 1672.3
+  },
+  {
+   "path": "XLTW-Test-n8389.vrp",
+   "instance": "XLTW-Test-n8389",
+   "bounds": {
+    "customers": 8388,
+    "capacity": 2611,
+    "kc": 162,
+    "kb": 162,
+    "round": {
+     "kt": 72,
+     "k": 162,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0025,
+     "seconds": [
+      3.2,
+      0.5,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 72,
+     "k": 162,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0025,
+     "seconds": [
+      2.5,
+      0.5,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 72,
+     "k": 162,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0025,
+     "seconds": [
+      3.0,
+      0.5,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.482,
+   "elapsed_s": 1682.7
+  },
+  {
+   "path": "XLTW-Test-n8575.vrp",
+   "instance": "XLTW-Test-n8575",
+   "bounds": {
+    "customers": 8574,
+    "capacity": 46662,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 11,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0297,
+     "seconds": [
+      3.0,
+      0.7,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 11,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0297,
+     "seconds": [
+      2.8,
+      0.6,
+      0.0
+     ]
+    },
+    "dimacs": {
+     "kt": 11,
+     "k": 11,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0297,
+     "seconds": [
+      3.2,
+      0.6,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.485,
+   "elapsed_s": 1693.8
+  },
+  {
+   "path": "XLTW-Test-n8766.vrp",
+   "instance": "XLTW-Test-n8766",
+   "bounds": {
+    "customers": 8765,
+    "capacity": 1522,
+    "kc": 432,
+    "kb": 432,
+    "round": {
+     "kt": 45,
+     "k": 432,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0807,
+     "seconds": [
+      3.1,
+      22.9,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 45,
+     "k": 432,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0809,
+     "seconds": [
+      2.8,
+      20.9,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 45,
+     "k": 432,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0808,
+     "seconds": [
+      3.4,
+      23.9,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.501,
+   "elapsed_s": 1771.1
+  },
+  {
+   "path": "XLTW-Test-n8960.vrp",
+   "instance": "XLTW-Test-n8960",
+   "bounds": {
+    "customers": 8959,
+    "capacity": 67151,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 5,
+     "k": 5,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0044,
+     "seconds": [
+      3.5,
+      0.2,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 5,
+     "k": 5,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0044,
+     "seconds": [
+      3.6,
+      0.3,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 5,
+     "k": 5,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0044,
+     "seconds": [
+      4.3,
+      0.2,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.505,
+   "elapsed_s": 1783.4
+  },
+  {
+   "path": "XLTW-Test-n9160.vrp",
+   "instance": "XLTW-Test-n9160",
+   "bounds": {
+    "customers": 9159,
+    "capacity": 368,
+    "kc": 244,
+    "kb": 244,
+    "round": {
+     "kt": 28,
+     "k": 244,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0529,
+     "seconds": [
+      3.7,
+      3.0,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 28,
+     "k": 244,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.053,
+     "seconds": [
+      3.3,
+      2.8,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 28,
+     "k": 244,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0529,
+     "seconds": [
+      4.4,
+      3.0,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.525,
+   "elapsed_s": 1803.8
+  },
+  {
+   "path": "XLTW-Test-n9363.vrp",
+   "instance": "XLTW-Test-n9363",
+   "bounds": {
+    "customers": 9362,
+    "capacity": 45,
+    "kc": 209,
+    "kb": 209,
+    "round": {
+     "kt": 253,
+     "k": 253,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2349,
+     "seconds": [
+      6.8,
+      209.9,
+      0.6
+     ]
+    },
+    "double": {
+     "kt": 408,
+     "k": 408,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2354,
+     "seconds": [
+      3.5,
+      259.6,
+      1.2
+     ]
+    },
+    "dimacs": {
+     "kt": 363,
+     "k": 363,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.2353,
+     "seconds": [
+      4.4,
+      219.1,
+      1.1
+     ]
+    }
+   },
+   "peak_gb": 0.529,
+   "elapsed_s": 2510.1
+  },
+  {
+   "path": "XLTW-Test-n9571.vrp",
+   "instance": "XLTW-Test-n9571",
+   "bounds": {
+    "customers": 9570,
+    "capacity": 2670,
+    "kc": 181,
+    "kb": 181,
+    "round": {
+     "kt": 12,
+     "k": 181,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0215,
+     "seconds": [
+      4.4,
+      0.5,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 12,
+     "k": 181,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0216,
+     "seconds": [
+      4.3,
+      0.5,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 12,
+     "k": 181,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0216,
+     "seconds": [
+      4.4,
+      0.4,
+      0.0
+     ]
+    }
+   },
+   "peak_gb": 0.534,
+   "elapsed_s": 2524.8
+  },
+  {
+   "path": "XLTW-Test-n9784.vrp",
+   "instance": "XLTW-Test-n9784",
+   "bounds": {
+    "customers": 9783,
+    "capacity": 52700,
+    "kc": 1,
+    "kb": 1,
+    "round": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011,
+     "seconds": [
+      3.9,
+      0.3,
+      0.0
+     ]
+    },
+    "double": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011,
+     "seconds": [
+      3.7,
+      0.3,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 8,
+     "k": 8,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0011,
+     "seconds": [
+      4.2,
+      0.3,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.534,
+   "elapsed_s": 2537.7
+  },
+  {
+   "path": "XLTW-Test-n10001.vrp",
+   "instance": "XLTW-Test-n10001",
+   "bounds": {
+    "customers": 10000,
+    "capacity": 2895,
+    "kc": 260,
+    "kb": 260,
+    "round": {
+     "kt": 15,
+     "k": 260,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0264,
+     "seconds": [
+      5.2,
+      3.1,
+      0.1
+     ]
+    },
+    "double": {
+     "kt": 16,
+     "k": 260,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0264,
+     "seconds": [
+      4.0,
+      3.3,
+      0.1
+     ]
+    },
+    "dimacs": {
+     "kt": 15,
+     "k": 260,
+     "verified": true,
+     "bad_pair": null,
+     "unservable": [],
+     "density": 0.0264,
+     "seconds": [
+      5.4,
+      3.3,
+      0.1
+     ]
+    }
+   },
+   "peak_gb": 0.538,
+   "elapsed_s": 2562.3
+  }
+ ],
+ "tally": {
+  "instances": 100,
+  "errors": [],
+  "unbounded": [],
+  "unservable": [],
+  "unverified_cliques": [],
+  "peak_gb": 0.538,
+  "bound_seconds": 2562.3,
+  "kb_gt_kc": [],
+  "bounded_in_conv": 100,
+  "kt_gt_kb_in_conv": [
+   "XLTW-Test-n1048.vrp",
+   "XLTW-Test-n1234.vrp",
+   "XLTW-Test-n1281.vrp",
+   "XLTW-Test-n1421.vrp",
+   "XLTW-Test-n1514.vrp",
+   "XLTW-Test-n1608.vrp",
+   "XLTW-Test-n1841.vrp",
+   "XLTW-Test-n1934.vrp",
+   "XLTW-Test-n2028.vrp",
+   "XLTW-Test-n2214.vrp",
+   "XLTW-Test-n2401.vrp",
+   "XLTW-Test-n2494.vrp",
+   "XLTW-Test-n2541.vrp",
+   "XLTW-Test-n2681.vrp",
+   "XLTW-Test-n2821.vrp",
+   "XLTW-Test-n2867.vrp",
+   "XLTW-Test-n3007.vrp",
+   "XLTW-Test-n3241.vrp",
+   "XLTW-Test-n3408.vrp",
+   "XLTW-Test-n3640.vrp",
+   "XLTW-Test-n3804.vrp",
+   "XLTW-Test-n3888.vrp",
+   "XLTW-Test-n4153.vrp",
+   "XLTW-Test-n4340.vrp",
+   "XLTW-Test-n4535.vrp",
+   "XLTW-Test-n4635.vrp",
+   "XLTW-Test-n5061.vrp",
+   "XLTW-Test-n5288.vrp",
+   "XLTW-Test-n5774.vrp",
+   "XLTW-Test-n5902.vrp",
+   "XLTW-Test-n6305.vrp",
+   "XLTW-Test-n6884.vrp",
+   "XLTW-Test-n7516.vrp",
+   "XLTW-Test-n7854.vrp",
+   "XLTW-Test-n8575.vrp",
+   "XLTW-Test-n8960.vrp",
+   "XLTW-Test-n9363.vrp",
+   "XLTW-Test-n9784.vrp"
+  ],
+  "compared_conv_double": 100,
+  "k_conv_eq_double": 89,
+  "predictions": {
+   "P1": "did not hold",
+   "P2": "did not hold",
+   "P3": "did not hold",
+   "P4": "held"
+  }
+ }
+}

@@ -1,0 +1,2639 @@
+{
+ "pyvrp": "0.14.1 (pinned)",
+ "seed": 20261102,
+ "seconds": 900,
+ "conv": "double",
+ "min_cap": 30.0,
+ "factor": 2.0,
+ "runs": [
+  {
+   "instance": "C1_10_2",
+   "arm": "fleet",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 80,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      109
+     ],
+     [
+      1.2,
+      106
+     ],
+     [
+      2.5,
+      105
+     ],
+     [
+      4.2,
+      104
+     ],
+     [
+      6.0,
+      103
+     ],
+     [
+      8.4,
+      100
+     ],
+     [
+      14.5,
+      99
+     ],
+     [
+      27.3,
+      98
+     ],
+     [
+      41.1,
+      97
+     ],
+     [
+      70.1,
+      96
+     ],
+     [
+      112.9,
+      95
+     ],
+     [
+      183.9,
+      94
+     ],
+     [
+      263.6,
+      93
+     ],
+     [
+      384.2,
+      92
+     ],
+     [
+      643.1,
+      91
+     ]
+    ],
+    "stats": {
+     "solves": 16
+    },
+    "wall_seconds": 901.2,
+    "vehicles": 91,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 47395.58,
+    "below_bound": false,
+    "reached_final_s": 643.1
+   }
+  },
+  {
+   "instance": "C1_10_2",
+   "arm": "restart",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 80,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      109
+     ],
+     [
+      1.3,
+      105
+     ],
+     [
+      2.7,
+      104
+     ],
+     [
+      5.3,
+      102
+     ],
+     [
+      10.1,
+      101
+     ],
+     [
+      14.8,
+      100
+     ],
+     [
+      26.2,
+      99
+     ],
+     [
+      39.0,
+      98
+     ],
+     [
+      63.9,
+      97
+     ],
+     [
+      99.8,
+      96
+     ],
+     [
+      148.9,
+      95
+     ],
+     [
+      205.6,
+      94
+     ],
+     [
+      277.4,
+      93
+     ],
+     [
+      385.1,
+      92
+     ],
+     [
+      568.9,
+      91
+     ]
+    ],
+    "stats": {
+     "solves": 16,
+     "fails": 1
+    },
+    "wall_seconds": 901.1,
+    "vehicles": 91,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 44190.59,
+    "below_bound": false,
+    "reached_final_s": 568.9
+   }
+  },
+  {
+   "instance": "C1_10_6",
+   "arm": "fleet",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 48,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      112
+     ],
+     [
+      1.1,
+      109
+     ],
+     [
+      1.9,
+      107
+     ],
+     [
+      3.3,
+      104
+     ],
+     [
+      5.0,
+      101
+     ],
+     [
+      16.1,
+      100
+     ]
+    ],
+    "stats": {
+     "solves": 7
+    },
+    "wall_seconds": 900.8,
+    "vehicles": 100,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 42825.31,
+    "below_bound": false,
+    "reached_final_s": 16.1
+   }
+  },
+  {
+   "instance": "C1_10_6",
+   "arm": "restart",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 48,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.3,
+      112
+     ],
+     [
+      1.0,
+      110
+     ],
+     [
+      1.9,
+      106
+     ],
+     [
+      3.5,
+      103
+     ],
+     [
+      7.8,
+      102
+     ],
+     [
+      12.8,
+      101
+     ],
+     [
+      21.5,
+      100
+     ]
+    ],
+    "stats": {
+     "solves": 36,
+     "fails": 29
+    },
+    "wall_seconds": 900.8,
+    "vehicles": 100,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 42774.49,
+    "below_bound": false,
+    "reached_final_s": 21.5
+   }
+  },
+  {
+   "instance": "C1_10_7",
+   "arm": "fleet",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 18,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      107
+     ],
+     [
+      1.4,
+      106
+     ],
+     [
+      2.5,
+      105
+     ],
+     [
+      4.3,
+      104
+     ],
+     [
+      7.0,
+      103
+     ],
+     [
+      10.8,
+      102
+     ],
+     [
+      17.7,
+      101
+     ],
+     [
+      31.1,
+      100
+     ],
+     [
+      758.5,
+      99
+     ]
+    ],
+    "stats": {
+     "solves": 10
+    },
+    "wall_seconds": 901.0,
+    "vehicles": 99,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 42783.42,
+    "below_bound": false,
+    "reached_final_s": 758.5
+   }
+  },
+  {
+   "instance": "C1_10_7",
+   "arm": "restart",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 18,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      107
+     ],
+     [
+      1.5,
+      104
+     ],
+     [
+      4.7,
+      102
+     ],
+     [
+      14.1,
+      101
+     ],
+     [
+      27.0,
+      100
+     ]
+    ],
+    "stats": {
+     "solves": 34,
+     "fails": 29
+    },
+    "wall_seconds": 900.9,
+    "vehicles": 100,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 43074.58,
+    "below_bound": false,
+    "reached_final_s": 27.0
+   }
+  },
+  {
+   "instance": "C1_10_8",
+   "arm": "fleet",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 12,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      111
+     ],
+     [
+      1.0,
+      109
+     ],
+     [
+      1.6,
+      107
+     ],
+     [
+      2.5,
+      106
+     ],
+     [
+      3.2,
+      105
+     ],
+     [
+      4.0,
+      104
+     ],
+     [
+      5.5,
+      103
+     ],
+     [
+      6.8,
+      102
+     ],
+     [
+      8.9,
+      101
+     ],
+     [
+      12.0,
+      100
+     ],
+     [
+      18.9,
+      99
+     ],
+     [
+      30.3,
+      98
+     ],
+     [
+      47.2,
+      97
+     ],
+     [
+      85.5,
+      96
+     ],
+     [
+      164.0,
+      95
+     ],
+     [
+      273.7,
+      94
+     ]
+    ],
+    "stats": {
+     "solves": 17
+    },
+    "wall_seconds": 900.9,
+    "vehicles": 94,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 44477.21,
+    "below_bound": false,
+    "reached_final_s": 273.7
+   }
+  },
+  {
+   "instance": "C1_10_8",
+   "arm": "restart",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 12,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      111
+     ],
+     [
+      0.9,
+      108
+     ],
+     [
+      1.7,
+      105
+     ],
+     [
+      2.7,
+      104
+     ],
+     [
+      4.1,
+      103
+     ],
+     [
+      5.5,
+      102
+     ],
+     [
+      7.5,
+      101
+     ],
+     [
+      10.7,
+      100
+     ],
+     [
+      15.9,
+      99
+     ],
+     [
+      26.9,
+      98
+     ],
+     [
+      50.5,
+      97
+     ],
+     [
+      86.2,
+      96
+     ],
+     [
+      287.3,
+      95
+     ],
+     [
+      604.0,
+      94
+     ]
+    ],
+    "stats": {
+     "solves": 20,
+     "fails": 6
+    },
+    "wall_seconds": 900.8,
+    "vehicles": 94,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 43808.81,
+    "below_bound": false,
+    "reached_final_s": 604.0
+   }
+  },
+  {
+   "instance": "C1_10_9",
+   "arm": "fleet",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 5,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.6,
+      108
+     ],
+     [
+      1.3,
+      104
+     ],
+     [
+      2.0,
+      101
+     ],
+     [
+      3.1,
+      100
+     ],
+     [
+      4.1,
+      99
+     ],
+     [
+      5.6,
+      98
+     ],
+     [
+      7.6,
+      97
+     ],
+     [
+      9.5,
+      96
+     ],
+     [
+      13.7,
+      95
+     ],
+     [
+      29.1,
+      94
+     ],
+     [
+      46.2,
+      93
+     ],
+     [
+      87.4,
+      92
+     ],
+     [
+      202.6,
+      91
+     ],
+     [
+      358.4,
+      90
+     ]
+    ],
+    "stats": {
+     "solves": 14
+    },
+    "wall_seconds": 358.4,
+    "vehicles": 90,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 43831.41,
+    "below_bound": false,
+    "reached_final_s": 358.4
+   }
+  },
+  {
+   "instance": "C1_10_9",
+   "arm": "restart",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 5,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.5,
+      108
+     ],
+     [
+      1.3,
+      101
+     ],
+     [
+      2.2,
+      100
+     ],
+     [
+      3.3,
+      99
+     ],
+     [
+      5.1,
+      98
+     ],
+     [
+      7.7,
+      97
+     ],
+     [
+      13.1,
+      96
+     ],
+     [
+      19.7,
+      95
+     ],
+     [
+      32.8,
+      94
+     ],
+     [
+      58.8,
+      93
+     ],
+     [
+      210.5,
+      92
+     ],
+     [
+      292.1,
+      91
+     ]
+    ],
+    "stats": {
+     "solves": 18,
+     "fails": 6
+    },
+    "wall_seconds": 901.2,
+    "vehicles": 91,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 44721.95,
+    "below_bound": false,
+    "reached_final_s": 292.1
+   }
+  },
+  {
+   "instance": "C2_10_6",
+   "arm": "fleet",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 4,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.5,
+      56
+     ],
+     [
+      1.2,
+      48
+     ],
+     [
+      1.9,
+      44
+     ],
+     [
+      2.7,
+      42
+     ],
+     [
+      3.5,
+      40
+     ],
+     [
+      4.2,
+      39
+     ],
+     [
+      5.0,
+      38
+     ],
+     [
+      6.3,
+      37
+     ],
+     [
+      7.5,
+      36
+     ],
+     [
+      8.8,
+      35
+     ],
+     [
+      10.8,
+      34
+     ],
+     [
+      12.4,
+      33
+     ],
+     [
+      15.8,
+      32
+     ],
+     [
+      19.1,
+      31
+     ],
+     [
+      31.8,
+      30
+     ],
+     [
+      586.4,
+      29
+     ]
+    ],
+    "stats": {
+     "solves": 17
+    },
+    "wall_seconds": 901.0,
+    "vehicles": 29,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 18081.58,
+    "below_bound": false,
+    "reached_final_s": 586.4
+   }
+  },
+  {
+   "instance": "C2_10_6",
+   "arm": "restart",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 4,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.5,
+      56
+     ],
+     [
+      1.2,
+      49
+     ],
+     [
+      1.8,
+      47
+     ],
+     [
+      2.5,
+      44
+     ],
+     [
+      3.3,
+      42
+     ],
+     [
+      4.0,
+      40
+     ],
+     [
+      4.8,
+      39
+     ],
+     [
+      5.8,
+      38
+     ],
+     [
+      6.9,
+      37
+     ],
+     [
+      7.8,
+      36
+     ],
+     [
+      9.5,
+      35
+     ],
+     [
+      10.9,
+      34
+     ],
+     [
+      13.0,
+      33
+     ],
+     [
+      15.5,
+      32
+     ],
+     [
+      18.9,
+      31
+     ],
+     [
+      28.1,
+      30
+     ]
+    ],
+    "stats": {
+     "solves": 44,
+     "fails": 28
+    },
+    "wall_seconds": 901.4,
+    "vehicles": 30,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 18332.37,
+    "below_bound": false,
+    "reached_final_s": 28.1
+   }
+  },
+  {
+   "instance": "C2_10_7",
+   "arm": "fleet",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 9,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      59
+     ],
+     [
+      0.9,
+      50
+     ],
+     [
+      1.4,
+      47
+     ],
+     [
+      2.0,
+      43
+     ],
+     [
+      2.7,
+      41
+     ],
+     [
+      3.4,
+      40
+     ],
+     [
+      4.0,
+      39
+     ],
+     [
+      4.9,
+      38
+     ],
+     [
+      5.8,
+      37
+     ],
+     [
+      6.7,
+      36
+     ],
+     [
+      7.9,
+      35
+     ],
+     [
+      9.4,
+      34
+     ],
+     [
+      12.7,
+      33
+     ],
+     [
+      16.4,
+      32
+     ],
+     [
+      20.9,
+      31
+     ],
+     [
+      28.1,
+      30
+     ]
+    ],
+    "stats": {
+     "solves": 17
+    },
+    "wall_seconds": 901.3,
+    "vehicles": 30,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 18738.85,
+    "below_bound": false,
+    "reached_final_s": 28.1
+   }
+  },
+  {
+   "instance": "C2_10_7",
+   "arm": "restart",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 9,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.5,
+      59
+     ],
+     [
+      0.9,
+      47
+     ],
+     [
+      1.5,
+      44
+     ],
+     [
+      2.1,
+      43
+     ],
+     [
+      2.8,
+      42
+     ],
+     [
+      3.5,
+      41
+     ],
+     [
+      4.3,
+      40
+     ],
+     [
+      5.3,
+      38
+     ],
+     [
+      6.3,
+      37
+     ],
+     [
+      7.8,
+      36
+     ],
+     [
+      9.3,
+      35
+     ],
+     [
+      10.9,
+      34
+     ],
+     [
+      13.4,
+      33
+     ],
+     [
+      16.6,
+      32
+     ],
+     [
+      21.9,
+      31
+     ],
+     [
+      29.8,
+      30
+     ]
+    ],
+    "stats": {
+     "solves": 44,
+     "fails": 28
+    },
+    "wall_seconds": 901.2,
+    "vehicles": 30,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 18010.73,
+    "below_bound": false,
+    "reached_final_s": 29.8
+   }
+  },
+  {
+   "instance": "C2_10_8",
+   "arm": "fleet",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 2,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      56
+     ],
+     [
+      0.9,
+      48
+     ],
+     [
+      1.4,
+      46
+     ],
+     [
+      2.0,
+      44
+     ],
+     [
+      2.6,
+      42
+     ],
+     [
+      3.3,
+      40
+     ],
+     [
+      4.0,
+      39
+     ],
+     [
+      4.9,
+      38
+     ],
+     [
+      5.8,
+      37
+     ],
+     [
+      6.7,
+      36
+     ],
+     [
+      7.9,
+      35
+     ],
+     [
+      9.2,
+      34
+     ],
+     [
+      10.7,
+      33
+     ],
+     [
+      12.8,
+      32
+     ],
+     [
+      14.8,
+      31
+     ],
+     [
+      19.0,
+      30
+     ],
+     [
+      26.8,
+      29
+     ],
+     [
+      564.9,
+      28
+     ]
+    ],
+    "stats": {
+     "solves": 18
+    },
+    "wall_seconds": 564.9,
+    "vehicles": 28,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 17986.48,
+    "below_bound": false,
+    "reached_final_s": 564.9
+   }
+  },
+  {
+   "instance": "C2_10_8",
+   "arm": "restart",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 2,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.3,
+      56
+     ],
+     [
+      0.8,
+      48
+     ],
+     [
+      1.4,
+      46
+     ],
+     [
+      2.0,
+      44
+     ],
+     [
+      2.6,
+      42
+     ],
+     [
+      3.2,
+      40
+     ],
+     [
+      4.0,
+      39
+     ],
+     [
+      4.9,
+      38
+     ],
+     [
+      5.8,
+      37
+     ],
+     [
+      6.9,
+      36
+     ],
+     [
+      8.0,
+      35
+     ],
+     [
+      9.3,
+      34
+     ],
+     [
+      10.5,
+      33
+     ],
+     [
+      12.4,
+      32
+     ],
+     [
+      15.1,
+      31
+     ],
+     [
+      20.2,
+      30
+     ],
+     [
+      27.4,
+      29
+     ]
+    ],
+    "stats": {
+     "solves": 45,
+     "fails": 28
+    },
+    "wall_seconds": 901.6,
+    "vehicles": 29,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 19230.83,
+    "below_bound": false,
+    "reached_final_s": 27.4
+   }
+  },
+  {
+   "instance": "C2_10_9",
+   "arm": "fleet",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 6,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      57
+     ],
+     [
+      0.9,
+      49
+     ],
+     [
+      1.4,
+      47
+     ],
+     [
+      1.9,
+      45
+     ],
+     [
+      2.4,
+      44
+     ],
+     [
+      3.0,
+      42
+     ],
+     [
+      3.5,
+      41
+     ],
+     [
+      4.2,
+      40
+     ],
+     [
+      5.0,
+      39
+     ],
+     [
+      5.7,
+      38
+     ],
+     [
+      6.7,
+      37
+     ],
+     [
+      7.6,
+      36
+     ],
+     [
+      8.6,
+      35
+     ],
+     [
+      9.9,
+      34
+     ],
+     [
+      11.7,
+      33
+     ],
+     [
+      14.2,
+      32
+     ],
+     [
+      17.2,
+      31
+     ],
+     [
+      21.0,
+      30
+     ],
+     [
+      31.4,
+      29
+     ]
+    ],
+    "stats": {
+     "solves": 20
+    },
+    "wall_seconds": 901.3,
+    "vehicles": 29,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 18534.2,
+    "below_bound": false,
+    "reached_final_s": 31.4
+   }
+  },
+  {
+   "instance": "C2_10_9",
+   "arm": "restart",
+   "bound": {
+    "kc": 28,
+    "kb": 28,
+    "kt": 6,
+    "k": 28,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 28,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.3,
+      57
+     ],
+     [
+      0.6,
+      51
+     ],
+     [
+      1.0,
+      45
+     ],
+     [
+      1.5,
+      44
+     ],
+     [
+      2.1,
+      41
+     ],
+     [
+      2.6,
+      40
+     ],
+     [
+      3.2,
+      39
+     ],
+     [
+      3.8,
+      38
+     ],
+     [
+      4.7,
+      37
+     ],
+     [
+      5.4,
+      36
+     ],
+     [
+      6.3,
+      35
+     ],
+     [
+      7.2,
+      34
+     ],
+     [
+      8.5,
+      33
+     ],
+     [
+      10.5,
+      32
+     ],
+     [
+      13.9,
+      31
+     ],
+     [
+      18.8,
+      30
+     ],
+     [
+      28.3,
+      29
+     ]
+    ],
+    "stats": {
+     "solves": 45,
+     "fails": 28
+    },
+    "wall_seconds": 901.3,
+    "vehicles": 29,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 17946.38,
+    "below_bound": false,
+    "reached_final_s": 28.3
+   }
+  },
+  {
+   "instance": "RC1_10_1",
+   "arm": "fleet",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 54,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.3,
+      105
+     ],
+     [
+      0.7,
+      102
+     ],
+     [
+      1.3,
+      99
+     ],
+     [
+      3.1,
+      98
+     ],
+     [
+      5.1,
+      97
+     ],
+     [
+      7.9,
+      96
+     ],
+     [
+      16.6,
+      95
+     ],
+     [
+      17.6,
+      94
+     ],
+     [
+      22.3,
+      93
+     ],
+     [
+      49.0,
+      92
+     ],
+     [
+      85.6,
+      91
+     ],
+     [
+      206.1,
+      90
+     ]
+    ],
+    "stats": {
+     "solves": 12
+    },
+    "wall_seconds": 206.1,
+    "vehicles": 90,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 59579.86,
+    "below_bound": false,
+    "reached_final_s": 206.1
+   }
+  },
+  {
+   "instance": "RC1_10_1",
+   "arm": "restart",
+   "bound": {
+    "kc": 90,
+    "kb": 90,
+    "kt": 54,
+    "k": 90,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 90,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      105
+     ],
+     [
+      1.0,
+      100
+     ],
+     [
+      2.5,
+      99
+     ],
+     [
+      4.3,
+      98
+     ],
+     [
+      5.2,
+      97
+     ],
+     [
+      11.3,
+      96
+     ],
+     [
+      14.9,
+      95
+     ],
+     [
+      23.2,
+      94
+     ],
+     [
+      37.0,
+      93
+     ],
+     [
+      87.4,
+      92
+     ],
+     [
+      113.7,
+      91
+     ]
+    ],
+    "stats": {
+     "solves": 27,
+     "fails": 16
+    },
+    "wall_seconds": 900.7,
+    "vehicles": 91,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 53405.57,
+    "below_bound": false,
+    "reached_final_s": 113.7
+   }
+  },
+  {
+   "instance": "RC2_10_1",
+   "arm": "fleet",
+   "bound": {
+    "kc": 18,
+    "kb": 18,
+    "kt": 11,
+    "k": 18,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 18,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.6,
+      64
+     ],
+     [
+      1.2,
+      53
+     ],
+     [
+      1.8,
+      48
+     ],
+     [
+      2.4,
+      43
+     ],
+     [
+      3.0,
+      40
+     ],
+     [
+      3.7,
+      37
+     ],
+     [
+      4.4,
+      36
+     ],
+     [
+      5.2,
+      33
+     ],
+     [
+      6.0,
+      32
+     ],
+     [
+      6.7,
+      31
+     ],
+     [
+      7.5,
+      30
+     ],
+     [
+      8.3,
+      29
+     ],
+     [
+      9.2,
+      28
+     ],
+     [
+      10.3,
+      27
+     ],
+     [
+      11.5,
+      26
+     ],
+     [
+      13.5,
+      25
+     ],
+     [
+      16.2,
+      24
+     ],
+     [
+      19.0,
+      23
+     ],
+     [
+      24.5,
+      22
+     ],
+     [
+      32.0,
+      21
+     ],
+     [
+      57.9,
+      20
+     ]
+    ],
+    "stats": {
+     "solves": 22
+    },
+    "wall_seconds": 902.0,
+    "vehicles": 20,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 32808.48,
+    "below_bound": false,
+    "reached_final_s": 57.9
+   }
+  },
+  {
+   "instance": "RC2_10_1",
+   "arm": "restart",
+   "bound": {
+    "kc": 18,
+    "kb": 18,
+    "kt": 11,
+    "k": 18,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 18,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.3,
+      64
+     ],
+     [
+      0.7,
+      52
+     ],
+     [
+      1.0,
+      44
+     ],
+     [
+      1.4,
+      41
+     ],
+     [
+      1.8,
+      39
+     ],
+     [
+      2.2,
+      37
+     ],
+     [
+      2.7,
+      36
+     ],
+     [
+      3.1,
+      35
+     ],
+     [
+      3.7,
+      34
+     ],
+     [
+      4.3,
+      33
+     ],
+     [
+      4.9,
+      32
+     ],
+     [
+      5.4,
+      31
+     ],
+     [
+      6.0,
+      30
+     ],
+     [
+      6.5,
+      29
+     ],
+     [
+      7.1,
+      28
+     ],
+     [
+      7.7,
+      27
+     ],
+     [
+      8.3,
+      26
+     ],
+     [
+      9.2,
+      25
+     ],
+     [
+      10.6,
+      24
+     ],
+     [
+      13.5,
+      23
+     ],
+     [
+      15.4,
+      22
+     ],
+     [
+      23.3,
+      21
+     ],
+     [
+      36.3,
+      20
+     ]
+    ],
+    "stats": {
+     "solves": 51,
+     "fails": 28
+    },
+    "wall_seconds": 901.2,
+    "vehicles": 20,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 32307.8,
+    "below_bound": false,
+    "reached_final_s": 36.3
+   }
+  },
+  {
+   "instance": "RC2_10_2",
+   "arm": "fleet",
+   "bound": {
+    "kc": 18,
+    "kb": 18,
+    "kt": 10,
+    "k": 18,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 18,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      62
+     ],
+     [
+      0.8,
+      53
+     ],
+     [
+      1.2,
+      46
+     ],
+     [
+      1.6,
+      43
+     ],
+     [
+      2.1,
+      41
+     ],
+     [
+      2.6,
+      39
+     ],
+     [
+      3.1,
+      36
+     ],
+     [
+      3.6,
+      35
+     ],
+     [
+      4.3,
+      34
+     ],
+     [
+      4.8,
+      33
+     ],
+     [
+      5.4,
+      32
+     ],
+     [
+      6.0,
+      31
+     ],
+     [
+      6.7,
+      30
+     ],
+     [
+      7.4,
+      29
+     ],
+     [
+      8.0,
+      28
+     ],
+     [
+      8.7,
+      27
+     ],
+     [
+      9.6,
+      26
+     ],
+     [
+      10.3,
+      25
+     ],
+     [
+      12.1,
+      24
+     ],
+     [
+      13.7,
+      23
+     ],
+     [
+      15.6,
+      22
+     ],
+     [
+      23.6,
+      21
+     ],
+     [
+      51.1,
+      20
+     ],
+     [
+      228.7,
+      19
+     ]
+    ],
+    "stats": {
+     "solves": 25
+    },
+    "wall_seconds": 903.4,
+    "vehicles": 19,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 27110.24,
+    "below_bound": false,
+    "reached_final_s": 228.7
+   }
+  },
+  {
+   "instance": "RC2_10_2",
+   "arm": "restart",
+   "bound": {
+    "kc": 18,
+    "kb": 18,
+    "kt": 10,
+    "k": 18,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 18,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.3,
+      62
+     ],
+     [
+      0.8,
+      52
+     ],
+     [
+      1.2,
+      46
+     ],
+     [
+      1.8,
+      44
+     ],
+     [
+      2.2,
+      42
+     ],
+     [
+      2.7,
+      40
+     ],
+     [
+      3.2,
+      37
+     ],
+     [
+      3.7,
+      36
+     ],
+     [
+      4.2,
+      35
+     ],
+     [
+      4.7,
+      34
+     ],
+     [
+      5.3,
+      33
+     ],
+     [
+      5.9,
+      32
+     ],
+     [
+      6.5,
+      31
+     ],
+     [
+      7.1,
+      30
+     ],
+     [
+      7.6,
+      29
+     ],
+     [
+      8.3,
+      28
+     ],
+     [
+      9.1,
+      27
+     ],
+     [
+      9.9,
+      26
+     ],
+     [
+      10.6,
+      25
+     ],
+     [
+      11.8,
+      24
+     ],
+     [
+      13.4,
+      23
+     ],
+     [
+      14.7,
+      22
+     ],
+     [
+      28.3,
+      21
+     ],
+     [
+      38.7,
+      20
+     ],
+     [
+      402.3,
+      19
+     ]
+    ],
+    "stats": {
+     "solves": 49,
+     "fails": 24
+    },
+    "wall_seconds": 902.6,
+    "vehicles": 19,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 28934.57,
+    "below_bound": false,
+    "reached_final_s": 402.3
+   }
+  },
+  {
+   "instance": "RC2_10_5",
+   "arm": "fleet",
+   "bound": {
+    "kc": 18,
+    "kb": 18,
+    "kt": 12,
+    "k": 18,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "fleet",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 18,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      57
+     ],
+     [
+      0.9,
+      46
+     ],
+     [
+      1.4,
+      44
+     ],
+     [
+      1.9,
+      39
+     ],
+     [
+      2.4,
+      37
+     ],
+     [
+      2.9,
+      35
+     ],
+     [
+      3.5,
+      32
+     ],
+     [
+      4.1,
+      31
+     ],
+     [
+      4.6,
+      30
+     ],
+     [
+      5.1,
+      29
+     ],
+     [
+      5.6,
+      28
+     ],
+     [
+      6.4,
+      27
+     ],
+     [
+      7.0,
+      26
+     ],
+     [
+      7.8,
+      25
+     ],
+     [
+      8.5,
+      24
+     ],
+     [
+      9.3,
+      23
+     ],
+     [
+      10.0,
+      22
+     ],
+     [
+      10.9,
+      21
+     ],
+     [
+      11.9,
+      20
+     ],
+     [
+      17.9,
+      19
+     ],
+     [
+      28.0,
+      18
+     ]
+    ],
+    "stats": {
+     "solves": 21
+    },
+    "wall_seconds": 28.1,
+    "vehicles": 18,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 33168.31,
+    "below_bound": false,
+    "reached_final_s": 28.0
+   }
+  },
+  {
+   "instance": "RC2_10_5",
+   "arm": "restart",
+   "bound": {
+    "kc": 18,
+    "kb": 18,
+    "kt": 12,
+    "k": 18,
+    "clique_verified": true
+   },
+   "run": {
+    "arm": "restart",
+    "conv": "double",
+    "seconds": 900,
+    "seed": 20261102,
+    "lower": 18,
+    "pyvrp_feasible": true,
+    "trace": [
+     [
+      0.4,
+      57
+     ],
+     [
+      0.7,
+      46
+     ],
+     [
+      1.2,
+      40
+     ],
+     [
+      1.8,
+      36
+     ],
+     [
+      2.3,
+      35
+     ],
+     [
+      2.8,
+      33
+     ],
+     [
+      3.3,
+      32
+     ],
+     [
+      3.9,
+      31
+     ],
+     [
+      4.4,
+      30
+     ],
+     [
+      4.9,
+      29
+     ],
+     [
+      5.4,
+      28
+     ],
+     [
+      6.0,
+      27
+     ],
+     [
+      7.3,
+      26
+     ],
+     [
+      7.9,
+      25
+     ],
+     [
+      8.5,
+      24
+     ],
+     [
+      9.2,
+      23
+     ],
+     [
+      10.7,
+      22
+     ],
+     [
+      11.9,
+      21
+     ],
+     [
+      13.4,
+      20
+     ],
+     [
+      17.9,
+      19
+     ],
+     [
+      25.4,
+      18
+     ]
+    ],
+    "stats": {
+     "solves": 21,
+     "fails": 0
+    },
+    "wall_seconds": 25.4,
+    "vehicles": 18,
+    "exact_ok": true,
+    "exact_reason": "",
+    "distance": 32765.01,
+    "below_bound": false,
+    "reached_final_s": 25.4
+   }
+  }
+ ],
+ "tally": {
+  "runs_expected": 26,
+  "runs": 26,
+  "errors": [],
+  "not_exact": [],
+  "below_bound": [],
+  "below_sintef": [],
+  "pairs_fleet_300": 13,
+  "fleet_gained_after_300": 5,
+  "fleet_all": 13,
+  "fleet_over_sintef": 9,
+  "pairs_fleet_restart": 13,
+  "restart_le_fleet": 8,
+  "restart_lt_fleet": 0,
+  "restart_gt_fleet": 5,
+  "totals": {
+   "fleet": 737,
+   "restart": 742
+  },
+  "pairs": {
+   "C1_10_2": {
+    "sintef": 90,
+    "vrptwl": 94,
+    "fleet": 91,
+    "fleet_300": 93,
+    "fleet_600": 92,
+    "fleet_900": 91,
+    "restart": 91,
+    "restart_300": 93,
+    "restart_600": 91,
+    "restart_900": 91
+   },
+   "C1_10_6": {
+    "sintef": 99,
+    "vrptwl": 100,
+    "fleet": 100,
+    "fleet_300": 100,
+    "fleet_600": 100,
+    "fleet_900": 100,
+    "restart": 100,
+    "restart_300": 100,
+    "restart_600": 100,
+    "restart_900": 100
+   },
+   "C1_10_7": {
+    "sintef": 97,
+    "vrptwl": 99,
+    "fleet": 99,
+    "fleet_300": 100,
+    "fleet_600": 100,
+    "fleet_900": 99,
+    "restart": 100,
+    "restart_300": 100,
+    "restart_600": 100,
+    "restart_900": 100
+   },
+   "C1_10_8": {
+    "sintef": 92,
+    "vrptwl": 96,
+    "fleet": 94,
+    "fleet_300": 94,
+    "fleet_600": 94,
+    "fleet_900": 94,
+    "restart": 94,
+    "restart_300": 95,
+    "restart_600": 95,
+    "restart_900": 94
+   },
+   "C1_10_9": {
+    "sintef": 90,
+    "vrptwl": 91,
+    "fleet": 90,
+    "fleet_300": 91,
+    "fleet_600": 90,
+    "fleet_900": 90,
+    "restart": 91,
+    "restart_300": 91,
+    "restart_600": 91,
+    "restart_900": 91
+   },
+   "C2_10_6": {
+    "sintef": 29,
+    "vrptwl": 30,
+    "fleet": 29,
+    "fleet_300": 30,
+    "fleet_600": 29,
+    "fleet_900": 29,
+    "restart": 30,
+    "restart_300": 30,
+    "restart_600": 30,
+    "restart_900": 30
+   },
+   "C2_10_7": {
+    "sintef": 29,
+    "vrptwl": 30,
+    "fleet": 30,
+    "fleet_300": 30,
+    "fleet_600": 30,
+    "fleet_900": 30,
+    "restart": 30,
+    "restart_300": 30,
+    "restart_600": 30,
+    "restart_900": 30
+   },
+   "C2_10_8": {
+    "sintef": 28,
+    "vrptwl": 29,
+    "fleet": 28,
+    "fleet_300": 29,
+    "fleet_600": 28,
+    "fleet_900": 28,
+    "restart": 29,
+    "restart_300": 29,
+    "restart_600": 29,
+    "restart_900": 29
+   },
+   "C2_10_9": {
+    "sintef": 28,
+    "vrptwl": 29,
+    "fleet": 29,
+    "fleet_300": 29,
+    "fleet_600": 29,
+    "fleet_900": 29,
+    "restart": 29,
+    "restart_300": 29,
+    "restart_600": 29,
+    "restart_900": 29
+   },
+   "RC1_10_1": {
+    "sintef": 90,
+    "vrptwl": 91,
+    "fleet": 90,
+    "fleet_300": 90,
+    "fleet_600": 90,
+    "fleet_900": 90,
+    "restart": 91,
+    "restart_300": 91,
+    "restart_600": 91,
+    "restart_900": 91
+   },
+   "RC2_10_1": {
+    "sintef": 20,
+    "vrptwl": 21,
+    "fleet": 20,
+    "fleet_300": 20,
+    "fleet_600": 20,
+    "fleet_900": 20,
+    "restart": 20,
+    "restart_300": 20,
+    "restart_600": 20,
+    "restart_900": 20
+   },
+   "RC2_10_2": {
+    "sintef": 18,
+    "vrptwl": 20,
+    "fleet": 19,
+    "fleet_300": 19,
+    "fleet_600": 19,
+    "fleet_900": 19,
+    "restart": 19,
+    "restart_300": 20,
+    "restart_600": 19,
+    "restart_900": 19
+   },
+   "RC2_10_5": {
+    "sintef": 18,
+    "vrptwl": 19,
+    "fleet": 18,
+    "fleet_300": 18,
+    "fleet_600": 18,
+    "fleet_900": 18,
+    "restart": 18,
+    "restart_300": 18,
+    "restart_600": 18,
+    "restart_900": 18
+   }
+  },
+  "predictions": {
+   "R0": "held",
+   "R1": "held",
+   "R2": "held",
+   "R3": "did not hold",
+   "R4": "did not hold",
+   "R5": "held"
+  }
+ }
+}
