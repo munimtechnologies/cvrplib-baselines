@@ -11,6 +11,9 @@ Standard library only, so the build needs neither pip nor a venv.
 Every wheel is checked against the sha256 that PyPI publishes for it before it is used. --offline never touches the
 network: a wheel missing from vendor/wheels/ is an error. matplotlib (a dependency of PyVRP that is used only for
 plotting) is left out on purpose; the solver never imports it.
+
+0.1.1: lib/XLTW_BUILD.json also records the interpreter that ran the install ("executable"), so tests and the
+conformance check use the same one; downloads are retried up to three times.
 """
 import argparse
 import hashlib
@@ -18,6 +21,8 @@ import json
 import os
 import shutil
 import sys
+import time
+import urllib.error
 import urllib.request
 import zipfile
 
@@ -53,10 +58,17 @@ def pick(name, version, files, tags=TAGS):
     return out
 
 
-def get(url, timeout=120):
+def get(url, timeout=120, tries=3, wait=20.0):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except (urllib.error.URLError, OSError):
+            if i == tries - 1:
+                raise
+            time.sleep(wait)
+    raise AssertionError("unreachable")
 
 
 def resolve(lock=LOCK):
@@ -138,6 +150,10 @@ def select(doc, tag):
 def install(tag, dest, offline, lock=LOCK, vendor=VENDOR):
     doc = load(lock)
     chosen = select(doc, tag)
+    running = "cp%d%d" % sys.version_info[:2]
+    if tag != running:
+        raise LockError("--tag %s does not match the interpreter running the install (%s, %s); run lock.py with "
+                        "the Python the solver will use" % (tag, running, sys.executable))
     paths = [fetch_one(w, offline, vendor) for w in chosen]
     dest = os.path.abspath(dest)
     if os.path.commonpath([dest, HERE]) != HERE or dest == HERE:
@@ -147,11 +163,20 @@ def install(tag, dest, offline, lock=LOCK, vendor=VENDOR):
     os.makedirs(dest)
     for p in paths:
         safe_extract(p, dest)
-    info = {"tag": tag, "python": sys.version.split()[0], "offline": offline,
+    info = {"tag": tag, "python": sys.version.split()[0], "executable": sys.executable, "offline": offline,
             "wheels": [{k: w[k] for k in ("name", "version", "filename", "sha256")} for w in chosen]}
     with open(os.path.join(dest, "XLTW_BUILD.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(info, f, indent=1)
     return info
+
+
+def build_python(here=HERE):
+    """The interpreter recorded by the last build (lib/XLTW_BUILD.json), or None if there is no build."""
+    try:
+        with open(os.path.join(here, "lib", "XLTW_BUILD.json"), encoding="utf-8") as f:
+            return json.load(f).get("executable")
+    except (OSError, ValueError):
+        return None
 
 
 def main(argv=None):

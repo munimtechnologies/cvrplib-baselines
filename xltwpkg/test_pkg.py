@@ -2,6 +2,10 @@
 
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Apache-2.0.
 Standard library only. Tests that need the built package (lib/, ./solver) are skipped until build.sh has run.
+
+0.1.1: every subprocess that imports lib/ runs under the interpreter the build recorded (lib/XLTW_BUILD.json), not
+under whatever Python runs the tests. In 0.1.0 these were the same by assumption, and in the python:3.12 image they
+were not (build.sh had picked python3.13), so two tests failed on an import error while the build was fine.
 """
 import hashlib
 import io
@@ -21,6 +25,8 @@ import lock  # noqa: E402
 import solver  # noqa: E402
 
 BUILT = os.path.exists(os.path.join(HERE, "lib", "XLTW_BUILD.json")) and os.path.exists(os.path.join(HERE, "solver"))
+BUILD_PY = lock.build_python() if BUILT else None
+PY = BUILD_PY or sys.executable  # the interpreter for subprocesses that may import lib/
 
 
 def _f(name, sha="0" * 64, kind="bdist_wheel", yanked=False):
@@ -122,6 +128,19 @@ class FetchAndExtract(unittest.TestCase):
         self.assertEqual(stat.S_IMODE(os.stat(os.path.join(dest, "pkg", "_ext.so")).st_mode), 0o755)
         self.assertTrue(os.path.exists(os.path.join(dest, "pkg", "__init__.py")))
 
+    def test_install_refuses_a_tag_of_another_python(self):
+        running = "cp%d%d" % sys.version_info[:2]
+        other = [t for t in lock.TAGS if t != running][0]
+        path = os.path.join(self.d, "wheels.lock")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"pins": [{"name": "a", "version": "1"}],
+                       "wheels": [{"name": "a", "version": "1", "tag": t, "filename": "a-%s.whl" % t,
+                                   "sha256": "0" * 64, "url": "http://unused"} for t in lock.TAGS]}, f)
+        with self.assertRaises(lock.LockError) as cm:
+            lock.install(other, os.path.join(HERE, "lib-test-unused"), True, lock=path, vendor=self.d)
+        self.assertIn("does not match the interpreter", str(cm.exception))
+        self.assertFalse(os.path.exists(os.path.join(HERE, "lib-test-unused")))
+
 
 class FakeSol:
     def __init__(self, routes, dist, feasible=True):
@@ -172,7 +191,7 @@ class PrinterTests(unittest.TestCase):
 @unittest.skipIf(os.name != "posix", "fd juggling is checked on Linux, where the challenge runs")
 class StdoutDiscipline(unittest.TestCase):
     def _run(self, code):
-        p = subprocess.run([sys.executable, "-c", code], cwd=HERE, capture_output=True, text=True, timeout=120)
+        p = subprocess.run([PY, "-c", code], cwd=HERE, capture_output=True, text=True, timeout=120)
         self.assertEqual(p.returncode, 0, p.stderr)
         return p
 
@@ -221,8 +240,7 @@ class WatchdogTests(unittest.TestCase):
 
     def test_hard_deadline_ends_a_stuck_call(self):
         t = __import__("time").monotonic()
-        p = subprocess.run([sys.executable, "-c", STUCK, "2.0"], cwd=HERE, capture_output=True, text=True,
-                           timeout=30)
+        p = subprocess.run([PY, "-c", STUCK, "2.0"], cwd=HERE, capture_output=True, text=True, timeout=30)
         took = __import__("time").monotonic() - t
         self.assertEqual(p.returncode, 0, p.stderr)
         self.assertEqual(p.stdout, self.WANT)          # the held solution got out too
@@ -233,7 +251,7 @@ class WatchdogTests(unittest.TestCase):
     def test_sigterm_ends_a_stuck_call_at_once(self):
         import signal as sg
         import time as tm
-        p = subprocess.Popen([sys.executable, "-c", STUCK, "50.0"], cwd=HERE, stdout=subprocess.PIPE,
+        p = subprocess.Popen([PY, "-c", STUCK, "50.0"], cwd=HERE, stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE, text=True)
         tm.sleep(2.0)
         t = tm.monotonic()
@@ -257,18 +275,23 @@ class Built(unittest.TestCase):
             info = json.load(f)
         got = {w["name"]: w["version"] for w in info["wheels"]}
         self.assertEqual(got, dict(lock.PINS))
+        self.assertTrue(info.get("executable"), "XLTW_BUILD.json records no interpreter")
         code = ("import importlib.metadata as m, os, sys; sys.path.insert(0, os.path.join(sys.argv[1], 'lib'));"
-                "import numpy, pyvrp; print(m.version('pyvrp'), numpy.__version__, pyvrp.__file__)")
-        p = subprocess.run([sys.executable, "-I", "-c", code, HERE], capture_output=True, text=True, timeout=120)
+                "import numpy, pyvrp; print(m.version('pyvrp'), numpy.__version__, pyvrp.__file__, "
+                "'cp%d%d' % sys.version_info[:2])")
+        p = subprocess.run([BUILD_PY, "-I", "-c", code, HERE], capture_output=True, text=True, timeout=120)
         self.assertEqual(p.returncode, 0, p.stderr)
-        ver, npv, where = p.stdout.split()
+        ver, npv, where, tag = p.stdout.split()
         self.assertEqual((ver, npv), ("0.14.1", "2.3.4"))
         self.assertTrue(where.startswith(os.path.join(HERE, "lib")))
+        self.assertEqual(tag, info["tag"])
 
     @unittest.skipUnless(BUILT and os.name == "posix", "needs build.sh")
     def test_launcher(self):
         path = os.path.join(HERE, "solver")
         self.assertTrue(os.access(path, os.X_OK))
+        with open(path, encoding="utf-8") as f:
+            self.assertIn('exec "%s" -s -P' % BUILD_PY, f.read())  # the launcher runs the build's interpreter
         p = subprocess.run([path], capture_output=True, text=True, timeout=60)
         self.assertEqual((p.returncode, p.stdout), (2, ""))
         self.assertIn("usage", p.stderr)

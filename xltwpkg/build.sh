@@ -7,6 +7,11 @@
 #
 # Needs only bash and CPython 3.11, 3.12 or 3.13 (standard library) on Linux x86-64 with glibc 2.28 or newer.
 # No pip, no venv, no root. Set XLTW_PYTHON=/path/to/python3.x to choose the interpreter.
+#
+# Interpreter choice (0.1.1): XLTW_PYTHON, then the machine's default `python3`, then `python`, and only then
+# python3.13 / 3.12 / 3.11. Version 0.1.0 tried python3.13 first; in the python:3.12 Docker image that picked
+# Debian's /usr/bin/python3.13 instead of the default /usr/local/bin/python3 (3.12), so lib/ held cp313 wheels
+# that the default interpreter could not import. The chosen interpreter is recorded in lib/XLTW_BUILD.json.
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$HERE"
@@ -20,10 +25,10 @@ for arg in "$@"; do
 done
 
 PY=""
-for cand in "${XLTW_PYTHON:-}" python3.13 python3.12 python3.11 python3; do
+for cand in "${XLTW_PYTHON:-}" python3 python python3.13 python3.12 python3.11; do
   [ -n "$cand" ] || continue
   path="$(command -v "$cand" 2>/dev/null)" || continue
-  if "$path" -c 'import sys; sys.exit(0 if (3, 11) <= sys.version_info[:2] <= (3, 13) else 1)' 2>/dev/null; then
+  if "$path" -c 'import sys; sys.exit(0 if sys.implementation.name == "cpython" and (3, 11) <= sys.version_info[:2] <= (3, 13) else 1)' 2>/dev/null; then
     PY="$path"
     break
   fi

@@ -4,8 +4,11 @@ MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's nam
 
 Runs `./solver INSTANCE SECONDS SEED` exactly as CVRPLib's VRPTW Challenge says it runs algorithms (one process per
 run, SIGTERM at the limit, SIGKILL five seconds later, stdout read as it arrives) on a few of the smallest XLTW-Test
-instances, and scores the pre-registered predictions C0-C6 of expectations.md. Every counted solution is checked
+instances, and scores the pre-registered predictions C0-C8 of expectations.md. Every counted solution is checked
 exactly (xltwbase.check_exact, nearest-integer rounding), and every stdout line is checked against the format.
+
+0.1.1: if the build recorded a different interpreter (lib/XLTW_BUILD.json "executable"), this script re-runs itself
+under that one first, because it imports numpy from lib/ to check the counted solutions. Nothing else changed.
 """
 import argparse
 import glob
@@ -41,7 +44,7 @@ RUNSETS = {
 ROUTE = re.compile(r"^Route #([1-9][0-9]*): ?([0-9]+( [0-9]+)*)?$")
 COST = re.compile(r"^Cost: ?(-?[0-9]+(\.[0-9]+)?)$")
 SHIP = ["README.md", "Makefile", "build.sh", "lock.py", "wheels.lock", "solver.py", "xltwbase.py", "xltwlb.py",
-        "test_pkg.py", "conformance.py", "expectations.md"]
+        "test_pkg.py", "conformance.py", "fetch_helpers.py", "expectations.md", "addendum-2026-11-06.md"]
 
 
 def network_reachable():
@@ -214,6 +217,7 @@ def build_info():
         return {"tag": None, "error": str(e)}
     import lock
     info["pins_ok"] = {w["name"]: w["version"] for w in info["wheels"]} == dict(lock.PINS)
+    info["checked_by"] = sys.executable
     try:
         import numpy
         import pyvrp
@@ -228,22 +232,36 @@ def build_info():
 
 def write_md(path, build, net, recs, preds, job):
     L = ["# xltwpkg: conformance of the packaged solver (%s)" % job, "",
-         "Network reachable during the run steps: %s. Built offline for %s with Python %s; pins ok: %s." % (
-             net, build.get("tag"), build.get("python"), build.get("pins_ok")), "",
+         "Network reachable during the run steps: %s. Built offline for %s with Python %s (%s); pins ok: %s." % (
+             net, build.get("tag"), build.get("python"), build.get("executable"), build.get("pins_ok")), "",
          "Predictions (expectations.md): `%s`" % json.dumps(preds), "",
          "| run | instance | n | limit s | seed | vehicles | distance | feasible | cost line ok | bad stdout lines | "
-         "self-stopped | last Cost at s | slack s | peak GB |",
-         "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+         "self-stopped | last Cost at s | slack s | peak GB | watchdog |",
+         "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in recs:
         if r.get("error"):
-            L.append("| %s | %s | | | | error | | | | | | | | |" % (r["id"], r.get("instance")))
+            L.append("| %s | %s | | | | error | | | | | | | | | |" % (r["id"], r.get("instance")))
             continue
-        L.append("| %s | %s | %d | %.0f | %d | %s | %s | %s | %s | %d | %s | %s | %s | %s |" % (
+        L.append("| %s | %s | %d | %.2f | %d | %s | %s | %s | %s | %d | %s | %s | %s | %s | %s |" % (
             r["id"], r["instance"], r["customers"], r["limit"], r["seed"], r["vehicles"], r["distance"],
             r["feasible"], r["cost_line_ok"], r["bad_line_count"], r["self_stopped"], r["last_cost_at"], r["slack"],
-            r["peak_gb"]))
+            r["peak_gb"], r.get("watchdog") or ""))
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(L) + "\n")
+
+
+def reexec_under_build_python():
+    """Run this script under the interpreter the build recorded, if that is not the one running now."""
+    import lock
+    exe = lock.build_python(HERE)
+    if not exe or os.environ.get("XLTW_CONFORMANCE_REEXEC"):
+        return
+    if os.path.realpath(exe) == os.path.realpath(sys.executable):
+        return
+    print("conformance.py: re-running under the build's interpreter %s (was %s)" % (exe, sys.executable),
+          flush=True)
+    os.environ["XLTW_CONFORMANCE_REEXEC"] = "1"
+    os.execv(exe, [exe, os.path.abspath(__file__)] + sys.argv[1:])
 
 
 def main():
@@ -253,6 +271,7 @@ def main():
     ap.add_argument("--job", default="xltwpkg")
     ap.add_argument("--runs", default="main", choices=sorted(RUNSETS))
     a = ap.parse_args()
+    reexec_under_build_python()
     out = os.path.join(a.out_dir, "xltwpkg")
     logs = os.path.join(out, "logs")
     os.makedirs(logs, exist_ok=True)
@@ -277,10 +296,10 @@ def main():
             recs.append(rec)
             print(json.dumps({k: rec.get(k) for k in ("id", "instance", "vehicles", "distance", "feasible",
                                                      "bad_line_count", "self_stopped", "slack", "peak_gb",
-                                                     "error")}), flush=True)
+                                                     "watchdog", "error")}), flush=True)
     preds = score(build, net, recs, a.runs)
     res = {"job": a.job, "runs_set": a.runs, "network_reachable": net, "build": build, "runs": recs, "predictions": preds,
-           "python": sys.version.split()[0]}
+           "python": sys.version.split()[0], "executable": sys.executable}
     with open(os.path.join(out, "results.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(res, f, indent=1)
     write_md(os.path.join(out, "results.md"), build, net, recs, preds, a.job)
