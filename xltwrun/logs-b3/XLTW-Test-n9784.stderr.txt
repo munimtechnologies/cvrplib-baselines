@@ -1,0 +1,2 @@
+[     5.3s] bound {"kc": 1, "kb": 1, "kt": 8, "k": 8, "timed_out": false, "seconds": 4.37}
+XLTW_SOLVER_STATS {"instance": "XLTW-Test-n9784", "customers": 9783, "limit": 586.98, "seed": 20261104, "bound": {"kc": 1, "kb": 1, "kt": 8, "k": 8, "timed_out": false, "seconds": 4.37}, "fleet_solves": 7, "iterations": 12885, "fleet_seconds": 318.5, "fleet_vehicles": 526, "printed": 16, "vehicles": 522, "cost": 858289, "sigterm": false, "elapsed": 584.44}
