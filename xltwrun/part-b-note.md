@@ -1,5 +1,11 @@
 # xltwrun part b (instances with more than 6,444 customers): first two thirds, and what went wrong
 
+> **Correction (2026-11-06, later the same day).** The section "One real failure: XLTW-Test-n8575 did not stop"
+> below is wrong. The job runner's log shows this container was paused by the host from about 76 s to about 515 s
+> into the n8575 run; the pause ended at the limit, so the late-SIGTERM rule did not catch it. It was not a stuck
+> PyVRP call. Two runs in the table below that the rule counted as valid (n7037 and n8389) were also paused for
+> about 184 s each. See [pause-audit.md](pause-audit.md) for every affected run and how it was checked.
+
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. CC BY 4.0.
 Written 2026-11-06 ~05:30 UTC. Raw outputs: `results-b1.*`, `progress-b1.jsonl`, `results-b2.*`, `progress-b2.jsonl`,
 `sols/` (every counted solution, exact-checked). Pre-registration: `expectations.md` (G0-G5, scored only on all
@@ -13,7 +19,7 @@ pinned baseline (`solver.py` at ba1eec8, PyVRP 0.14.1) one instance at a time at
 
 Both containers were paused by the host for about 45 minutes in total while they ran. A paused container freezes
 the harness as well as the solver, and the clock keeps going. In five runs the harness's first poll after the
-pause was long past the limit: it sent SIGTERM 388-930 s late and SIGKILL 0.2 s later.
+pause was long past the limit: it sent SIGTERM 388-930 s late and SIGKILL 0.2 s after it.
 
 | part | instance | limit s | SIGTERM sent at s | vehicles | K |
 |---|---|---|---|---|---|
@@ -27,7 +33,7 @@ These are not valid runs of the protocol. Rule, set before any re-run result is 
 more than 1 s after its limit (the harness polls every 0.2 s) is invalid and is re-run once, unchanged (job
 `xltwrun-b1r-v1`: parts b1ra, b1rb, b2r). The final score uses the re-runs; these originals stay here.
 
-## One real failure: XLTW-Test-n8575 did not stop
+## One real failure: XLTW-Test-n8575 did not stop (WRONG, see the correction at the top)
 
 On n8575 (8,574 customers, capacity non-binding, K = 11) the harness was on time: SIGTERM 0.19 s after the
 514.4 s limit. The solver had not stopped by itself and did not react within 5 s, so it was SIGKILLed. Its stderr

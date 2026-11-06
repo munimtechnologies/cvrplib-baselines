@@ -1,0 +1,77 @@
+{
+ "pyvrp": "0.14.1 (pinned)",
+ "scale": 30.0,
+ "seed": 20261104,
+ "part": "b3ra",
+ "min_n": 9100,
+ "max_n": 9200,
+ "workers": 1,
+ "mem_gb": 5.0,
+ "archive_sha256_expected": "9635b9fa813ea34ff3f35842f80a40ce6764d14c27cf2e13e5fbf1de623f4631",
+ "runs": [
+  {
+   "instance": "XLTW-Test-n9160",
+   "customers": 9159,
+   "limit": 549.54,
+   "seed": 20261104,
+   "exit": -9,
+   "wall": 672.13,
+   "sigterm_at": 671.52,
+   "sigkill_at": 671.73,
+   "blocks": 6,
+   "blocks_after_limit": 0,
+   "other_stdout_lines": 0,
+   "peak_gb": 3.892,
+   "mem_est_gb": 3.505,
+   "kc": 244,
+   "k": 244,
+   "solver": null,
+   "vehicles": 394,
+   "distance": 395364,
+   "exact_ok": true,
+   "at_s": 178.57,
+   "cost_line": 395364.0,
+   "cost_line_ok": true,
+   "last_block_counted": true,
+   "at_k": false,
+   "below_k": false,
+   "gap_k": 0.6148
+  }
+ ],
+ "tally_this_part": {
+  "runs": 1,
+  "errors": [],
+  "counted": 1,
+  "no_solution": [],
+  "cost_line_wrong": [],
+  "other_stdout": [],
+  "sigterm": [
+   "XLTW-Test-n9160"
+  ],
+  "sigkill": [
+   "XLTW-Test-n9160"
+  ],
+  "below_k": [],
+  "at_k": 0,
+  "at_k_kc1": 0,
+  "kc1": 0,
+  "at_k_other": 0,
+  "other": 1,
+  "median_gap_k": 0.6148,
+  "over_mem_est": [
+   "XLTW-Test-n9160"
+  ],
+  "no_peak": [],
+  "bound_timed_out": [],
+  "vehicles": 394,
+  "k_total": 244,
+  "predictions": {
+   "G0": "untestable",
+   "G1": "untestable",
+   "G2": "untestable",
+   "G3": "untestable",
+   "G4": "untestable",
+   "G5": "untestable"
+  }
+ }
+}
