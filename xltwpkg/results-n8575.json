@@ -1,0 +1,139 @@
+{
+ "job": "xltwpkg-n8575-v2",
+ "runs_set": "n8575",
+ "network_reachable": false,
+ "build": {
+  "tag": "cp312",
+  "python": "3.12.15",
+  "executable": "/usr/local/bin/python3",
+  "offline": true,
+  "wheels": [
+   {
+    "name": "pyvrp",
+    "version": "0.14.1",
+    "filename": "pyvrp-0.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "f533035aeb125cd06ff64f4c875210078d44716d8352bd398351be4feb9761c4"
+   },
+   {
+    "name": "numpy",
+    "version": "2.3.4",
+    "filename": "numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "4121c5beb58a7f9e6dfdee612cb24f4df5cd4db6e8261d7f4d7450a997a65d6a"
+   },
+   {
+    "name": "vrplib",
+    "version": "2.2.0",
+    "filename": "vrplib-2.2.0-py3-none-any.whl",
+    "sha256": "5bed28c4ff8cfaf99da7af3081e5627bc4108f0056abc25be0285d0a8b9ad104"
+   },
+   {
+    "name": "tqdm",
+    "version": "4.67.1",
+    "filename": "tqdm-4.67.1-py3-none-any.whl",
+    "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+   }
+  ],
+  "pins_ok": true,
+  "checked_by": "/usr/local/bin/python",
+  "numpy_from_lib": true,
+  "pyvrp_from_lib": true
+ },
+ "runs": [
+  {
+   "id": "W1",
+   "instance": "XLTW-Test-n8575",
+   "customers": 8574,
+   "limit": 514.44,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 512.349,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "exit_after_sigterm": null,
+   "stdout_lines": 3064,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 25,
+   "blocks_after_limit": 0,
+   "first_line_at": 31.44,
+   "last_cost_at": 512.062,
+   "slack": 2.378,
+   "peak_gb": 3.43,
+   "solver_stats": {
+    "solver": "xltw-solver 0.1.0",
+    "instance": "XLTW-Test-n8575",
+    "customers": 8574,
+    "limit": 514.4,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 11,
+     "k": 11,
+     "timed_out": false,
+     "seconds": 5.25
+    },
+    "fleet_solves": 11,
+    "iterations": 30011,
+    "fleet_seconds": 257.2,
+    "fleet_vehicles": 111,
+    "printed": 25,
+    "vehicles": 101,
+    "cost": 166466,
+    "sigterm": false,
+    "elapsed": 511.96
+   },
+   "watchdog": null,
+   "max_poll_gap": 0.053,
+   "harness_frozen": false,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 101,
+   "distance": 166466,
+   "cost_line": 166466.0,
+   "cost_line_ok": true,
+   "frozen_first_try": {
+    "id": "W1",
+    "instance": "XLTW-Test-n8575",
+    "customers": 8574,
+    "limit": 514.44,
+    "seed": 20261104,
+    "exit": -9,
+    "wall": 633.358,
+    "self_stopped": false,
+    "sigterm_at": 632.997,
+    "sigkill_at": 633.053,
+    "exit_after_sigterm": 0.36,
+    "stdout_lines": 720,
+    "bad_lines": [],
+    "bad_line_count": 0,
+    "numbering_errors": 0,
+    "blocks": 4,
+    "blocks_after_limit": 0,
+    "first_line_at": 28.037,
+    "last_cost_at": 90.467,
+    "slack": 423.973,
+    "peak_gb": 3.424,
+    "solver_stats": null,
+    "watchdog": null,
+    "max_poll_gap": 534.084,
+    "harness_frozen": true,
+    "feasible": true,
+    "reason": "",
+    "vehicles": 147,
+    "distance": 205753,
+    "cost_line": 205753.0,
+    "cost_line_ok": true
+   }
+  }
+ ],
+ "predictions": {
+  "C0": "held",
+  "C7": "held",
+  "C8": "did not hold"
+ },
+ "python": "3.12.15",
+ "executable": "/usr/local/bin/python"
+}

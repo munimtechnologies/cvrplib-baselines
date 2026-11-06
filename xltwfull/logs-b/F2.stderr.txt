@@ -1,0 +1,11 @@
+[     0.5s] bound {"kc": 1, "kb": 1, "kt": 16, "k": 16, "timed_out": false, "seconds": 0.19}
+/work/lib/pyvrp/PenaltyManager.py:228: PenaltyBoundWarning: 
+            A penalty parameter has reached its maximum value. This means PyVRP
+            struggles to find a feasible solution for this instance, either
+            because the instance has no feasible solution, or it is hard to
+            find one - possibly due to large data scaling differences. Check
+            the instance carefully to determine if a feasible solution exists,
+            or consider increasing PenaltyParams.max_penalty.
+            
+  warn(msg, PenaltyBoundWarning)
+XLTW_WATCHDOG sigterm at 2611.68s, prints 30

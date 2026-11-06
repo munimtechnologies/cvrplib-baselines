@@ -1,0 +1,11 @@
+[     0.5s] bound {"kc": 92, "kb": 92, "kt": 18, "k": 92, "timed_out": false, "seconds": 0.21}
+/work/lib/pyvrp/PenaltyManager.py:228: PenaltyBoundWarning: 
+            A penalty parameter has reached its maximum value. This means PyVRP
+            struggles to find a feasible solution for this instance, either
+            because the instance has no feasible solution, or it is hard to
+            find one - possibly due to large data scaling differences. Check
+            the instance carefully to determine if a feasible solution exists,
+            or consider increasing PenaltyParams.max_penalty.
+            
+  warn(msg, PenaltyBoundWarning)
+XLTW_SOLVER_STATS {"solver": "xltw-solver 0.1.0", "instance": "XLTW-Test-n1094", "customers": 1093, "limit": 60.0, "seed": 7, "bound": {"kc": 92, "kb": 92, "kt": 18, "k": 92, "timed_out": false, "seconds": 0.21}, "fleet_solves": 5, "iterations": 9021, "fleet_seconds": 28.9, "fleet_vehicles": 95, "printed": 12, "vehicles": 94, "cost": 79908, "sigterm": false, "elapsed": 58.4}
