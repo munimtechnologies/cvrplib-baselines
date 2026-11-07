@@ -1,0 +1,66 @@
+===== setup-01-pip: pip install pyvrp==0.14.1
+Collecting pyvrp==0.14.1
+  Downloading pyvrp-0.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.9 kB)
+Collecting matplotlib>=2.2.0 (from pyvrp==0.14.1)
+  Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting numpy>=1.26.0 (from pyvrp==0.14.1)
+  Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting tqdm>=4.64.1 (from pyvrp==0.14.1)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting vrplib>=1.4.0 (from pyvrp==0.14.1)
+  Downloading vrplib-2.2.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=9 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting tzdata (from python-dateutil>=2.7->matplotlib>=2.2.0->pyvrp==0.14.1)
+  Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading pyvrp-0.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 18.2 MB/s eta 0:00:00
+Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 45.0 MB/s eta 0:00:00
+Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 45.7 MB/s eta 0:00:00
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Downloading vrplib-2.2.0-py3-none-any.whl (15 kB)
+Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 41.1 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 26.9 MB/s eta 0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 42.9 MB/s eta 0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: tzdata, tqdm, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, vrplib, python-dateutil, contourpy, matplotlib, pyvrp
+Successfully installed contourpy-1.4.0 cycler-0.12.1 fonttools-4.68.0 kiwisolver-1.5.1 matplotlib-3.11.2 numpy-2.5.4 packaging-26.3 pillow-13.0.0 pyparsing-3.3.3 python-dateutil-4.0.0 pyvrp-0.14.1 tqdm-4.70.1 tzdata-2026.6 vrplib-2.2.0
+
+===== setup-02-python: python getmerge.py
+fetched 5 pinned files and 11 result files
+
+===== run-01-python: python -m unittest -v test_filt
+{"replaced": [{"instance": "B", "from": "b1", "by": "b1ra", "limit": 100.0, "sigterm_at": 400.0}, {"instance": "D", "from": "b3", "by": "b3ra", "limit": 100.0, "sigterm_at": 900.0}], "kept_frozen_by_rule": [{"instance": "D", "part": "b3ra", "limit": 100.0, "sigterm_at": 300.0}]}
+
+===== run-02-python: python filt.py in/xltwrun /out/xltwrun
+{"replaced": [{"instance": "XLTW-Test-n7193", "from": "b1", "by": "b1rb", "limit": 431.52, "sigterm_at": 819.12}, {"instance": "XLTW-Test-n6884", "from": "b1", "by": "b1ra", "limit": 412.98, "sigterm_at": 1343.27}, {"instance": "XLTW-Test-n6734", "from": "b1", "by": "b1ra", "limit": 403.98, "sigterm_at": 978.5}, {"instance": "XLTW-Test-n8207", "from": "b2", "by": "b2r", "limit": 492.36, "sigterm_at": 1254.84}, {"instance": "XLTW-Test-n8028", "from": "b2", "by": "b2r", "limit": 481.62, "sigterm_at": 977.85}, {"instance": "XLTW-Test-n9571", "from": "b3", "by": "b3rb", "limit": 574.2, "sigterm_at": 3667.35}, {"instance": "XLTW-Test-n9160", "from": "b3", "by": "b3ra", "limit": 549.54, "sigterm_at": 761.75}], "kept_frozen_by_rule": [{"instance": "XLTW-Test-n9160", "part": "b3ra", "limit": 549.54, "sigterm_at": 671.52}]}
+
+===== run-03-python: python xltwrun.py --merge in/xltwrun/results-a.json,/out/xltwrun/results-b1f.json,/out/xltwrun/results-b2f.json,/out/xltwrun/results-b3f.json,in/xltwrun/results-b1ra.json,in/xltwrun/results-b1rb.json,
+{"G0": "did not hold", "G1": "did not hold", "G2": "did not hold", "G3": "held", "G4": "did not hold", "G5": "did not hold"}
+
+===== run-04-python: python fullrun.py --merge in/xltwfull/results-a.json,in/xltwfull/results-b.json --out-dir /out
+{"F0": "did not hold", "F1": "untestable (F0 failed)", "F2": "untestable (F0 failed)", "F3": "untestable (F0 failed)", "F4": "untestable (F0 failed)", "F5": "untestable (F0 failed)"}

@@ -1,0 +1,1427 @@
+{
+ "part": "merged",
+ "network_reachable": false,
+ "build": {
+  "tag": "cp312",
+  "python": "3.12.15",
+  "executable": "/usr/local/bin/python3",
+  "offline": true,
+  "wheels": [
+   {
+    "name": "pyvrp",
+    "version": "0.14.1",
+    "filename": "pyvrp-0.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "f533035aeb125cd06ff64f4c875210078d44716d8352bd398351be4feb9761c4"
+   },
+   {
+    "name": "numpy",
+    "version": "2.3.4",
+    "filename": "numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "4121c5beb58a7f9e6dfdee612cb24f4df5cd4db6e8261d7f4d7450a997a65d6a"
+   },
+   {
+    "name": "vrplib",
+    "version": "2.2.0",
+    "filename": "vrplib-2.2.0-py3-none-any.whl",
+    "sha256": "5bed28c4ff8cfaf99da7af3081e5627bc4108f0056abc25be0285d0a8b9ad104"
+   },
+   {
+    "name": "tqdm",
+    "version": "4.67.1",
+    "filename": "tqdm-4.67.1-py3-none-any.whl",
+    "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+   }
+  ],
+  "pins_ok": true,
+  "checked_by": "/usr/local/bin/python",
+  "numpy_from_lib": true,
+  "pyvrp_from_lib": true
+ },
+ "runs": [
+  {
+   "id": "F1",
+   "instance": "XLTW-Test-n1234",
+   "customers": 1233,
+   "limit": 2219.4,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 2213.586,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 1151,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 32,
+   "blocks_after_limit": 0,
+   "last_cost_at": 2213.526,
+   "slack": 5.874,
+   "peak_gb": 0.164,
+   "max_poll_gap": 0.063,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 1.44,
+     "vehicles": 64,
+     "cost": 121784.0
+    },
+    {
+     "t": 29.12,
+     "vehicles": 35,
+     "cost": 95685.0
+    },
+    {
+     "t": 86.36,
+     "vehicles": 34,
+     "cost": 91437.0
+    },
+    {
+     "t": 1107.35,
+     "vehicles": 34,
+     "cost": 91405.0
+    },
+    {
+     "t": 1132.28,
+     "vehicles": 34,
+     "cost": 88384.0
+    },
+    {
+     "t": 1156.65,
+     "vehicles": 34,
+     "cost": 86824.0
+    },
+    {
+     "t": 1181.21,
+     "vehicles": 34,
+     "cost": 86013.0
+    },
+    {
+     "t": 1205.28,
+     "vehicles": 34,
+     "cost": 85316.0
+    },
+    {
+     "t": 1227.88,
+     "vehicles": 34,
+     "cost": 84892.0
+    },
+    {
+     "t": 1252.77,
+     "vehicles": 34,
+     "cost": 84654.0
+    },
+    {
+     "t": 1278.89,
+     "vehicles": 34,
+     "cost": 84293.0
+    },
+    {
+     "t": 1303.19,
+     "vehicles": 34,
+     "cost": 84112.0
+    },
+    {
+     "t": 1329.84,
+     "vehicles": 34,
+     "cost": 83970.0
+    },
+    {
+     "t": 1353.64,
+     "vehicles": 34,
+     "cost": 83919.0
+    },
+    {
+     "t": 1385.42,
+     "vehicles": 34,
+     "cost": 83917.0
+    },
+    {
+     "t": 1415.85,
+     "vehicles": 34,
+     "cost": 83902.0
+    },
+    {
+     "t": 1440.25,
+     "vehicles": 34,
+     "cost": 83864.0
+    },
+    {
+     "t": 1462.58,
+     "vehicles": 34,
+     "cost": 83858.0
+    },
+    {
+     "t": 1493.48,
+     "vehicles": 34,
+     "cost": 83851.0
+    },
+    {
+     "t": 1603.65,
+     "vehicles": 34,
+     "cost": 83827.0
+    },
+    {
+     "t": 1719.57,
+     "vehicles": 34,
+     "cost": 83798.0
+    },
+    {
+     "t": 1768.06,
+     "vehicles": 34,
+     "cost": 83791.0
+    },
+    {
+     "t": 1797.51,
+     "vehicles": 34,
+     "cost": 83787.0
+    },
+    {
+     "t": 1861.31,
+     "vehicles": 34,
+     "cost": 83776.0
+    },
+    {
+     "t": 1888.26,
+     "vehicles": 34,
+     "cost": 83750.0
+    },
+    {
+     "t": 1957.74,
+     "vehicles": 34,
+     "cost": 83743.0
+    },
+    {
+     "t": 1999.57,
+     "vehicles": 34,
+     "cost": 83725.0
+    },
+    {
+     "t": 2032.22,
+     "vehicles": 34,
+     "cost": 83720.0
+    },
+    {
+     "t": 2055.3,
+     "vehicles": 34,
+     "cost": 83712.0
+    },
+    {
+     "t": 2116.89,
+     "vehicles": 34,
+     "cost": 83701.0
+    },
+    {
+     "t": 2150.65,
+     "vehicles": 34,
+     "cost": 83694.0
+    },
+    {
+     "t": 2213.53,
+     "vehicles": 34,
+     "cost": 83690.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver 0.1.0",
+    "instance": "XLTW-Test-n1234",
+    "customers": 1233,
+    "limit": 2219.4,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 7,
+     "k": 7,
+     "timed_out": false,
+     "seconds": 0.14
+    },
+    "fleet_solves": 21,
+    "iterations": 423658,
+    "fleet_seconds": 1106.4,
+    "fleet_vehicles": 34,
+    "printed": 32,
+    "vehicles": 34,
+    "cost": 83690,
+    "sigterm": false,
+    "elapsed": 2213.48
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 34,
+   "distance": 83690,
+   "cost_line": 83690.0,
+   "cost_line_ok": true,
+   "part_a_vehicles": 35,
+   "part_a_distance": 89250,
+   "k": 7,
+   "k_star": 27,
+   "final_vehicles_first_at": 86.36
+  },
+  {
+   "id": "F2",
+   "instance": "XLTW-Test-n1421",
+   "customers": 1420,
+   "limit": 2556.0,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 2611.807,
+   "self_stopped": false,
+   "sigterm_at": 2611.753,
+   "sigkill_at": null,
+   "stdout_lines": 2042,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 30,
+   "blocks_after_limit": 0,
+   "last_cost_at": 2117.712,
+   "slack": 438.288,
+   "peak_gb": 0.212,
+   "max_poll_gap": 489.168,
+   "harness_frozen": true,
+   "trajectory": [
+    {
+     "t": 1.43,
+     "vehicles": 112,
+     "cost": 199242.0
+    },
+    {
+     "t": 28.4,
+     "vehicles": 73,
+     "cost": 143972.0
+    },
+    {
+     "t": 61.92,
+     "vehicles": 69,
+     "cost": 139559.0
+    },
+    {
+     "t": 119.42,
+     "vehicles": 67,
+     "cost": 137528.0
+    },
+    {
+     "t": 201.16,
+     "vehicles": 66,
+     "cost": 137837.0
+    },
+    {
+     "t": 1041.85,
+     "vehicles": 65,
+     "cost": 131927.0
+    },
+    {
+     "t": 1275.47,
+     "vehicles": 65,
+     "cost": 131895.0
+    },
+    {
+     "t": 1305.87,
+     "vehicles": 65,
+     "cost": 131519.0
+    },
+    {
+     "t": 1334.61,
+     "vehicles": 65,
+     "cost": 131390.0
+    },
+    {
+     "t": 1365.37,
+     "vehicles": 65,
+     "cost": 131285.0
+    },
+    {
+     "t": 1391.7,
+     "vehicles": 65,
+     "cost": 131207.0
+    },
+    {
+     "t": 1418.94,
+     "vehicles": 65,
+     "cost": 131079.0
+    },
+    {
+     "t": 1455.48,
+     "vehicles": 65,
+     "cost": 130832.0
+    },
+    {
+     "t": 1482.51,
+     "vehicles": 65,
+     "cost": 130700.0
+    },
+    {
+     "t": 1508.25,
+     "vehicles": 65,
+     "cost": 130694.0
+    },
+    {
+     "t": 1540.15,
+     "vehicles": 65,
+     "cost": 130524.0
+    },
+    {
+     "t": 1566.81,
+     "vehicles": 65,
+     "cost": 130499.0
+    },
+    {
+     "t": 1595.96,
+     "vehicles": 65,
+     "cost": 130425.0
+    },
+    {
+     "t": 1630.27,
+     "vehicles": 65,
+     "cost": 130365.0
+    },
+    {
+     "t": 1657.02,
+     "vehicles": 65,
+     "cost": 130326.0
+    },
+    {
+     "t": 1696.03,
+     "vehicles": 65,
+     "cost": 130308.0
+    },
+    {
+     "t": 1727.52,
+     "vehicles": 65,
+     "cost": 130294.0
+    },
+    {
+     "t": 1756.94,
+     "vehicles": 65,
+     "cost": 130291.0
+    },
+    {
+     "t": 1785.64,
+     "vehicles": 65,
+     "cost": 130280.0
+    },
+    {
+     "t": 1867.51,
+     "vehicles": 65,
+     "cost": 130272.0
+    },
+    {
+     "t": 1917.03,
+     "vehicles": 65,
+     "cost": 130270.0
+    },
+    {
+     "t": 1942.9,
+     "vehicles": 65,
+     "cost": 130267.0
+    },
+    {
+     "t": 2049.0,
+     "vehicles": 65,
+     "cost": 130259.0
+    },
+    {
+     "t": 2081.74,
+     "vehicles": 65,
+     "cost": 130255.0
+    },
+    {
+     "t": 2117.71,
+     "vehicles": 65,
+     "cost": 130249.0
+    }
+   ],
+   "solver_stats": null,
+   "watchdog": "XLTW_WATCHDOG sigterm at 2611.68s, prints 30",
+   "feasible": true,
+   "reason": "",
+   "vehicles": 65,
+   "distance": 130249,
+   "cost_line": 130249.0,
+   "cost_line_ok": true,
+   "frozen_first_try": {
+    "id": "F2",
+    "instance": "XLTW-Test-n1421",
+    "customers": 1420,
+    "limit": 2556.0,
+    "seed": 20261104,
+    "exit": 0,
+    "wall": 2549.763,
+    "self_stopped": true,
+    "sigterm_at": null,
+    "sigkill_at": null,
+    "stdout_lines": 2535,
+    "bad_lines": [],
+    "bad_line_count": 0,
+    "numbering_errors": 0,
+    "blocks": 37,
+    "blocks_after_limit": 0,
+    "last_cost_at": 2493.68,
+    "slack": 62.32,
+    "peak_gb": 0.195,
+    "max_poll_gap": 536.201,
+    "harness_frozen": true,
+    "trajectory": [
+     {
+      "t": 1.18,
+      "vehicles": 112,
+      "cost": 199242.0
+     },
+     {
+      "t": 32.18,
+      "vehicles": 72,
+      "cost": 143281.0
+     },
+     {
+      "t": 61.65,
+      "vehicles": 69,
+      "cost": 139559.0
+     },
+     {
+      "t": 123.26,
+      "vehicles": 67,
+      "cost": 137528.0
+     },
+     {
+      "t": 754.43,
+      "vehicles": 66,
+      "cost": 137837.0
+     },
+     {
+      "t": 1275.35,
+      "vehicles": 66,
+      "cost": 137710.0
+     },
+     {
+      "t": 1303.56,
+      "vehicles": 66,
+      "cost": 134605.0
+     },
+     {
+      "t": 1339.17,
+      "vehicles": 66,
+      "cost": 133491.0
+     },
+     {
+      "t": 1377.84,
+      "vehicles": 66,
+      "cost": 132915.0
+     },
+     {
+      "t": 1429.05,
+      "vehicles": 66,
+      "cost": 132576.0
+     },
+     {
+      "t": 1461.23,
+      "vehicles": 66,
+      "cost": 132257.0
+     },
+     {
+      "t": 1488.64,
+      "vehicles": 66,
+      "cost": 131944.0
+     },
+     {
+      "t": 1519.57,
+      "vehicles": 66,
+      "cost": 131784.0
+     },
+     {
+      "t": 1550.69,
+      "vehicles": 66,
+      "cost": 131556.0
+     },
+     {
+      "t": 1576.25,
+      "vehicles": 66,
+      "cost": 131419.0
+     },
+     {
+      "t": 1602.49,
+      "vehicles": 66,
+      "cost": 131330.0
+     },
+     {
+      "t": 1634.39,
+      "vehicles": 66,
+      "cost": 131254.0
+     },
+     {
+      "t": 1661.79,
+      "vehicles": 66,
+      "cost": 131185.0
+     },
+     {
+      "t": 1691.77,
+      "vehicles": 66,
+      "cost": 131090.0
+     },
+     {
+      "t": 1734.31,
+      "vehicles": 66,
+      "cost": 131042.0
+     },
+     {
+      "t": 1759.88,
+      "vehicles": 66,
+      "cost": 131006.0
+     },
+     {
+      "t": 1794.45,
+      "vehicles": 66,
+      "cost": 130972.0
+     },
+     {
+      "t": 1820.6,
+      "vehicles": 66,
+      "cost": 130951.0
+     },
+     {
+      "t": 1892.87,
+      "vehicles": 66,
+      "cost": 130927.0
+     },
+     {
+      "t": 1923.77,
+      "vehicles": 66,
+      "cost": 130916.0
+     },
+     {
+      "t": 2016.15,
+      "vehicles": 66,
+      "cost": 130912.0
+     },
+     {
+      "t": 2053.57,
+      "vehicles": 66,
+      "cost": 130908.0
+     },
+     {
+      "t": 2080.18,
+      "vehicles": 66,
+      "cost": 130885.0
+     },
+     {
+      "t": 2116.12,
+      "vehicles": 66,
+      "cost": 130844.0
+     },
+     {
+      "t": 2161.13,
+      "vehicles": 66,
+      "cost": 130826.0
+     },
+     {
+      "t": 2188.08,
+      "vehicles": 66,
+      "cost": 130822.0
+     },
+     {
+      "t": 2242.99,
+      "vehicles": 66,
+      "cost": 130821.0
+     },
+     {
+      "t": 2273.72,
+      "vehicles": 66,
+      "cost": 130820.0
+     },
+     {
+      "t": 2303.18,
+      "vehicles": 66,
+      "cost": 130819.0
+     },
+     {
+      "t": 2373.87,
+      "vehicles": 66,
+      "cost": 130814.0
+     },
+     {
+      "t": 2453.88,
+      "vehicles": 66,
+      "cost": 130805.0
+     },
+     {
+      "t": 2493.68,
+      "vehicles": 66,
+      "cost": 130800.0
+     }
+    ],
+    "solver_stats": {
+     "solver": "xltw-solver 0.1.0",
+     "instance": "XLTW-Test-n1421",
+     "customers": 1420,
+     "limit": 2556.0,
+     "seed": 20261104,
+     "bound": {
+      "kc": 1,
+      "kb": 1,
+      "kt": 16,
+      "k": 16,
+      "timed_out": false,
+      "seconds": 0.19
+     },
+     "fleet_solves": 24,
+     "iterations": 281016,
+     "fleet_seconds": 1274.4,
+     "fleet_vehicles": 66,
+     "printed": 37,
+     "vehicles": 66,
+     "cost": 130800,
+     "sigterm": false,
+     "elapsed": 2549.42
+    },
+    "watchdog": null,
+    "feasible": true,
+    "reason": "",
+    "vehicles": 66,
+    "distance": 130800,
+    "cost_line": 130800.0,
+    "cost_line_ok": true
+   },
+   "part_a_vehicles": 72,
+   "part_a_distance": 139809,
+   "k": 16,
+   "k_star": 47,
+   "final_vehicles_first_at": 1041.85
+  },
+  {
+   "id": "F3",
+   "instance": "XLTW-Test-n1608",
+   "customers": 1607,
+   "limit": 2892.6,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 2885.471,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 4500,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 41,
+   "blocks_after_limit": 0,
+   "last_cost_at": 2835.619,
+   "slack": 56.981,
+   "peak_gb": 0.24,
+   "max_poll_gap": 0.057,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 1.42,
+     "vehicles": 124,
+     "cost": 126883.0
+    },
+    {
+     "t": 49.53,
+     "vehicles": 113,
+     "cost": 121276.0
+    },
+    {
+     "t": 79.99,
+     "vehicles": 112,
+     "cost": 120039.0
+    },
+    {
+     "t": 150.56,
+     "vehicles": 111,
+     "cost": 119221.0
+    },
+    {
+     "t": 302.92,
+     "vehicles": 110,
+     "cost": 118122.0
+    },
+    {
+     "t": 586.28,
+     "vehicles": 109,
+     "cost": 116267.0
+    },
+    {
+     "t": 1123.98,
+     "vehicles": 108,
+     "cost": 113887.0
+    },
+    {
+     "t": 1443.47,
+     "vehicles": 108,
+     "cost": 113877.0
+    },
+    {
+     "t": 1473.72,
+     "vehicles": 108,
+     "cost": 113649.0
+    },
+    {
+     "t": 1505.41,
+     "vehicles": 108,
+     "cost": 113491.0
+    },
+    {
+     "t": 1534.5,
+     "vehicles": 108,
+     "cost": 113354.0
+    },
+    {
+     "t": 1563.58,
+     "vehicles": 108,
+     "cost": 113290.0
+    },
+    {
+     "t": 1593.58,
+     "vehicles": 108,
+     "cost": 113192.0
+    },
+    {
+     "t": 1628.62,
+     "vehicles": 108,
+     "cost": 113100.0
+    },
+    {
+     "t": 1661.15,
+     "vehicles": 108,
+     "cost": 113002.0
+    },
+    {
+     "t": 1692.34,
+     "vehicles": 108,
+     "cost": 112974.0
+    },
+    {
+     "t": 1752.08,
+     "vehicles": 108,
+     "cost": 112950.0
+    },
+    {
+     "t": 1783.84,
+     "vehicles": 108,
+     "cost": 112944.0
+    },
+    {
+     "t": 1821.64,
+     "vehicles": 108,
+     "cost": 112941.0
+    },
+    {
+     "t": 1855.64,
+     "vehicles": 108,
+     "cost": 112940.0
+    },
+    {
+     "t": 1921.45,
+     "vehicles": 108,
+     "cost": 112938.0
+    },
+    {
+     "t": 1959.14,
+     "vehicles": 108,
+     "cost": 112923.0
+    },
+    {
+     "t": 1994.54,
+     "vehicles": 108,
+     "cost": 112908.0
+    },
+    {
+     "t": 2029.65,
+     "vehicles": 108,
+     "cost": 112900.0
+    },
+    {
+     "t": 2082.37,
+     "vehicles": 108,
+     "cost": 112896.0
+    },
+    {
+     "t": 2111.78,
+     "vehicles": 108,
+     "cost": 112874.0
+    },
+    {
+     "t": 2153.41,
+     "vehicles": 108,
+     "cost": 112868.0
+    },
+    {
+     "t": 2184.79,
+     "vehicles": 108,
+     "cost": 112851.0
+    },
+    {
+     "t": 2214.31,
+     "vehicles": 108,
+     "cost": 112799.0
+    },
+    {
+     "t": 2243.51,
+     "vehicles": 108,
+     "cost": 112780.0
+    },
+    {
+     "t": 2272.91,
+     "vehicles": 108,
+     "cost": 112768.0
+    },
+    {
+     "t": 2337.05,
+     "vehicles": 108,
+     "cost": 112763.0
+    },
+    {
+     "t": 2418.59,
+     "vehicles": 108,
+     "cost": 112737.0
+    },
+    {
+     "t": 2451.6,
+     "vehicles": 108,
+     "cost": 112696.0
+    },
+    {
+     "t": 2504.09,
+     "vehicles": 108,
+     "cost": 112688.0
+    },
+    {
+     "t": 2533.79,
+     "vehicles": 108,
+     "cost": 112685.0
+    },
+    {
+     "t": 2585.87,
+     "vehicles": 108,
+     "cost": 112684.0
+    },
+    {
+     "t": 2618.95,
+     "vehicles": 108,
+     "cost": 112664.0
+    },
+    {
+     "t": 2666.49,
+     "vehicles": 108,
+     "cost": 112663.0
+    },
+    {
+     "t": 2728.03,
+     "vehicles": 108,
+     "cost": 112658.0
+    },
+    {
+     "t": 2835.62,
+     "vehicles": 108,
+     "cost": 112655.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver 0.1.0",
+    "instance": "XLTW-Test-n1608",
+    "customers": 1607,
+    "limit": 2892.6,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 7,
+     "k": 7,
+     "timed_out": false,
+     "seconds": 0.16
+    },
+    "fleet_solves": 15,
+    "iterations": 414221,
+    "fleet_seconds": 1442.3,
+    "fleet_vehicles": 108,
+    "printed": 41,
+    "vehicles": 108,
+    "cost": 112655,
+    "sigterm": false,
+    "elapsed": 2885.34
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 108,
+   "distance": 112655,
+   "cost_line": 112655.0,
+   "cost_line_ok": true,
+   "part_a_vehicles": 113,
+   "part_a_distance": 118365,
+   "k": 7,
+   "k_star": 81,
+   "final_vehicles_first_at": 1123.98
+  },
+  {
+   "id": "F4",
+   "instance": "XLTW-Test-n1841",
+   "customers": 1840,
+   "limit": 3312.0,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 3304.038,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 916,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 33,
+   "blocks_after_limit": 0,
+   "last_cost_at": 3303.97,
+   "slack": 8.03,
+   "peak_gb": 0.273,
+   "max_poll_gap": 0.059,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 2.13,
+     "vehicles": 77,
+     "cost": 150523.0
+    },
+    {
+     "t": 37.11,
+     "vehicles": 30,
+     "cost": 103439.0
+    },
+    {
+     "t": 75.55,
+     "vehicles": 26,
+     "cost": 95805.0
+    },
+    {
+     "t": 191.67,
+     "vehicles": 25,
+     "cost": 90580.0
+    },
+    {
+     "t": 1652.99,
+     "vehicles": 25,
+     "cost": 90474.0
+    },
+    {
+     "t": 1691.75,
+     "vehicles": 25,
+     "cost": 87959.0
+    },
+    {
+     "t": 1727.2,
+     "vehicles": 25,
+     "cost": 87066.0
+    },
+    {
+     "t": 1765.12,
+     "vehicles": 25,
+     "cost": 86180.0
+    },
+    {
+     "t": 1799.71,
+     "vehicles": 25,
+     "cost": 85865.0
+    },
+    {
+     "t": 1836.32,
+     "vehicles": 25,
+     "cost": 85498.0
+    },
+    {
+     "t": 1872.89,
+     "vehicles": 25,
+     "cost": 85312.0
+    },
+    {
+     "t": 1907.64,
+     "vehicles": 25,
+     "cost": 85190.0
+    },
+    {
+     "t": 1944.61,
+     "vehicles": 25,
+     "cost": 85015.0
+    },
+    {
+     "t": 1979.06,
+     "vehicles": 25,
+     "cost": 84891.0
+    },
+    {
+     "t": 2015.63,
+     "vehicles": 25,
+     "cost": 84866.0
+    },
+    {
+     "t": 2050.13,
+     "vehicles": 25,
+     "cost": 84831.0
+    },
+    {
+     "t": 2106.66,
+     "vehicles": 25,
+     "cost": 84814.0
+    },
+    {
+     "t": 2139.97,
+     "vehicles": 25,
+     "cost": 84792.0
+    },
+    {
+     "t": 2176.49,
+     "vehicles": 25,
+     "cost": 84779.0
+    },
+    {
+     "t": 2230.24,
+     "vehicles": 25,
+     "cost": 84752.0
+    },
+    {
+     "t": 2355.37,
+     "vehicles": 25,
+     "cost": 84742.0
+    },
+    {
+     "t": 2435.91,
+     "vehicles": 25,
+     "cost": 84739.0
+    },
+    {
+     "t": 2473.1,
+     "vehicles": 25,
+     "cost": 84715.0
+    },
+    {
+     "t": 2507.96,
+     "vehicles": 25,
+     "cost": 84695.0
+    },
+    {
+     "t": 2599.18,
+     "vehicles": 25,
+     "cost": 84686.0
+    },
+    {
+     "t": 2643.02,
+     "vehicles": 25,
+     "cost": 84646.0
+    },
+    {
+     "t": 2697.46,
+     "vehicles": 25,
+     "cost": 84639.0
+    },
+    {
+     "t": 2759.69,
+     "vehicles": 25,
+     "cost": 84625.0
+    },
+    {
+     "t": 2888.75,
+     "vehicles": 25,
+     "cost": 84619.0
+    },
+    {
+     "t": 2979.39,
+     "vehicles": 25,
+     "cost": 84617.0
+    },
+    {
+     "t": 3243.79,
+     "vehicles": 25,
+     "cost": 84606.0
+    },
+    {
+     "t": 3277.73,
+     "vehicles": 25,
+     "cost": 84511.0
+    },
+    {
+     "t": 3303.97,
+     "vehicles": 25,
+     "cost": 84464.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver 0.1.0",
+    "instance": "XLTW-Test-n1841",
+    "customers": 1840,
+    "limit": 3312.0,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 4,
+     "k": 4,
+     "timed_out": false,
+     "seconds": 0.17
+    },
+    "fleet_solves": 28,
+    "iterations": 470622,
+    "fleet_seconds": 1651.5,
+    "fleet_vehicles": 25,
+    "printed": 33,
+    "vehicles": 25,
+    "cost": 84464,
+    "sigterm": false,
+    "elapsed": 3303.89
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 25,
+   "distance": 84464,
+   "cost_line": 84464.0,
+   "cost_line_ok": true,
+   "frozen_first_try": {
+    "id": "F4",
+    "instance": "XLTW-Test-n1841",
+    "customers": 1840,
+    "limit": 3312.0,
+    "seed": 20261104,
+    "exit": 0,
+    "wall": 3304.282,
+    "self_stopped": true,
+    "sigterm_at": null,
+    "sigkill_at": null,
+    "stdout_lines": 971,
+    "bad_lines": [],
+    "bad_line_count": 0,
+    "numbering_errors": 0,
+    "blocks": 35,
+    "blocks_after_limit": 0,
+    "last_cost_at": 3304.027,
+    "slack": 7.973,
+    "peak_gb": 0.272,
+    "max_poll_gap": 84.573,
+    "harness_frozen": true,
+    "trajectory": [
+     {
+      "t": 2.64,
+      "vehicles": 77,
+      "cost": 150523.0
+     },
+     {
+      "t": 36.24,
+      "vehicles": 33,
+      "cost": 100480.0
+     },
+     {
+      "t": 86.37,
+      "vehicles": 26,
+      "cost": 95805.0
+     },
+     {
+      "t": 276.91,
+      "vehicles": 25,
+      "cost": 90580.0
+     },
+     {
+      "t": 1653.66,
+      "vehicles": 25,
+      "cost": 90474.0
+     },
+     {
+      "t": 1689.12,
+      "vehicles": 25,
+      "cost": 87959.0
+     },
+     {
+      "t": 1723.52,
+      "vehicles": 25,
+      "cost": 87036.0
+     },
+     {
+      "t": 1766.23,
+      "vehicles": 25,
+      "cost": 86158.0
+     },
+     {
+      "t": 1800.13,
+      "vehicles": 25,
+      "cost": 85636.0
+     },
+     {
+      "t": 1835.01,
+      "vehicles": 25,
+      "cost": 85321.0
+     },
+     {
+      "t": 1868.98,
+      "vehicles": 25,
+      "cost": 85141.0
+     },
+     {
+      "t": 1903.8,
+      "vehicles": 25,
+      "cost": 84979.0
+     },
+     {
+      "t": 1940.18,
+      "vehicles": 25,
+      "cost": 84879.0
+     },
+     {
+      "t": 1978.93,
+      "vehicles": 25,
+      "cost": 84859.0
+     },
+     {
+      "t": 2012.07,
+      "vehicles": 25,
+      "cost": 84829.0
+     },
+     {
+      "t": 2067.09,
+      "vehicles": 25,
+      "cost": 84814.0
+     },
+     {
+      "t": 2114.22,
+      "vehicles": 25,
+      "cost": 84787.0
+     },
+     {
+      "t": 2161.17,
+      "vehicles": 25,
+      "cost": 84777.0
+     },
+     {
+      "t": 2202.51,
+      "vehicles": 25,
+      "cost": 84752.0
+     },
+     {
+      "t": 2321.3,
+      "vehicles": 25,
+      "cost": 84742.0
+     },
+     {
+      "t": 2411.01,
+      "vehicles": 25,
+      "cost": 84739.0
+     },
+     {
+      "t": 2446.0,
+      "vehicles": 25,
+      "cost": 84716.0
+     },
+     {
+      "t": 2481.12,
+      "vehicles": 25,
+      "cost": 84709.0
+     },
+     {
+      "t": 2631.36,
+      "vehicles": 25,
+      "cost": 84686.0
+     },
+     {
+      "t": 2682.87,
+      "vehicles": 25,
+      "cost": 84646.0
+     },
+     {
+      "t": 2740.01,
+      "vehicles": 25,
+      "cost": 84639.0
+     },
+     {
+      "t": 2792.09,
+      "vehicles": 25,
+      "cost": 84625.0
+     },
+     {
+      "t": 2885.31,
+      "vehicles": 25,
+      "cost": 84619.0
+     },
+     {
+      "t": 2946.61,
+      "vehicles": 25,
+      "cost": 84617.0
+     },
+     {
+      "t": 3150.37,
+      "vehicles": 25,
+      "cost": 84606.0
+     },
+     {
+      "t": 3183.5,
+      "vehicles": 25,
+      "cost": 84488.0
+     },
+     {
+      "t": 3219.34,
+      "vehicles": 25,
+      "cost": 84449.0
+     },
+     {
+      "t": 3254.34,
+      "vehicles": 25,
+      "cost": 84421.0
+     },
+     {
+      "t": 3294.87,
+      "vehicles": 25,
+      "cost": 84376.0
+     },
+     {
+      "t": 3304.03,
+      "vehicles": 25,
+      "cost": 84368.0
+     }
+    ],
+    "solver_stats": {
+     "solver": "xltw-solver 0.1.0",
+     "instance": "XLTW-Test-n1841",
+     "customers": 1840,
+     "limit": 3312.0,
+     "seed": 20261104,
+     "bound": {
+      "kc": 1,
+      "kb": 1,
+      "kt": 4,
+      "k": 4,
+      "timed_out": false,
+      "seconds": 0.24
+     },
+     "fleet_solves": 28,
+     "iterations": 501146,
+     "fleet_seconds": 1651.4,
+     "fleet_vehicles": 25,
+     "printed": 35,
+     "vehicles": 25,
+     "cost": 84368,
+     "sigterm": false,
+     "elapsed": 3303.9
+    },
+    "watchdog": null,
+    "feasible": true,
+    "reason": "",
+    "vehicles": 25,
+    "distance": 84368,
+    "cost_line": 84368.0,
+    "cost_line_ok": true
+   },
+   "part_a_vehicles": 29,
+   "part_a_distance": 85369,
+   "k": 4,
+   "k_star": 18,
+   "final_vehicles_first_at": 191.67
+  }
+ ],
+ "parts": [
+  "in/xltwfull/results-a.json",
+  "in/xltwfull/results-b.json"
+ ],
+ "predictions": {
+  "F0": "did not hold",
+  "F1": "untestable (F0 failed)",
+  "F2": "untestable (F0 failed)",
+  "F3": "untestable (F0 failed)",
+  "F4": "untestable (F0 failed)",
+  "F5": "untestable (F0 failed)"
+ }
+}

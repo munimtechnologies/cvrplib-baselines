@@ -1,0 +1,61 @@
+{
+ "replaced": [
+  {
+   "instance": "XLTW-Test-n7193",
+   "from": "b1",
+   "by": "b1rb",
+   "limit": 431.52,
+   "sigterm_at": 819.12
+  },
+  {
+   "instance": "XLTW-Test-n6884",
+   "from": "b1",
+   "by": "b1ra",
+   "limit": 412.98,
+   "sigterm_at": 1343.27
+  },
+  {
+   "instance": "XLTW-Test-n6734",
+   "from": "b1",
+   "by": "b1ra",
+   "limit": 403.98,
+   "sigterm_at": 978.5
+  },
+  {
+   "instance": "XLTW-Test-n8207",
+   "from": "b2",
+   "by": "b2r",
+   "limit": 492.36,
+   "sigterm_at": 1254.84
+  },
+  {
+   "instance": "XLTW-Test-n8028",
+   "from": "b2",
+   "by": "b2r",
+   "limit": 481.62,
+   "sigterm_at": 977.85
+  },
+  {
+   "instance": "XLTW-Test-n9571",
+   "from": "b3",
+   "by": "b3rb",
+   "limit": 574.2,
+   "sigterm_at": 3667.35
+  },
+  {
+   "instance": "XLTW-Test-n9160",
+   "from": "b3",
+   "by": "b3ra",
+   "limit": 549.54,
+   "sigterm_at": 761.75
+  }
+ ],
+ "kept_frozen_by_rule": [
+  {
+   "instance": "XLTW-Test-n9160",
+   "part": "b3ra",
+   "limit": 549.54,
+   "sigterm_at": 671.52
+  }
+ ]
+}
