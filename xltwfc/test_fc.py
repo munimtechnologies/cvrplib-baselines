@@ -1,8 +1,10 @@
-"""Tests for xltwfc (fcsolver.py, fcrun.py). Standard library only; needs the files getfc.py fetches (solver.py,
-lock.py, fullrun.py, conformance.py) in this folder.
+"""Tests for xltwfc (fcsolver.py, fcrun.py). Standard library only; needs the files getfc.py and fetch_helpers.py
+fetch (solver.py, lock.py, fullrun.py, conformance.py, xltwbase.py, xltwlb.py) in this folder, and the build (lib/)
+for the end-to-end test, which runs fcsolver.py under the package's interpreter on a small synthetic instance.
 
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Apache-2.0.
 """
+import json
 import os
 import subprocess
 import sys
@@ -17,6 +19,7 @@ import fcsolver  # noqa: E402
 import lock  # noqa: E402
 
 PY = lock.build_python(HERE) or sys.executable
+HAVE_BUILD = lock.build_python(HERE) is not None
 
 
 class FakeSol:
@@ -44,6 +47,9 @@ class FixedCost(unittest.TestCase):
         with self.assertRaises(ValueError):
             fcsolver.fixed_cost_for(10, 0)
 
+    def test_version(self):
+        self.assertEqual(fcsolver.VERSION, "0.1.0-fc2")
+
 
 class HolderTests(unittest.TestCase):
     def test_fewer_routes_first_then_distance(self):
@@ -56,6 +62,52 @@ class HolderTests(unittest.TestCase):
         self.assertTrue(h.offer(FakeSol(4, 500)))
         self.assertFalse(h.offer(FakeSol(5, 1)))
         self.assertEqual(h.key, (4, 500))
+
+
+class Visits(unittest.TestCase):
+    """fc1 called Route.visits(), which PyVRP 0.14 does not have. fc2 uses the package's own conversion."""
+
+    def test_uses_package_conversion(self):
+        class Act:
+            def __init__(self, idx, client):
+                self.idx, self.is_client = idx, client
+
+        class R:
+            def __init__(self, idxs):
+                self.idxs = idxs
+
+            def schedule(self):
+                return [Act(0, False)] + [Act(i, True) for i in self.idxs] + [Act(0, False)]
+
+        class Sol:
+            def routes(self):
+                return [R([3, 1]), R([2])]
+
+        import solver as S
+        S.load_helpers()
+        self.assertEqual(fcsolver.visits(Sol()), [[3, 1], [2]])
+
+
+class RunUntil(unittest.TestCase):
+    def test_stops_at_first_unfrozen(self):
+        seq = iter([{"harness_frozen": True, "n": 1}, {"harness_frozen": False, "n": 2},
+                    {"harness_frozen": False, "n": 3}])
+        rec = fcrun.run_until_unfrozen(lambda: dict(next(seq)))
+        self.assertEqual((rec["n"], rec["attempts"], len(rec["frozen_tries"])), (2, 2, 1))
+
+    def test_at_most_three(self):
+        calls = []
+
+        def run():
+            calls.append(1)
+            return {"harness_frozen": True}
+        rec = fcrun.run_until_unfrozen(run)
+        self.assertEqual((len(calls), rec["attempts"], rec["harness_frozen"]), (3, 3, True))
+
+    def test_clean_first_try(self):
+        rec = fcrun.run_until_unfrozen(lambda: {"harness_frozen": False})
+        self.assertEqual(rec["attempts"], 1)
+        self.assertNotIn("frozen_tries", rec)
 
 
 def rec(rid, vehicles, k_star, peak=0.3, fc=True, **kw):
@@ -79,6 +131,7 @@ class Score(unittest.TestCase):
         self.assertEqual(fcrun.KSTAR_TOTAL, 173)
         self.assertEqual(fcrun.S3_FLOOR, 199)
         self.assertEqual(fcrun.SEED, 20261104)
+        self.assertEqual(fcrun.MAX_ATTEMPTS, 3)
 
     def test_all_held(self):
         fc = [rec("F1", 33, 27), rec("F2", 60, 47), rec("F3", 100, 81), rec("F4", 25, 18)]
@@ -127,7 +180,7 @@ class Launcher(unittest.TestCase):
             self.assertTrue(os.access(path, os.X_OK))
             with open(path, encoding="utf-8") as f:
                 body = f.read()
-            self.assertIn('exec "/usr/bin/python-x" -s -P "%s" "$@"' % os.path.join(d, "fcsolver.py"), body)
+            self.assertIn('exec "/usr/bin/python-x" -s -P "%s"' % os.path.join(d, "fcsolver.py"), body)
             self.assertNotIn("\r", body)
 
     def test_usage(self):
@@ -137,6 +190,33 @@ class Launcher(unittest.TestCase):
         p = subprocess.run([PY, "-s", os.path.join(HERE, "fcsolver.py"), "x.vrp", "0", "1"], capture_output=True,
                            text=True, timeout=120)
         self.assertEqual((p.returncode, p.stdout), (2, ""))
+
+
+@unittest.skipUnless(HAVE_BUILD, "needs the offline build (lib/) for PyVRP")
+class EndToEnd(unittest.TestCase):
+    """The whole fcsolver run (both fleet steps and the distance phase) on a synthetic 80-customer instance."""
+
+    def test_small_instance(self):
+        with tempfile.TemporaryDirectory() as d:
+            inst = os.path.join(d, "SYN80.vrp")
+            code = ("import sys; sys.path[:0] = [%r, %r]; import xltwlb as X; "
+                    "open(%r, 'w').write(X.write_vrplib(X.synthetic(80)))" % (HERE, os.path.join(HERE, "lib"), inst))
+            subprocess.run([PY, "-s", "-c", code], check=True, timeout=120)
+            p = subprocess.run([PY, "-s", os.path.join(HERE, "fcsolver.py"), inst, "12", "1"], capture_output=True,
+                               text=True, timeout=120)
+            self.assertEqual(p.returncode, 0, p.stderr[-2000:])
+            lines = [x for x in p.stdout.splitlines() if x.strip()]
+            self.assertTrue(lines and lines[-1].startswith("Cost: "), p.stdout[-500:])
+            self.assertTrue(all(x.startswith("Route #") or x.startswith("Cost: ") for x in lines))
+            stats = [x for x in p.stderr.splitlines() if x.startswith("XLTW_SOLVER_STATS ")]
+            self.assertEqual(len(stats), 1, p.stderr[-2000:])
+            st = json.loads(stats[0][len("XLTW_SOLVER_STATS "):])
+            self.assertEqual(st["solver"], "xltw-solver-fc 0.1.0-fc2")
+            self.assertIsNotNone(st["first_vehicles"])
+            if st["first_vehicles"] > st["bound"]["k"]:
+                self.assertIsNotNone(st["fixed_cost"])
+                self.assertGreater(st["fc_iterations"], 0)
+            self.assertGreater(st["iterations"], 0)
 
 
 if __name__ == "__main__":

@@ -4,9 +4,11 @@ MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's nam
 
 The harness is xltwfull/fullrun.py as published (cvrplib-baselines commit 876bd94), imported unchanged: one process
 per run, SIGTERM at the limit and SIGKILL 5 s later, the last complete solution printed before the limit counts and is
-re-checked exactly, a run whose harness went more than 1 s between two polls is frozen (invalid) and re-run once. The
-only change is which program it starts: a launcher in fcbin/ that runs fcsolver.py with the package's interpreter.
-Predictions S0-S5 are in expectations.md, fixed and published before any run.
+re-checked exactly, a run whose harness went more than 1 s between two polls is frozen (invalid). The only change is
+which program it starts: a launcher in fcbin/ that runs fcsolver.py with the package's interpreter.
+Predictions S0-S5 are in expectations.md, fixed and published before any run; addendum-2026-11-07.md (published
+before any study run) fixes fcsolver's route conversion and changes the frozen rule from "re-run once" to "re-run
+until valid, at most 3 attempts in all".
 
   python fcrun.py --smoke --data-dir /data --out-dir /out                  # 40 s on n1048; exit 1 unless valid
   python fcrun.py --part a --runs F1,F3 --data-dir /data --out-dir /out
@@ -28,6 +30,7 @@ IDS = [r[0] for r in FR.RUNS]
 KSTAR_TOTAL = sum(r[6] for r in FR.RUNS)  # 173
 S3_FLOOR = 199                            # ceil(1.15 x 173)
 SMOKE = ("S0smoke", "XLTW-Test-n1048", 40.0)
+MAX_ATTEMPTS = 3                          # addendum-2026-11-07: re-run a frozen run until valid, at most 3 in all
 
 LAUNCHER = """#!/usr/bin/env bash
 # xltwfc launcher: runs fcsolver.py the way build.sh's ./solver runs solver.py. Usage: solver INSTANCE SECONDS SEED
@@ -74,6 +77,19 @@ def fc_ran(rec):
     return st.get("fixed_cost") is not None and (st.get("fc_iterations") or 0) > 0
 
 
+def run_until_unfrozen(run, attempts=MAX_ATTEMPTS):
+    """Call run() until its record is not frozen, at most `attempts` times; earlier frozen tries are kept."""
+    tries = []
+    rec = run()
+    while rec.get("harness_frozen") and len(tries) + 1 < attempts:
+        tries.append(rec)
+        rec = run()
+    if tries:
+        rec["frozen_tries"] = tries
+    rec["attempts"] = len(tries) + 1
+    return rec
+
+
 def smoke(a):
     import conformance as C
     out = os.path.join(a.out_dir, "xltwfc")
@@ -83,13 +99,14 @@ def smoke(a):
     path = C.find(a.data_dir, name)
     if path is None:
         raise SystemExit("smoke: %s not found under %s" % (name, a.data_dir))
-    rec = FR.run_one(rid, path, limit, SEED, os.path.join(out, "logs-smoke"), os.path.join(out, "smoke-sols"))
+    rec = run_until_unfrozen(lambda: FR.run_one(rid, path, limit, SEED, os.path.join(out, "logs-smoke"),
+                                                os.path.join(out, "smoke-sols")))
     ok = FR.valid(rec) and fc_ran(rec)
     rec["smoke_ok"] = ok
     with open(os.path.join(out, "smoke.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(rec, f, indent=1)
     print(json.dumps({k: rec.get(k) for k in ("id", "instance", "vehicles", "distance", "self_stopped", "exit",
-                                             "feasible", "cost_line_ok", "smoke_ok")}), flush=True)
+                                             "feasible", "cost_line_ok", "attempts", "smoke_ok")}), flush=True)
     print("solver stats: %s" % json.dumps(rec.get("solver_stats")), flush=True)
     if not ok:
         raise SystemExit("smoke run not valid or the fixed-cost phase did not run: not starting the study")
@@ -118,11 +135,7 @@ def run_part(a):
             rec = {"id": rid, "instance": name, "error": "not run: network reachable or build pins not ok"}
         else:
             try:
-                rec = FR.run_one(rid, path, limit, SEED, logs, sols)
-                if rec["harness_frozen"]:  # pre-registered: re-run once, unchanged
-                    first = rec
-                    rec = FR.run_one(rid, path, limit, SEED, logs, sols)
-                    rec["frozen_first_try"] = first
+                rec = run_until_unfrozen(lambda: FR.run_one(rid, path, limit, SEED, logs, sols))
                 FR.attach_reference(rec)
             except Exception as e:  # noqa: BLE001 - recorded
                 rec = {"id": rid, "instance": name, "error": repr(e)}
@@ -133,8 +146,9 @@ def run_part(a):
         print(json.dumps({"id": rid, "instance": name, "vehicles": rec.get("vehicles"), "k_star": rec.get("k_star"),
                           "first_vehicles": st.get("first_vehicles"), "fixed_cost": st.get("fixed_cost"),
                           "distance": rec.get("distance"), "self_stopped": rec.get("self_stopped"),
-                          "harness_frozen": rec.get("harness_frozen"), "peak_gb": rec.get("peak_gb"),
-                          "watchdog": rec.get("watchdog"), "error": rec.get("error")}), flush=True)
+                          "harness_frozen": rec.get("harness_frozen"), "attempts": rec.get("attempts"),
+                          "peak_gb": rec.get("peak_gb"), "watchdog": rec.get("watchdog"),
+                          "error": rec.get("error")}), flush=True)
     write_md(os.path.join(out, "results-%s.md" % a.part), res)
 
 
@@ -176,7 +190,7 @@ def write_md(path, res, full=None):
              res["build"].get("pins_ok")), "",
          "Predictions (expectations.md): `%s`" % json.dumps(res.get("predictions")), "",
          "| run | instance | n | limit s | vehicles | xltwfull vehicles | part a (T/30) | K* | first feasible | F | "
-         "final count first printed at s | distance | xltwfull distance | slack s | peak GB | frozen | valid |",
+         "final count first printed at s | distance | xltwfull distance | slack s | peak GB | attempts | valid |",
          "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in res["runs"]:
         if r.get("error"):
@@ -188,7 +202,7 @@ def write_md(path, res, full=None):
             r["id"], r["instance"], r["customers"], r["limit"], r["vehicles"], f.get("vehicles"),
             r.get("part_a_vehicles"), r.get("k_star"), st.get("first_vehicles"), st.get("fixed_cost"),
             r.get("final_vehicles_first_at"), r["distance"], f.get("distance"), r["slack"], r["peak_gb"],
-            r["harness_frozen"], FR.valid(r) and fc_ran(r)))
+            r.get("attempts", 1), FR.valid(r) and fc_ran(r)))
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(L) + "\n")
 

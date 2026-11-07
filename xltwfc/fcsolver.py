@@ -23,6 +23,10 @@ again. In xltwfull/ part a (full limit), that search stalled: on n1234 the last 
 the next attempt ran for the rest of the fleet phase (about 1,020 s) without success; on n1608 each step took about
 twice as long as the one before (112 vehicles at 80 s, 111 at 151 s, 110 at 303 s, 109 at 586 s, 108 at 1,124 s).
 
+0.1.0-fc2 (2026-11-07, addendum-2026-11-07.md): fc1 crashed in its first smoke run, before any study run, because
+PyVRP 0.14's Route has no visits(). visits() now converts routes exactly as the package's own distance phase does
+(solver.py: `[[c - 1 for c in r] for r in solution_routes(best)]`). Nothing else in the method changed.
+
 Usage (as the challenge runs algorithms): fcsolver.py INSTANCE SECONDS SEED
 """
 import os
@@ -40,7 +44,7 @@ import time  # noqa: E402
 
 import solver as S  # noqa: E402  the package's solver.py (0.1.0); S.START is the process start
 
-VERSION = "0.1.0-fc1"
+VERSION = "0.1.0-fc2"
 FACTOR = 10
 
 
@@ -57,8 +61,9 @@ def better(a, b):
 
 
 def visits(sol):
-    """Each route's client indices as PyVRP numbers them (depot 0), for Solution(data, routes)."""
-    return [list(r.visits()) for r in sol.routes()]
+    """Each route's PyVRP location indices, for Solution(data, routes): the package's own conversion
+    (solver.py, distance phase: customer numbers from solution_routes, minus one)."""
+    return [[c - 1 for c in r] for r in S.solution_routes(sol)]
 
 
 class Holder:
