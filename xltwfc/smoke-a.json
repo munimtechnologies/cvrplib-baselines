@@ -1,0 +1,184 @@
+{
+ "id": "S0smoke",
+ "instance": "XLTW-Test-n1048",
+ "customers": 1047,
+ "limit": 40.0,
+ "seed": 20261104,
+ "exit": 0,
+ "wall": 38.558,
+ "self_stopped": true,
+ "sigterm_at": null,
+ "sigkill_at": null,
+ "stdout_lines": 439,
+ "bad_lines": [],
+ "bad_line_count": 0,
+ "numbering_errors": 0,
+ "blocks": 24,
+ "blocks_after_limit": 0,
+ "last_cost_at": 37.791,
+ "slack": 2.209,
+ "peak_gb": 0.127,
+ "max_poll_gap": 0.051,
+ "harness_frozen": false,
+ "trajectory": [
+  {
+   "t": 0.76,
+   "vehicles": 38,
+   "cost": 78665.0
+  },
+  {
+   "t": 1.78,
+   "vehicles": 29,
+   "cost": 65498.0
+  },
+  {
+   "t": 3.07,
+   "vehicles": 24,
+   "cost": 59539.0
+  },
+  {
+   "t": 4.94,
+   "vehicles": 21,
+   "cost": 55111.0
+  },
+  {
+   "t": 6.66,
+   "vehicles": 19,
+   "cost": 53534.0
+  },
+  {
+   "t": 7.99,
+   "vehicles": 17,
+   "cost": 52421.0
+  },
+  {
+   "t": 9.09,
+   "vehicles": 16,
+   "cost": 51134.0
+  },
+  {
+   "t": 10.79,
+   "vehicles": 16,
+   "cost": 50752.0
+  },
+  {
+   "t": 12.12,
+   "vehicles": 16,
+   "cost": 49942.0
+  },
+  {
+   "t": 13.15,
+   "vehicles": 16,
+   "cost": 49702.0
+  },
+  {
+   "t": 15.34,
+   "vehicles": 15,
+   "cost": 49209.0
+  },
+  {
+   "t": 16.75,
+   "vehicles": 15,
+   "cost": 48794.0
+  },
+  {
+   "t": 18.58,
+   "vehicles": 15,
+   "cost": 48501.0
+  },
+  {
+   "t": 19.42,
+   "vehicles": 15,
+   "cost": 48346.0
+  },
+  {
+   "t": 20.82,
+   "vehicles": 15,
+   "cost": 48184.0
+  },
+  {
+   "t": 22.73,
+   "vehicles": 15,
+   "cost": 48036.0
+  },
+  {
+   "t": 23.9,
+   "vehicles": 15,
+   "cost": 47909.0
+  },
+  {
+   "t": 28.33,
+   "vehicles": 14,
+   "cost": 47649.0
+  },
+  {
+   "t": 29.5,
+   "vehicles": 14,
+   "cost": 47631.0
+  },
+  {
+   "t": 30.94,
+   "vehicles": 14,
+   "cost": 47615.0
+  },
+  {
+   "t": 32.73,
+   "vehicles": 14,
+   "cost": 47514.0
+  },
+  {
+   "t": 34.35,
+   "vehicles": 14,
+   "cost": 47492.0
+  },
+  {
+   "t": 35.77,
+   "vehicles": 14,
+   "cost": 47426.0
+  },
+  {
+   "t": 37.79,
+   "vehicles": 14,
+   "cost": 47404.0
+  }
+ ],
+ "solver_stats": {
+  "solver": "xltw-solver-fc 0.1.0-fc2",
+  "instance": "XLTW-Test-n1048",
+  "customers": 1047,
+  "limit": 40.0,
+  "seed": 20261104,
+  "bound": {
+   "kc": 1,
+   "kb": 1,
+   "kt": 3,
+   "k": 3,
+   "timed_out": false,
+   "seconds": 0.06
+  },
+  "fleet_solves": 2,
+  "iterations": 15365,
+  "factor": 10,
+  "fixed_cost": 20710,
+  "first_vehicles": 38,
+  "first_seconds": 0.4,
+  "fc_iterations": 12214,
+  "fc_seconds": 18.6,
+  "fleet_seconds": 19.1,
+  "fleet_vehicles": 15,
+  "printed": 24,
+  "vehicles": 14,
+  "cost": 47404,
+  "sigterm": false,
+  "elapsed": 38.43
+ },
+ "watchdog": null,
+ "feasible": true,
+ "reason": "",
+ "vehicles": 14,
+ "distance": 47404,
+ "cost_line": 47404.0,
+ "cost_line_ok": true,
+ "attempts": 1,
+ "smoke_ok": true
+}

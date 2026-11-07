@@ -1,0 +1,506 @@
+{
+ "part": "b",
+ "network_reachable": false,
+ "build": {
+  "tag": "cp312",
+  "python": "3.12.15",
+  "executable": "/usr/local/bin/python3",
+  "offline": true,
+  "wheels": [
+   {
+    "name": "pyvrp",
+    "version": "0.14.1",
+    "filename": "pyvrp-0.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "f533035aeb125cd06ff64f4c875210078d44716d8352bd398351be4feb9761c4"
+   },
+   {
+    "name": "numpy",
+    "version": "2.3.4",
+    "filename": "numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "4121c5beb58a7f9e6dfdee612cb24f4df5cd4db6e8261d7f4d7450a997a65d6a"
+   },
+   {
+    "name": "vrplib",
+    "version": "2.2.0",
+    "filename": "vrplib-2.2.0-py3-none-any.whl",
+    "sha256": "5bed28c4ff8cfaf99da7af3081e5627bc4108f0056abc25be0285d0a8b9ad104"
+   },
+   {
+    "name": "tqdm",
+    "version": "4.67.1",
+    "filename": "tqdm-4.67.1-py3-none-any.whl",
+    "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+   }
+  ],
+  "pins_ok": true,
+  "checked_by": "/usr/local/bin/python",
+  "numpy_from_lib": true,
+  "pyvrp_from_lib": true
+ },
+ "runs": [
+  {
+   "id": "F2",
+   "instance": "XLTW-Test-n1421",
+   "customers": 1420,
+   "limit": 2556.0,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 2549.546,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 2411,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 34,
+   "blocks_after_limit": 0,
+   "last_cost_at": 2549.438,
+   "slack": 6.562,
+   "peak_gb": 0.186,
+   "max_poll_gap": 0.063,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 0.92,
+     "vehicles": 114,
+     "cost": 201394.0
+    },
+    {
+     "t": 26.76,
+     "vehicles": 81,
+     "cost": 150788.0
+    },
+    {
+     "t": 54.63,
+     "vehicles": 76,
+     "cost": 143937.0
+    },
+    {
+     "t": 96.79,
+     "vehicles": 71,
+     "cost": 139062.0
+    },
+    {
+     "t": 137.21,
+     "vehicles": 69,
+     "cost": 137176.0
+    },
+    {
+     "t": 189.99,
+     "vehicles": 69,
+     "cost": 136666.0
+    },
+    {
+     "t": 382.87,
+     "vehicles": 69,
+     "cost": 135513.0
+    },
+    {
+     "t": 664.11,
+     "vehicles": 68,
+     "cost": 135561.0
+    },
+    {
+     "t": 898.4,
+     "vehicles": 68,
+     "cost": 134453.0
+    },
+    {
+     "t": 1274.98,
+     "vehicles": 68,
+     "cost": 134255.0
+    },
+    {
+     "t": 1304.04,
+     "vehicles": 68,
+     "cost": 133520.0
+    },
+    {
+     "t": 1335.37,
+     "vehicles": 68,
+     "cost": 133186.0
+    },
+    {
+     "t": 1363.58,
+     "vehicles": 68,
+     "cost": 132932.0
+    },
+    {
+     "t": 1394.04,
+     "vehicles": 68,
+     "cost": 132643.0
+    },
+    {
+     "t": 1420.85,
+     "vehicles": 68,
+     "cost": 132544.0
+    },
+    {
+     "t": 1448.6,
+     "vehicles": 68,
+     "cost": 132401.0
+    },
+    {
+     "t": 1476.33,
+     "vehicles": 68,
+     "cost": 132318.0
+    },
+    {
+     "t": 1503.73,
+     "vehicles": 68,
+     "cost": 132267.0
+    },
+    {
+     "t": 1530.43,
+     "vehicles": 68,
+     "cost": 132202.0
+    },
+    {
+     "t": 1560.54,
+     "vehicles": 68,
+     "cost": 132172.0
+    },
+    {
+     "t": 1588.94,
+     "vehicles": 68,
+     "cost": 132135.0
+    },
+    {
+     "t": 1619.87,
+     "vehicles": 68,
+     "cost": 132096.0
+    },
+    {
+     "t": 1653.97,
+     "vehicles": 68,
+     "cost": 132069.0
+    },
+    {
+     "t": 1693.45,
+     "vehicles": 68,
+     "cost": 132051.0
+    },
+    {
+     "t": 1740.47,
+     "vehicles": 68,
+     "cost": 132031.0
+    },
+    {
+     "t": 1929.77,
+     "vehicles": 68,
+     "cost": 132027.0
+    },
+    {
+     "t": 1970.68,
+     "vehicles": 67,
+     "cost": 131992.0
+    },
+    {
+     "t": 2014.5,
+     "vehicles": 67,
+     "cost": 131780.0
+    },
+    {
+     "t": 2068.6,
+     "vehicles": 67,
+     "cost": 131685.0
+    },
+    {
+     "t": 2105.31,
+     "vehicles": 67,
+     "cost": 131673.0
+    },
+    {
+     "t": 2161.71,
+     "vehicles": 67,
+     "cost": 131665.0
+    },
+    {
+     "t": 2188.8,
+     "vehicles": 67,
+     "cost": 131636.0
+    },
+    {
+     "t": 2267.02,
+     "vehicles": 67,
+     "cost": 131627.0
+    },
+    {
+     "t": 2549.44,
+     "vehicles": 67,
+     "cost": 131617.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver-fc 0.1.0-fc2",
+    "instance": "XLTW-Test-n1421",
+    "customers": 1420,
+    "limit": 2556.0,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 16,
+     "k": 16,
+     "timed_out": false,
+     "seconds": 0.16
+    },
+    "fleet_solves": 2,
+    "iterations": 468369,
+    "factor": 10,
+    "fixed_cost": 17670,
+    "first_vehicles": 114,
+    "first_seconds": 0.44,
+    "fc_iterations": 497602,
+    "fc_seconds": 1274.0,
+    "fleet_seconds": 1274.5,
+    "fleet_vehicles": 68,
+    "printed": 34,
+    "vehicles": 67,
+    "cost": 131617,
+    "sigterm": false,
+    "elapsed": 2549.4
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 67,
+   "distance": 131617,
+   "cost_line": 131617.0,
+   "cost_line_ok": true,
+   "attempts": 1,
+   "part_a_vehicles": 72,
+   "part_a_distance": 139809,
+   "k": 16,
+   "k_star": 47,
+   "final_vehicles_first_at": 1970.68
+  },
+  {
+   "id": "F4",
+   "instance": "XLTW-Test-n1841",
+   "customers": 1840,
+   "limit": 3312.0,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 3304.076,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 938,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 31,
+   "blocks_after_limit": 0,
+   "last_cost_at": 3303.957,
+   "slack": 8.043,
+   "peak_gb": 0.278,
+   "max_poll_gap": 0.057,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 1.62,
+     "vehicles": 78,
+     "cost": 151869.0
+    },
+    {
+     "t": 34.79,
+     "vehicles": 39,
+     "cost": 92809.0
+    },
+    {
+     "t": 69.1,
+     "vehicles": 35,
+     "cost": 87942.0
+    },
+    {
+     "t": 103.28,
+     "vehicles": 31,
+     "cost": 85466.0
+    },
+    {
+     "t": 136.98,
+     "vehicles": 30,
+     "cost": 84047.0
+    },
+    {
+     "t": 171.26,
+     "vehicles": 29,
+     "cost": 85101.0
+    },
+    {
+     "t": 204.79,
+     "vehicles": 29,
+     "cost": 82840.0
+    },
+    {
+     "t": 254.58,
+     "vehicles": 28,
+     "cost": 88025.0
+    },
+    {
+     "t": 352.0,
+     "vehicles": 28,
+     "cost": 87091.0
+    },
+    {
+     "t": 387.06,
+     "vehicles": 28,
+     "cost": 83779.0
+    },
+    {
+     "t": 422.19,
+     "vehicles": 28,
+     "cost": 82827.0
+    },
+    {
+     "t": 461.89,
+     "vehicles": 27,
+     "cost": 87055.0
+    },
+    {
+     "t": 499.38,
+     "vehicles": 27,
+     "cost": 84663.0
+    },
+    {
+     "t": 545.98,
+     "vehicles": 27,
+     "cost": 83779.0
+    },
+    {
+     "t": 580.87,
+     "vehicles": 27,
+     "cost": 82930.0
+    },
+    {
+     "t": 620.23,
+     "vehicles": 26,
+     "cost": 88495.0
+    },
+    {
+     "t": 655.58,
+     "vehicles": 26,
+     "cost": 86621.0
+    },
+    {
+     "t": 694.56,
+     "vehicles": 26,
+     "cost": 85121.0
+    },
+    {
+     "t": 727.77,
+     "vehicles": 26,
+     "cost": 84342.0
+    },
+    {
+     "t": 761.87,
+     "vehicles": 26,
+     "cost": 83821.0
+    },
+    {
+     "t": 800.35,
+     "vehicles": 26,
+     "cost": 83478.0
+    },
+    {
+     "t": 835.04,
+     "vehicles": 26,
+     "cost": 83192.0
+    },
+    {
+     "t": 896.94,
+     "vehicles": 26,
+     "cost": 83103.0
+    },
+    {
+     "t": 933.57,
+     "vehicles": 26,
+     "cost": 82982.0
+    },
+    {
+     "t": 1175.35,
+     "vehicles": 26,
+     "cost": 82968.0
+    },
+    {
+     "t": 1350.62,
+     "vehicles": 26,
+     "cost": 82941.0
+    },
+    {
+     "t": 1652.34,
+     "vehicles": 26,
+     "cost": 82896.0
+    },
+    {
+     "t": 1722.11,
+     "vehicles": 26,
+     "cost": 82856.0
+    },
+    {
+     "t": 1769.53,
+     "vehicles": 26,
+     "cost": 82851.0
+    },
+    {
+     "t": 3265.21,
+     "vehicles": 26,
+     "cost": 82845.0
+    },
+    {
+     "t": 3303.96,
+     "vehicles": 26,
+     "cost": 82826.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver-fc 0.1.0-fc2",
+    "instance": "XLTW-Test-n1841",
+    "customers": 1840,
+    "limit": 3312.0,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 4,
+     "k": 4,
+     "timed_out": false,
+     "seconds": 0.14
+    },
+    "fleet_solves": 2,
+    "iterations": 556798,
+    "factor": 10,
+    "fixed_cost": 19480,
+    "first_vehicles": 78,
+    "first_seconds": 0.93,
+    "fc_iterations": 592458,
+    "fc_seconds": 1650.6,
+    "fleet_seconds": 1651.7,
+    "fleet_vehicles": 26,
+    "printed": 31,
+    "vehicles": 26,
+    "cost": 82826,
+    "sigterm": false,
+    "elapsed": 3303.9
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 26,
+   "distance": 82826,
+   "cost_line": 82826.0,
+   "cost_line_ok": true,
+   "attempts": 1,
+   "part_a_vehicles": 29,
+   "part_a_distance": 85369,
+   "k": 4,
+   "k_star": 18,
+   "final_vehicles_first_at": 620.23
+  }
+ ],
+ "python": "3.12.15",
+ "executable": "/usr/local/bin/python",
+ "solver": "fcsolver.py"
+}

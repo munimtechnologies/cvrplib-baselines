@@ -1,0 +1,3 @@
+[     0.4s] bound {"kc": 1, "kb": 1, "kt": 16, "k": 16, "timed_out": false, "seconds": 0.16}
+[     0.9s] fixed-cost phase: k0 114, d0 201394, F 17670
+XLTW_SOLVER_STATS {"solver": "xltw-solver-fc 0.1.0-fc2", "instance": "XLTW-Test-n1421", "customers": 1420, "limit": 2556.0, "seed": 20261104, "bound": {"kc": 1, "kb": 1, "kt": 16, "k": 16, "timed_out": false, "seconds": 0.16}, "fleet_solves": 2, "iterations": 468369, "factor": 10, "fixed_cost": 17670, "first_vehicles": 114, "first_seconds": 0.44, "fc_iterations": 497602, "fc_seconds": 1274.0, "fleet_seconds": 1274.5, "fleet_vehicles": 68, "printed": 34, "vehicles": 67, "cost": 131617, "sigterm": false, "elapsed": 2549.4}
