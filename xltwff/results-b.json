@@ -1,0 +1,540 @@
+{
+ "part": "b",
+ "network_reachable": false,
+ "build": {
+  "tag": "cp312",
+  "python": "3.12.15",
+  "executable": "/usr/local/bin/python3",
+  "offline": true,
+  "wheels": [
+   {
+    "name": "pyvrp",
+    "version": "0.14.1",
+    "filename": "pyvrp-0.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "f533035aeb125cd06ff64f4c875210078d44716d8352bd398351be4feb9761c4"
+   },
+   {
+    "name": "numpy",
+    "version": "2.3.4",
+    "filename": "numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "4121c5beb58a7f9e6dfdee612cb24f4df5cd4db6e8261d7f4d7450a997a65d6a"
+   },
+   {
+    "name": "vrplib",
+    "version": "2.2.0",
+    "filename": "vrplib-2.2.0-py3-none-any.whl",
+    "sha256": "5bed28c4ff8cfaf99da7af3081e5627bc4108f0056abc25be0285d0a8b9ad104"
+   },
+   {
+    "name": "tqdm",
+    "version": "4.67.1",
+    "filename": "tqdm-4.67.1-py3-none-any.whl",
+    "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+   }
+  ],
+  "pins_ok": true,
+  "checked_by": "/usr/local/bin/python",
+  "numpy_from_lib": true,
+  "pyvrp_from_lib": true
+ },
+ "patched": true,
+ "runs": [
+  {
+   "id": "H2",
+   "instance": "XLTW-Test-n1421",
+   "customers": 1420,
+   "limit": 2556.0,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 2549.508,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 1580,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 23,
+   "blocks_after_limit": 0,
+   "last_cost_at": 2549.45,
+   "slack": 6.55,
+   "peak_gb": 0.213,
+   "max_poll_gap": 0.053,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 1.23,
+     "vehicles": 112,
+     "cost": 199242.0
+    },
+    {
+     "t": 28.89,
+     "vehicles": 73,
+     "cost": 143972.0
+    },
+    {
+     "t": 66.47,
+     "vehicles": 69,
+     "cost": 139559.0
+    },
+    {
+     "t": 123.09,
+     "vehicles": 67,
+     "cost": 137528.0
+    },
+    {
+     "t": 206.16,
+     "vehicles": 66,
+     "cost": 137837.0
+    },
+    {
+     "t": 1309.43,
+     "vehicles": 65,
+     "cost": 131927.0
+    },
+    {
+     "t": 2040.0,
+     "vehicles": 65,
+     "cost": 131895.0
+    },
+    {
+     "t": 2069.04,
+     "vehicles": 65,
+     "cost": 131519.0
+    },
+    {
+     "t": 2096.66,
+     "vehicles": 65,
+     "cost": 131308.0
+    },
+    {
+     "t": 2124.72,
+     "vehicles": 65,
+     "cost": 131201.0
+    },
+    {
+     "t": 2156.89,
+     "vehicles": 65,
+     "cost": 130905.0
+    },
+    {
+     "t": 2184.04,
+     "vehicles": 65,
+     "cost": 130775.0
+    },
+    {
+     "t": 2217.04,
+     "vehicles": 65,
+     "cost": 130697.0
+    },
+    {
+     "t": 2244.09,
+     "vehicles": 65,
+     "cost": 130524.0
+    },
+    {
+     "t": 2279.24,
+     "vehicles": 65,
+     "cost": 130466.0
+    },
+    {
+     "t": 2307.45,
+     "vehicles": 65,
+     "cost": 130394.0
+    },
+    {
+     "t": 2337.13,
+     "vehicles": 65,
+     "cost": 130338.0
+    },
+    {
+     "t": 2362.9,
+     "vehicles": 65,
+     "cost": 130319.0
+    },
+    {
+     "t": 2391.61,
+     "vehicles": 65,
+     "cost": 130306.0
+    },
+    {
+     "t": 2430.57,
+     "vehicles": 65,
+     "cost": 130292.0
+    },
+    {
+     "t": 2460.68,
+     "vehicles": 65,
+     "cost": 130281.0
+    },
+    {
+     "t": 2542.46,
+     "vehicles": 65,
+     "cost": 130272.0
+    },
+    {
+     "t": 2549.45,
+     "vehicles": 65,
+     "cost": 130271.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver 0.1.0+ff08",
+    "instance": "XLTW-Test-n1421",
+    "customers": 1420,
+    "limit": 2556.0,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 16,
+     "k": 16,
+     "timed_out": false,
+     "seconds": 0.18
+    },
+    "fleet_solves": 25,
+    "iterations": 134908,
+    "fleet_seconds": 2039.1,
+    "fleet_vehicles": 65,
+    "printed": 23,
+    "vehicles": 65,
+    "cost": 130271,
+    "sigterm": false,
+    "elapsed": 2549.4
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 65,
+   "distance": 130271,
+   "cost_line": 130271.0,
+   "cost_line_ok": true,
+   "final_vehicles_first_at": 1309.43
+  },
+  {
+   "id": "H4",
+   "instance": "XLTW-Test-n1841",
+   "customers": 1840,
+   "limit": 3312.0,
+   "seed": 20261104,
+   "exit": 0,
+   "wall": 3304.026,
+   "self_stopped": true,
+   "sigterm_at": null,
+   "sigkill_at": null,
+   "stdout_lines": 605,
+   "bad_lines": [],
+   "bad_line_count": 0,
+   "numbering_errors": 0,
+   "blocks": 21,
+   "blocks_after_limit": 0,
+   "last_cost_at": 3303.966,
+   "slack": 8.034,
+   "peak_gb": 0.271,
+   "max_poll_gap": 0.055,
+   "harness_frozen": false,
+   "trajectory": [
+    {
+     "t": 1.95,
+     "vehicles": 77,
+     "cost": 150523.0
+    },
+    {
+     "t": 36.1,
+     "vehicles": 31,
+     "cost": 101924.0
+    },
+    {
+     "t": 80.28,
+     "vehicles": 26,
+     "cost": 95805.0
+    },
+    {
+     "t": 228.85,
+     "vehicles": 25,
+     "cost": 90580.0
+    },
+    {
+     "t": 2643.8,
+     "vehicles": 25,
+     "cost": 90474.0
+    },
+    {
+     "t": 2682.18,
+     "vehicles": 25,
+     "cost": 87959.0
+    },
+    {
+     "t": 2717.44,
+     "vehicles": 25,
+     "cost": 87036.0
+    },
+    {
+     "t": 2750.65,
+     "vehicles": 25,
+     "cost": 86180.0
+    },
+    {
+     "t": 2787.95,
+     "vehicles": 25,
+     "cost": 85748.0
+    },
+    {
+     "t": 2821.65,
+     "vehicles": 25,
+     "cost": 85451.0
+    },
+    {
+     "t": 2856.51,
+     "vehicles": 25,
+     "cost": 85228.0
+    },
+    {
+     "t": 2890.3,
+     "vehicles": 25,
+     "cost": 85048.0
+    },
+    {
+     "t": 2923.43,
+     "vehicles": 25,
+     "cost": 84924.0
+    },
+    {
+     "t": 2965.59,
+     "vehicles": 25,
+     "cost": 84873.0
+    },
+    {
+     "t": 3004.46,
+     "vehicles": 25,
+     "cost": 84840.0
+    },
+    {
+     "t": 3039.17,
+     "vehicles": 25,
+     "cost": 84820.0
+    },
+    {
+     "t": 3073.04,
+     "vehicles": 25,
+     "cost": 84814.0
+    },
+    {
+     "t": 3109.22,
+     "vehicles": 25,
+     "cost": 84793.0
+    },
+    {
+     "t": 3149.03,
+     "vehicles": 25,
+     "cost": 84779.0
+    },
+    {
+     "t": 3184.93,
+     "vehicles": 25,
+     "cost": 84767.0
+    },
+    {
+     "t": 3303.97,
+     "vehicles": 25,
+     "cost": 84744.0
+    }
+   ],
+   "solver_stats": {
+    "solver": "xltw-solver 0.1.0+ff08",
+    "instance": "XLTW-Test-n1841",
+    "customers": 1840,
+    "limit": 3312.0,
+    "seed": 20261104,
+    "bound": {
+     "kc": 1,
+     "kb": 1,
+     "kt": 4,
+     "k": 4,
+     "timed_out": false,
+     "seconds": 0.18
+    },
+    "fleet_solves": 28,
+    "iterations": 203907,
+    "fleet_seconds": 2642.4,
+    "fleet_vehicles": 25,
+    "printed": 21,
+    "vehicles": 25,
+    "cost": 84744,
+    "sigterm": false,
+    "elapsed": 3303.89
+   },
+   "watchdog": null,
+   "feasible": true,
+   "reason": "",
+   "vehicles": 25,
+   "distance": 84744,
+   "cost_line": 84744.0,
+   "cost_line_ok": true,
+   "frozen_first_try": {
+    "id": "H4",
+    "instance": "XLTW-Test-n1841",
+    "customers": 1840,
+    "limit": 3312.0,
+    "seed": 20261104,
+    "exit": 0,
+    "wall": 3304.127,
+    "self_stopped": true,
+    "sigterm_at": null,
+    "sigkill_at": null,
+    "stdout_lines": 605,
+    "bad_lines": [],
+    "bad_line_count": 0,
+    "numbering_errors": 0,
+    "blocks": 21,
+    "blocks_after_limit": 0,
+    "last_cost_at": 3303.986,
+    "slack": 8.014,
+    "peak_gb": 0.272,
+    "max_poll_gap": 92.706,
+    "harness_frozen": true,
+    "trajectory": [
+     {
+      "t": 1.64,
+      "vehicles": 77,
+      "cost": 150523.0
+     },
+     {
+      "t": 35.84,
+      "vehicles": 31,
+      "cost": 101924.0
+     },
+     {
+      "t": 84.43,
+      "vehicles": 26,
+      "cost": 95805.0
+     },
+     {
+      "t": 208.48,
+      "vehicles": 25,
+      "cost": 90580.0
+     },
+     {
+      "t": 2643.91,
+      "vehicles": 25,
+      "cost": 90474.0
+     },
+     {
+      "t": 2680.83,
+      "vehicles": 25,
+      "cost": 88104.0
+     },
+     {
+      "t": 2714.34,
+      "vehicles": 25,
+      "cost": 87509.0
+     },
+     {
+      "t": 2748.38,
+      "vehicles": 25,
+      "cost": 86747.0
+     },
+     {
+      "t": 2791.4,
+      "vehicles": 25,
+      "cost": 86158.0
+     },
+     {
+      "t": 2825.59,
+      "vehicles": 25,
+      "cost": 85748.0
+     },
+     {
+      "t": 2862.42,
+      "vehicles": 25,
+      "cost": 85451.0
+     },
+     {
+      "t": 2898.15,
+      "vehicles": 25,
+      "cost": 85244.0
+     },
+     {
+      "t": 2940.89,
+      "vehicles": 25,
+      "cost": 85048.0
+     },
+     {
+      "t": 2974.3,
+      "vehicles": 25,
+      "cost": 84939.0
+     },
+     {
+      "t": 3008.59,
+      "vehicles": 25,
+      "cost": 84876.0
+     },
+     {
+      "t": 3053.92,
+      "vehicles": 25,
+      "cost": 84840.0
+     },
+     {
+      "t": 3117.42,
+      "vehicles": 25,
+      "cost": 84814.0
+     },
+     {
+      "t": 3152.33,
+      "vehicles": 25,
+      "cost": 84793.0
+     },
+     {
+      "t": 3190.75,
+      "vehicles": 25,
+      "cost": 84779.0
+     },
+     {
+      "t": 3245.47,
+      "vehicles": 25,
+      "cost": 84752.0
+     },
+     {
+      "t": 3303.99,
+      "vehicles": 25,
+      "cost": 84744.0
+     }
+    ],
+    "solver_stats": {
+     "solver": "xltw-solver 0.1.0+ff08",
+     "instance": "XLTW-Test-n1841",
+     "customers": 1840,
+     "limit": 3312.0,
+     "seed": 20261104,
+     "bound": {
+      "kc": 1,
+      "kb": 1,
+      "kt": 4,
+      "k": 4,
+      "timed_out": false,
+      "seconds": 0.13
+     },
+     "fleet_solves": 28,
+     "iterations": 191049,
+     "fleet_seconds": 2642.7,
+     "fleet_vehicles": 25,
+     "printed": 21,
+     "vehicles": 25,
+     "cost": 84744,
+     "sigterm": false,
+     "elapsed": 3303.92
+    },
+    "watchdog": null,
+    "feasible": true,
+    "reason": "",
+    "vehicles": 25,
+    "distance": 84744,
+    "cost_line": 84744.0,
+    "cost_line_ok": true
+   },
+   "final_vehicles_first_at": 228.85
+  }
+ ],
+ "python": "3.12.15",
+ "executable": "/usr/local/bin/python"
+}
