@@ -1,0 +1,67 @@
+===== setup-01-python: python getdet.py
+
+===== setup-02-python: python fetch_helpers.py /data
+
+===== setup-03-python: python lock.py --resolve --fetch
+
+===== run-01-bash: bash build.sh --offline
+
+===== run-02-python: python -m unittest -v test_pkg
+test_launcher (test_pkg.Built.test_launcher) ... ok
+test_lib_has_the_pins (test_pkg.Built.test_lib_has_the_pins) ... ok
+test_no_crlf (test_pkg.Built.test_no_crlf) ... ok
+test_download_is_checked (test_pkg.FetchAndExtract.test_download_is_checked) ... ok
+test_extract_keeps_modes (test_pkg.FetchAndExtract.test_extract_keeps_modes) ... ok
+test_extract_refuses_escape (test_pkg.FetchAndExtract.test_extract_refuses_escape) ... ok
+test_install_refuses_a_tag_of_another_python (test_pkg.FetchAndExtract.test_install_refuses_a_tag_of_another_python) ... ok
+test_offline_missing_is_an_error (test_pkg.FetchAndExtract.test_offline_missing_is_an_error) ... ok
+test_tampered_vendor_file_is_refused (test_pkg.FetchAndExtract.test_tampered_vendor_file_is_refused) ... ok
+test_one_manylinux_x86_64_per_tag (test_pkg.Pick.test_one_manylinux_x86_64_per_tag) ... ok
+test_pure_wheel (test_pkg.Pick.test_pure_wheel) ... ok
+test_select_needs_one_per_pin (test_pkg.Pick.test_select_needs_one_per_pin) ... ok
+test_yanked_and_missing (test_pkg.Pick.test_yanked_and_missing) ... ok
+test_better_only_and_vehicles_first (test_pkg.PrinterTests.test_better_only_and_vehicles_first) ... ok
+test_format (test_pkg.PrinterTests.test_format) ... ok
+test_margin (test_pkg.PrinterTests.test_margin) ... ok
+test_throttle_holds_then_flushes (test_pkg.PrinterTests.test_throttle_holds_then_flushes) ... ok
+test_only_solutions_reach_stdout (test_pkg.StdoutDiscipline.test_only_solutions_reach_stdout) ... ok
+test_pyvrp_logger_goes_to_stderr (test_pkg.StdoutDiscipline.test_pyvrp_logger_goes_to_stderr) ... ok
+test_hard_deadline_ends_a_stuck_call (test_pkg.WatchdogTests.test_hard_deadline_ends_a_stuck_call) ... ok
+test_sigterm_ends_a_stuck_call_at_once (test_pkg.WatchdogTests.test_sigterm_ends_a_stuck_call_at_once) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 4.804s
+
+OK
+
+===== run-03-python: python -m unittest -v test_det
+test_clock_safety_net (test_det.BudgetCriterion.test_clock_safety_net) ... ok
+test_counts_down (test_det.BudgetCriterion.test_counts_down) ... ok
+test_sigterm (test_det.BudgetCriterion.test_sigterm) ... ok
+test_constants (test_det.BudgetFormula.test_constants) ... ok
+test_depends_on_n_and_limit_only (test_det.BudgetFormula.test_depends_on_n_and_limit_only) ... ok
+test_value (test_det.BudgetFormula.test_value) ... ok
+test_same_seed_same_solution (test_det.EndToEnd.test_same_seed_same_solution) ... FAIL
+test_launcher (test_det.Launcher.test_launcher) ... ok
+test_usage (test_det.Launcher.test_usage) ... ok
+test_at_most_three (test_det.RunUntil.test_at_most_three) ... ok
+test_second_try (test_det.RunUntil.test_second_try) ... ok
+test_all_held (test_det.Score.test_all_held) ... ok
+test_d1_and_d2 (test_det.Score.test_d1_and_d2) ... ok
+test_d3_range (test_det.Score.test_d3_range) ... ok
+test_d4_d5_d6 (test_det.Score.test_d4_d5_d6) ... ok
+test_gate (test_det.Score.test_gate) ... ok
+
+======================================================================
+FAIL: test_same_seed_same_solution (test_det.EndToEnd.test_same_seed_same_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/work/test_det.py", line 188, in test_same_seed_same_solution
+    self.assertEqual(sols[0], sols[1])
+AssertionError: 'Rout[53 chars]4 51 45 24 33\nRoute #3: 26 10 12 5 47 4 18 71[223 chars]2143' != 'Rout[53 chars]4 51 62 39 42 75\nRoute #3: 67 8 29 28 27 13 5[223 chars]2660'
+Diff is 749 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 16 tests in 25.977s
+
+FAILED (failures=1)

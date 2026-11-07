@@ -1,7 +1,11 @@
-"""Tests for xltwdet (detsolver.py, detrun.py). Standard library only; needs the files getdet.py and fetch_helpers.py
-fetch (solver.py, lock.py, fullrun.py, conformance.py, xltwbase.py, xltwlb.py) in this folder, and the build (lib/)
-for the end-to-end test, which runs detsolver.py three times on one synthetic instance and seed (once with a CPU
-hog) and requires the same final solution each time.
+"""Tests for xltwdet (detsolver.py 0.1.0-det2, detrun.py as published at commit b7b7755). Standard library only;
+needs the files getdet.py and fetch_helpers.py fetch (solver.py, lock.py, fullrun.py, conformance.py, xltwbase.py,
+xltwlb.py, detrun.py) in this folder, and the build (lib/) for the end-to-end tests.
+
+Changed from the det1 test (addendum-2026-11-07.md): the end-to-end test now (1) runs with XLTW_DET_SAFETY=0.05 and
+a 20 s limit, so the budget, not the clock, ends each run, (2) checks every run's stats (no clock stop, no SIGTERM,
+the bound not cut short) BEFORE it compares solutions, and prints them, so a failure says why, and (3) is preceded
+by a control that runs PyVRP alone twice with the same seed and a fixed number of iterations.
 
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Apache-2.0.
 """
@@ -27,7 +31,7 @@ HAVE_BUILD = lock.build_python(HERE) is not None
 class BudgetFormula(unittest.TestCase):
     def test_constants(self):
         self.assertEqual((detsolver.RATE0, detsolver.RATE_EXP, detsolver.SAFETY), (300.0, 0.5, 0.6))
-        self.assertEqual(detsolver.VERSION, "0.1.0-det1")
+        self.assertEqual(detsolver.VERSION, "0.1.0-det2")
 
     def test_value(self):
         # n = 1,047, T = 120 s: 0.6 x 300 / sqrt(1.047) x (120 - 1.74) = about 20,803
@@ -39,6 +43,21 @@ class BudgetFormula(unittest.TestCase):
         self.assertLess(detsolver.iteration_budget(1000, 60.0), detsolver.iteration_budget(1000, 120.0))
         self.assertGreater(detsolver.iteration_budget(8574, 1.8 * 8574), 0)
         self.assertEqual(detsolver.iteration_budget(1000, 0.5), 0)
+
+
+class SafetyEnv(unittest.TestCase):
+    def test_default_is_the_study_value(self):
+        self.assertEqual(detsolver.safety_from_env({}), 0.6)
+        self.assertEqual(detsolver.safety_from_env({"XLTW_DET_SAFETY": ""}), 0.6)
+
+    def test_override_and_range(self):
+        self.assertEqual(detsolver.safety_from_env({"XLTW_DET_SAFETY": "0.05"}), 0.05)
+        for bad in ("0", "-1", "1.5", "x"):
+            with self.assertRaises(ValueError):
+                detsolver.safety_from_env({"XLTW_DET_SAFETY": bad})
+
+    def test_this_job_does_not_set_it(self):
+        self.assertNotIn("XLTW_DET_SAFETY", os.environ)
 
 
 class BudgetCriterion(unittest.TestCase):
@@ -166,31 +185,74 @@ def last_solution(stdout):
     return "\n".join(lines[start:ends[-1] + 1])
 
 
+def synthetic(d, n=80):
+    inst = os.path.join(d, "SYN%d.vrp" % n)
+    code = ("import sys; sys.path[:0] = [%r, %r]; import xltwlb as X; "
+            "open(%r, 'w').write(X.write_vrplib(X.synthetic(%d)))" % (HERE, os.path.join(HERE, "lib"), inst, n))
+    subprocess.run([PY, "-s", "-c", code], check=True, timeout=120)
+    return inst
+
+
+CONTROL = """
+import json, sys
+sys.path[:0] = [%r, %r]
+import solver as S
+S.load_helpers()
+from pyvrp import solve
+from pyvrp.stop import MaxIterations
+with open(%r, encoding="utf-8") as f:
+    data = S.read_data(S.X.parse_any(f.read()))
+out = []
+for _ in range(2):
+    res = solve(data, stop=MaxIterations(%d), seed=3, collect_stats=False, display=False)
+    out.append({"routes": S.solution_routes(res.best), "distance": int(res.best.distance()),
+                "iterations": int(res.num_iterations)})
+print(json.dumps(out))
+"""
+
+
 @unittest.skipUnless(HAVE_BUILD, "needs the offline build (lib/) for PyVRP")
 class EndToEnd(unittest.TestCase):
-    def test_same_seed_same_solution(self):
+    def test_0_pyvrp_alone_is_deterministic(self):
+        """Control: PyVRP 0.14.1 itself, same data, seed and iteration count, twice in one process."""
         with tempfile.TemporaryDirectory() as d:
-            inst = os.path.join(d, "SYN80.vrp")
-            code = ("import sys; sys.path[:0] = [%r, %r]; import xltwlb as X; "
-                    "open(%r, 'w').write(X.write_vrplib(X.synthetic(80)))" % (HERE, os.path.join(HERE, "lib"), inst))
-            subprocess.run([PY, "-s", "-c", code], check=True, timeout=120)
+            inst = synthetic(d)
+            p = subprocess.run([PY, "-s", "-c", CONTROL % (HERE, os.path.join(HERE, "lib"), inst, 400)],
+                               capture_output=True, text=True, timeout=300)
+            self.assertEqual(p.returncode, 0, p.stderr[-2000:])
+            a, b = json.loads(p.stdout.strip().splitlines()[-1])
+            sys.stderr.write("\nCONTROL %s\n" % json.dumps({"a": [a["distance"], a["iterations"]],
+                                                           "b": [b["distance"], b["iterations"]]}))
+            self.assertEqual(a["iterations"], 400)
+            self.assertEqual(a, b)
+
+    def test_1_same_seed_same_solution(self):
+        env = dict(os.environ, XLTW_DET_SAFETY="0.05")
+        with tempfile.TemporaryDirectory() as d:
+            inst = synthetic(d)
             sols, stats = [], []
             for with_hog in (False, False, True):
                 with detrun.hog(with_hog):
-                    p = subprocess.run([PY, "-s", os.path.join(HERE, "detsolver.py"), inst, "10", "3"],
-                                       capture_output=True, text=True, timeout=120)
+                    p = subprocess.run([PY, "-s", os.path.join(HERE, "detsolver.py"), inst, "20", "3"],
+                                       capture_output=True, text=True, timeout=120, env=env)
                 self.assertEqual(p.returncode, 0, p.stderr[-2000:])
                 sols.append(last_solution(p.stdout))
                 line = [x for x in p.stderr.splitlines() if x.startswith("XLTW_SOLVER_STATS ")]
                 self.assertEqual(len(line), 1, p.stderr[-2000:])
                 stats.append(json.loads(line[0][len("XLTW_SOLVER_STATS "):]))
-            self.assertIsNotNone(sols[0])
-            self.assertEqual(sols[0], sols[1])
-            self.assertEqual(sols[0], sols[2])
             for st in stats:
+                sys.stderr.write("\nE2E_STATS %s\n" % json.dumps(st))
+            for st in stats:
+                self.assertEqual(st["safety"], 0.05, st)
                 self.assertFalse(st["clock_stop"], st)
+                self.assertFalse(st["term_stop"], st)
+                self.assertFalse(st["bound"]["timed_out"], st)
                 self.assertGreater(st["fleet_iterations"] + st["iterations"], 0)
                 self.assertLessEqual(st["fleet_iterations"], st["fleet_budget"])
+            self.assertIsNotNone(sols[0])
+            self.maxDiff = None
+            self.assertEqual(sols[0], sols[1])
+            self.assertEqual(sols[0], sols[2])
 
 
 if __name__ == "__main__":

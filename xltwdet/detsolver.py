@@ -23,6 +23,11 @@ each to its first feasible solution), the distance phase the rest. The wall cloc
 phase reaches the solver's usual stopping point first, it stops there, as 0.1.0 does, and the run is flagged
 (`clock_stop` in the stats line), because from that point on it is no longer deterministic.
 
+0.1.0-det2 (2026-11-07, xltwdet/addendum-2026-11-07.md) differs from det1 only in that the environment variable
+XLTW_DET_SAFETY, if set, replaces SAFETY. It exists for the unit test only: the rate model, fitted at n >= 1,047,
+overestimates PyVRP's speed on the test's 80-customer instance, so det1's own end-to-end test fell back to the clock.
+The study's runs never set it, and every stats line records the safety used.
+
 Usage (as the challenge runs algorithms): detsolver.py INSTANCE SECONDS SEED
 """
 import os
@@ -40,10 +45,22 @@ import time  # noqa: E402
 
 import solver as S  # noqa: E402  the package's solver.py (0.1.0); S.START is the process start
 
-VERSION = "0.1.0-det1"
+VERSION = "0.1.0-det2"
 RATE0 = 300.0      # iterations per second at n = 1,000 (a low estimate)
 RATE_EXP = 0.5     # rate ~ n ** -0.5
 SAFETY = 0.6       # share of the estimated iterations actually budgeted
+SAFETY_ENV = "XLTW_DET_SAFETY"  # unit tests only
+
+
+def safety_from_env(env=None):
+    env = os.environ if env is None else env
+    v = env.get(SAFETY_ENV, "")
+    if not v:
+        return SAFETY
+    s = float(v)
+    if not 0.0 < s <= 1.0:
+        raise ValueError("%s must be in (0, 1]" % SAFETY_ENV)
+    return s
 
 
 def iteration_budget(n, limit, safety=SAFETY):
@@ -169,15 +186,16 @@ def main(argv):
         return 2
     try:
         limit, seed = float(argv[2]), int(argv[3])
-    except ValueError:
-        sys.stderr.write("detsolver: SECONDS must be a number and SEED an integer\n")
+        safety = safety_from_env()
+    except ValueError as e:
+        sys.stderr.write("detsolver: SECONDS must be a number and SEED an integer (%s)\n" % e)
         return 2
     if not limit > 0:
         sys.stderr.write("detsolver: SECONDS must be positive\n")
         return 2
     signal.signal(signal.SIGTERM, S._on_term)
     out = S.claim_stdout()
-    run(argv[1], limit, seed, out=out)
+    run(argv[1], limit, seed, out=out, safety=safety)
     out.flush()
     return 0
 

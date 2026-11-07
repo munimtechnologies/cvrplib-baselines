@@ -1,7 +1,8 @@
-"""Setup for the xltwdet job (network on): fetch the xltw-solver package as published (cvrplib-baselines commit
-19c7eb6, package 0.1.1, solver 0.1.0) and the xltwfull harness (commit 876bd94, xltwfull/fullrun.py) into this
-folder, record every file's SHA-256, and wait until this study's pre-registration is public on `main` and
-byte-identical to the local copy (prereg.md).
+"""Setup for the xltwdet job, second attempt (network on): fetch the xltw-solver package as published
+(cvrplib-baselines commit 19c7eb6, package 0.1.1, solver 0.1.0), the xltwfull harness (commit 876bd94) and
+detrun.py as pre-registered (commit b7b7755) into this folder, record every file's SHA-256, check that the
+pre-registration on `main` is byte-identical to its first published version (commit b7b7755), and wait until the
+addendum is public on `main` and identical to the local addendum-2026-11-07.md.
 
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Apache-2.0.
 """
@@ -20,8 +21,9 @@ PKG_FILES = ["README.md", "Makefile", "build.sh", "lock.py", "solver.py", "test_
              "fetch_helpers.py", "addendum-2026-11-06.md"]
 FULL_COMMIT = "876bd94bcf1f8aacc6b158d220b9286bdac1a886"
 FULL_FILES = ["fullrun.py", "test_fullrun.py"]
-PREREG_URL = B + "main/xltwdet/expectations.md"
-PREREG_LOCAL = "prereg.md"
+DET_COMMIT = "b7b77554c7b2581b4f00368e6db12b2f8cd97d63"
+DET_FILES = ["detrun.py"]
+ADDENDUM = "addendum-2026-11-07.md"
 UA = "xltwdet job - MV2 of Munim, Inc. (mv2@munimtech.com)"
 WAIT = 50 * 60
 
@@ -45,8 +47,10 @@ def norm(b):
 
 
 def fetch(dest=HERE, getter=get):
-    manifest = {"package_commit": PKG_COMMIT, "harness_commit": FULL_COMMIT, "files": {}}
-    for commit, folder, names in ((PKG_COMMIT, "xltwpkg", PKG_FILES), (FULL_COMMIT, "xltwfull", FULL_FILES)):
+    manifest = {"package_commit": PKG_COMMIT, "harness_commit": FULL_COMMIT, "detrun_commit": DET_COMMIT,
+                "files": {}}
+    for commit, folder, names in ((PKG_COMMIT, "xltwpkg", PKG_FILES), (FULL_COMMIT, "xltwfull", FULL_FILES),
+                                  (DET_COMMIT, "xltwdet", DET_FILES)):
         for name in names:
             body = getter(B + commit + "/" + folder + "/" + name)
             with open(os.path.join(dest, name), "wb") as f:
@@ -60,28 +64,38 @@ def fetch(dest=HERE, getter=get):
     return manifest
 
 
-def wait_prereg(local_path, getter=get, deadline=None, sleep=time.sleep):
+def prereg_unchanged(getter=get):
+    first = norm(getter(B + DET_COMMIT + "/xltwdet/expectations.md"))
+    now = norm(getter(B + "main/xltwdet/expectations.md?nocache=%d" % int(time.time())))
+    if first != now:
+        sys.exit("xltwdet/expectations.md on main differs from its pre-registered version: not running")
+    h = hashlib.sha256(first).hexdigest()
+    print("pre-registration unchanged since %s, sha256 %s" % (DET_COMMIT[:7], h), flush=True)
+    return h
+
+
+def wait_addendum(local_path, getter=get, deadline=None, sleep=time.sleep):
     with open(local_path, "rb") as f:
         local = norm(f.read())
     deadline = deadline if deadline is not None else time.time() + WAIT
     while True:
         try:
-            body = norm(getter(PREREG_URL + "?nocache=%d" % int(time.time()), tries=1))
+            body = norm(getter(B + "main/xltwdet/" + ADDENDUM + "?nocache=%d" % int(time.time()), tries=1))
             if body == local:
-                print("pre-registration public and identical, sha256 %s" % hashlib.sha256(local).hexdigest(),
-                      flush=True)
+                print("addendum public and identical, sha256 %s" % hashlib.sha256(local).hexdigest(), flush=True)
                 return hashlib.sha256(local).hexdigest()
-            print("xltwdet/expectations.md on main differs from prereg.md; waiting", flush=True)
+            print("xltwdet/%s on main differs from the local copy; waiting" % ADDENDUM, flush=True)
         except (urllib.error.URLError, OSError) as e:
-            print("waiting for xltwdet/expectations.md (%s)" % e, flush=True)
+            print("waiting for xltwdet/%s (%s)" % (ADDENDUM, e), flush=True)
         if time.time() > deadline:
-            sys.exit("the pre-registration never became public as expected: not running")
+            sys.exit("the addendum never became public as expected: not running")
         sleep(60)
 
 
 def main():
     fetch()
-    wait_prereg(os.path.join(HERE, PREREG_LOCAL))
+    prereg_unchanged()
+    wait_addendum(os.path.join(HERE, ADDENDUM))
 
 
 if __name__ == "__main__":
