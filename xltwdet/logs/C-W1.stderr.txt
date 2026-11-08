@@ -1,0 +1,3 @@
+[     0.3s] bound {"kc": 1, "kb": 1, "kt": 7, "k": 7, "timed_out": false, "seconds": 0.07}
+[     0.4s] work budget: 19170 iterations (fleet phase up to 9585)
+XLTW_SOLVER_STATS {"solver": "xltw-solver-det 0.1.0-det2", "instance": "XLTW-Test-n1234", "customers": 1233, "limit": 120.0, "seed": 20261107, "bound": {"kc": 1, "kb": 1, "kt": 7, "k": 7, "timed_out": false, "seconds": 0.07}, "mode": "work", "budget": 19170, "fleet_budget": 9585, "safety": 0.6, "fleet_solves": 20, "fleet_iterations": 9585, "iterations": 9585, "clock_stop": false, "fleet_seconds": 76.5, "fleet_vehicles": 35, "distance_budget_used": 9585, "term_stop": false, "printed": 20, "vehicles": 35, "cost": 88231, "sigterm": false, "elapsed": 101.35}
