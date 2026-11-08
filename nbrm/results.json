@@ -1,0 +1,426 @@
+{
+ "job": "nbrm-v2",
+ "build": {
+  "repo": "https://github.com/Astronomax/vrptw-powerful-route-minimization-heuristic.git",
+  "commit_asked": "89d4c05",
+  "built": true,
+  "commit": "89d4c050e9f68ed9470114b5043c9cd8dc56f00a",
+  "submodules": "0192daa14787481d6328ba9f4449f6ded88224ca src/lib/small (1.1-170-g0192daa)",
+  "patch_matches": 1,
+  "problem_c_sha256_patched": "88f34dbdbd81f68832ea103cc450f249e354438fa751d33fedcc93aec363bc3d",
+  "flags": [
+   "-DCMAKE_BUILD_TYPE=Release",
+   "-DENABLE_MARCH_NATIVE=OFF"
+  ],
+  "binary_sha256": "44f954556d38546a27f91e969d3707001effebae85f0949c77ce795e93f667da",
+  "prereg_sha256": "c528421c28342757003e3d70662337571cab5995a8e8bb0e49e0eec0b2ef5108",
+  "addendum_sha256": "ca23d9daf3a3837c2e8027244c18dab529ef726f0fc953e307cbba091e95c292"
+ },
+ "network_reachable": false,
+ "python": "3.12.15",
+ "runs": [
+  {
+   "cmd": [
+    "/out/nbrm/runs/N1.txt",
+    "/out/nbrm/runs/N1.sol",
+    "--t_max",
+    "1109",
+    "--lower_bound",
+    "27",
+    "--seed",
+    "20261104",
+    "--log_level",
+    "normal"
+   ],
+   "exit": 0,
+   "wall": 1112.08,
+   "cpu": 1109.02,
+   "peak_gb": 0.043,
+   "killed_at": null,
+   "max_poll_gap": 0.2,
+   "id": "N1",
+   "instance": "XLTW-Test-n1234",
+   "customers": 1233,
+   "t_max": 1109,
+   "lower_bound": 27,
+   "seed": 20261104,
+   "incumbents": 1200,
+   "vehicles": 34,
+   "feasible": true,
+   "reason": "",
+   "distance": 95444,
+   "final_count_first_cpu_s": 131.7,
+   "trajectory": [
+    [
+     4126,
+     44
+    ],
+    [
+     4225,
+     43
+    ],
+    [
+     4330,
+     42
+    ],
+    [
+     4573,
+     41
+    ],
+    [
+     5134,
+     40
+    ],
+    [
+     6055,
+     39
+    ],
+    [
+     6932,
+     38
+    ],
+    [
+     8289,
+     37
+    ],
+    [
+     16949,
+     36
+    ],
+    [
+     35523,
+     35
+    ],
+    [
+     131696,
+     34
+    ]
+   ],
+   "valid": true
+  },
+  {
+   "cmd": [
+    "/out/nbrm/runs/N2.txt",
+    "/out/nbrm/runs/N2.sol",
+    "--t_max",
+    "1278",
+    "--lower_bound",
+    "47",
+    "--seed",
+    "20261104",
+    "--log_level",
+    "normal"
+   ],
+   "exit": 0,
+   "wall": 1280.7,
+   "cpu": 1278.05,
+   "peak_gb": 0.053,
+   "killed_at": null,
+   "max_poll_gap": 0.2,
+   "id": "N2",
+   "instance": "XLTW-Test-n1421",
+   "customers": 1420,
+   "t_max": 1278,
+   "lower_bound": 47,
+   "seed": 20261104,
+   "incumbents": 1355,
+   "vehicles": 66,
+   "feasible": true,
+   "reason": "",
+   "distance": 140789,
+   "final_count_first_cpu_s": 109.82,
+   "trajectory": [
+    [
+     4423,
+     76
+    ],
+    [
+     4691,
+     75
+    ],
+    [
+     4986,
+     74
+    ],
+    [
+     5273,
+     73
+    ],
+    [
+     6158,
+     72
+    ],
+    [
+     8734,
+     71
+    ],
+    [
+     10055,
+     70
+    ],
+    [
+     14952,
+     69
+    ],
+    [
+     41573,
+     68
+    ],
+    [
+     49859,
+     67
+    ],
+    [
+     109821,
+     66
+    ]
+   ],
+   "valid": true
+  },
+  {
+   "cmd": [
+    "/out/nbrm/runs/N3.txt",
+    "/out/nbrm/runs/N3.sol",
+    "--t_max",
+    "1446",
+    "--lower_bound",
+    "81",
+    "--seed",
+    "20261104",
+    "--log_level",
+    "normal"
+   ],
+   "exit": 0,
+   "wall": 2153.54,
+   "cpu": 1446.08,
+   "peak_gb": 0.063,
+   "killed_at": null,
+   "max_poll_gap": 518.96,
+   "id": "N3",
+   "instance": "XLTW-Test-n1608",
+   "customers": 1607,
+   "t_max": 1446,
+   "lower_bound": 81,
+   "seed": 20261104,
+   "incumbents": 1499,
+   "vehicles": 109,
+   "feasible": true,
+   "reason": "",
+   "distance": 117814,
+   "final_count_first_cpu_s": 1116.39,
+   "trajectory": [
+    [
+     12898,
+     119
+    ],
+    [
+     13666,
+     118
+    ],
+    [
+     14060,
+     117
+    ],
+    [
+     19368,
+     116
+    ],
+    [
+     22682,
+     115
+    ],
+    [
+     26287,
+     114
+    ],
+    [
+     34954,
+     113
+    ],
+    [
+     53605,
+     112
+    ],
+    [
+     81178,
+     111
+    ],
+    [
+     211665,
+     110
+    ],
+    [
+     1116390,
+     109
+    ]
+   ],
+   "valid": true
+  },
+  {
+   "cmd": [
+    "/out/nbrm/runs/N4.txt",
+    "/out/nbrm/runs/N4.sol",
+    "--t_max",
+    "1656",
+    "--lower_bound",
+    "18",
+    "--seed",
+    "20261104",
+    "--log_level",
+    "normal"
+   ],
+   "exit": 0,
+   "wall": 1743.02,
+   "cpu": 1656.17,
+   "peak_gb": 0.066,
+   "killed_at": null,
+   "max_poll_gap": 83.8,
+   "id": "N4",
+   "instance": "XLTW-Test-n1841",
+   "customers": 1840,
+   "t_max": 1656,
+   "lower_bound": 18,
+   "seed": 20261104,
+   "incumbents": 1815,
+   "vehicles": 26,
+   "feasible": true,
+   "reason": "",
+   "distance": 102392,
+   "final_count_first_cpu_s": 342.5,
+   "trajectory": [
+    [
+     10618,
+     36
+    ],
+    [
+     10863,
+     35
+    ],
+    [
+     11184,
+     34
+    ],
+    [
+     12197,
+     33
+    ],
+    [
+     15021,
+     32
+    ],
+    [
+     27034,
+     31
+    ],
+    [
+     31968,
+     30
+    ],
+    [
+     66403,
+     29
+    ],
+    [
+     97752,
+     28
+    ],
+    [
+     181417,
+     27
+    ],
+    [
+     342498,
+     26
+    ]
+   ],
+   "valid": true
+  }
+ ],
+ "smoke": {
+  "cmd": [
+   "/out/nbrm/runs/smoke.txt",
+   "/out/nbrm/runs/smoke.sol",
+   "--t_max",
+   "3",
+   "--lower_bound",
+   "0",
+   "--seed",
+   "1",
+   "--log_level",
+   "normal"
+  ],
+  "exit": 0,
+  "wall": 0.2,
+  "cpu": 0.02,
+  "peak_gb": 0.0,
+  "killed_at": null,
+  "max_poll_gap": 0.0,
+  "id": "smoke",
+  "instance": "SYN-n60",
+  "customers": 60,
+  "t_max": 3,
+  "lower_bound": 0,
+  "seed": 1,
+  "incumbents": 55,
+  "vehicles": 6,
+  "feasible": true,
+  "reason": "",
+  "distance": 29035,
+  "final_count_first_cpu_s": 0.02,
+  "trajectory": [
+   [
+    3,
+    16
+   ],
+   [
+    4,
+    15
+   ],
+   [
+    4,
+    14
+   ],
+   [
+    4,
+    13
+   ],
+   [
+    4,
+    12
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    21,
+    6
+   ]
+  ],
+  "valid": true
+ },
+ "predictions": {
+  "N0": "held",
+  "N1": "did not hold",
+  "N2": "did not hold",
+  "N3": "did not hold",
+  "N4": "held",
+  "N5": "held"
+ }
+}
