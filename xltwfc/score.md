@@ -7,9 +7,13 @@ Pre-registration: [expectations.md](expectations.md) (S0-S5, fixed on 2026-11-06
 run; re-run rule). Raw outputs: [results-a.json](results-a.json) / [results-a.md](results-a.md) (F1, F3; job
 `xltwfc-a-v2`) and [results-b.json](results-b.json) / [results-b.md](results-b.md) (F2, F4; job `xltwfc-b-v2`), plus
 `logs-a/`, `logs-b/`, `logs-smoke/`, `smoke-*.json`, `sols/`. Both jobs ran on the Blade on 2026-11-07 (10:45-12:28
-UTC), and the runner's log has no pause for either (ids 499abb8c65db, 240c2fa8b60f). These verdicts are written out by
-hand from those files. The pre-registered merge (`fcrun.py --merge results-a.json,results-b.json --full
-../xltwfull/results.json`) is queued as job `xltwscore-v1`, and its output will be added here.
+UTC), and the runner's log has no pause for either (ids 499abb8c65db, 240c2fa8b60f). These verdicts were first
+written out by hand from those files.
+
+**Merge reproduced (2026-11-08).** The pre-registered merge (`fcrun.py --merge results-a.json,results-b.json --full
+../xltwfull/results.json`) ran as job `xltwscore-v1` (Blade, 2026-11-07 21:20-21:22 UTC) on the files fetched from
+`main`, and printed exactly the verdicts below: `{"S0": "held", "S1": "did not hold", "S2": "did not hold", "S3":
+"held", "S4": "held", "S5": "held"}`. Its output is [results.json](results.json) and [results.md](results.md).
 
 ## Verdicts
 
@@ -39,9 +43,10 @@ scratch) on every instance. It is 2 behind on n1421 and n1608. It is the third f
 loop, after warm starts and thin ejection (`xltwrm/`) and capped restarts (`xltwrs/`). The penalised search
 does pass through solutions with fewer routes, but a fixed cost per vehicle is not enough pressure to empty a route
 when the time windows are tight. That is what route-elimination methods built for this (ejection pools, squeeze;
-Nagata & Braysy 2009) target, and they are next. On n1234, at the same 34 vehicles, the fixed-cost run's distance
-(82,856) is 1.0% shorter than the plain loop's (83,690). That is a by-product: the fixed-cost search also shortens
-routes during the fleet phase, which the restart loop does not. It is not a fleet gain.
+Nagata & Bräysy 2009) target; the pre-registered test of one is [../nbrm/expectations.md](../nbrm/expectations.md).
+On n1234, at the same 34 vehicles, the fixed-cost run's distance (82,856) is 1.0% shorter than the plain loop's
+(83,690). That is a by-product: the fixed-cost search also shortens routes during the fleet phase, which the restart
+loop does not. It is not a fleet gain.
 
 Limits: one seed, four instances, one value of F chosen before any run and not tuned. K* is a lower bound, not a
 known optimum.

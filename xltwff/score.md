@@ -5,9 +5,12 @@ MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's nam
 Pre-registration: [expectations.md](expectations.md) (H0-H5, fixed on 2026-11-06 before any run). Raw outputs: part a
 ([part-a-note.md](part-a-note.md), [results-a.json](results-a.json); job `xltwff-a-v1`, Blade, no pauses) and part b
 ([part-b-note.md](part-b-note.md), [results-b.json](results-b.json), [results-b.md](results-b.md), [logs-b/](logs-b/),
-[sols/](sols/); job `xltwff-b-v1`, Blade). These verdicts are written out by hand from those files. The
-pre-registered merge (`ffrun.py --merge results-a.json,results-b.json --ref ../xltwfull/results.json`) is queued as
-job `xltwscore-v1`, and its output will be added here.
+[sols/](sols/); job `xltwff-b-v1`, Blade). These verdicts were first written out by hand from those files.
+
+**Merge reproduced (2026-11-08).** The pre-registered merge (`ffrun.py --merge results-a.json,results-b.json --ref
+../xltwfull/results.json`) ran as job `xltwscore-v1` (Blade, 2026-11-07 21:20-21:22 UTC) on the files fetched from
+`main`, and printed exactly the verdicts below: `{"H0": "did not hold", "H1".."H5": "untestable (H0 failed)"}`. Its
+output is [results.json](results.json) and [results.md](results.md).
 
 ## Verdicts
 
@@ -46,7 +49,8 @@ it that way.
 
 Keep 0.8 as a candidate default (it never cost more than 0.33% distance here), but the next fleet idea must change
 the search itself. The fixed-cost search tried in parallel did worse ([../xltwfc/score.md](../xltwfc/score.md)).
-Route-elimination moves aimed at the fleet (ejection pools, Nagata & Braysy 2009) are next.
+A dedicated route-elimination method (ejection pools and squeeze; Nagata & Bräysy 2009) is next: see
+[../nbrm/expectations.md](../nbrm/expectations.md).
 
 Limits: one seed, four instances, stopped on the wall clock on a shared machine. K* is a lower bound, not a known
 optimum.
