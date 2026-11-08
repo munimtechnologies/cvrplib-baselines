@@ -4,7 +4,8 @@ XLTW-Test instances of xltwfull/, under the VRPTW Challenge's nearest-integer di
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Apache-2.0 (this wrapper; the
 route minimiser it runs is MIT-licensed and is not part of this file).
 
-Predictions N0-N5 are in expectations.md, fixed and published before any run.
+Predictions N0-N5 are in expectations.md, fixed and published before any run. nbrm-v2 differs from nbrm-v1 only in
+where the synthetic smoke instance comes from (xltwlb.synthetic; see addendum-v2.md).
 
   python nbrun.py --data-dir /data --out-dir /out            # smoke run, N1-N4, scoring
   python nbrun.py --score results.json                       # re-score a results file
@@ -16,10 +17,8 @@ import math
 import os
 import re
 import resource
-import signal
 import subprocess
 import sys
-import threading
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -38,6 +37,12 @@ RUNS = [
 BY_ID = {r[0]: r for r in RUNS}
 INCUMBENT = re.compile(r"incumbent_ms:\s*(\d+)\s+n_routes:\s*(\d+)")
 HEADER = ("CUST NO.  XCOORD.   YCOORD.    DEMAND   READY TIME  DUE DATE   SERVICE   TIME")
+
+
+def synthetic(n):
+    """The smoke instance. expectations.md names it xltwbase.synthetic; the function lives in xltwlb (v0.3.7)."""
+    import xltwlb as X
+    return X.synthetic(n)
 
 
 def limit_for(customers):
@@ -218,7 +223,7 @@ def find(data_dir, name):
 
 def write_md(path, res):
     L = ["# nbrm: Nagata & Braysy route minimiser (Astronomax, MIT) on four capacity-free XLTW-Test instances", "",
-         "Seed %d. Build: %s. Network reachable during the runs: %s." % (
+         "Job nbrm-v2. Seed %d. Build: %s. Network reachable during the runs: %s." % (
              SEED, json.dumps(res.get("build")), res.get("network_reachable")), "",
          "Predictions (expectations.md): `%s`" % json.dumps(res.get("predictions")), "",
          "Smoke run: `%s`" % json.dumps({k: (res.get("smoke") or {}).get(k) for k in
@@ -250,7 +255,6 @@ def main():
             res = json.load(f)
         print(json.dumps(score(res)))
         return
-    import xltwbase as B
     import xltwlb as X
     out = os.path.join(a.out_dir, "nbrm")
     work = os.path.join(out, "runs")
@@ -260,14 +264,15 @@ def main():
     if os.path.exists(bpath):
         with open(bpath, encoding="utf-8") as f:
             build = json.load(f)
-    res = {"build": build, "network_reachable": network_reachable(), "python": sys.version.split()[0], "runs": []}
+    res = {"job": "nbrm-v2", "build": build, "network_reachable": network_reachable(),
+           "python": sys.version.split()[0], "runs": []}
     res_path = os.path.join(out, "results.json")
 
     def save():
         with open(res_path, "w", encoding="utf-8", newline="\n") as f:
             json.dump(res, f, indent=1)
 
-    syn = B.synthetic(60)
+    syn = synthetic(60)
     res["smoke"] = one(a.binary, "smoke", syn, 3, 0, 1, work, 120.0)
     print(json.dumps({k: res["smoke"].get(k) for k in ("vehicles", "feasible", "reason", "exit", "cpu")}),
           flush=True)

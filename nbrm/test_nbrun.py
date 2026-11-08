@@ -1,13 +1,17 @@
-"""Tests for nbrun.py and getnb.py (no network, no route-minimiser binary needed).
+"""Tests for nbrun.py and getnb.py (no network). The end-to-end test runs the built route minimiser when the job's
+setup has placed it next to this file, and is skipped otherwise.
 
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Apache-2.0.
 """
+import hashlib
 import os
 import tempfile
 import unittest
 
 import getnb
 import nbrun
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 class Patch(unittest.TestCase):
@@ -21,6 +25,31 @@ class Patch(unittest.TestCase):
         self.assertEqual(getnb.patch_source("return hypot(dx, dy);")[1], 0)
 
 
+class Prereg(unittest.TestCase):
+    def test_hash_gate(self):
+        body = b"# nbrm: expectations\n"
+        h = hashlib.sha256(body).hexdigest()
+        got = getnb.wait_prereg("unused", getter=lambda url, tries=1: body, deadline=0, sleep=lambda s: None,
+                                expected=h)
+        self.assertEqual(got, h)
+        with self.assertRaises(SystemExit):
+            getnb.wait_prereg("unused", getter=lambda url, tries=1: body + b"x", deadline=0, sleep=lambda s: None,
+                              expected=h)
+
+    def test_crlf_normalised(self):
+        body = b"a\nb\n"
+        h = hashlib.sha256(body).hexdigest()
+        self.assertEqual(getnb.wait_prereg("unused", getter=lambda url, tries=1: b"a\r\nb\r\n", deadline=0,
+                                           sleep=lambda s: None, expected=h), h)
+
+    def test_addendum(self):
+        ok = b"# nbrm addendum\nnbrm-v2 ...\n"
+        self.assertEqual(getnb.wait_addendum(getter=lambda url, tries=1: ok, deadline=0, sleep=lambda s: None),
+                         hashlib.sha256(ok).hexdigest())
+        with self.assertRaises(SystemExit):
+            getnb.wait_addendum(getter=lambda url, tries=1: b"other", deadline=0, sleep=lambda s: None)
+
+
 class Limits(unittest.TestCase):
     def test_values(self):
         self.assertEqual([nbrun.fleet_limit(r[2]) for r in nbrun.RUNS], [1109, 1278, 1446, 1656])
@@ -31,9 +60,8 @@ class Limits(unittest.TestCase):
 
 class Format(unittest.TestCase):
     def test_homberger_roundtrip(self):
-        import xltwbase as B
         import xltwlb as X
-        inst = B.synthetic(40)
+        inst = nbrun.synthetic(40)
         with tempfile.TemporaryDirectory() as d:
             p = os.path.join(d, "x.txt")
             nbrun.write_homberger(inst, p)
@@ -59,12 +87,26 @@ class Format(unittest.TestCase):
         self.assertIsNone(nbrun.first_ms_at(incs, 58))
 
     def test_check_uses_round(self):
-        import xltwbase as B
-        inst = B.synthetic(12)
+        inst = nbrun.synthetic(12)
         one_each = [[c] for c in range(1, 13)]
         chk = nbrun.check(one_each, inst)
         self.assertTrue(chk["feasible"], chk)
         self.assertFalse(nbrun.check(one_each[:-1], inst)["feasible"])
+
+
+@unittest.skipUnless(os.path.exists(os.path.join(HERE, "routes")), "route minimiser not built here")
+class EndToEnd(unittest.TestCase):
+    def test_smoke_with_real_binary(self):
+        """The real binary on the smoke instance, exactly as main() runs it: stops by itself, writes a solution
+        that the exact check accepts."""
+        with tempfile.TemporaryDirectory() as d:
+            rec = nbrun.one(os.path.join(HERE, "routes"), "e2e", nbrun.synthetic(60), 3, 0, 1, d, 120.0)
+        self.assertIsNone(rec["killed_at"], rec)
+        self.assertEqual(rec["exit"], 0, rec)
+        self.assertIsNotNone(rec["vehicles"], rec)
+        self.assertTrue(rec["feasible"], rec)
+        self.assertTrue(rec["valid"], rec)
+        self.assertGreater(rec["incumbents"], 0, rec)
 
 
 def rec(rid, veh, cpu=100.0, peak=0.1, ok=True):

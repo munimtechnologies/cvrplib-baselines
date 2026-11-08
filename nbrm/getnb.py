@@ -28,6 +28,8 @@ XLTW = "https://galgos.inf.puc-rio.br/cvrplib/uploads/files/vrptw_challenge/XLTW
 XLTW_SHA256 = "9635b9fa813ea34ff3f35842f80a40ce6764d14c27cf2e13e5fbf1de623f4631"
 UA = "nbrm job - MV2 of Munim, Inc. (mv2@munimtech.com)"
 WAIT = 50 * 60
+PREREG_SHA256 = "c528421c28342757003e3d70662337571cab5995a8e8bb0e49e0eec0b2ef5108"
+ADDENDUM_URL = B + "main/nbrm/addendum-v2.md"
 PATCH_RE = re.compile(r"sqrt\(\s*dx\s*\*\s*dx\s*\+\s*dy\s*\*\s*dy\s*\)")
 PATCH_TO = "floor(sqrt(dx * dx + dy * dy) + 0.5)"
 
@@ -124,22 +126,40 @@ def build_nb():
     return info
 
 
-def wait_prereg(local_path, getter=get, deadline=None, sleep=time.sleep):
-    with open(local_path, "rb") as f:
-        local = norm(f.read())
+def wait_prereg(local_path, getter=get, deadline=None, sleep=time.sleep, expected=PREREG_SHA256):
+    """v2: the pre-registration is already public (nbrm-v1 verified it on 2026-11-08, sha256 PREREG_SHA256). The
+    public file must still hash to that value; the local copy is kept for reference only."""
     deadline = deadline if deadline is not None else time.time() + WAIT
     while True:
         try:
             body = norm(getter(PREREG_URL + "?nocache=%d" % int(time.time()), tries=1))
-            if body == local:
-                h = hashlib.sha256(local).hexdigest()
-                print("pre-registration public and identical, sha256 %s" % h, flush=True)
+            h = hashlib.sha256(body).hexdigest()
+            if h == expected:
+                print("pre-registration public and unchanged since nbrm-v1, sha256 %s" % h, flush=True)
                 return h
-            print("nbrm/expectations.md on main differs from prereg.md; waiting", flush=True)
+            print("nbrm/expectations.md on main has sha256 %s, expected %s; waiting" % (h, expected), flush=True)
         except (urllib.error.URLError, OSError) as e:
             print("waiting for nbrm/expectations.md (%s)" % e, flush=True)
         if time.time() > deadline:
             sys.exit("the pre-registration never became public as expected: not running")
+        sleep(60)
+
+
+def wait_addendum(getter=get, deadline=None, sleep=time.sleep):
+    """The v2 addendum (what failed in nbrm-v1 and what changed) must be public on main before anything runs."""
+    deadline = deadline if deadline is not None else time.time() + WAIT
+    while True:
+        try:
+            body = norm(getter(ADDENDUM_URL + "?nocache=%d" % int(time.time()), tries=1))
+            if b"nbrm-v2" in body:
+                h = hashlib.sha256(body).hexdigest()
+                print("addendum public, sha256 %s" % h, flush=True)
+                return h
+            print("nbrm/addendum-v2.md on main does not name nbrm-v2; waiting", flush=True)
+        except (urllib.error.URLError, OSError) as e:
+            print("waiting for nbrm/addendum-v2.md (%s)" % e, flush=True)
+        if time.time() > deadline:
+            sys.exit("the addendum never became public: not running")
         sleep(60)
 
 
@@ -153,6 +173,7 @@ def main():
     ensure_data(data_dir)
     info = build_nb()
     info["prereg_sha256"] = wait_prereg(os.path.join(HERE, PREREG_LOCAL))
+    info["addendum_sha256"] = wait_addendum()
     with open(os.path.join(HERE, "nb-build.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(info, f, indent=1)
     print(json.dumps(info), flush=True)
