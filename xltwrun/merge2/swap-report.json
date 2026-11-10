@@ -1,0 +1,139 @@
+{
+ "replaced": [
+  {
+   "instance": "XLTW-Test-n7037",
+   "old_part": "results-b1f.json",
+   "old_vehicles": 647,
+   "old_distance": 574297,
+   "old_sigterm_at": null,
+   "new_file": "rerun-v1/results-r7037.json",
+   "new_vehicles": 645,
+   "new_distance": 568970
+  },
+  {
+   "instance": "XLTW-Test-n8389",
+   "old_part": "results-b2f.json",
+   "old_vehicles": 404,
+   "old_distance": 731276,
+   "old_sigterm_at": null,
+   "new_file": "rerun-v2/results-r8389.json",
+   "new_vehicles": 393,
+   "new_distance": 718723
+  },
+  {
+   "instance": "XLTW-Test-n8575",
+   "old_part": "results-b2f.json",
+   "old_vehicles": 156,
+   "old_distance": 207870,
+   "old_sigterm_at": 514.63,
+   "new_file": "rerun-v2/results-r8575.json",
+   "new_vehicles": 103,
+   "new_distance": 169175
+  },
+  {
+   "instance": "XLTW-Test-n9160",
+   "old_part": "results-b3ra.json",
+   "old_vehicles": 394,
+   "old_distance": 395364,
+   "old_sigterm_at": 671.52,
+   "new_file": "rerun-v2/results-r9160.json",
+   "new_vehicles": 365,
+   "new_distance": 355632
+  },
+  {
+   "instance": "XLTW-Test-n9363",
+   "old_part": "results-b3f.json",
+   "old_vehicles": 484,
+   "old_distance": 513639,
+   "old_sigterm_at": null,
+   "new_file": "rerun-v2/results-r9363.json",
+   "new_vehicles": 458,
+   "new_distance": 498624
+  },
+  {
+   "instance": "XLTW-Test-n9571",
+   "old_part": "results-b3rb.json",
+   "old_vehicles": 315,
+   "old_distance": 434099,
+   "old_sigterm_at": null,
+   "new_file": "rerun-v1/results-r9571.json",
+   "new_vehicles": 309,
+   "new_distance": 424767
+  },
+  {
+   "instance": "XLTW-Test-n10001",
+   "old_part": "results-b3f.json",
+   "old_vehicles": 281,
+   "old_distance": 505302,
+   "old_sigterm_at": 600.09,
+   "new_file": "rerun-v1/results-r10001.json",
+   "new_vehicles": 267,
+   "new_distance": 465017
+  }
+ ],
+ "parts": [
+  {
+   "file": "results-a.json",
+   "runs": 80
+  },
+  {
+   "file": "results-b1f.json",
+   "runs": 4
+  },
+  {
+   "file": "results-b2f.json",
+   "runs": 2
+  },
+  {
+   "file": "results-b3f.json",
+   "runs": 2
+  },
+  {
+   "file": "results-b1ra.json",
+   "runs": 2
+  },
+  {
+   "file": "results-b1rb.json",
+   "runs": 1
+  },
+  {
+   "file": "results-b2r.json",
+   "runs": 2
+  },
+  {
+   "file": "results-b3ra.json",
+   "runs": 0
+  },
+  {
+   "file": "results-b3rb.json",
+   "runs": 0
+  }
+ ],
+ "rerun_files": [
+  "results-r7037.json",
+  "results-r8389.json",
+  "results-r8575.json",
+  "results-r9160.json",
+  "results-r9363.json",
+  "results-r9571.json",
+  "results-r10001.json"
+ ],
+ "merge_list": [
+  "/out/m2in/results-a.json",
+  "/out/m2in/results-b1f.json",
+  "/out/m2in/results-b2f.json",
+  "/out/m2in/results-b3f.json",
+  "/out/m2in/results-b1ra.json",
+  "/out/m2in/results-b1rb.json",
+  "/out/m2in/results-b2r.json",
+  "/out/m2in/results-b3ra.json",
+  "/out/m2in/results-b3rb.json",
+  "/out/m2in/results-r7037.json",
+  "/out/m2in/results-r8389.json",
+  "/out/m2in/results-r8575.json",
+  "/out/m2in/results-r9160.json",
+  "/out/m2in/results-r9363.json",
+  "/out/m2in/results-r9571.json",
+  "/out/m2in/results-r10001.json"
+ ]
+}
