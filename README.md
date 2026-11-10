@@ -12,20 +12,24 @@ instances on 2027-02-24, ending 2027-03-26) asks what a method can do on very la
 measure what an off-the-shelf solver on one CPU does, as a floor to compare against. They are calibrations,
 not new results. The challenge's rules were published on 2026-11-02 (summary below).
 
-**Status (2026-11-08).** This README is the first version of our XLTW-Test report.
+**Status (2026-11-10).** This README is version 1 of our XLTW-Test report.
 
-- The baseline ran on all 100 XLTW-Test instances under the challenge's protocol at 1/30 of the time limit, and
-  `xltwrun/` is scored: 1 of 6 predictions held. The fleet search is the weak spot: 18,529 vehicles against a
-  capacity/clique bound of 11,298 and a time-based bound K* of 13,961.
-- Some of those timed runs were paused by the shared host. We audited every run against the job runner's pause log
-  and corrected an earlier claim (`xltwrun/pause-audit.md`).
+- The baseline has a valid run on all 100 XLTW-Test instances under the challenge's protocol at 1/30 of the time
+  limit. The 7 runs that host pauses had spoiled were re-run cleanly and swapped in under a rule fixed beforehand
+  (`xltwrun/score-2.md`). All 100 runs now stop by themselves and count. In total: **18,388 vehicles**, against a
+  capacity/clique bound K of 11,298 and a time-based bound K* of 13,961 (31.7% above K*). Only 6 runs end at K.
+- The fleet search is the weak spot, and two ways of explaining the gap were ruled out. A dedicated route minimiser
+  (Nagata and Bräysy, 2009) ended one vehicle *above* PyVRP on each of the four capacity-free instances it was tried
+  on (`nbrm/`). A classical path-cover bound never tightened K* on any of the 100 (`kmatch/`). Whether the gap lies
+  in the search or in a loose K* is still open.
+- Some timed runs were paused by the shared host. We audited every run against the job runner's pause log and
+  corrected an earlier claim (`xltwrun/pause-audit.md`). The clean re-runs used fewer vehicles than the paused runs
+  on all 7 instances (141 fewer in total): pauses cost fleet, not only time.
 - The solver is packaged for the algorithm track (`xltwpkg/`, scored) and is now its own repository,
   [munimtechnologies/xltw-solver](https://github.com/munimtechnologies/xltw-solver).
 - Four full-limit studies on the four smallest capacity-free instances are in. Thirty times the time barely moves the
   fleet (`xltwfull/`). Giving the fleet search 80% of the limit saved one vehicle (`xltwff/`). A fixed-cost fleet search
   lost to the plain loop (`xltwfc/`). Stopping on an iteration budget makes a seed repeat its answer (`xltwdet/`).
-- Next: a dedicated route-minimisation heuristic (Nagata and Bräysy, 2009) on the same four instances (`nbrm/`,
-  pre-registered, queued).
 
 ## The challenge's rules (published 2026-11-02, summarised)
 
@@ -47,26 +51,27 @@ nearest-integer rounding, which `xltwlb.py` already calls 'round'. The double/DI
 'round' the time-window bound of the R1 `_1` instances no longer binds (`xltwlb/`). The time limit for algorithm
 runs is 1,800 s per 1,000 customers, six times the 300 s fleet budgets used so far.
 
-## XLTW-Test report, version 0 (2026-11-08)
+## XLTW-Test report, version 1 (2026-11-10)
 
 What one off-the-shelf solver (PyVRP 0.14.1 with a vehicles-first wrapper, one CPU, one seed) does on CVRPLib's
 XLTW-Test set, and what we learned about running it under the challenge's protocol. Each line links to its scored
-folder below.
+folder below. Version 0 (2026-11-08) had 18,529 vehicles, with 7 runs spoiled by host pauses.
 
 | question | answer so far | where |
 |---|---|---|
-| how many vehicles at T(n)/30, all 100 instances | 18,529 in total; K = 11,298, K* = 13,961; median (vehicles - K) / K = 51.5%; only 6 runs at K, none of them capacity-free | `xltwrun/` |
-| does it follow the protocol | 97 of 100 runs stopped by themselves; the 3 SIGKILLs were runs frozen by host pauses, not solver hangs | `xltwrun/`, `xltwrun/pause-audit.md` |
+| how many vehicles at T(n)/30, all 100 instances | **18,388** in total; K = 11,298, K* = 13,961 (31.7% above K*); median (vehicles - K) / K = 50.5%; only 6 runs at K, none of them capacity-free | `xltwrun/`, `xltwrun/score-2.md` |
+| does it follow the protocol | yes: with the 7 paused runs replaced by clean re-runs, 100 of 100 stop by themselves and count, with no SIGKILL and nothing below K | `xltwrun/score-2.md`, `xltwrun/pause-audit.md` |
+| what host pauses did | every one of the 7 clean re-runs used fewer vehicles than the paused run (n8575 156 -> 103, n9160 394 -> 365, n9363 484 -> 458; 141 fewer in all) | `xltwrun/score-2.md` |
 | does the packaged build work offline | yes, on Python 3.11 and 3.12: offline build, stdout discipline, on-time stop, watchdog | `xltwpkg/` |
 | does the full limit T(n) help the fleet | a little: 177 to 167 vehicles (-5.6%) on the 3 valid runs of 4 capacity-free instances, against K* = 126 on those 3 | `xltwfull/` |
 | more fleet time (0.8 of T(n)) | one vehicle fewer of 166; distance at most +0.33% where counts are equal | `xltwff/` |
 | one fixed-cost fleet search instead of restarts | worse: 170 against 167 | `xltwfc/` |
 | deterministic for a given seed | yes with an iteration budget (3 of 3 identical on each instance); the first budget formula is too tight on slow machines | `xltwdet/` |
-| is the gap the solver or the instances | being tested with a dedicated route minimiser | `nbrm/` |
+| does a dedicated route minimiser do better | no: Nagata and Bräysy's method ended one vehicle above PyVRP on each of 4 capacity-free instances (235 against 231; K* 173) | `nbrm/` |
+| is K* simply loose | not in a way a path-cover (assignment) bound can show: it never beats K* on any of the 100 | `kmatch/` |
 
-Not yet done for the report: clean single-instance re-runs of the 7 XLTW-Test instances whose `xltwrun/` runs were
-paused (n7037, n8389, n8575, n9160, n9363, n9571, n10001; queued under
-[xltwrun/rerun-2026-11-08.md](xltwrun/rerun-2026-11-08.md)), and a recalibrated iteration budget.
+Not yet done for the report: a recalibrated iteration budget (one rate per phase) before the budget becomes the
+solver's default, and a fleet idea that is neither more time nor ejection-based route removal.
 
 ## vrp/: warm and cold PyVRP on the three smallest XL instances
 
@@ -455,7 +460,7 @@ R4 (restart better on at least 3) did not ([xltwrs/expectations.md](xltwrs/expec
 [xltwrs/results.md](xltwrs/results.md), [xltwrs/results.json](xltwrs/results.json),
 [xltwrs/progress.jsonl](xltwrs/progress.jsonl); solutions in [xltwrs/sols/](xltwrs/sols/). None is a record.
 
-## xltwrun/: the baseline on all 100 XLTW-Test instances under the challenge's protocol (scored)
+## xltwrun/: the baseline on all 100 XLTW-Test instances under the challenge's protocol (scored twice)
 
 [`xltwrun/solver.py`](xltwrun/solver.py) is the `xltwbase.py` baseline (plain fleet loop stopped at K, the rest of
 the time to distance) as a program that follows the algorithm track's rules: `python solver.py instance seconds seed`,
@@ -465,21 +470,27 @@ will: one process per instance, SIGTERM at the limit and SIGKILL five seconds la
 before the limit counted, and that solution re-checked in exact arithmetic. All 100 XLTW-Test instances, limits
 divided by 30 (60 s per 1,000 customers), seed 20261104. It is PyVRP with a wrapper, not a new method.
 
-| prediction ([expectations.md](xltwrun/expectations.md), fixed 2026-11-04) | verdict |
-|---|---|
-| G0 every run counts, no SIGKILL, nothing below K | did not hold: 3 SIGKILLs (n8575, n10001, n9160), all on runs frozen by host pauses; no counted solution infeasible or below K |
-| G1 the solver stops by itself on all 100 | did not hold: 97 |
-| G2 20 to 55 runs end at exactly K | did not hold: **6** (n1654, n1888, n2307, n3287, n3334, n4738, all with KC > 1) |
-| G3 at most 5 of the 33 capacity-free instances end at K | held: 0 |
-| G4 median (vehicles - K) / K at most 10% | did not hold: **51.5%** |
-| G5 peak memory within the pre-registered estimate | did not hold: 67 of 100 above it, by at most 17%; the fit 0.17 + 4.7 x (n / 10,000)^2 GB covers all 100 (largest 4.62 GB) |
+| prediction ([expectations.md](xltwrun/expectations.md), fixed 2026-11-04) | merge 1 ([score.md](xltwrun/score.md)) | merge 2, paused runs replaced ([score-2.md](xltwrun/score-2.md)) |
+|---|---|---|
+| G0 every run counts, no SIGKILL, nothing below K | did not hold: 3 SIGKILLs (n8575, n10001, n9160), all on runs frozen by host pauses | **held**: 100 of 100 counted, no SIGKILL, none below K |
+| G1 the solver stops by itself on all 100 | did not hold: 97 | **held**: 100 |
+| G2 20 to 55 runs end at exactly K | did not hold: **6** (n1654, n1888, n2307, n3287, n3334, n4738, all with KC > 1) | did not hold: 6 |
+| G3 at most 5 of the 33 capacity-free instances end at K | held: 0 | held: 0 |
+| G4 median (vehicles - K) / K at most 10% | did not hold: **51.5%** | did not hold: **50.5%** |
+| G5 peak memory within the pre-registered estimate | did not hold: 67 of 100 above it, by at most 17%; the fit 0.17 + 4.7 x (n / 10,000)^2 GB covers all 100 (largest 4.62 GB) | did not hold: 67; the same fit still covers every peak |
 
-In total 18,529 vehicles against K = 11,298 and K* = 13,961 (33% above K*). Scoring:
-[xltwrun/score.md](xltwrun/score.md) (job `xltwmerge-v1` ran the pre-registered `xltwrun.py --merge`). Raw output:
-[xltwrun/results.md](xltwrun/results.md), [xltwrun/results.json](xltwrun/results.json) (all 100), the part files
-`results-a.*`, `results-b*.*`, [part-a.md](xltwrun/part-a.md), [part-b-note.md](xltwrun/part-b-note.md),
-[filter-report.json](xltwrun/filter-report.json), and every counted solution in [xltwrun/sols/](xltwrun/sols/)
-(exact-checked; none is a record).
+Merge 1 counted 18,529 vehicles. Merge 2 swapped in the clean re-runs of the 7 paused instances, under a rule fixed
+before any re-run was read (swap whether the re-run came out better or worse;
+[rerun-2026-11-08.md](xltwrun/rerun-2026-11-08.md)), and counts **18,388** (K = 11,298, K* = 13,961; 31.7% above
+K*). Every re-run used fewer vehicles than the paused run it replaced: n8575 156 -> 103, n9160 394 -> 365, n9363
+484 -> 458, n10001 281 -> 267, n8389 404 -> 393, n9571 315 -> 309, n7037 647 -> 645. Merge 2 is a second, declared
+reading of the same study, not a new pre-registration. Raw output: [xltwrun/results.md](xltwrun/results.md),
+[xltwrun/results.json](xltwrun/results.json) (merge 1, all 100), [xltwrun/merge2/](xltwrun/merge2/) (merge 2:
+results, merge list, swap and filter reports), the part files `results-a.*`, `results-b*.*`,
+[part-a.md](xltwrun/part-a.md), [part-b-note.md](xltwrun/part-b-note.md),
+[filter-report.json](xltwrun/filter-report.json), the re-run attempts
+([rerun-attempt-1.md](xltwrun/rerun-attempt-1.md), [rerun-attempt-2.md](xltwrun/rerun-attempt-2.md)), and every
+counted solution in [xltwrun/sols/](xltwrun/sols/) (exact-checked; none is a record).
 
 **Pause audit and correction ([xltwrun/pause-audit.md](xltwrun/pause-audit.md)).** The jobs run in containers on
 shared machines, and the job runner pauses a whole container when a machine is short of memory. A paused solver
@@ -489,10 +500,8 @@ n10001): five were counted although paused for 184-439 s in the middle, so they 
 limit, and the re-runs of n9160 and n9571 were paused again. An earlier note called the n8575 SIGKILL a PyVRP
 call that ignored the clock. **That was wrong**: the container was paused for about 439 s of that run. We have no
 evidence of a PyVRP call that ignores the clock, and we withdrew that claim. Our harnesses now measure the gap between
-their own polls (over 1 s = frozen), and runs are checked against the pause log before scoring. The 7 paused
-instances are being re-run one at a time, under a rule fixed before the job ran
-([xltwrun/rerun-2026-11-08.md](xltwrun/rerun-2026-11-08.md)): same harness, seed and limits, at most 3 attempts per
-instance, then one more mechanical merge published next to the first scoring.
+their own polls (over 1 s = frozen), and runs are checked against the pause log before scoring. The 7 instances were
+re-run one at a time until each had a clean run, and merge 2 above counts those.
 
 ## xltwpkg/: the solver packaged for the algorithm track (scored), now [xltw-solver](https://github.com/munimtechnologies/xltw-solver)
 
@@ -567,16 +576,52 @@ The budget formula assumed one iteration rate per instance size, but on n1234 th
 iterations per second and the distance phase at 297-386. The next budget will count the two phases separately. The
 budget is not yet the solver's default.
 
-## nbrm/: a dedicated route minimiser on the same four instances (pre-registered, queued)
+## nbrm/: a dedicated route minimiser on the same four instances (scored: one vehicle worse everywhere)
 
-Is the fleet gap the search or the instances? [`nbrm/`](nbrm/) runs the route-minimisation heuristic of Nagata and
+Is the fleet gap the search or the instances? [`nbrm/`](nbrm/) ran the route-minimisation heuristic of Nagata and
 Bräysy (Operations Research Letters 37, 2009) in the open C implementation by
-[Astronomax](https://github.com/Astronomax/vrptw-powerful-route-minimization-heuristic) (MIT; we did not write it),
-patched only to round arc lengths to the nearest integer, on n1234, n1421, n1608 and n1841, with half the limit
-T(n) each. Predictions N0-N5, fixed before any run: [nbrm/expectations.md](nbrm/expectations.md). The first job
-(`nbrm-v1`) built the code but stopped in its own unit tests before any run, because the smoke instance was taken
-from the wrong module. What changed for `nbrm-v2` is in [nbrm/addendum-v2.md](nbrm/addendum-v2.md); the
-predictions are unchanged.
+[Astronomax](https://github.com/Astronomax/vrptw-powerful-route-minimization-heuristic) (MIT; we did not write it;
+commit 89d4c05), patched only to round arc lengths to the nearest integer, on n1234, n1421, n1608 and n1841, with
+half the limit T(n) of CPU time each and default settings. Predictions N0-N5, fixed before any run:
+[nbrm/expectations.md](nbrm/expectations.md), with [nbrm/addendum-v2.md](nbrm/addendum-v2.md) (the first job stopped
+in its own unit tests before any run).
+
+| instance | K* | best valid PyVRP run (full T(n)) | route minimiser (T(n)/2 CPU) | final count first reached at |
+|---|---|---|---|---|
+| n1234 | 27 | 33 | 34 | 131.7 CPU s (5.9% of T(n)) |
+| n1421 | 47 | 65 | 66 | 109.8 CPU s (4.3%) |
+| n1608 | 81 | 108 | 109 | 1,116.4 CPU s (38.6%) |
+| n1841 | 18 | 25 | 26 | 342.5 CPU s (10.3%) |
+| total | 173 | 231 | **235** | |
+
+Scoring: [nbrm/score.md](nbrm/score.md): the gate N0, N4 (at most one instance reaches K*) and N5 (CPU and memory)
+held; N1 (no more vehicles than PyVRP on each), N2 (fewer on at least 3 of 4) and N3 (total at most 221) did not.
+The route minimiser reached its final count early and then stalled one route short of PyVRP. It does not shorten
+routes, so its distances are not comparable. Host pauses did not affect it, because it stops on process CPU time.
+Raw output: [nbrm/results.md](nbrm/results.md), [nbrm/results.json](nbrm/results.json), the run logs and solutions in
+`nbrm/runs/`. As pre-registered, the planned hybrid (route minimiser for the fleet, then PyVRP for distance) is
+dropped. One seed, default parameters, four instances.
+
+## kmatch/: a path-cover fleet bound on all 100 XLTW-Test instances (pilot: never tightens K*)
+
+If K* is far below the true minimum fleet, the gap is the bound's, not the search's. [`kmatch/`](kmatch/) computed
+the classical path-cover (assignment) bound KM = max(n - M, 1), where M is a maximum matching in the graph of
+customer pairs that one vehicle can serve one after the other (after Dantzig and Fulkerson's minimum fleet for fixed
+schedules), on all 100 instances in 'round', and checked it against the 80 exactly verified part-a solutions.
+A pilot with guesses written before it ran ([kmatch/pilot.md](kmatch/pilot.md)), not a full pre-registration.
+
+| | result ([kmatch/readout.md](kmatch/readout.md)) |
+|---|---|
+| KM above K* | **never** (0 of 100); the sum of max(K*, KM) is still 13,961 |
+| KM = 1 | 60 of 100: wherever two customers can each precede the other, the relaxation pairs them into a loop no route can drive, and with wide windows such loops are everywhere (they form on all 100) |
+| KM above the clique bound KC | 10 instances (9 capacity-free, plus n3888: 458 against 204), but the energetic bound was already higher on all 10 |
+| closest calls | n1748 (KM 142, K* 143) and n3888 (458 against 460), both with narrow windows and few loops |
+| KM above any verified solution | never (80 of 80) |
+
+Guesses g1, g3 and g4 held; g2 (KM above K* on at least one capacity-free instance) did not; mean Brier 0.094. A
+loop-free strengthening (subtour cuts in the assignment problem) is possible but would have to recover dozens of
+vehicles from KM = 1 on the wide-window instances; we do not pursue it. Raw output:
+[kmatch/results.md](kmatch/results.md), [kmatch/results.json](kmatch/results.json).
 
 ## bkslog/: CVRPLib's best-known-solution announcements as a table
 
@@ -641,12 +686,13 @@ Scoring: [xl/score.md](xl/score.md): X1-X4 all held.
 
 ## Coming next
 
-- Score `nbrm/` (N0-N5). If the route minimiser clearly beats the plain loop, pre-register a hybrid (its fleet
-  phase, then PyVRP's distance phase from its routes) as the next version of `xltw-solver`, keeping its MIT notice.
-- Clean single-instance re-runs of the 7 paused `xltwrun/` instances, so the XLTW-Test report covers all 100 with
-  valid runs.
-- A recalibrated iteration budget (one rate per phase), pre-registered, before the budget becomes the default.
-- `bkswatch/` again about once a week while new VRPTW BKSs keep arriving, using the 2026-11-02 read as the reference.
+- A recalibrated iteration budget (one rate per phase), pre-registered, before the budget becomes the default of
+  `xltw-solver`.
+- A different fleet idea for the capacity-free instances: neither more time nor ejection-based route removal has
+  moved the fleet much, and the cheap bound check found no slack in K*.
+- `bkswatch/` again while new VRPTW BKSs keep arriving, using the 2026-11-02 read as the reference (CVRPLib's site
+  refused connections when last tried on 2026-11-09).
+- The algorithm track opens on 2026-12-16; this README's report section is the XLTW-Test report it asks for.
 
 Reproduce (Python 3.12):
 
@@ -715,7 +761,8 @@ cp ../xltwlb/xltwlb.py ../xltwbase/xltwbase.py .
 python -m unittest -v test_xltwrun
 python xltwrun.py --scale 30 --workers 4 --mem-gb 3.3 --max-n 6500 --part a --data-dir data --out-dir out
 # part b ran as parts b1, b2, b3 with --workers 1 and --min-n/--max-n per part (see part-a.md);
-# frozen runs are re-run as parts b1ra, b1rb, b2r, b3ra, b3rb
+# frozen runs are re-run as parts b1ra, b1rb, b2r, b3ra, b3rb, then one instance at a time (rerun-2026-11-08.md);
+# both merges ran xltwrun.py --merge (score.md, score-2.md say which inputs)
 # one instance, exactly as the challenge runs it (here at the full limit for 1,047 customers):
 python solver.py data/xltw-test/x-9635b9fa813e/XLTW-Test-n1048.vrp 1884.6 1234 > n1048.sol
 cd ../xltwpkg
@@ -742,8 +789,9 @@ python -m unittest -v test_xl_scale
 python xl_scale.py --id 379 --sizes 1000,2500,5000,10000 --seconds 300,600,900,1800 --data-dir data --out-dir out
 ```
 
-The full-limit studies (`xltwfull/`, `xltwff/`, `xltwfc/`, `xltwdet/`) each keep their run script, tests and
-merge command in their folder; their `expectations.md` and `score.md` say which job ran what.
+The full-limit studies (`xltwfull/`, `xltwff/`, `xltwfc/`, `xltwdet/`) and the `kmatch/` pilot each keep their run
+script, tests and merge command in their folder; their `expectations.md` (or `pilot.md`) and `score.md` (or
+`readout.md`) say which job ran what.
 
 Limits: one seed, one CPU per run, wall-clock budgets (results vary with machine speed, as `xltwbase/` and
 `xltwctl/` show). The results files say "PyVRP unknown" because 0.14.1 has no `__version__`; the version was pinned
@@ -757,5 +805,5 @@ SINTEF's record table in `vrptwl/fleet_double.py` is quoted (vehicles and distan
 `bkslog/` keeps the announced instance names, values, dates and credits only. `bkswatch/` keeps one row per BKS
 (route count, costs, check results), not the solutions. `xltwtest/` keeps file names, sizes, hashes, header and
 section names, summary statistics and bounds, not the instances. `xltwrun/`, `xltwen/`, `xltwfull/`, `xltwff/`,
-`xltwfc/`, `xltwdet/` and `nbrm/` keep per-run results and solutions, not the instances. The route minimiser in
-`nbrm/` is cloned and built at run time and is not redistributed here.
+`xltwfc/`, `xltwdet/`, `nbrm/` and `kmatch/` keep per-run results and solutions, not the instances. The route
+minimiser in `nbrm/` is cloned and built at run time and is not redistributed here.
