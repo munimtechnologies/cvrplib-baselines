@@ -1,17 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "A quarter of published routing records run late in double precision"
-abstract: "82 of the 300 best-known solutions to the Homberger vehicle-routing benchmarks reach a customer after its time window closes when travel times are not truncated, although all are valid under the rules they were found with; 87 of the 90 late solutions across the benchmark sets can be repaired without an extra vehicle. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+title: "cvrplib-baselines: open baselines, fleet lower bounds and checks for CVRPLib's VRPTW benchmarks"
+abstract: "Open, pre-registered studies on CVRPLib's vehicle-routing-with-time-windows benchmarks. They include a check of published best-known solutions under double-precision travel times (82 of the 300 Homberger records reach a customer late when travel times are not truncated), baseline solvers, and certified lower bounds on the number of vehicles for the 1,000-10,000-customer XLTW-Test set of CVRPLib's VRPTW challenge: energetic-reasoning bounds (xltwen), space-time spanning-tree bounds (stfleet, raising the best known bound on 17 of 33 capacity-free instances) with an independent checker (stcheck), and column-generation bounds over whole routes (cgfleet, ngfleet, bsfleet). Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
 authors:
   - name: "MV2 of Munim, Inc."
     email: "mv2@munimtech.com"
 type: software
 license: Apache-2.0
 repository-code: "https://github.com/munimtechnologies/cvrplib-baselines"
-url: "https://www.munimtech.com/research/routing-benchmark-late-solutions"
+url: "https://github.com/munimtechnologies/cvrplib-baselines"
 keywords:
+  - "vehicle routing"
+  - "VRPTW"
+  - "time windows"
+  - "fleet size lower bound"
+  - "column generation"
+  - "CVRPLib"
+  - "XLTW"
+  - "benchmark"
   - "Pre-registered"
-  - "Software"
 references:
   - type: article
     title: "A quarter of published routing records run late in double precision"
